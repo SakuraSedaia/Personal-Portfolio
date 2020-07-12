@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/* Fonts */
+@font-face {
+  font-family: PT_Sans;
+  src: url("PT_Sans/PTSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: PT_Sans;
+  src: url("PT_Sans/PTSans-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: PT_Sans;
+  src: url("PT_Sans/PTSans-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: PT_Sans;
+  src: url("PT_Sans/PTSans-Italic.ttf");
+  font-style: italic;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+/* Header */
+.header-wrapper {
+  background-color: rgb(148, 148, 148);
+}
+
+/* Information Bar */
+
+.information-wrapper {
+  height: 60px;
+  background-color: rgb(242, 242, 242);
+}
+.logo-wrapper {
+  width: 50%;
+}
+#logo {
+  font-size: 26px;
+  font-family: PT_Sans;
+  font-weight: bold;
+}
+#subtitle {
+  font-size: 16px;
+  font-family: PT_Sans;
+}
+
+.alert-wrapper {
+  position: absolute;
+  display: flex;
+  right: 50px;
+  top: 10px;
+}
+.alert-icon {
+  width: 75px;
+  right: 0;
+  text-align: center;
+}
+.alert-icon span {
+  font-size: 45px;
+  cursor: pointer;
+}
+
+#devWarning {
+  animation-name: devWarning;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes devWarning {
+  0% {
+    color: black;
+  }
+  50% {
+    color: rgb(204, 44, 44);
+  }
+  100% {
+    color: black;
+  }
+}
+@keyframes devWarningDeactivate {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+/* Build Information Styles */
+
+.build-info {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.479)
+  );
+  position: absolute;
+  bottom: 0;
+  height: auto;
+  right: 0;
+  padding: 5px;
+  width: 45%;
+  text-align: center;
+}
+.build-info span {
+  font-size: 16px;
+}
