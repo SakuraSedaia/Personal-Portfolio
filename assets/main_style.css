@@ -25,9 +25,16 @@
     font-style: italic;
 }
 
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|IBM+Plex+Sans|Pacifico|Roboto&display=swap");
+
+/* Start CSS */
 html,
 body {
     margin: 0;
+}
+
+.material-icons {
+    transition: 500ms;
 }
 
 /* Header */
@@ -40,6 +47,8 @@ body {
 .information-wrapper {
     height: 60px;
     background-color: rgb(242, 242, 242);
+
+    z-index: 99;
 }
 
 .logo-wrapper {
@@ -77,7 +86,7 @@ body {
 
 #devWarning {
     animation-name: devWarning;
-    animation-duration: 0.7s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
 }
@@ -87,8 +96,16 @@ body {
         color: black;
     }
 
+    30% {
+        color: black;
+    }
+
     50% {
         color: rgb(204, 44, 44);
+    }
+
+    70% {
+        color: black;
     }
 
     100% {
@@ -109,11 +126,67 @@ body {
 /* Navigation */
 .navigation-wrapper {
     height: 36px;
+    width: 60%;
+    position: absolute;
+    background-color: rgb(54, 54, 54);
+    text-align: right;
+    transform: translateX(100%);
+    animation-name: none;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    z-index: -1;
     display: flex;
+    right: 0;
 }
 
+@keyframes navAnimateIn {
+    0% {
+        transform: translateY(-300%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes navAnimateOut {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-300%);
+    }
+}
+
+
 .nav-item {
-    font-size: 24px;
+    color: #F2AEAE;
+    flex-basis: 33.3%;
+    font-size: 18px;
+    text-align: center;
+    font-family: "IBM Plex Sans";
+    display: inline-block;
+    transition: 250ms;
+    border-left: rgba(210, 156, 217, 0) solid 3px;
+    border-right: rgba(210, 156, 217, 0) solid 3px;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background-color: #042626;
+    border-color: white;
+}
+
+.nav-div {
+    display: inline-block;
+    font-size: 18px;
+    color: #F2AEAE;
+}
+
+.navigation-wrapper div {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /* Build Information Styles */
