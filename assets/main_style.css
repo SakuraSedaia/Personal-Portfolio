@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|IBM+Plex+Sans|Pacifico|Roboto&display=swap");
 
 /* Fonts */
 @font-face {
@@ -25,7 +26,7 @@
     font-style: italic;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Comfortaa|IBM+Plex+Sans|Pacifico|Roboto&display=swap");
+
 
 /* Start CSS */
 html,
@@ -38,7 +39,7 @@ body {
 }
 
 /* Header */
-.header-wrapper {
+.header-container {
     background-color: rgb(148, 148, 148);
 }
 
@@ -189,6 +190,37 @@ body {
     padding-bottom: 5px;
 }
 
+/* Header Content */
+.header-wrapper {
+    border: 10px solid rgb(245, 86, 133);
+    background-color: rgb(245, 86, 133);
+}
+.header-content {
+    padding: 1in;
+    padding-top: 2in;
+    padding-bottom: 2in;
+    background-image: url(images/WPRenders/MermaidSakura-Azura_Processed.png);
+    background-size: cover;
+    background-position: center 28%;
+    border-radius: 20px;
+    display: flex;
+}
+.header-1 {
+    font-family: PT_Sans;
+}
+
+.header-1 h1 {
+    font-family: "IBM Plex Sans";
+    color: rgb(242,242,242);
+}
+.header-1 h2 {
+    color: rgb(189, 189, 189);
+}
+
+.header-2 {
+    background-color: red;
+    content: normal;
+}
 /* Build Information Styles */
 
 .build-info {

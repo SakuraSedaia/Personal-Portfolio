@@ -10,7 +10,10 @@ function openDevAlert() {
   document.getElementById("devWarning").style.cursor = "default";
   document.getElementById("devWarning").removeAttribute("onclick");
 }
+
+
 var isNavOpen;
+
 function openNavigation() {
   if (isNavOpen != 0) {
     document.getElementById("navWrapper").style.animationName = "navAnimateIn";
@@ -22,3 +25,4 @@ function openNavigation() {
     document.getElementById("navigation").innerHTML = "menu";
   }
 }
+
