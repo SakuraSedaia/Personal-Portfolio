@@ -1,0 +1,57 @@
+:root {
+    --slide-1: url(images/WPRenders/DianaMountainRender.png);
+    --slide-2: url(images/WPRenders/CalithSakura-Frozen.png);
+    --slide-3: url(images/WPRenders/MermaidSakura-Azura_Processed.png);
+    --slide-4: url(images/WPRenders/BarSet_Preview4.png);
+}
+
+
+@keyframes header-slide {
+
+    /* Slide 1 */
+
+    0% {
+        background-image: var(--slide-1);
+    }
+
+    20% {
+        background-image: var(--slide-1);
+    }
+
+    25% {
+        background-image: var(--slide-2);
+    }
+
+    45% {
+        background-image: var(--slide-2);
+    }
+
+    50% {
+        background-image: var(--slide-3);
+    }
+
+    70% {
+        background-image: var(--slide-3);
+    }
+
+    75% {
+        background-image: var(--slide-4);
+    }
+
+    95% {
+        background-image: var(--slide-4);
+    }
+
+    100% {
+        background-image: var(--slide-1);
+    }
+}
+
+
+
+.header-slide {
+    animation: infinite;
+    animation-name: header-slide;
+    animation-duration: 40s;
+    animation-timing-function: ease-in-out;
+}
