@@ -3,6 +3,12 @@
     --slide-2: url(images/WPRenders/CalithSakura-Frozen.png);
     --slide-3: url(images/WPRenders/MermaidSakura-Azura_Processed.png);
     --slide-4: url(images/WPRenders/BarSet_Preview4.png);
+
+    /* Animation Properties */
+    --loop: infinite;
+    --name: header-slide;
+    --duration: 20s;
+    --timing-function: easy-in-out;
 }
 
 
@@ -50,8 +56,26 @@
 
 
 .header-slide {
-    animation: infinite;
-    animation-name: header-slide;
-    animation-duration: 40s;
-    animation-timing-function: ease-in-out;
+    animation: var(--loop);
+    animation-name: var(--name);
+    animation-duration: var(--duration);
+    animation-timing-function: var(--timing-function);
+    
+    /* Webkit Compat */
+    -webkit-animation: var(--loop);
+    -webkit-animation-name: var(--name);
+    -webkit-animation-duration: var(--duration);
+    -webkit-animation-timing-function: var(--timing-function);
+
+    /* Opera Compat */
+    -o-animation: var(--loop);
+    -o-animation-name: var(--name);
+    -o-animation-duration: var(--duration);
+    -o-animation-timing-function: var(--timing-function);
+
+    /* Mozilla Compat */
+    -moz-animation: var(--loop);
+    -moz-animation-name: var(--name);
+    -moz-animation-duration: var(--duration);
+    -moz-animation-timing-function: var(--timing-function);
 }
