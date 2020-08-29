@@ -56,6 +56,9 @@
 
 
 .header-slide {
+    background-size: cover;
+    background-position: center 28%;
+
     animation: var(--loop);
     animation-name: var(--name);
     animation-duration: var(--duration);

@@ -127,37 +127,12 @@ body {
 /* Navigation */
 .navigation-wrapper {
     height: 36px;
-    width: 60%;
-    position: absolute;
+    width: 100%;
     background-color: rgb(54, 54, 54);
     text-align: right;
-    transform: translateX(100%);
-    animation-name: none;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-    z-index: -1;
+    z-index: 1;
     display: flex;
     right: 0;
-}
-
-@keyframes navAnimateIn {
-    0% {
-        transform: translateY(-300%);
-    }
-
-    100% {
-        transform: translateY(0%);
-    }
-}
-
-@keyframes navAnimateOut {
-    0% {
-        transform: translateY(0%);
-    }
-
-    100% {
-        transform: translateY(-300%);
-    }
 }
 
 
@@ -200,9 +175,10 @@ body {
     padding-top: 2in;
     padding-bottom: 2in;
     background-size: cover;
-    background-position: center 28%;
+    background-position: center 50%;
     border-radius: 20px;
     display: flex;
+    background-image: url('images/WPRenders/MermaidSakura-SpookyForest.png');
 }
 .header-1 {
     font-family: PT_Sans;
@@ -220,21 +196,45 @@ body {
     background-color: red;
     content: normal;
 }
-/* Build Information Styles */
 
-.build-info {
-    background-image: linear-gradient(to right,
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 0.479));
-    position: absolute;
-    bottom: 0;
-    height: auto;
-    right: 0;
-    padding: 5px;
-    width: 45%;
+/* Section 1 - FAQ */
+
+.section1-wrapper {
+    background-color: rgb(230, 230, 230);
+    margin: 0;
+    padding: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.section1-content {
+    margin-left: 1in;
+    margin-right: 1in;
+    padding: 1px;
+    padding-left: 1in;
+    padding-right: 1in;
+    text-indent: 1in;
+    background-color: rgba(0, 0, 0, 0.103);
+}
+.section1-content h1 {
+    color: red;
+    font-family: PT_Sans;
+    font-weight: bold;
+}
+.question-1 {
+    text-align: left;
+    width: 500px;
+    background-color: grey;
+    padding: 28px;
+}
+.question-1 h2 {
+    font-family: PT_Sans;
+    color: pink;
+}
+
+.question-2 {
     text-align: center;
 }
 
-.build-info span {
-    font-size: 16px;
+.question-3 {
+    text-align: right;
 }
