@@ -4,28 +4,31 @@
 /* Fonts */
 @font-face {
     font-family: PT_Sans;
-    src: url("PT_Sans/PTSans-Regular.ttf");
+    src: url("fonts/PTSans-Regular.ttf");
 }
 
 @font-face {
     font-family: PT_Sans;
-    src: url("PT_Sans/PTSans-Bold.ttf");
+    src: url("fonts/PTSans-Bold.ttf");
     font-weight: bold;
 }
 
 @font-face {
     font-family: PT_Sans;
-    src: url("PT_Sans/PTSans-BoldItalic.ttf");
+    src: url("fonts/PTSans-BoldItalic.ttf");
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: PT_Sans;
-    src: url("PT_Sans/PTSans-Italic.ttf");
+    src: url("fonts/PTSans-Italic.ttf");
     font-style: italic;
 }
-
+@font-face {
+    font-family: "Minecraft";
+    src: url("fonts/Minecraftia-Regular.ttf");
+}
 
 
 /* Start CSS */
@@ -34,207 +37,45 @@ body {
     margin: 0;
 }
 
-.material-icons {
-    transition: 500ms;
+.blur {
+	-webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
 }
 
-/* Header */
-.header-container {
-    background-color: rgb(148, 148, 148);
+.logo {
+	font-size: 24px;
+	color: white;
+	font-family: PT_Sans;
 }
 
-/* Information Bar */
-
-.information-wrapper {
-    height: 60px;
-    background-color: rgb(242, 242, 242);
-
-    z-index: 99;
+h1 {
+	font-family: PT_Sans;
+	font-weight: bold;
+	color: white;
 }
 
-.logo-wrapper {
-    width: 50%;
+h4 {
+	color: white;
+	font-family: Minecraft;
 }
 
-#logo {
-    font-size: 26px;
-    font-family: PT_Sans;
-    font-weight: bold;
+.navbar-item {
+	background-color: rgba(247,101,173,0.00);
+	border-radius: 10px;
+	width: 150px;
+	color: white;
+	transition: .1s;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
-#subtitle {
-    font-size: 16px;
-    font-family: PT_Sans;
+.navbar-item:hover {
+	background-color: rgba(247,101,173,1.00);
 }
 
-.alert-wrapper {
-    position: absolute;
-    display: flex;
-    right: 50px;
-    top: 10px;
-}
-
-.alert-icon {
-    width: 75px;
-    right: 0;
-    text-align: center;
-}
-
-.alert-icon span {
-    font-size: 45px;
-    cursor: pointer;
-}
-
-#devWarning {
-    animation-name: devWarning;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
-}
-
-@keyframes devWarning {
-    0% {
-        color: black;
-    }
-
-    30% {
-        color: black;
-    }
-
-    50% {
-        color: rgb(204, 44, 44);
-    }
-
-    70% {
-        color: black;
-    }
-
-    100% {
-        color: black;
-    }
-}
-
-@keyframes devWarningDeactivate {
-    0% {
-        opacity: 100%;
-    }
-
-    100% {
-        opacity: 0%;
-    }
-}
-
-/* Navigation */
-.navigation-wrapper {
-    height: 36px;
-    width: 100%;
-    background-color: rgb(54, 54, 54);
-    text-align: right;
-    z-index: 1;
-    display: flex;
-    right: 0;
-}
-
-
-.nav-item {
-    color: #F2AEAE;
-    flex-basis: 33.3%;
-    font-size: 18px;
-    text-align: center;
-    font-family: "IBM Plex Sans";
-    display: inline-block;
-    transition: 250ms;
-    border-left: rgba(210, 156, 217, 0) solid 3px;
-    border-right: rgba(210, 156, 217, 0) solid 3px;
-    cursor: pointer;
-}
-
-.nav-item:hover {
-    background-color: #042626;
-    border-color: white;
-}
-
-.nav-div {
-    display: inline-block;
-    font-size: 18px;
-    color: #F2AEAE;
-}
-
-.navigation-wrapper div {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-/* Header Content */
-.header-wrapper {
-    border: 10px solid rgb(245, 86, 133);
-    background-color: rgb(245, 86, 133);
-}
-.header-content {
-    padding: 1in;
-    padding-top: 2in;
-    padding-bottom: 2in;
-    background-size: cover;
-    background-position: center 50%;
-    border-radius: 20px;
-    display: flex;
-    background-image: url('images/WPRenders/MermaidSakura-SpookyForest.png');
-}
-.header-1 {
-    font-family: PT_Sans;
-}
-
-.header-1 h1 {
-    font-family: "IBM Plex Sans";
-    color: rgb(242,242,242);
-}
-.header-1 h2 {
-    color: rgb(189, 189, 189);
-}
-
-.header-2 {
-    background-color: red;
-    content: normal;
-}
-
-/* Section 1 - FAQ */
-
-.section1-wrapper {
-    background-color: rgb(230, 230, 230);
-    margin: 0;
-    padding: 10px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-}
-.section1-content {
-    margin-left: 1in;
-    margin-right: 1in;
-    padding: 1px;
-    padding-left: 1in;
-    padding-right: 1in;
-    text-indent: 1in;
-    background-color: rgba(0, 0, 0, 0.103);
-}
-.section1-content h1 {
-    color: red;
-    font-family: PT_Sans;
-    font-weight: bold;
-}
-.question-1 {
-    text-align: left;
-    width: 500px;
-    background-color: grey;
-    padding: 28px;
-}
-.question-1 h2 {
-    font-family: PT_Sans;
-    color: pink;
-}
-
-.question-2 {
-    text-align: center;
-}
-
-.question-3 {
-    text-align: right;
+.nav-link {
+	cursor: pointer;
 }

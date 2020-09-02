@@ -1,112 +1,56 @@
 <!DOCTYPE html>
-<!--Labels are directly above the content they repersent-->
-<html>
-  <!-- Begin Head Code -->
-
+<html lang="en">
   <head>
-    <!--Meta Information-->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Document Title -->
-    <title>Sakura Sedaia - Personal Portfolio</title>
-
-    <!-- Document Links -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link href="assets/main_style.css" rel="stylesheet" />
+	  <link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" />
+    <title>Sakura Sedaia</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.0.0.css" rel="stylesheet" />
+    <link href="assets/main_style.css" rel="stylesheet" type="text/css" />
   </head>
-
-  <!-- Begin Body Code -->
-
   <body>
-    <!-- Begin Header Code -->
-    <div class="header-container">
-      <div class="information-wrapper">
-        <div class="logo-wrapper">
-          <span id="logo">Sakura Sedaia</span>
-          <br />
-          <span id="subtitle">Personal Portfolio</span>
+    <div
+      class="container-fluid top"
+      style="
+        background-image: url(assets/images/WPRenders/SakuraMeetMavera_PublishCopy.png);
+        background-position: center 10%;
+      "
+    >
+      <header>
+        <div class="row">
+          <div class="col logo">Sakura Sedaia</div>
+          <div class="col">
+			  
+			</div>
         </div>
-        <div class="alert-wrapper">
-          <div class="alert-icon">
-            <span
-              class="material-icons"
-              onclick="openDevAlert()"
-              id="devWarning"
-            >
-              report
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <div class="navigation-wrapper" id="navWrapper">
-        <div class="nav-item active" onclick="openHome()">
-          <a class="nav-link">Home</a>
-        </div>
-        <div class="nav-div">|</div>
-        <div class="nav-item" onclick="openWorks()">
-          <a class="nav-link">Works</a>
-        </div>
-        <div class="nav-div">|</div>
-        <div class="nav-item" onclick="openContact()">
-          <a class="nav-link">Contact</a>
-        </div>
+      </header>
+      <div class="text-center" style="margin: 240px 0 0; height: 260px">
+        <h1>Personal Portfolio</h1>
+        <h4>Collection of Projects and Creations made by yours truely</h4>
       </div>
     </div>
 
-    <div class="header-wrapper">
-      <div class="header-content">
-        <div class="header-1">
-          <h1>Sakura Sedaia</h1>
-          <h2>Minecraft Animator and Machinima Maker</h2>
-        </div>
-        <div class="header-2"></div>
-      </div>
-    </div>
+    <nav class="navbar navbar-expand-lg text-center navbar-dark bg-dark sticky-top">
+      <ul class="navbar-nav">
+		<li class="navbar-item text-center active"><a class="nav-link">Home</a></li>
+		  
+		  <li class="navbar-item text-center"><a class="nav-link">3D Art</a></li>
+		  
+		  <li class="navbar-item text-center"><a class="nav-link">Website Design</a></li>
+		  
+		  <li class="navbar-item text-center"><a class="nav-link">Contact</a></li>
+	</ul>
+    </nav>
+	  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
 
-    <div class="section1-wrapper">
-      <div class="section1-content">
-        <div class="header">
-          <h1>About Me</h1>
-        </div>
-
-        <div class="question-1">
-          <h2>Who am I?</h2>
-          <p>
-            I am a freelance Minecraft Animator and Machinima Maker, Currently I
-            am working with "Knights of Ardonia" to help create seasons 2 and 3
-            of Black Plasma Studio's Minecraft Animated Series called "Songs of
-            War".
-          </p>
-        </div>
-
-        <div class="question-2">
-          <h2>What is my Perfered Software?</h2>
-          <p>Blender 3D</p>
-        </div>
-
-        <div class="question-3">
-          <h2>What are you?</h2>
-          <p>I am a 17 year old Human, though my Avatar is a Female Neko</p>
-        </div>
-      </div>
-    </div>
-
-    <script src="responsive.js"></script>
-
-    <!-- Datecheck API developed by Sakura -->
-    <script src="assets/Scripts/datecheck.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
   </body>
-
-  <!--
-####################
-Document Information & Statistics
-####################
-Website Created: 11/07/2020 23:53
-Current Build Date: 12/08/2020
---></html>
+</html>
