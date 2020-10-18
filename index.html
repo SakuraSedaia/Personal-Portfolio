@@ -18,7 +18,10 @@
       rel="stylesheet"
       type="text/css"
     />
-
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- FontAwesome Kit -->
     <script
       src="https://kit.fontawesome.com/da3984bc4a.js"
@@ -27,6 +30,10 @@
   </head>
   <body>
     <rigs-dropdown id="rdp">
+      <div class="close-rdp" onclick="rigsDropdown('close')" id="closeRdpBtn">
+        <span class="material-icons md-36"> cancel </span>
+      </div>
+
       <div
         class="rdp rdp-sacr"
         style="
@@ -38,13 +45,7 @@
           <h2 class="rdp-title-h2" id="rdpSACRText">
             Sakura's Advanced Minecraft Rig
           </h2>
-          <div
-            class="rdp-btn"
-            href="#"
-            id="rdpSACRBtn"
-          >
-            Open Page
-          </div>
+          <div class="rdp-btn" href="#" id="rdpSACRBtn">Open Page</div>
         </div>
       </div>
       <div
@@ -56,13 +57,7 @@
       >
         <div class="rdp-title">
           <h2 class="rdp-title-h2" id="rdpSLACMEText">Sakura's LACM Edit</h2>
-          <div
-            class="rdp-btn"
-            href="#"
-            id="rdpSLACMEBtn"
-          >
-            Open Page
-          </div>
+          <div class="rdp-btn" href="#" id="rdpSLACMEBtn">Open Page</div>
         </div>
       </div>
     </rigs-dropdown>
@@ -75,7 +70,24 @@
           background-position: 0in -1in;
         "
       >
-        <div class="header-logo"><span>Sakura Sedaia</span></div>
+        <div class="navigation">
+          <span><i data-icon="saki-face"></i>Sakura Sedaia</span>
+          <div class="nav-contian">
+            <div class="nav-item">
+              <a>Home</a>
+            </div>
+            <div class="nav-item">
+              <a>
+                <span onclick="rigsDropdown('open')" class="dropdown"
+                  >Rigs<span class="material-icons"> expand_more </span></span
+                >
+              </a>
+            </div>
+            <div class="nav-item">
+              <a>Contact</a>
+            </div>
+          </div>
+        </div>
 
         <div class="header-content">
           <h1>Personal Portfolio</h1>
@@ -85,24 +97,14 @@
         <div class="social-links">
           <ul>
             <li>
-              <div class="sm-item" id="YTLink">YouTube</div>
+              <div class="sm-item" id="YTLink" onclick='openExternal("www.youtube.com/channel/UCGuwtqpTXQELvMYkv8T1zlw")'>YouTube</div>
             </li>
             <li>
-              <div class="sm-item" id="DALink">DeviantArt</div>
-              <div class="sm-item" id="GHLink">Github</div>
+              <div class="sm-item" id="DALink" onclick='openExternal("www.deviantart.com/spatialjon")'>DeviantArt</div>
             </li>
-          </ul>
-        </div>
-      </div>
-
-      <div id="navigation">
-        <div class="nav-contain">
-          <ul class="nav-list">
-            <li class="nav-item"><a href="index.html">Home</a></li>
-            <li class="nav-item">
-              <dropdown onclick="openRigsDropdown()">Rigs</dropdown>
+            <li>
+              <div class="sm-item" id="GHLink" onclick='openExternal("github.com/SakuraSedaia")'>Github</div>
             </li>
-            <li class="nav-item"><a href="#">Contact</a></li>
           </ul>
         </div>
       </div>
