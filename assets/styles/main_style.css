@@ -3,22 +3,38 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|IBM+Plex+Sans|Pacifico|Roboto&display=swap");
 @import url("../fonts/fonts.css");
 
+:root {
+    --header-height: 4in;
+}
+
 /* Start CSS */
 html,
 body {
     margin: 0;
 }
 
-rigs-dropdown {
+rigs-dropdown[id="rdp"] {
     width: 100%;
     display: flex;
+    position: absolute;
+    z-index: 999;
+    
+    height: 0in;
+    overflow: hidden;
+    transition: 500ms;
 }
 
 .rdp {
     flex-basis: 50%;
-
+    background-color: rgba(0,0,0,.20);
+    background-blend-mode: multiply;
+    transition: 500ms;
+    background-size: 115%;
 }
-
+.rdp:hover {
+    background-color: rgba(0,0,0,.50);
+    background-size: 150%;
+}
 .rdp:before {
     -webkit-filter: blur(10px);
     -moz-filter: blur(10px);
@@ -27,13 +43,46 @@ rigs-dropdown {
     filter: blur(10px);
 }
 
+.rdp-title {
+    text-align: center;
+    color: white;
+    font-family: Minecraft;
+    height: 100%;
+}
+.rdp-title h2 {
+    position: relative;
+    top: 0in;
+    opacity: 0;
+
+    transition: 500ms;
+}
+.rdp-btn {
+    position: relative;
+    top: 1.2in;
+    width: 150px;
+    border: 3px solid white;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    background-color: rgba(255,255,255,0);
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.opacity-100 {
+    opacity: 100%;
+}
+.rdp-btn:hover {
+    background-color: rgba(255,255,255,1);
+    color: black;
+}
 .header-contain {
     width: 100%;
-    height: 5in;
+    height: var(--header-height);
 }
 
 .header-contain {
-    height: 5in;
+    height: var(--header-height);
 }
 
 .header-logo {
@@ -51,7 +100,7 @@ rigs-dropdown {
 
 .header-content {
     width: 100%;
-    top: 2in;
+    top: 1in;
     position: absolute;
 }
 
@@ -67,3 +116,60 @@ rigs-dropdown {
     font-family: Minecraft;
     text-indent: .75in;
 }
+
+.social-links {
+    position: absolute;
+    right: 1in;
+    color: white;
+    text-align: center;
+    top: 1in;
+}
+.social-links ul li {
+    list-style-type: none;
+}
+.sm-item {
+    width: 150px;
+    border: 3px solid;
+    border-radius: 25px;
+    height: 23px;
+    font-size: 16px;
+    font-family: Minecraft;
+    margin-top: 20px;
+    
+    transition: 500ms;
+    cursor: pointer;
+}
+
+#YTLink {
+    border-color: rgb(201, 21, 21);
+    color:  rgb(201, 21, 21);
+}
+
+#YTLink:hover {
+    border-color: rgb(201, 21, 21);
+    color:  white;
+    background-color: rgb(201, 21, 21);
+}
+
+#DALink {
+    border-color: rgb(2, 235, 138);
+    color: rgb(2, 235, 138);
+}
+
+#DALink:hover {
+    border-color: rgb(2, 235, 138);
+    color: black;
+    background-color: rgb(2, 235, 138);
+}
+
+#GHLink {
+    border-color: #fff;
+    color: #fff;
+}
+
+#GHLink:hover {
+    border-color: #fff;
+    color:  black;
+    background-color: #fff;
+}
+

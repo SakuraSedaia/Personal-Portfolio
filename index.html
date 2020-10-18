@@ -18,21 +18,55 @@
       rel="stylesheet"
       type="text/css"
     />
+
+    <!-- FontAwesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/da3984bc4a.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <rigs-dropdown>
-      <div class="rdp rdp-sacr">
+    <rigs-dropdown id="rdp">
+      <div
+        class="rdp rdp-sacr"
+        style="
+          background-image: url(assets/images/MCRigBackgrouns/SACRThumbnail1.png);
+          background-position: center;
+        "
+      >
         <div class="rdp-title">
-			<h4><a>Sakura's Advanced Minecraft Rig</a></h4>
-		</div>
+          <h2 class="rdp-title-h2" id="rdpSACRText">
+            Sakura's Advanced Minecraft Rig
+          </h2>
+          <div
+            class="rdp-btn"
+            href="#"
+            id="rdpSACRBtn"
+          >
+            Open Page
+          </div>
+        </div>
       </div>
-      <div class="rdp rdp-lacm">
+      <div
+        class="rdp rdp-lacm"
+        style="
+          background-image: url(assets/images/MCRigBackgrouns/LACMThumbnail1.PNG);
+          background-position: center;
+        "
+      >
         <div class="rdp-title">
-			<h4><a>Sakura's LACM Edit</a></h4>
-		</div>
+          <h2 class="rdp-title-h2" id="rdpSLACMEText">Sakura's LACM Edit</h2>
+          <div
+            class="rdp-btn"
+            href="#"
+            id="rdpSLACMEBtn"
+          >
+            Open Page
+          </div>
+        </div>
       </div>
-	</rigs-dropdown>
-	
+    </rigs-dropdown>
+
     <header>
       <div
         class="header-contain"
@@ -50,24 +84,30 @@
 
         <div class="social-links">
           <ul>
-            <li>YouTube</li>
-            <li>DeviantArt</li>
-            <li>Old Site</li>
+            <li>
+              <div class="sm-item" id="YTLink">YouTube</div>
+            </li>
+            <li>
+              <div class="sm-item" id="DALink">DeviantArt</div>
+              <div class="sm-item" id="GHLink">Github</div>
+            </li>
           </ul>
         </div>
       </div>
 
       <div id="navigation">
         <div class="nav-contain">
-          <ul>
-            <li><a>Home</a></li>
-            <li>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item">
               <dropdown onclick="openRigsDropdown()">Rigs</dropdown>
             </li>
-            <li><a>Home</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
           </ul>
         </div>
       </div>
     </header>
+
+    <script src="assets/scripts/responsive.js"></script>
   </body>
 </html>
