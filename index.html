@@ -1,59 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>Sakura Sedaia</title>
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-	  <link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" />
-    <title>Sakura Sedaia</title>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap-4.0.0.css" rel="stylesheet" />
-    <link href="assets/main_style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/styles/main_style.css"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body>
-    <div
-      class="container-fluid top"
-      style="
-        background-image: url(assets/images/WPRenders/SakuraMeetMavera_PublishCopy.png);
-        background-position: center 10%;
-      "
-    >
-      <header>
-        <div class="row">
-          <div class="col logo">Sakura Sedaia</div>
-          <div class="col">
-			  
-			</div>
-        </div>
-      </header>
-      <div class="text-center" style="margin: 240px 0 0; height: 260px">
-        <h1>Personal Portfolio</h1>
-        <h4>Collection of Projects and Creations made by yours truely</h4>
+    <rigs-dropdown>
+      <div class="rdp rdp-sacr">
+        <div class="rdp-title">
+			<h4><a>Sakura's Advanced Minecraft Rig</a></h4>
+		</div>
       </div>
-    </div>
+      <div class="rdp rdp-lacm">
+        <div class="rdp-title">
+			<h4><a>Sakura's LACM Edit</a></h4>
+		</div>
+      </div>
+	</rigs-dropdown>
+	
+    <header>
+      <div
+        class="header-contain"
+        style="
+          background-image: url(assets/images/WPRenders/SakuraMeetMavera_PublishCopy.png);
+          background-position: 0in -1in;
+        "
+      >
+        <div class="header-logo"><span>Sakura Sedaia</span></div>
 
-    <nav class="navbar navbar-expand-lg text-center navbar-dark bg-dark sticky-top">
-      <ul class="navbar-nav">
-		<li class="navbar-item text-center active btn btn-5"><a>Home</a></li>
-		  
-		  <li class="navbar-item text-center btn btn-5"><a>3D Art</a></li>
-		  
-		  <li class="navbar-item text-center btn btn-5"><a>Website Design</a></li>
-		  
-		  <li class="navbar-item text-center btn btn-5"><a>Contact</a></li>
-	</ul>
-    </nav>
-	  
-	  <div class="container-fluid">
-		  
-	  </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.2.1.min.js"></script>
+        <div class="header-content">
+          <h1>Personal Portfolio</h1>
+          <h4>Provided by you're local Internet Neko</h4>
+        </div>
 
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.0.0.js"></script>
+        <div class="social-links">
+          <ul>
+            <li>YouTube</li>
+            <li>DeviantArt</li>
+            <li>Old Site</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="navigation">
+        <div class="nav-contain">
+          <ul>
+            <li><a>Home</a></li>
+            <li>
+              <dropdown onclick="openRigsDropdown()">Rigs</dropdown>
+            </li>
+            <li><a>Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
