@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+@import url("../fonts/fonts.css");
+@import url("../vectors/vector.css");
+
+:root {
+    --header-height: 4in;
+}
+
+/* Start CSS */
+html,
+body {
+    margin: 0;
+}
+
+i[data-icon="saki-face"] {
+    padding-right: 10px;
+}
+
+rigs-dropdown[id="rdp"] {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 999;
+
+    height: 0in;
+    overflow: hidden;
+    transition: 500ms;
+}
+
+.rdp {
+    flex-basis: 50%;
+    background-color: rgba(0, 0, 0, .20);
+    background-blend-mode: multiply;
+    transition: 500ms;
+    background-size: 115%;
+}
+
+.rdp:hover {
+    background-color: rgba(0, 0, 0, .50);
+    background-size: 125%;
+}
+
+.close-rdp {
+    position: absolute;
+    color: white;
+    font-size: 48px;
+    width: 30px;
+    cursor: pointer;
+    right: -.2in;
+    opacity: 0;
+
+    transition: 500ms;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.rdp-title {
+    text-align: center;
+    color: white;
+    font-family: Minecraft;
+    height: 100%;
+}
+
+.rdp-title h2 {
+    position: relative;
+    top: 0in;
+    opacity: 0;
+
+    transition: 500ms;
+}
+
+.rdp-btn {
+    position: relative;
+    top: 1.2in;
+    width: 150px;
+    border: 3px solid white;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: 500ms;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.opacity-100 {
+    opacity: 100%;
+}
+
+.rdp-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    border-radius: 0px;
+}
+
+.header-contain {
+    width: 100%;
+    height: var(--header-height);
+}
+
+.header-contain {
+    height: var(--header-height);
+}
+
+.navigation {
+    color: white;
+    height: .5in;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-indent: .2in;
+    background-color: rgba(0, 0, 0, .20);
+}
+
+.nav-contian {
+    position: absolute;
+    right: 0;
+    transform: translateY(-100%);
+}
+
+.nav-item {
+    width: 200px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+}
+.nav-item:hover {
+    background-color: rgba(0,0,0,.3);
+}
+.header-content {
+    width: 100%;
+    top: 1in;
+    position: absolute;
+}
+
+.header-content h1 {
+    font-family: PT_Sans;
+    font-weight: bold;
+    color: white;
+    text-indent: 1in;
+}
+
+.header-content h4 {
+    color: white;
+    font-family: Minecraft;
+    text-indent: .75in;
+}
+
+.social-links {
+    position: absolute;
+    right: 1in;
+    color: white;
+    text-align: center;
+    top: 1in;
+}
+
+.social-links ul li {
+    list-style-type: none;
+}
+
+.sm-item {
+    width: 150px;
+    border: 3px solid;
+    border-radius: 25px;
+    height: 23px;
+    font-size: 16px;
+    font-family: Minecraft;
+    margin-top: 20px;
+
+    transition: 500ms;
+    cursor: pointer;
+}
+
+#YTLink {
+    border-color: rgb(201, 21, 21);
+    color: rgb(201, 21, 21);
+}
+
+#YTLink:hover {
+    border-color: rgb(201, 21, 21);
+    color: white;
+    background-color: rgb(201, 21, 21);
+}
+
+#DALink {
+    border-color: rgb(2, 235, 138);
+    color: rgb(2, 235, 138);
+}
+
+#DALink:hover {
+    border-color: rgb(2, 235, 138);
+    color: black;
+    background-color: rgb(2, 235, 138);
+}
+
+#GHLink {
+    border-color: #fff;
+    color: #fff;
+}
+
+#GHLink:hover {
+    border-color: #fff;
+    color: black;
+    background-color: #fff;
+}
