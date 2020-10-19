@@ -58,3 +58,5 @@ function openExternal(url) {
 	  window.open("https://" + url, "_blank");
 	}
   }
+
+window.alert("Warning, this site is still in Development, please be patient as development progresses");
