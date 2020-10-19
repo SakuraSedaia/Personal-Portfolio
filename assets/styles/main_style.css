@@ -13,15 +13,17 @@ html,
 body {
     margin: 0;
 }
+
 i[data-icon="saki-face"] {
     padding-right: 10px;
 }
+
 rigs-dropdown[id="rdp"] {
     width: 100%;
     display: flex;
     position: absolute;
     z-index: 999;
-    
+
     height: 0in;
     overflow: hidden;
     transition: 500ms;
@@ -29,15 +31,17 @@ rigs-dropdown[id="rdp"] {
 
 .rdp {
     flex-basis: 50%;
-    background-color: rgba(0,0,0,.20);
+    background-color: rgba(0, 0, 0, .20);
     background-blend-mode: multiply;
     transition: 500ms;
     background-size: 115%;
 }
+
 .rdp:hover {
-    background-color: rgba(0,0,0,.50);
+    background-color: rgba(0, 0, 0, .50);
     background-size: 125%;
 }
+
 .close-rdp {
     position: absolute;
     color: white;
@@ -49,13 +53,18 @@ rigs-dropdown[id="rdp"] {
 
     transition: 500ms;
 }
-.material-icons.md-36 { font-size: 36px;}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
 .rdp-title {
     text-align: center;
     color: white;
     font-family: Minecraft;
     height: 100%;
 }
+
 .rdp-title h2 {
     position: relative;
     top: 0in;
@@ -63,6 +72,7 @@ rigs-dropdown[id="rdp"] {
 
     transition: 500ms;
 }
+
 .rdp-btn {
     position: relative;
     top: 1.2in;
@@ -71,7 +81,7 @@ rigs-dropdown[id="rdp"] {
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 0px;
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(255, 255, 255, 0);
     transition: 500ms;
     cursor: pointer;
     border-radius: 15px;
@@ -80,8 +90,9 @@ rigs-dropdown[id="rdp"] {
 .opacity-100 {
     opacity: 100%;
 }
+
 .rdp-btn:hover {
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255, 255, 255, 1);
     color: black;
     border-radius: 0px;
 }
@@ -90,9 +101,11 @@ rigs-dropdown[id="rdp"] {
     width: 100%;
     height: var(--header-height);
 }
+
 .header-contain {
     height: var(--header-height);
 }
+
 .navigation {
     color: white;
     height: .5in;
@@ -100,18 +113,23 @@ rigs-dropdown[id="rdp"] {
     font-weight: 500;
     font-size: 30px;
     text-indent: .2in;
-    background-color: rgba(0,0,0,.20);
+    background-color: rgba(0, 0, 0, .20);
 }
+
 .nav-contian {
     position: absolute;
     right: 0;
     transform: translateY(-100%);
 }
+
 .nav-item {
     width: 200px;
     text-align: center;
     float: right;
     cursor: pointer;
+}
+.nav-item:hover {
+    background-color: rgba(0,0,0,.3);
 }
 .header-content {
     width: 100%;
@@ -120,14 +138,14 @@ rigs-dropdown[id="rdp"] {
 }
 
 .header-content h1 {
-	font-family: PT_Sans;
-	font-weight: bold;
+    font-family: PT_Sans;
+    font-weight: bold;
     color: white;
     text-indent: 1in;
 }
 
 .header-content h4 {
-	color: white;
+    color: white;
     font-family: Minecraft;
     text-indent: .75in;
 }
@@ -139,9 +157,11 @@ rigs-dropdown[id="rdp"] {
     text-align: center;
     top: 1in;
 }
+
 .social-links ul li {
     list-style-type: none;
 }
+
 .sm-item {
     width: 150px;
     border: 3px solid;
@@ -150,19 +170,19 @@ rigs-dropdown[id="rdp"] {
     font-size: 16px;
     font-family: Minecraft;
     margin-top: 20px;
-    
+
     transition: 500ms;
     cursor: pointer;
 }
 
 #YTLink {
     border-color: rgb(201, 21, 21);
-    color:  rgb(201, 21, 21);
+    color: rgb(201, 21, 21);
 }
 
 #YTLink:hover {
     border-color: rgb(201, 21, 21);
-    color:  white;
+    color: white;
     background-color: rgb(201, 21, 21);
 }
 
@@ -184,7 +204,6 @@ rigs-dropdown[id="rdp"] {
 
 #GHLink:hover {
     border-color: #fff;
-    color:  black;
+    color: black;
     background-color: #fff;
 }
-
