@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
@@ -18,6 +18,7 @@
 </head>
 
 <body>
+
 	<rigs-dropdown id="rdp">
 		<div class="close-rdp" onclick="rigsDropdown('close')" id="closeRdpBtn">
 			<span class="material-icons md-36"> cancel </span>
@@ -85,83 +86,72 @@
 	</header>
 	<!-- End Header -->
 
-	<!-- Begin page Content -->
-	<div class="content-section">
-		<div class="about">
-			<div class="title">
-				<h1>Who am I</h1>
-				<p>I am a 17 year old 3D Animator and Website Designer from Iowa, I started 3D Animation when I was 12
-					and Website Design when I was 14. I mainly work with Minecraft Animation and build simple websites,
-					I eventually hope to turn Website Design into a carreer and 3D Animation into a suitable hobby. I
-					currently have an IRL Job and work within many online Minecraft production studio's. The most
-					prominant one being <a onclick="openExternal('')">Silver Deer Entertainment</a>, for which I am
-					writting and directing a Zombie Survival Machinima called Parallel Z.
-				</p>
+	<div class="about-sacr">
+		<div class="title-sacr">
+			<div class="title-text">
+				<h1>Sakura's Advanced Character Rig</h1>
+				<h3>Lightweight Advanced Minecraft Character Rig built and designed by an Animator for Animators</h3>
 			</div>
+			<div class="title-bg"></div>
+
 		</div>
 
-		<div class="updates" hidden>
-			<div class="col-contain">
-
-				<div class="col">
-					<div class="title">
-						<h1>Latest Video</h1>
-					</div>
-					<div class="video">
-
-					</div>
-					<div class="caption">
-						<h4>Add a Caption here</h4>
-					</div>
-				</div>
-
-				<div class="col">
-					<h1>Latest News</h1>
-					<h2>NEW WEBSITE!!!</h2>
-					<p>Built entirely from scratch this new site aims to bring better content Delivery than the old <a
-							onclick="openExternal('spatialdzn.weebly.com/')">Weebly Site</a>, this will allow for better
-						optimization and quicker updates. The new site will be hosted using Google Domains and GitHub
-						and be completely maintained and coded by Me.</p>
-				</div>
+		<!-- Rig Download -->
+		<div class="rig-download-section">
+			<div class="rds-col rds-background">
+				<img src="https://sakura-sedaia.com/assets/images/WPRenders/SoWModTeam_Render.png" width="540px"
+					alt="background">
+			</div>
+			<div class="rds-col">
+				<h1>Download SACR R4.1.1 LTS</h1>
+				<span class="file-details">File Size: 1.21MB |
+					<a onclick="openInternal('assets/misc/sacr-changelog-latest.txt')"
+						class="download-extra">Changelog</a> |
+					<a onclick="openExternal('github.com/SakuraSedaia/SACR-MC-Rig/')" class="download-extra">GitHub
+						Repo</a>
+				</span>
+				<div class="download-lr download-extra" onclick="downloadSACR()">Latest Release</div>
+				<div hidden>Go to Sakura's LACM Lite Edit</div>
 			</div>
 
 		</div>
-		<div class="discord-promo">
-			<div class="plx-card silver">
-				<div class="pxc-bg"
-					style="background-image:url('https://i.gyazo.com/a846fc87cca5ebd3942ae1e038bb5083.png')"> </div>
-				<div class="pxc-avatar"><img
-						src="https://store.playstation.com/store/api/chihiro/00_09_000/container/GB/en/999/EP4312-CUSA07658_00-AV00000000000049/1536930670000/image?w=240&amp;h=240&amp;bg_color=000000&amp;opacity=100&amp;_version=00_09_000" />
-				</div>
-				<div class="pxc-stopper"> </div>
-				<div class="pxc-subcard">
-					<div class="pxc-title">Sakura's Cherry Grove</div>
-					<div class="pxc-sub"> An amazing community server run by your's truly </div>
 
-					<div class="bottom-row">
-						<div class="pxc-info">
-							<div class="region">United States - Central</div>
+		<!-- Features section -->
+		<div class="features-sacr">
+			<h2>Highlight Features</h2>
+
+			<div class="highlight-features">
+				<div class="row-1">
+					<div class="row-1-col feat-one">
+						<h2>Light Weight</h2>
+						<div class="feat-overlay">
+							SACR's Optimized package should allow most mid-range computers and above to run the Standard
+							Build easily,
 						</div>
-						<div class="links">
-							<a class="site" uk-tooltip="WEBSITE"><i class="fas fa-globe-americas"> </i></a>
-							<a class="link discordLink" uk-tooltip="DISCORD SERVER"><i class="fab fa-discord"></i></a>
+					</div>
+					<div class="row-1-col feat-two">
+						<h2>Feature Packed</h2>
+						<div class="feat-overlay">
+							<p>SACR is packed with enough features to be able to get the job done and more, utilize the
+								Lattice system to create your own Mesh Preset and extrude the rig to your hearts
+								content, even try out it's embedded Teeth and Female Modes for your special rigs</p>
+						</div>
+					</div>
+					<div class="row-1-col feat-three">
+						<h2>Long-Term Support</h2>
+						<div class="feat-overlay">
+							<p>The SACR's Long-Term Support Status means the rig will continue to be updated with minor
+								feature updates and bug fixes for a extended amount of time, though this means major
+								content updates</p>
 						</div>
 					</div>
 				</div>
 			</div>
+
 		</div>
 	</div>
-	<!-- End page Content -->
 
-	<!-- Begin Footer -->
-	<footer>
-		<div class="footer-contain"></div>
-	</footer>
-	<!-- End Footer -->
-
-	<!-- Scripts -->
 	<script src="assets/scripts/responsive.js"></script>
-	<script src="assets/scripts/jquery-3.5.1.min.js"></script>
 </body>
 
 </html>

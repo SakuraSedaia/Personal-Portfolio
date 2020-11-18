@@ -1,6 +1,3 @@
-Sakuras Advanced Character Rig
-Version: SACR_R4.1.1_beta1 LTS
-
 Changelog R4.1.1 LTS:
     Fixes:
         * Parented Eyelashes to "Eyelashes" Empty
@@ -39,17 +36,10 @@ Changelog R4.1.1 LTS:
         - Removed Gradient World Setup
         - AntiLag has been removed
         - Removed Armour Entirely (Too Laggy and Rarely used)
+        - Round Eyes
+            * Will be Added back in a future build
         
     Added:
         + Added Derp Controls for the Pupils by rotating the main Pupil Controller
         + Added Emission Compatibility for Eyebrows
         + Added "HD Compatability" Option for HD Skins
-        
-        
-Thank's to Timy for helping solve the UV Projection/SSS Issue, His youtube is linked here:
-    youtube.com/user/timster488
-    
-Teeth Icon from Vampirism Mod:
-    https://www.curseforge.com/minecraft/mc-mods/vampirism-become-a-vampire
-    
-    
