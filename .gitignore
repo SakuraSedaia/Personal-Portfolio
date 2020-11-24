@@ -3,4 +3,8 @@
 *.scss
 assets/styles/main_style_css.css
 *.py
+<<<<<<< Updated upstream
 Website Assets/header.html
+=======
+Website Assets/*
+>>>>>>> Stashed changes

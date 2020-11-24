@@ -3,7 +3,7 @@
 # Created by Sakura Sedaia
 # 
 # Please do not steal without crediting me
-# 
+# Why
 */
 
 // Rig Dropdown
@@ -53,6 +53,10 @@ function rigsDropdown(state) {
   }
 }
 
+<<<<<<< Updated upstream
+=======
+// Links
+>>>>>>> Stashed changes
 function openInternal(url) {
   window.open(url, "_self");
 }
@@ -63,8 +67,21 @@ function openExternal(url) {
   }
 }
 
+<<<<<<< Updated upstream
 function downloadSACR() {
   window.open('assets/misc/SACR R4.1.1 LTS.zip');
+=======
+function downloadSACR(state) {
+  if (state == true) {
+    window.open('assets/misc/SACR R4.1.1 LTS.zip');
+    console.info("Rig Download started");
+
+  } else if (state == false) {
+    window.alert("I'm sorry, but this download link is disabled Temporarily, please try again later");
+    console.error("Rig download Disabled");
+
+  }
+>>>>>>> Stashed changes
 }
 
 
@@ -72,3 +89,10 @@ window.alert(
   "Warning, this site is still in Development, please be patient as development progresses, currently this site only supports Desktop Layouts"
 );
 
+<<<<<<< Updated upstream
+=======
+    window.alert("I'm sorry, but this download link is disabled Temporarily, please try again later");
+    console.error("Rig download Disabled");
+  }
+}
+>>>>>>> Stashed changes
