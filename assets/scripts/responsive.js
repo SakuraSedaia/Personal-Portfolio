@@ -3,24 +3,24 @@
 # Created by Sakura Sedaia
 # 
 # Please do not steal without crediting me
-==============================
-# Dependency State Meanings and Actions:
 # 
-# > true = Download is active, runs basic Download Command
-# > false = Download is disabled Temporarily, displays warning message to the user
-# 
-# Console Logs will also be entered on each run
 */
 
-
 // Rig Dropdown
+var rdpContain = document.getElementById("rdp");
+var rdpSACRText = document.getElementById("rdpSACRText");
+var rdpSLACMEText = document.getElementById("rdpSLACMEText");
+var rdpSACRBtn = document.getElementById("rdpSACRBtn");
+var rdpSLACMEBtn = document.getElementById("rdpSLACMEBtn");
+var closeRdpBtn = document.getElementById("closeRdpBtn");
+
 var rdp = [
-  document.getElementById("rdp"),
-  document.getElementById("rdpSACRText"),
-  document.getElementById("rdpSLACMEText"),
-  document.getElementById("rdpSACRBtn"),
-  document.getElementById("rdpSLACMEBtn"),
-  document.getElementById("closeRdpBtn"),
+  rdpContain,
+  rdpSACRText,
+  rdpSLACMEText,
+  rdpSACRBtn,
+  rdpSLACMEBtn,
+  closeRdpBtn,
 ];
 
 function rigsDropdown(state) {
@@ -37,8 +37,6 @@ function rigsDropdown(state) {
     window.setTimeout("rdp[4].style.opacity = 1", 400);
     window.setTimeout('rdp[5].style.right = ".2in"', 400);
     window.setTimeout("rdp[5].style.opacity = 1", 400);
-
-    console.info("Opening Rig Navigation");
   } else if (state == "close") {
     rdp[0].style.height = "0in";
     rdp[1].style.top = "0in";
@@ -52,50 +50,25 @@ function rigsDropdown(state) {
     rdp[3].style.opacity = 0;
     rdp[4].style.opacity = 0;
     rdp[5].style.opacity = 0;
-
-    console.info("Closing Rig Navigation");
   }
 }
 
-
-// Links
 function openInternal(url) {
-  window.open(url + ".html","_self");
-
-  console.info("Internal Paged Opened, Destination URL (" + "https://sakura-sedaia.com/" + url + ")")
+  window.open(url, "_self");
 }
 
 function openExternal(url) {
   if (window.confirm("Are you sure you want to go to an external page?")) {
     window.open("https://" + url, "_blank");
-
-    console.info("External Paged Opened, Destination URL (" + "https://" + url + ")")
   }
 }
 
-
-
-
-function downloadSACR(state) {
-  if (state == true) {
-    window.open('assets/misc/SACR R4.1.1 LTS.zip');
-    console.info("Rig Download started");
-
-  } else if (state == false) {
-    window.alert("I'm sorry, but this download link is disabled Temporarily, please try again later");
-    console.error("Rig download Disabled");
-
-  }
+function downloadSACR() {
+  window.open('assets/misc/SACR R4.1.1 LTS.zip');
 }
 
-function downloadSLACME(state) {
-  if (state == true) {
-    window.open('assets/misc/LACM - Sakuras Edit V2.zip');
-    console.info("Rig Download started");
 
-  } else if (state == false) {
+window.alert(
+  "Warning, this site is still in Development, please be patient as development progresses, currently this site only supports Desktop Layouts"
+);
 
-    window.alert("I'm sorry, but this download link is disabled Temporarily, please try again later");
-    console.error("Rig download Disabled");
-  }
-}
