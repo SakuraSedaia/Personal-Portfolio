@@ -67,8 +67,8 @@ function downloadSACR() {
   window.open('assets/misc/SACR R4.1.1 LTS.zip');
 }
 
-/*
+
 window.alert(
   "Warning, this site is still in Development, please be patient as development progresses, currently this site only supports Desktop Layouts"
 );
-*/
+
