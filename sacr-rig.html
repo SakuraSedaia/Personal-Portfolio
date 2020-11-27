@@ -17,73 +17,55 @@
 </head>
 
 <body>
-
-	<rigs-dropdown id="rdp">
-		<div class="close-rdp" onclick="rigsDropdown('close')" id="closeRdpBtn">
-			<span class="material-icons md-36"> cancel </span>
-		</div>
-
-		<div class="rdp rdp-sacr" style="
-          background-image: url(assets/images/MCRigBackgrouns/SACRThumbnail1.png);
-          background-position: center;
-        ">
-			<div class="rdp-title">
-				<h2 class="rdp-title-h2" id="rdpSACRText">
-					Sakura's Advanced Minecraft Rig
-				</h2>
-				<div class="rdp-btn" onclick="openInternal('sacr-rig')" id="rdpSACRBtn">Open Page</div>
+<!-- Header Start -->
+<header>
+	<div class="header-contain" id="header">
+		<!-- Navigation Start -->
+		<div class="navigation">
+			<div class="nav-logo">
+				<div class="logoIco"></div>
+				<div class="logoTxt" onclick="openInternal('index')"><span>Sakura Sedaia</span></div>
 			</div>
-		</div>
-		<div class="rdp rdp-lacm" style="
-          background-image: url(assets/images/MCRigBackgrouns/LACMThumbnail1.PNG);
-          background-position: center;
-        ">
-			<div class="rdp-title">
-				<h2 class="rdp-title-h2" id="rdpSLACMEText">Sakura's LACM Edit</h2>
-				<div class="rdp-btn" onclick="openInternal('slacme-rig')" id="rdpSLACMEBtn">Open Page</div>
-			</div>
-		</div>
-	</rigs-dropdown>
 
-	<!-- Header Start -->
-	<header>
-		<div class="header-contain" style="
-          background-image: url(assets/images/WPRenders/SakiAzzy-Wallpaper-Fixed-Composited.png);
-          background-position: 0 -1.25in;
-        ">
-			<!-- Navigation Start -->
-			<div class="navigation">
-				<div class="nav-logo">
-					<div class="logoIco"></div>
-					<div class="logoTxt" onclick="openInternal('index')"><span>Sakura Sedaia</span></div>
+			<div class="nav-contain">
+				<div class="nav-item" data-active="true" onclick="openInternal( 'index')">
+					Home
 				</div>
 
-				<div class="nav-contain">
-					<div class="nav-item" data-active="true" onclick="openInternal( 'index')">
-						Home
-					</div>
-					<div class="nav-item" onclick="rigsDropdown('open')">Rigs</div>
-					<div class="nav-item" onclick="openInternal( 'projects')">
-						Projects
-					</div>
-					<div class="nav-item" onclick="openInternal( 'contact')">
-						Contact
-					</div>
+				<div class="nav-item" onclick="openInternal('rig-navigation')">Rigs</div>
+				<div class="nav-item" onclick="openInternal( 'projects')">
+					Projects
+				</div>
+				<div class="nav-item" onclick="openInternal( 'contact')">
+					Contact
 				</div>
 			</div>
-			<!-- Navigation End -->
-
-			<!-- Header Content -->
-			<div class="header-content">
-				<div class="header-text">
-					<h1>Personal Portfolio</h1>
-					<h4>Provided by you're local Internet Neko</h4>
-				</div>
-			</div>
-
 		</div>
-	</header>
-	<!-- End Header -->
+		<!-- Navigation End -->
+
+		<!-- Header Content -->
+		<div class="header-content">
+			<div class="header-text">
+				<h1>Personal Portfolio</h1>
+				<h4>Provided by you're local Internet Neko</h4>
+			</div>
+		</div>
+
+	</div>
+	<div class="xmasCounter" id="xmasContainer">Days until Christmas:
+		<span id="xmasCounter">Undefined</span>
+	</div>
+	<div class="dev-warning"><strong>ATTENTION: </strong>This site is still in Development, please report any issues to Sakura at <a href="mailto:endergfx6@gmail.com">this Email</a></div></header>
+<!-- End Header -->
+
+	<!-- Begin page Content -->
+	<div class="rig-browser-section">
+		<p onclick="openInternal('sacr-rig')">SACR Minecraft Rig</p>
+		<p onclick="openInternal('slacme-rig')">SLACME Minecraft Rig</p>
+		<p onclick="openInternal('blender-assets')" hidden>Blender Assets</p>
+	</div>
+	<!-- End page Content -->
+			
 
 	<div class="about-sacr">
 		<div class="title-sacr">
@@ -151,6 +133,7 @@
 	</div>
 
 	<script src="assets/scripts/responsive.js"></script>
+	<script src="assets/scripts/christmas.js"></script>
 </body>
 
 </html>

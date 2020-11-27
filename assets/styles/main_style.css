@@ -1,11 +1,11 @@
 @import url("../fonts/fonts.css");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&amp;display=swap");
-/* line 10, main_style.scss */
+/* line 9, main_style.scss */
 html,
 body {
   margin: 0;
   width: 100%;
   height: 100%;
+  font-family: "Open Sans";
 }
 
 /* line 16, main_style.scss */
@@ -191,12 +191,34 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   text-indent: 0.75in;
 }
 
-/* line 204, main_style.scss */
+/* line 202, main_style.scss */
+.xmasCounter {
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  padding: 10px;
+  background-color: #dfdfdf;
+}
+
+/* line 209, main_style.scss */
+.dev-warning {
+  border-top: 2px solid #E42D30;
+  border-bottom: 2px solid #E42D30;
+  padding: 10px;
+  background-color: #bc1215;
+  color: white;
+  font-family: "Open Sans";
+}
+/* line 217, main_style.scss */
+.dev-warning strong {
+  font-family: "Noto Sans JP";
+}
+
+/* line 224, main_style.scss */
 .about-sacr .title-sacr {
   width: 100%;
   height: 100%;
 }
-/* line 208, main_style.scss */
+/* line 228, main_style.scss */
 .about-sacr .title-sacr .title-text {
   position: absolute;
   z-index: 0;
@@ -206,19 +228,19 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   border-radius: 10px;
   background-color: #00000090;
 }
-/* line 217, main_style.scss */
+/* line 237, main_style.scss */
 .about-sacr .title-sacr .title-text h1 {
   font-family: PT_Sans;
   text-indent: 1in;
   color: white;
 }
-/* line 222, main_style.scss */
+/* line 242, main_style.scss */
 .about-sacr .title-sacr .title-text h3 {
   font-family: Minecraft;
   font-size: 16px;
   color: white;
 }
-/* line 229, main_style.scss */
+/* line 249, main_style.scss */
 .about-sacr .title-sacr .title-bg {
   content: inherit;
   background-color: #fff5f525;
@@ -228,10 +250,10 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   z-index: -1;
   overflow: hidden;
   background-position: 0in -2.5in;
-  background-image: url("https://sakura-sedaia.com/assets/images/WPRenders/SoWModTeam_Render.png");
+  background-image: url("assets/images/WPRenders/SoWModTeam_Render.png");
 }
 
-/* line 244, main_style.scss */
+/* line 264, main_style.scss */
 .rig-download-section {
   height: 2in;
   background-color: #333;
@@ -240,15 +262,15 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   color: #fff5f5;
   display: flex;
 }
-/* line 252, main_style.scss */
+/* line 272, main_style.scss */
 .rig-download-section h1 {
   font-family: PT_Sans;
 }
-/* line 255, main_style.scss */
+/* line 275, main_style.scss */
 .rig-download-section span {
   font-family: "Roboto";
 }
-/* line 258, main_style.scss */
+/* line 279, main_style.scss */
 .rig-download-section .download-lr {
   background-color: transparent;
   border: none;
@@ -279,60 +301,60 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   font-family: PT_Sans;
   cursor: pointer;
 }
-/* line 290, main_style.scss */
+/* line 311, main_style.scss */
 .rig-download-section .download-lr:hover {
   background-color: #13b6fb95;
   -webkit-box-shadow: 0 4px 0 0 #04a7eb95;
   box-shadow: 0 4px 0 0 #04a7eb95;
 }
-/* line 295, main_style.scss */
+/* line 316, main_style.scss */
 .rig-download-section .download-extra {
   text-decoration: none;
 }
-/* line 298, main_style.scss */
+/* line 319, main_style.scss */
 .rig-download-section .download-extra:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-/* line 302, main_style.scss */
+/* line 323, main_style.scss */
 .rig-download-section .rds-col {
   flex-basis: 50%;
 }
-/* line 305, main_style.scss */
+/* line 326, main_style.scss */
 .rig-download-section .rds-col img {
   position: relative;
   transform: translateY(-15%);
 }
-/* line 310, main_style.scss */
+/* line 331, main_style.scss */
 .rig-download-section .rds-background {
   flex-basis: 25%;
   min-width: 600px;
 }
 
-/* line 317, main_style.scss */
+/* line 338, main_style.scss */
 .features-sacr {
   margin-left: 1in;
   margin-right: 1in;
 }
-/* line 321, main_style.scss */
+/* line 342, main_style.scss */
 .features-sacr h2 {
   font-family: PT_Sans;
   text-align: center;
   font-size: 36px;
 }
-/* line 327, main_style.scss */
+/* line 348, main_style.scss */
 .features-sacr .highlight-features {
   width: 1000px;
   margin: 0 auto;
   background-color: #f3f3f3;
   padding: 10px;
 }
-/* line 332, main_style.scss */
+/* line 353, main_style.scss */
 .features-sacr .highlight-features h2 {
   text-align: left;
   font-size: 24px;
 }
-/* line 337, main_style.scss */
+/* line 358, main_style.scss */
 .features-sacr .highlight-features .row-1-col .feat-overlay {
   font-family: "Noto Sans JP";
   height: 100px;

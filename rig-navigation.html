@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -12,7 +12,7 @@
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 	<link href="assets/styles/main_style.css" rel="stylesheet" type="text/css" />
-
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 	<!-- FontAwesome Kit -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
 </head>
@@ -59,67 +59,21 @@
 	<div class="dev-warning"><strong>ATTENTION: </strong>This site is still in Development, please report any issues to Sakura at <a href="mailto:endergfx6@gmail.com">this Email</a></div></header>
 <!-- End Header -->
 
-	<div class="about-sacr">
-		<div class="title-sacr"  style="background-image: url(assets/images/MCRigBackgrouns/LACMThumbnail1.PNG);background-position: 0 -1in;">
-			<div class="title-text">
-				<h1>Sakura's "LACM" Edit</h1>
-				<h3>An Edit aimed at Improving an Impoverished and Discontinued Rig</h3>
-			</div>
-			<div class="title-bg"></div>
-
-		</div>
-
-		<!-- Rig Download -->
-		<div class="rig-download-section">
-			<div class="rds-col rds-background">
-				<img src="assets/images/WPRenders/CalithSakura-Frozen.png" width="540px" alt="background">
-			</div>
-			<div class="rds-col">
-				<h1>Download LACM Sakura's Edit V2</h1>
-				<span class="file-details">File Size: 1.28MB
-					<a onclick="openInternal('assets/misc/slacme-changelog-latest.txt')" class="download-extra"
-						hidden>Changelog</a> |
-					<a onclick="openExternal('github.com/SakuraSedaia/LACM-Sakura-Edit/')" class="download-extra">GitHub
-						Repo</a>
-				</span>
-
-				<!-- 
-	Refer to internal Documentation in responsive.js for information on Dependant State Variables 
--->
-
-				<div class="download-lr download-extra" onclick="downloadSLACME(false)">Latest Release</div>
-				<div onclick="openInternal('sacr-rig')" class="link">Go to SACR</div>
-			</div>
-
-		</div>
-
-		<!-- Features section -->
-		<div class="features-sacr">
-			<h2>Highlight Features</h2>
-
-			<div class="highlight-features">
-				<div class="row-1">
-					<div class="row-1-col feat-one">
-						<h2>Light Weight</h2>
-						<div class="feat-overlay">
-							Due to various Optimizations and Improvements, the SLACME rig is even more opimized than
-							it's original counterpart
-						</div>
-					</div>
-					<div class="row-1-col feat-two">
-						<h2>Near to the Original</h2>
-						<div class="feat-overlay">
-							<p>LACM Contains all features from the original LACM V1 rig, as well as a few extra bits and
-								bobs added by Sakura</p>
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-		</div>
+	<!-- Begin page Content -->
+	<div class="rig-browser-section">
+		<p onclick="openInternal('sacr-rig')">SACR Minecraft Rig</p>
+		<p onclick="openInternal('slacme-rig')">SLACME Minecraft Rig</p>
+		<p onclick="openInternal('blender-assets')" hidden>Blender Assets</p>
 	</div>
+	<!-- End page Content -->
 
+	<!-- Begin Footer -->
+	<footer>
+		<div class="footer-contain"></div>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- Scripts -->
 	<script src="assets/scripts/responsive.js"></script>
 	<script src="assets/scripts/christmas.js"></script>
 </body>
