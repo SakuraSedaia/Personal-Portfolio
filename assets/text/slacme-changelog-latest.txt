@@ -1,0 +1,59 @@
+V2 Changelog (Changes from HD Edit V1.1)
+    Changed:
+        * (RIG) Rig Renamed to Sakura's Edit
+        * (PROPERTIES) Rig Age has been reworked to be slider based instead of toggle
+        * (PROPERTIES) Rig Age has been renamed to Rig Scale
+        * (OPTIMIZATION) Deleted broken Drivers
+        * (MATERIAL) Eyes no longer emit light by default
+        * (RIG SCALE) Rig Scale now affects Armature Object instead of Root Bone
+        * (MESH) Base Version has less Geometry for more optimization
+        * (TEXTURE) Renamed texture "steve" to "Rig"
+        * (TEXTURE) Renamed texture "Eye.png" to "Rig.Eyes"
+        * (TEXTURE) Default skin changed from LACM Steve Skin to Alex V2
+        * (TEXTURE) Default HD Eye Texture Changed from Magenta to Green 
+        * (MATERIAL) Default Eye Color Changed from Grey to Green
+        * (ARMATURE) Rig properties Panel has been relocated
+        * (ARMATURE) Decorative Eye Panel has been shifted Right
+        * (PROPERTIES) Alex Arms is now enabled by default
+        * (ARMATURE) Added Global Head Rotation Toggle
+        * (ARMATURE) Ankle Swap is automatically Enabled when Legs are in FK
+        * (MATERIAL) Swapped Eye Material Names
+        * (PROPERTIES) Properties Boneshape changed to SACR Properties Icon
+        * (OBJECT) Boneshapes Collection now inside main Rig Collection
+        * (ARMATURE) Armature Object renamed to "LACM V1 Edit" from "Character Rig"
+        * (ARMATURE) Re-coloured Bone Groups
+        * (BONESHAPES) Renamed Bone Shapes for easier Maintanence
+        * (BONESHAPES) Added Slim Varients of Arm Bone Shapes
+        * (ARMATURE) Tweaked Alex Arm Position, should fix wrists
+        * (PROPERTIES) Removed "Round Eyes" option from main panel
+        * (OBJECTS) Renamed a few objects, should make the Hierachy cleaner
+        
+    Added:
+        + (RIG) Extrudable Version is included now
+        
+    Removed:
+        - (RIG) Removed Fingers, this is due to the Alex Arm Fix
+        
+        
+    
+HD Edit V1.1 Changelog (Changes from HD Edit V1):
+    Changed
+        * Fixed the names of all mis-named Bones
+        * Left Ankle no longer freaks out when rotating main root bone
+        * Updated Information Document with better Grammar
+    
+    
+    
+HD Edit V1 Changelog (Changes from base LACM V1):
+    Changed:
+        * Reworked Pupils and Eyebrows Material, acts more like Neokat and SACR V1.1a
+        * Restructured Rig Object Hierarchy
+        * UV's are now the full pixel size rather than sub-pixel, this is to make the rig HD Skin Compatable, but also breaks easy Extrude Meshes
+        
+    
+    Added:
+        + Child Scale preset
+        + Round and Square HD eye support
+        
+    Removed:
+        - LACM Gradient System. The 2px Gradient is now Material based rather than Object based and can be toggled through the Material Settings, the Smooth Gradient Option was also removed

@@ -34,10 +34,10 @@
 				</div>
 
 				<div class="nav-item" onclick="openInternal('rig-navigation')">Rigs</div>
-				<div class="nav-item" onclick="openInternal( 'projects')">
+				<div class="nav-item" onclick="openInternal( 'projects')" hidden>
 					Projects
 				</div>
-				<div class="nav-item" onclick="openInternal( 'contact')">
+				<div class="nav-item" onclick="openInternal( 'contact')" hidden>
 					Contact
 				</div>
 			</div>
@@ -56,7 +56,16 @@
 	<div class="xmasCounter" id="xmasContainer">Days until Christmas:
 		<span id="xmasCounter">Undefined</span>
 	</div>
-	<div class="dev-warning"><strong>ATTENTION: </strong>This site is still in Development, please report any issues to Sakura at <a href="mailto:endergfx6@gmail.com">this Email</a></div></header>
+	
+	<div class="dev-warning" id="devWarning">
+		
+	</div>
+	
+	<div class="deprication-warning">
+		<strong>ATTENTION: </strong>
+		rig is now Depricated, no further Updates will be made for it
+	</div>
+</header>
 <!-- End Header -->
 
 	<div class="about-sacr">
@@ -76,9 +85,8 @@
 			</div>
 			<div class="rds-col">
 				<h1>Download LACM Sakura's Edit V2</h1>
-				<span class="file-details">File Size: 1.28MB
-					<a onclick="openInternal('assets/misc/slacme-changelog-latest.txt')" class="download-extra"
-						hidden>Changelog</a> |
+				<span class="file-details">File Size: 1.28MB | 
+					<a onclick="openText('slacme-changelog-latest')" class="download-extra">Changelog</a> |
 					<a onclick="openExternal('github.com/SakuraSedaia/LACM-Sakura-Edit/')" class="download-extra">GitHub
 						Repo</a>
 				</span>
@@ -87,8 +95,8 @@
 	Refer to internal Documentation in responsive.js for information on Dependant State Variables 
 -->
 
-				<div class="download-lr download-extra" onclick="downloadSLACME(false)">Latest Release</div>
-				<div onclick="openInternal('sacr-rig')" class="link">Go to SACR</div>
+				<div class="download-lr download-extra" onclick="downloadSLACME(true)">Latest Release</div>
+				<div onclick="openInternal('sacr-rig')"><span class="links"Go to SACR</span></div>
 			</div>
 
 		</div>
@@ -113,15 +121,16 @@
 								bobs added by Sakura</p>
 						</div>
 					</div>
-
 				</div>
 			</div>
-
 		</div>
 	</div>
 
+	
+	<!-- Scripts -->
+	<script src="assets/scripts/age.js"></script>
+	<script src="assets/scripts/seasons.js"></script>
 	<script src="assets/scripts/responsive.js"></script>
-	<script src="assets/scripts/christmas.js"></script>
 </body>
 
 </html>
