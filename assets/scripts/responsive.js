@@ -106,8 +106,8 @@ function downloadSLACME (state) {
 }
 
 // Developer Tools
-var devMode = true
-var useDevRefresh = false
+var devMode = false
+var useDevRefresh = true
 var devRefreshInterval = 3000
 
 if (devMode == true && useDevRefresh == true) {
