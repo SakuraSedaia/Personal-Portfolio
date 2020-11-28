@@ -56,7 +56,16 @@
 	<div class="xmasCounter" id="xmasContainer">Days until Christmas:
 		<span id="xmasCounter">Undefined</span>
 	</div>
-	<div class="dev-warning"><strong>ATTENTION: </strong>This site is still in Development, please report any issues to Sakura at <a href="mailto:endergfx6@gmail.com">this Email</a></div></header>
+	
+	<div class="dev-warning" id="devWarning">
+		
+	</div>
+	
+	<div class="deprication-warning">
+		<strong>ATTENTION: </strong>
+		rig is now Depricated, no further Updates will be made for it
+	</div>
+</header>
 <!-- End Header -->
 
 	<div class="about-sacr">
@@ -87,7 +96,7 @@
 	Refer to internal Documentation in responsive.js for information on Dependant State Variables 
 -->
 
-				<div class="download-lr download-extra" onclick="downloadSLACME(false)">Latest Release</div>
+				<div class="download-lr download-extra" onclick="downloadSLACME(false)">(Download not Active)</div>
 				<div onclick="openInternal('sacr-rig')" class="link">Go to SACR</div>
 			</div>
 
@@ -113,15 +122,16 @@
 								bobs added by Sakura</p>
 						</div>
 					</div>
-
 				</div>
 			</div>
-
 		</div>
 	</div>
 
+	
+	<!-- Scripts -->
+	<script src="assets/scripts/age.js"></script>
+	<script src="assets/scripts/seasons.js"></script>
 	<script src="assets/scripts/responsive.js"></script>
-	<script src="assets/scripts/christmas.js"></script>
 </body>
 
 </html>

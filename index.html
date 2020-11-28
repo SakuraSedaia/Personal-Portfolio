@@ -18,68 +18,65 @@
 </head>
 
 <body>
-<!-- Header Start -->
-<header>
-	<div class="header-contain" id="header">
-		<!-- Navigation Start -->
-		<div class="navigation">
-			<div class="nav-logo">
-				<div class="logoIco"></div>
-				<div class="logoTxt" onclick="openInternal('index')"><span>Sakura Sedaia</span></div>
-			</div>
-
-			<div class="nav-contain">
-				<div class="nav-item" data-active="true" onclick="openInternal( 'index')">
-					Home
+	<!-- Header Start -->
+	<header>
+		<div class="header-contain" id="header">
+			<!-- Navigation Start -->
+			<div class="navigation">
+				<div class="nav-logo">
+					<div class="logoIco"></div>
+					<div class="logoTxt" onclick="openInternal('index')"><span>Sakura Sedaia</span></div>
 				</div>
 
-				<div class="nav-item" onclick="openInternal('rig-navigation')">Rigs</div>
-				<div class="nav-item" onclick="openInternal( 'projects')">
-					Projects
-				</div>
-				<div class="nav-item" onclick="openInternal( 'contact')">
-					Contact
+				<div class="nav-contain">
+					<div class="nav-item" data-active="true" onclick="openInternal( 'index')">
+						Home
+					</div>
+
+					<div class="nav-item" onclick="openInternal('rig-navigation')">Rigs</div>
+					<div class="nav-item" onclick="openInternal( 'projects')">
+						Projects
+					</div>
+					<div class="nav-item" onclick="openInternal( 'contact')">
+						Contact
+					</div>
 				</div>
 			</div>
+			<!-- Navigation End -->
+
+			<!-- Header Content -->
+			<div class="header-content">
+				<div class="header-text">
+					<h1>Personal Portfolio</h1>
+					<h4>Provided by you're local Internet Neko</h4>
+				</div>
+			</div>
+
 		</div>
-		<!-- Navigation End -->
-
-		<!-- Header Content -->
-		<div class="header-content">
-			<div class="header-text">
-				<h1>Personal Portfolio</h1>
-				<h4>Provided by you're local Internet Neko</h4>
-			</div>
+		<div class="xmasCounter" id="xmasContainer">Days until Christmas:
+			<span id="xmasCounter">Undefined</span>
 		</div>
-
-	</div>
-	<div class="xmasCounter" id="xmasContainer">Days until Christmas:
-		<span id="xmasCounter">Undefined</span>
-	</div>
-	<div class="dev-warning"><strong>ATTENTION: </strong>This site is still in Development, please report any issues to Sakura at <a href="mailto:endergfx6@gmail.com">this Email</a></div></header>
-<!-- End Header -->
+		<div class="dev-warning" id="devWarning"><strong>ATTENTION: </strong>This site is still in Development, please report any issues
+			to Sakura at <a href="#" onclick="emailSaki()">this Email</a></div>
+	</header>
+	<!-- End Header -->
 
 	<!-- Begin page Content -->
-	<div class="rig-browser-section">
-		<p onclick="openInternal('sacr-rig')">SACR Minecraft Rig</p>
-		<p onclick="openInternal('slacme-rig')">SLACME Minecraft Rig</p>
-		<p onclick="openInternal('blender-assets')" hidden>Blender Assets</p>
-	</div>
-	<!-- End page Content -->
-
-	<!-- Begin page Content -->
-	<div class="content-section">
+	<div class="index-content-section">
 		<div class="about">
 			<div class="title">
 				<h1>Who am I</h1>
-				<p>I am a 17 year old 3D Animator and Website Designer from Iowa, I started 3D Animation when I was 12
-					and Website Design when I was 14. I mainly work with Minecraft Animation and build simple websites,
-					I eventually hope to turn Website Design into a carreer and 3D Animation into a suitable hobby. I
-					currently have an IRL Job and work within many online Minecraft production studio's. The most
-					prominant one being <a onclick="openExternal('')">Silver Deer Entertainment</a>, for which I am
-					writting and directing a Zombie Survival Machinima called Parallel Z.
-				</p>
+
 			</div>
+			<p>I am a <a id="age">null</a> year old 3D Animator and Website Designer from Iowa, I started 3D
+				Animation when I was 12
+				and Website Design when I was 14. I mainly work with Minecraft Animation and build simple websites,
+				I eventually hope to turn Website Design into a career and 3D Animation into a suitable hobby. I
+				currently have an IRL Job and work within many online Minecraft production studio's. The most
+				prominant one being <a onclick="openExternal('www.youtube.com/channel/UCbT_Y7FKTmZxr-EadQs0GNA')"
+					href="#">Silver Deer Entertainment</a>, for which I am
+				writting and directing a Zombie Survival Machinima called Parallel Z.
+			</p>
 		</div>
 
 		<div class="updates" hidden>
@@ -108,7 +105,7 @@
 			</div>
 
 		</div>
-		
+
 	</div>
 	<!-- End page Content -->
 
@@ -119,8 +116,14 @@
 	<!-- End Footer -->
 
 	<!-- Scripts -->
+	<script src="assets/scripts/age.js"></script>
+	<script src="assets/scripts/seasons.js"></script>
 	<script src="assets/scripts/responsive.js"></script>
-	<script src="assets/scripts/christmas.js"></script>
+	<script>
+	// Age Display Set
+var ageDisplay = document.getElementById('age');
+
+ageDisplay.innerHTML = sakuraAge</script>
 </body>
 
 </html>

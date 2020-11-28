@@ -55,25 +55,19 @@
 	<div class="xmasCounter" id="xmasContainer">Days until Christmas:
 		<span id="xmasCounter">Undefined</span>
 	</div>
-	<div class="dev-warning"><strong>ATTENTION: </strong>This site is still in Development, please report any issues to Sakura at <a href="mailto:endergfx6@gmail.com">this Email</a></div></header>
+	<div class="dev-warning" id="devWarning"></div>
+</header>
 <!-- End Header -->
-
-	<!-- Begin page Content -->
-	<div class="rig-browser-section">
-		<p onclick="openInternal('sacr-rig')">SACR Minecraft Rig</p>
-		<p onclick="openInternal('slacme-rig')">SLACME Minecraft Rig</p>
-		<p onclick="openInternal('blender-assets')" hidden>Blender Assets</p>
-	</div>
-	<!-- End page Content -->
 			
 
 	<div class="about-sacr">
-		<div class="title-sacr">
+		<div class="title-sacr" style="background-image: url(assets/images/MCRigBackgrouns/SACRThumbnail3.png);background-position: center;background-size: cover;">
 			<div class="title-text">
 				<h1>Sakura's Advanced Character Rig</h1>
 				<h3>Lightweight Advanced Minecraft Character Rig built and designed by an Animator for Animators</h3>
 			</div>
-			<div class="title-bg"></div>
+			<div class="title-bg" style="
+			background-image: url('assets/images/WPRenders/SoWModTeam_Render.png')"></div>
 
 		</div>
 
@@ -132,8 +126,10 @@
 		</div>
 	</div>
 
+	<!-- Scripts -->
+	<script src="assets/scripts/age.js"></script>
+	<script src="assets/scripts/seasons.js"></script>
 	<script src="assets/scripts/responsive.js"></script>
-	<script src="assets/scripts/christmas.js"></script>
 </body>
 
 </html>
