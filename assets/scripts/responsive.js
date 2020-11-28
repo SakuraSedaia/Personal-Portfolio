@@ -64,6 +64,12 @@ function openExternal (url) {
     window.open('https://' + url, '_blank')
   }
 }
+
+function openText (url) {
+  // Internal Links
+  window.open("assets/text/" + url + ".txt", '_blank')
+}
+
 function emailSaki () {
   if (
     window.confirm(
@@ -89,7 +95,7 @@ function downloadSACR (state) {
 
 function downloadSLACME (state) {
   if (state == true) {
-    window.open(null)
+    window.open('assets/misc/LACM - Sakuras Edit V2.zip')
     console.info('Rig Download started')
   } else if (state == false) {
     window.alert(
