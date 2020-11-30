@@ -1,6 +1,5 @@
 
 *.map
-*.scss
 assets/styles/main_style_css.css
 *.py
 Website Assets/*
