@@ -57,12 +57,18 @@ function openInternal (url) {
   // Internal Links
   window.open(url + '.html', '_self')
 }
+var securityBadge;
 
-function openExternal (url) {
-  // External Links
-  if (window.confirm('Are you sure you want to go to an external page?')) {
-    window.open('https://' + url, '_blank')
-  }
+function openExternal(url, isSiteSecure) {
+	if (isSiteSecure == "secure") {
+		securityBadge = "https://";
+	} else if (isSiteSecure != "secure") {
+		securityBadge = "http://";
+	}
+	// External Links
+	if (window.confirm("Are you sure you want to go to an external page?")) {
+		window.open(securityBadge + url, "_blank");
+	}
 }
 
 function openText (url) {
