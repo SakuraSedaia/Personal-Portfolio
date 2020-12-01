@@ -397,3 +397,98 @@ rigs-dropdown[id="rdp"] {
 		}
 	}
 }
+
+// Rig Navigation Stuffs
+$rig-nav-border-radius: 10px;
+$sacr-hover: rgb(255, 180, 200);
+$slacme-hover: rgb(0, 180, 200);
+$transition-duration: 250ms;
+
+.cards-container {
+	text-align: center;
+	background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/OreBackground.png");
+	padding: 1in;
+	.cards-list-item-outer:before {
+		filter: blur(10px);
+		-webkit-filter: blur(10px);
+		-o-filter: blur(10px);
+		-moz-filter: blur(10px);
+	}
+	.cards-list-item-outer {
+		display: inline-block;
+
+		position: relative;
+		.cards-list-item-inner {
+			cursor: pointer;
+			transition: $transition-duration;
+			background-color: rgba(25, 25, 25, 0.5);
+			color: white;
+			width: 400px;
+			font-family: PT_Sans;
+			border-radius: $rig-nav-border-radius;
+			.cards-list-item-thumbnail {
+				width: 400px;
+				height: 225px;
+
+				margin-bottom: 20px;
+				border-bottom: 4px solid;
+				border-top-right-radius: $rig-nav-border-radius;
+				border-top-left-radius: $rig-nav-border-radius;
+			}
+			.sacr-thumbnail {
+				background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/SACRThumbnail3.PNG");
+				background-size: cover;
+				border-color: white;
+				transition: $transition-duration;
+			}
+			.slacme-thumbnail {
+				background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/LACMThumbnail1.PNG");
+				background-size: cover;
+				border-color: white;
+				transition: $transition-duration;
+			}
+
+			.cards-list-item-info {
+				text-align: center;
+				height: 160px;
+				.cards-list-item-title {
+					font-size: 20pt;
+					transition: $transition-duration;
+				}
+				.cards-list-item-excerp {
+					font-size: 12pt;
+
+					.links {
+						transition: $transition-duration;
+					}
+				}
+			}
+		}
+		.cards-list-item-inner:hover {
+			background-color: rgba(0, 0, 0, 0.7);
+			// Set Color of Thumbnail Border
+			.sacr-thumbnail {
+				border-bottom-color: $sacr-hover;
+			}
+			.slacme-thumbnail {
+				border-bottom-color: $slacme-hover;
+			}
+
+			// Set Color of Title Text
+			.sacr-title {
+				color: $sacr-hover;
+			}
+			.slacme-title {
+				color: $slacme-hover;
+			}
+
+			// Set Color of Links
+			.sacr-link {
+				color: $sacr-hover;
+			}
+			.slacme-link {
+				color: $slacme-hover;
+			}
+		}
+	}
+}
