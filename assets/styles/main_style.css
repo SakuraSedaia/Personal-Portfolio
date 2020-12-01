@@ -15,13 +15,13 @@ body {
   transition: 500ms;
 }
 
-/* line 20, main_style.scss */
+/* line 21, main_style.scss */
 .links:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-/* line 25, main_style.scss */
+/* line 26, main_style.scss */
 rigs-dropdown[id="rdp"] {
   width: 100%;
   display: flex;
@@ -31,7 +31,7 @@ rigs-dropdown[id="rdp"] {
   overflow: hidden;
   transition: 500ms;
 }
-/* line 34, main_style.scss */
+/* line 35, main_style.scss */
 rigs-dropdown[id="rdp"] .close-rdp {
   position: absolute;
   color: white;
@@ -42,7 +42,7 @@ rigs-dropdown[id="rdp"] .close-rdp {
   opacity: 0;
   transition: 500ms;
 }
-/* line 45, main_style.scss */
+/* line 46, main_style.scss */
 rigs-dropdown[id="rdp"] .rdp {
   flex-basis: 50%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -50,25 +50,25 @@ rigs-dropdown[id="rdp"] .rdp {
   transition: 500ms;
   background-size: 115%;
 }
-/* line 52, main_style.scss */
+/* line 53, main_style.scss */
 rigs-dropdown[id="rdp"] .rdp .material-icons.md-36 {
   font-size: 36px;
 }
-/* line 56, main_style.scss */
+/* line 57, main_style.scss */
 rigs-dropdown[id="rdp"] .rdp .rdp-title {
   text-align: center;
   color: white;
   font-family: Minecraft;
   height: 100%;
 }
-/* line 63, main_style.scss */
+/* line 64, main_style.scss */
 rigs-dropdown[id="rdp"] .rdp .rdp-title h2 {
   position: relative;
   top: 0in;
   opacity: 0;
   transition: 500ms;
 }
-/* line 71, main_style.scss */
+/* line 72, main_style.scss */
 rigs-dropdown[id="rdp"] .rdp .rdp-btn {
   position: relative;
   top: 1.2in;
@@ -82,34 +82,34 @@ rigs-dropdown[id="rdp"] .rdp .rdp-btn {
   cursor: pointer;
   border-radius: 15px;
 }
-/* line 84, main_style.scss */
+/* line 85, main_style.scss */
 rigs-dropdown[id="rdp"] .rdp .rdp-btn:hover {
   background-color: white;
   border-radius: 3px;
   color: black;
 }
-/* line 90, main_style.scss */
+/* line 91, main_style.scss */
 rigs-dropdown[id="rdp"] .rdp .opacity-100 {
   opacity: 100%;
 }
-/* line 95, main_style.scss */
+/* line 96, main_style.scss */
 rigs-dropdown[id="rdp"] .rdp:hover {
   background-color: rgba(0, 0, 0, 0.5);
   background-size: 125%;
 }
 
-/* line 102, main_style.scss */
+/* line 103, main_style.scss */
 .header-contain {
   width: 100%;
   height: 4in;
   background-size: cover;
 }
-/* line 108, main_style.scss */
+/* line 109, main_style.scss */
 .header-contain .navigation {
   height: 32px;
   display: flex;
 }
-/* line 113, main_style.scss */
+/* line 114, main_style.scss */
 .header-contain .navigation .nav-logo {
   display: flex;
   flex-basis: 50%;
@@ -117,12 +117,12 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   height: 47px;
   position: absolute;
 }
-/* line 120, main_style.scss */
+/* line 121, main_style.scss */
 .header-contain .navigation .nav-logo .logoIco {
   width: 47px;
   content: url("https://sakura-sedaia.com/assets/images/Favicon/favicon-32x32.png");
 }
-/* line 125, main_style.scss */
+/* line 126, main_style.scss */
 .header-contain .navigation .nav-logo .logoTxt {
   padding-left: 10px;
   overflow-y: hidden;
@@ -136,12 +136,12 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   padding-right: 20px;
   width: 140px;
 }
-/* line 138, main_style.scss */
+/* line 139, main_style.scss */
 .header-contain .navigation .nav-logo .logoTxt span {
   position: absolute;
   transform: translateY(2px);
 }
-/* line 146, main_style.scss */
+/* line 147, main_style.scss */
 .header-contain .navigation .nav-contain {
   display: flex;
   width: 50vw;
@@ -149,7 +149,7 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   right: 0;
   position: absolute;
 }
-/* line 155, main_style.scss */
+/* line 156, main_style.scss */
 .header-contain .navigation .nav-contain .nav-item {
   flex-basis: 25%;
   border-bottom: 5px solid rgba(255, 255, 255, 0);
@@ -164,14 +164,14 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   font-family: "Noto Sans JP";
   font-size: 16px;
 }
-/* line 169, main_style.scss */
+/* line 170, main_style.scss */
 .header-contain .navigation .nav-contain .nav-item[active="true"] {
   border-bottom: 5px solid;
   background-color: white;
   color: black;
   border-color: pink;
 }
-/* line 175, main_style.scss */
+/* line 176, main_style.scss */
 .header-contain .navigation .nav-contain .nav-item:hover {
   border-bottom: 5px solid pink;
   flex-basis: 25%;
@@ -179,26 +179,26 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   padding-top: 10px;
   background-color: rgba(25, 25, 25, 0.5);
 }
-/* line 187, main_style.scss */
+/* line 188, main_style.scss */
 .header-contain .header-text {
   position: absolute;
   transform: translateY(1in);
 }
-/* line 191, main_style.scss */
+/* line 192, main_style.scss */
 .header-contain .header-text h1 {
   font-family: PT_Sans;
   font-weight: bold;
   color: #fff5f5;
   text-indent: 1in;
 }
-/* line 197, main_style.scss */
+/* line 198, main_style.scss */
 .header-contain .header-text h4 {
   color: #fff5f5;
   font-family: Minecraft;
   text-indent: 0.75in;
 }
 
-/* line 205, main_style.scss */
+/* line 206, main_style.scss */
 .xmasCounter {
   border-top: 2px solid grey;
   border-bottom: 2px solid grey;
@@ -206,7 +206,7 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   background-color: #dfdfdf;
 }
 
-/* line 212, main_style.scss */
+/* line 213, main_style.scss */
 .dev-warning {
   border-top: 2px solid #fff022;
   border-bottom: 2px solid #fff022;
@@ -215,12 +215,12 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   color: black;
   font-family: "Open Sans";
 }
-/* line 220, main_style.scss */
+/* line 221, main_style.scss */
 .dev-warning strong {
   font-family: "Noto Sans JP";
 }
 
-/* line 225, main_style.scss */
+/* line 226, main_style.scss */
 .deprication-warning {
   border-top: 2px solid #ff2222;
   border-bottom: 2px solid #ff2222;
@@ -229,31 +229,31 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   color: white;
   font-family: "Open Sans";
 }
-/* line 233, main_style.scss */
+/* line 234, main_style.scss */
 .deprication-warning strong {
   font-family: "Noto Sans JP";
 }
 
-/* line 241, main_style.scss */
+/* line 242, main_style.scss */
 .index-content-section .about .title {
   font-size: 20px;
 }
-/* line 244, main_style.scss */
+/* line 245, main_style.scss */
 .index-content-section .about p {
   font-size: 14px;
 }
-/* line 249, main_style.scss */
+/* line 250, main_style.scss */
 .index-content-section .updates {
   /* Unused Stuff */
   content: none;
 }
 
-/* line 258, main_style.scss */
+/* line 259, main_style.scss */
 .about-sacr .title-sacr {
   width: 100%;
   height: 100%;
 }
-/* line 262, main_style.scss */
+/* line 263, main_style.scss */
 .about-sacr .title-sacr .title-text {
   position: absolute;
   z-index: 0;
@@ -263,19 +263,19 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   border-radius: 10px;
   background-color: #00000090;
 }
-/* line 271, main_style.scss */
+/* line 272, main_style.scss */
 .about-sacr .title-sacr .title-text h1 {
   font-family: PT_Sans;
   text-indent: 1in;
   color: white;
 }
-/* line 276, main_style.scss */
+/* line 277, main_style.scss */
 .about-sacr .title-sacr .title-text h3 {
   font-family: Minecraft;
   font-size: 16px;
   color: white;
 }
-/* line 283, main_style.scss */
+/* line 284, main_style.scss */
 .about-sacr .title-sacr .title-bg {
   content: inherit;
   background-color: #fff5f525;
@@ -287,7 +287,7 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   background-position: 0in -2.5in;
 }
 
-/* line 297, main_style.scss */
+/* line 298, main_style.scss */
 .rig-download-section {
   height: 2in;
   background-color: #333;
@@ -296,15 +296,15 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   color: #fff5f5;
   display: flex;
 }
-/* line 305, main_style.scss */
+/* line 306, main_style.scss */
 .rig-download-section h1 {
   font-family: PT_Sans;
 }
-/* line 308, main_style.scss */
+/* line 309, main_style.scss */
 .rig-download-section span {
   font-family: "Roboto";
 }
-/* line 312, main_style.scss */
+/* line 313, main_style.scss */
 .rig-download-section .download-lr {
   background-color: transparent;
   border: none;
@@ -335,63 +335,161 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   font-family: PT_Sans;
   cursor: pointer;
 }
-/* line 344, main_style.scss */
+/* line 345, main_style.scss */
 .rig-download-section .download-lr:hover {
   background-color: #13b6fb95;
   -webkit-box-shadow: 0 4px 0 0 #04a7eb95;
   box-shadow: 0 4px 0 0 #04a7eb95;
 }
-/* line 349, main_style.scss */
+/* line 350, main_style.scss */
 .rig-download-section .download-extra {
   text-decoration: none;
 }
-/* line 352, main_style.scss */
+/* line 353, main_style.scss */
 .rig-download-section .download-extra:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-/* line 356, main_style.scss */
+/* line 357, main_style.scss */
 .rig-download-section .rds-col {
   flex-basis: 50%;
 }
-/* line 359, main_style.scss */
+/* line 360, main_style.scss */
 .rig-download-section .rds-col img {
   position: relative;
   transform: translateY(-15%);
 }
-/* line 364, main_style.scss */
+/* line 365, main_style.scss */
 .rig-download-section .rds-background {
   flex-basis: 25%;
   min-width: 600px;
 }
 
-/* line 372, main_style.scss */
+/* line 373, main_style.scss */
 .features-sacr {
   margin-left: 1in;
   margin-right: 1in;
 }
-/* line 376, main_style.scss */
+/* line 377, main_style.scss */
 .features-sacr h2 {
   font-family: PT_Sans;
   text-align: center;
   font-size: 36px;
 }
-/* line 382, main_style.scss */
+/* line 383, main_style.scss */
 .features-sacr .highlight-features {
   width: 1000px;
   margin: 0 auto;
   background-color: #f3f3f3;
   padding: 10px;
 }
-/* line 387, main_style.scss */
+/* line 388, main_style.scss */
 .features-sacr .highlight-features h2 {
   text-align: left;
   font-size: 24px;
 }
-/* line 392, main_style.scss */
+/* line 393, main_style.scss */
 .features-sacr .highlight-features .row-1-col .feat-overlay {
   font-family: "Noto Sans JP";
   height: 100px;
+}
+
+/* line 407, main_style.scss */
+.cards-container {
+  text-align: center;
+  background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/OreBackground.png");
+  padding: 1in;
+}
+/* line 411, main_style.scss */
+.cards-container .cards-list-item-outer:before {
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -o-filter: blur(10px);
+  -moz-filter: blur(10px);
+}
+/* line 417, main_style.scss */
+.cards-container .cards-list-item-outer {
+  display: inline-block;
+  position: relative;
+}
+/* line 421, main_style.scss */
+.cards-container .cards-list-item-outer .cards-list-item-inner {
+  cursor: pointer;
+  transition: 250ms;
+  background-color: rgba(25, 25, 25, 0.5);
+  color: white;
+  width: 400px;
+  font-family: PT_Sans;
+  border-radius: 10px;
+}
+/* line 429, main_style.scss */
+.cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-thumbnail {
+  width: 400px;
+  height: 225px;
+  margin-bottom: 20px;
+  border-bottom: 4px solid;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+/* line 438, main_style.scss */
+.cards-container .cards-list-item-outer .cards-list-item-inner .sacr-thumbnail {
+  background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/SACRThumbnail3.PNG");
+  background-size: cover;
+  border-color: white;
+  transition: 250ms;
+}
+/* line 444, main_style.scss */
+.cards-container .cards-list-item-outer .cards-list-item-inner .slacme-thumbnail {
+  background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/LACMThumbnail1.PNG");
+  background-size: cover;
+  border-color: white;
+  transition: 250ms;
+}
+/* line 451, main_style.scss */
+.cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info {
+  text-align: center;
+  height: 160px;
+}
+/* line 454, main_style.scss */
+.cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info .cards-list-item-title {
+  font-size: 20pt;
+  transition: 250ms;
+}
+/* line 458, main_style.scss */
+.cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info .cards-list-item-excerp {
+  font-size: 12pt;
+}
+/* line 461, main_style.scss */
+.cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info .cards-list-item-excerp .links {
+  transition: 250ms;
+}
+/* line 467, main_style.scss */
+.cards-container .cards-list-item-outer .cards-list-item-inner:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/* line 470, main_style.scss */
+.cards-container .cards-list-item-outer .cards-list-item-inner:hover .sacr-thumbnail {
+  border-bottom-color: #ffb4c8;
+}
+/* line 473, main_style.scss */
+.cards-container .cards-list-item-outer .cards-list-item-inner:hover .slacme-thumbnail {
+  border-bottom-color: #00b4c8;
+}
+/* line 478, main_style.scss */
+.cards-container .cards-list-item-outer .cards-list-item-inner:hover .sacr-title {
+  color: #ffb4c8;
+}
+/* line 481, main_style.scss */
+.cards-container .cards-list-item-outer .cards-list-item-inner:hover .slacme-title {
+  color: #00b4c8;
+}
+/* line 486, main_style.scss */
+.cards-container .cards-list-item-outer .cards-list-item-inner:hover .sacr-link {
+  color: #ffb4c8;
+}
+/* line 489, main_style.scss */
+.cards-container .cards-list-item-outer .cards-list-item-inner:hover .slacme-link {
+  color: #00b4c8;
 }
 
 /*# sourceMappingURL=main_style.css.map */
