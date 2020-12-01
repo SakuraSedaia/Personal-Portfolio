@@ -10,8 +10,9 @@ body {
 
 /* line 16, main_style.scss */
 .links {
-  color: pink;
+  color: white;
   text-decoration: none;
+  transition: 500ms;
 }
 
 /* line 20, main_style.scss */
