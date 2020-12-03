@@ -394,20 +394,14 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   height: 100px;
 }
 
-/* line 407, main_style.scss */
+/* line 411, main_style.scss */
 .cards-container {
   text-align: center;
   background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/OreBackground.png");
   padding: 1in;
+  transition: 750ms;
 }
-/* line 411, main_style.scss */
-.cards-container .cards-list-item-outer:before {
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
-  -o-filter: blur(10px);
-  -moz-filter: blur(10px);
-}
-/* line 417, main_style.scss */
+/* line 416, main_style.scss */
 .cards-container .cards-list-item-outer {
   display: inline-block;
   position: relative;
@@ -415,81 +409,159 @@ rigs-dropdown[id="rdp"] .rdp:hover {
 /* line 421, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner {
   cursor: pointer;
-  transition: 250ms;
+  transition: 750ms;
   background-color: rgba(25, 25, 25, 0.5);
   color: white;
   width: 400px;
   font-family: PT_Sans;
   border-radius: 10px;
 }
-/* line 429, main_style.scss */
+/* line 431, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-thumbnail {
   width: 400px;
   height: 225px;
+  transition: 750ms;
   margin-bottom: 20px;
   border-bottom: 4px solid;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
-/* line 438, main_style.scss */
+/* line 441, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner .sacr-thumbnail {
   background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/SACRThumbnail3.PNG");
   background-size: cover;
+  background-position: center;
   border-color: white;
-  transition: 250ms;
+  transition: 750ms;
 }
-/* line 444, main_style.scss */
+/* line 448, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner .slacme-thumbnail {
   background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/LACMThumbnail1.PNG");
   background-size: cover;
+  background-position: center;
   border-color: white;
-  transition: 250ms;
+  transition: 750ms;
 }
-/* line 451, main_style.scss */
+/* line 456, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info {
+  position: relative;
   text-align: center;
   height: 160px;
 }
-/* line 454, main_style.scss */
+/* line 460, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info .cards-list-item-title {
   font-size: 20pt;
-  transition: 250ms;
+  transition: 750ms;
 }
-/* line 458, main_style.scss */
+/* line 464, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info .cards-list-item-excerp {
   font-size: 12pt;
 }
-/* line 461, main_style.scss */
-.cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info .cards-list-item-excerp .links {
-  transition: 250ms;
-}
 /* line 467, main_style.scss */
+.cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info .cards-list-item-excerp .links {
+  transition: 750ms;
+}
+/* line 473, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
-/* line 470, main_style.scss */
+/* line 477, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner:hover .sacr-thumbnail {
   border-bottom-color: #ffb4c8;
 }
-/* line 473, main_style.scss */
+/* line 480, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner:hover .slacme-thumbnail {
   border-bottom-color: #00b4c8;
 }
-/* line 478, main_style.scss */
+/* line 485, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner:hover .sacr-title {
   color: #ffb4c8;
 }
-/* line 481, main_style.scss */
+/* line 488, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner:hover .slacme-title {
   color: #00b4c8;
 }
-/* line 486, main_style.scss */
+/* line 493, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner:hover .sacr-link {
   color: #ffb4c8;
 }
-/* line 489, main_style.scss */
+/* line 496, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner:hover .slacme-link {
   color: #00b4c8;
+}
+/* line 502, main_style.scss */
+.cards-container .cards-list-item-outer .sacr-background::before {
+  content: "";
+  background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/SACRThumbnail3.PNG");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0%;
+  transition: 750ms;
+}
+/* line 515, main_style.scss */
+.cards-container .cards-list-item-outer .slacme-background::before {
+  content: "";
+  background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/LACMThumbnail1.PNG");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0%;
+  transition: 750ms;
+}
+
+@media screen and (max-width: 540px) {
+  /* line 534, main_style.scss */
+  .cards-container {
+    padding: 0;
+    width: 100%;
+  }
+  /* line 538, main_style.scss */
+  .cards-container .cards-list-item-outer {
+    display: block;
+  }
+  /* line 541, main_style.scss */
+  .cards-container .cards-list-item-outer .cards-list-item-inner {
+    width: 100%;
+    border-radius: 0;
+    background-blend-mode: multiply;
+  }
+  /* line 546, main_style.scss */
+  .cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-thumbnail {
+    border-bottom: 0px solid white;
+    height: 10px;
+    width: 100%;
+  }
+  /* line 551, main_style.scss */
+  .cards-container .cards-list-item-outer .cards-list-item-inner .sacr-thumbnail {
+    opacity: 0%;
+  }
+  /* line 554, main_style.scss */
+  .cards-container .cards-list-item-outer .cards-list-item-inner .slacme-thumbnail {
+    opacity: 0%;
+  }
+  /* line 560, main_style.scss */
+  .cards-container .cards-list-item-outer .sacr-background::before {
+    background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/SACRThumbnail3.PNG");
+    background-position: center;
+    background-size: cover;
+    opacity: 100%;
+  }
+  /* line 567, main_style.scss */
+  .cards-container .cards-list-item-outer .slacme-background::before {
+    background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/LACMThumbnail1.PNG");
+    background-position: center;
+    background-size: cover;
+    opacity: 100%;
+  }
 }
 
 /*# sourceMappingURL=main_style.css.map */

@@ -402,23 +402,24 @@ rigs-dropdown[id="rdp"] {
 $rig-nav-border-radius: 10px;
 $sacr-hover: rgb(255, 180, 200);
 $slacme-hover: rgb(0, 180, 200);
-$transition-duration: 250ms;
+$transition-duration: 750ms;
+$sacrBackgroundImage: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/SACRThumbnail3.PNG");
+$slacmeBackgroundImage: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/LACMThumbnail1.PNG");
+$browserBackground: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/OreBackground.png");
 
+// Default Desktop Style for the Card based Navigation
 .cards-container {
 	text-align: center;
-	background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/OreBackground.png");
+	background-image: $browserBackground;
 	padding: 1in;
-	.cards-list-item-outer:before {
-		filter: blur(10px);
-		-webkit-filter: blur(10px);
-		-o-filter: blur(10px);
-		-moz-filter: blur(10px);
-	}
+	transition: $transition-duration;
 	.cards-list-item-outer {
 		display: inline-block;
 
 		position: relative;
+
 		.cards-list-item-inner {
+			// Actual Card CSS
 			cursor: pointer;
 			transition: $transition-duration;
 			background-color: rgba(25, 25, 25, 0.5);
@@ -426,29 +427,34 @@ $transition-duration: 250ms;
 			width: 400px;
 			font-family: PT_Sans;
 			border-radius: $rig-nav-border-radius;
+
 			.cards-list-item-thumbnail {
 				width: 400px;
 				height: 225px;
 
+				transition: $transition-duration;
 				margin-bottom: 20px;
 				border-bottom: 4px solid;
 				border-top-right-radius: $rig-nav-border-radius;
 				border-top-left-radius: $rig-nav-border-radius;
 			}
 			.sacr-thumbnail {
-				background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/SACRThumbnail3.PNG");
+				background-image: $sacrBackgroundImage;
 				background-size: cover;
+				background-position: center;
 				border-color: white;
 				transition: $transition-duration;
 			}
 			.slacme-thumbnail {
-				background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/LACMThumbnail1.PNG");
+				background-image: $slacmeBackgroundImage;
 				background-size: cover;
+				background-position: center;
 				border-color: white;
 				transition: $transition-duration;
 			}
 
 			.cards-list-item-info {
+				position: relative;
 				text-align: center;
 				height: 160px;
 				.cards-list-item-title {
@@ -466,6 +472,7 @@ $transition-duration: 250ms;
 		}
 		.cards-list-item-inner:hover {
 			background-color: rgba(0, 0, 0, 0.7);
+			
 			// Set Color of Thumbnail Border
 			.sacr-thumbnail {
 				border-bottom-color: $sacr-hover;
@@ -488,6 +495,80 @@ $transition-duration: 250ms;
 			}
 			.slacme-link {
 				color: $slacme-hover;
+			}
+		}
+
+		// Define backgrounds for Mobile Layout
+		.sacr-background::before {
+			content: "";
+			background-image: $sacrBackgroundImage;
+			background-position: center;
+			background-size: cover;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			bottom: 0px;
+			left: 0px;
+			opacity: 0%;
+			transition: $transition-duration;
+		}
+		.slacme-background::before {
+			content: "";
+			background-image: $slacmeBackgroundImage;
+			background-position: center;
+			background-size: cover;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			bottom: 0px;
+			left: 0px;
+			opacity: 0%;
+			transition: $transition-duration;
+		}
+	}
+}
+
+
+// Start Mobile Layout
+@media screen and (max-width: 540px) {
+	.cards-container {
+		padding: 0;
+		width: 100%;
+
+		.cards-list-item-outer {
+			display: block;
+
+			.cards-list-item-inner {
+				width: 100%;
+				border-radius: 0;
+				background-blend-mode: multiply;
+
+				.cards-list-item-thumbnail {
+					border-bottom: 0px solid white;
+					height: 10px;
+					width: 100%;
+				}
+				.sacr-thumbnail {
+					opacity: 0%;
+				}
+				.slacme-thumbnail {
+					opacity: 0%;
+				}
+			}
+
+			// Rig Backgrounds
+			.sacr-background::before {
+				background-image: $sacrBackgroundImage;
+				background-position: center;
+				background-size: cover;
+
+				opacity: 100%;
+			}
+			.slacme-background::before {
+				background-image: $slacmeBackgroundImage;
+				background-position: center;
+				background-size: cover;
+				opacity: 100%;
 			}
 		}
 	}
