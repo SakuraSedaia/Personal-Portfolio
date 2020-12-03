@@ -399,7 +399,7 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   text-align: center;
   background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/OreBackground.png");
   padding: 1in;
-  transition: 750ms;
+  transition: 250ms;
 }
 /* line 416, main_style.scss */
 .cards-container .cards-list-item-outer {
@@ -409,7 +409,7 @@ rigs-dropdown[id="rdp"] .rdp:hover {
 /* line 421, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner {
   cursor: pointer;
-  transition: 750ms;
+  transition: 250ms;
   background-color: rgba(25, 25, 25, 0.5);
   color: white;
   width: 400px;
@@ -420,7 +420,7 @@ rigs-dropdown[id="rdp"] .rdp:hover {
 .cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-thumbnail {
   width: 400px;
   height: 225px;
-  transition: 750ms;
+  transition: 250ms;
   margin-bottom: 20px;
   border-bottom: 4px solid;
   border-top-right-radius: 10px;
@@ -432,7 +432,7 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   background-size: cover;
   background-position: center;
   border-color: white;
-  transition: 750ms;
+  transition: 250ms;
 }
 /* line 448, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner .slacme-thumbnail {
@@ -440,7 +440,7 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   background-size: cover;
   background-position: center;
   border-color: white;
-  transition: 750ms;
+  transition: 250ms;
 }
 /* line 456, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info {
@@ -451,7 +451,7 @@ rigs-dropdown[id="rdp"] .rdp:hover {
 /* line 460, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info .cards-list-item-title {
   font-size: 20pt;
-  transition: 750ms;
+  transition: 250ms;
 }
 /* line 464, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info .cards-list-item-excerp {
@@ -459,7 +459,7 @@ rigs-dropdown[id="rdp"] .rdp:hover {
 }
 /* line 467, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info .cards-list-item-excerp .links {
-  transition: 750ms;
+  transition: 250ms;
 }
 /* line 473, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner:hover {
@@ -501,7 +501,7 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   bottom: 0px;
   left: 0px;
   opacity: 0%;
-  transition: 750ms;
+  transition: 250ms;
 }
 /* line 515, main_style.scss */
 .cards-container .cards-list-item-outer .slacme-background::before {
@@ -515,7 +515,7 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   bottom: 0px;
   left: 0px;
   opacity: 0%;
-  transition: 750ms;
+  transition: 250ms;
 }
 
 @media screen and (max-width: 540px) {
