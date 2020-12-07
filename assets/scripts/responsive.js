@@ -60,9 +60,9 @@ function openInternal (url) {
 var securityBadge;
 
 function openExternal(url, isSiteSecure) {
-	if (isSiteSecure == "secure") {
+	if (isSiteSecure == "secure" || isSiteSecure == 1) {
 		securityBadge = "https://";
-	} else if (isSiteSecure != "secure") {
+	} else if (isSiteSecure != "secure" || isSiteSecure == 0) {
 		securityBadge = "http://";
 	}
 	// External Links
