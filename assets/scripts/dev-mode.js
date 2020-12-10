@@ -1,8 +1,14 @@
+devImportTimer();
+console.log("Developer Tools import Successful, completed in " + devImportTimg)
+
 // Developer Tools
-var devMode = false
 var useDevRefresh = true
 var useDevWarning = true
 var devRefreshInterval = 3000
+
+if (devMode == true) {
+	console.warn("Developer Tools Activated")	
+}
 
 if (devMode == true && useDevRefresh == true) {
   var devConsoleWarning = console.warn('Developer Tools Activated')
