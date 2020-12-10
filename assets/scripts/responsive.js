@@ -60,9 +60,9 @@ function openInternal (url) {
 var securityBadge;
 
 function openExternal(url, isSiteSecure) {
-	if (isSiteSecure == "secure") {
+	if (isSiteSecure == "secure" || isSiteSecure == 1) {
 		securityBadge = "https://";
-	} else if (isSiteSecure != "secure") {
+	} else if (isSiteSecure != "secure" || isSiteSecure == 0) {
 		securityBadge = "http://";
 	}
 	// External Links
@@ -110,15 +110,15 @@ function downloadSLACME (state) {
     console.error('Rig download Disabled')
   }
 }
+var devMode = true
 
-// Developer Tools
-var devMode = false
-var useDevRefresh = true
-var devRefreshInterval = 3000
-
-if (devMode == true && useDevRefresh == true) {
-  var devConsoleWarning = console.warn('Developer Tools Activated')
-  window.setTimeout('window.location.reload()', devRefreshInterval)
+if(devMode == true) {
+	devModeScript("dev-mode.js");	
 }
+// Import Dev Tool Script
+function devModeScript(url) {
+    var script = document.createElement("script");  // create a script DOM node
+    script.src = url;  // set its src to the provided URL
 
-document.getElementById('devWarning').innerHTML = '<strong>Warning: </strong>This site is still in Development, please report any issues to Sakura at <a href="#" onclick="emailSaki()">this Email</a>'
+    document.head.appendChild(script);  // add it to the end of the head section of the page (could change 'head' to 'body' to add it to the end of the body section instead)
+}
