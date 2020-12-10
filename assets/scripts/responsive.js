@@ -112,13 +112,17 @@ function downloadSLACME (state) {
 }
 var devMode = true
 
+
 if(devMode == true) {
-	devModeScript("dev-mode.js");	
+  devModeScript("assets/scripts/dev-mode.js");	
+  console.warn("Developer Mode Activated")
 }
 // Import Dev Tool Script
 function devModeScript(url) {
     var script = document.createElement("script");  // create a script DOM node
     script.src = url;  // set its src to the provided URL
+    console.time("Developer Scripts Imported in")
 
-    document.head.appendChild(script);  // add it to the end of the head section of the page (could change 'head' to 'body' to add it to the end of the body section instead)
+    document.body.appendChild(script);  // add it to the end of the head section of the page (could change 'head' to 'body' to add it to the end of the body section instead)
 }
+

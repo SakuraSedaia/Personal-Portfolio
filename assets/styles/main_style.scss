@@ -210,18 +210,7 @@ rigs-dropdown[id="rdp"] {
 	background-color: rgba(223,223,223,1.00);
 }
 
-.dev-warning {
-	border-top: 2px solid #fff022;
-	border-bottom: 2px solid #fff022;
-	padding: 10px;
-	background-color: rgb(255, 238, 2);
-	color: black;
-	font-family: "Open Sans";
-	
-	strong {
-		font-family: "Noto Sans JP";
-	}
-}
+
 
 .deprication-warning {
 	border-top: 2px solid #ff2222;
@@ -530,7 +519,7 @@ $browserBackground: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns
 
 
 // Start Mobile Layout
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 500px) {
 	.cards-container {
 		padding: 0;
 		width: 100%;
