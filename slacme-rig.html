@@ -18,56 +18,59 @@
 </head>
 
 <body>
-<!-- Header Start -->
-<header>
-	<div class="header-contain" id="header">
-		<!-- Navigation Start -->
-		<div class="navigation">
-			<div class="nav-logo">
-				<div class="logoIco"></div>
-				<div class="logoTxt" onclick="openInternal('index')"><span>Sakura Sedaia</span></div>
-			</div>
-
-			<div class="nav-contain">
-				<div class="nav-item" data-active="true" onclick="openInternal( 'index')">
-					Home
+	<!-- Header Start -->
+	<header>
+		<div class="header-contain" id="header">
+			<!-- Navigation Start -->
+			<div class="navigation">
+				<div class="nav-logo">
+					<div class="logoIco"></div>
+					<div class="logoTxt" onclick="openInternal('index')"><span>Sakura Sedaia</span></div>
 				</div>
 
-				<div class="nav-item" onclick="openInternal('rig-navigation')">Rigs</div>
-				<div class="nav-item" onclick="openInternal( 'projects')" hidden>
-					Projects
-				</div>
-				<div class="nav-item" onclick="openInternal( 'contact')" hidden>
-					Contact
+				<div class="nav-contain">
+					<div class="nav-item" data-active="true" onclick="openInternal( 'index')">
+						Home
+					</div>
+
+					<div class="nav-item" onclick="openInternal('rig-navigation')">Rigs</div>
+					<div class="nav-item" onclick="openInternal( 'projects')" hidden>
+						Projects
+					</div>
+					<div class="nav-item" onclick="openInternal( 'contact')" hidden>
+						Contact
+					</div>
 				</div>
 			</div>
+			<!-- Navigation End -->
+
+			<!-- Header Content -->
+			<div class="header-content">
+				<div class="header-text">
+					<h1>Personal Portfolio</h1>
+					<h4>Provided by you're local Internet Neko</h4>
+				</div>
+			</div>
+
 		</div>
-		<!-- Navigation End -->
-
-		<!-- Header Content -->
-		<div class="header-content">
-			<div class="header-text">
-				<h1>Personal Portfolio</h1>
-				<h4>Provided by you're local Internet Neko</h4>
-			</div>
+		<div class="xmasCounter" id="xmasContainer">Days until Christmas:
+			<span id="xmasCounter">Undefined</span>
 		</div>
 
-	</div>
-	<div class="xmasCounter" id="xmasContainer">Days until Christmas:
-		<span id="xmasCounter">Undefined</span>
-	</div>
-	
-	<div class="dev-warning" id="devWarning"><!-- HTML Not Displayed, Developer Mode Disabled --></div>
-	
-	<div class="deprication-warning">
-		<strong>ATTENTION: </strong>
-		rig is now Depricated, no further Updates will be made for it
-	</div>
-</header>
-<!-- End Header -->
+		<div class="dev-warning" id="devWarning">
+			<!-- HTML Not Displayed, Developer Mode Disabled -->
+		</div>
+
+		<div class="deprication-warning">
+			<strong>ATTENTION: </strong>
+			rig is now Depricated, no further Updates will be made for it
+		</div>
+	</header>
+	<!-- End Header -->
 
 	<div class="about-sacr">
-		<div class="title-sacr"  style="background-image: url(assets/images/MCRigBackgrouns/LACMThumbnail1.PNG);background-position: 0 -1in;">
+		<div class="title-sacr"
+			style="background-image: url(assets/images/MCRigBackgrouns/LACMThumbnail1.PNG);background-position: 0 -1in;">
 			<div class="title-text">
 				<h1>Sakura's "LACM" Edit</h1>
 				<h3>An Edit aimed at Improving an Impoverished and Discontinued Rig</h3>
@@ -83,9 +86,10 @@
 			</div>
 			<div class="rds-col">
 				<h1>Download LACM Sakura's Edit V2</h1>
-				<span class="file-details">File Size: 1.28MB | 
+				<span class="file-details">File Size: 1.28MB |
 					<a onclick="openText('slacme-changelog-latest')" class="download-extra">Changelog</a> |
-					<a onclick="openExternal('github.com/SakuraSedaia/LACM-Sakura-Edit/','secure')" class="download-extra">GitHub
+					<a onclick="openExternal('github.com/SakuraSedaia/LACM-Sakura-Edit/','secure')"
+						class="download-extra">GitHub
 						Repo</a>
 				</span>
 
@@ -124,7 +128,7 @@
 		</div>
 	</div>
 
-	
+
 	<!-- Scripts -->
 	<script src="assets/scripts/age.js"></script>
 	<script src="assets/scripts/seasons.js"></script>

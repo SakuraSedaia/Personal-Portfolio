@@ -1,390 +1,623 @@
 @import url("../fonts/fonts.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 $header-height: 4in;
 $light: #fff5f5;
 $shade: rgba(25, 25, 25, 0.5);
 $nav-border: pink;
-// Hello World
+
+// Times Formatted: 1
+
 // Universal
 html,
 body {
-	margin: 0;
-	width: 100%;
-	height: 100%;
-	font-family: "Open Sans";
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Open Sans";
 }
+
 .links {
-	color: white;
-	text-decoration: none;
-	transition: 500ms;
+    color: white;
+    text-decoration: none;
+    transition: 500ms;
 }
+
 .links:hover {
-	text-decoration: underline;
-	cursor: pointer;
-}
-// Rig Dropdown
-rigs-dropdown[id="rdp"] {
-	width: 100%;
-	display: flex;
-	position: absolute;
-	z-index: 999;
-
-	height: 0in;
-	overflow: hidden;
-	transition: 500ms;
-	.close-rdp {
-		position: absolute;
-		color: white;
-		font-size: 48px;
-		width: 30px;
-		cursor: pointer;
-		right: -0.2in;
-		opacity: 0;
-
-		transition: 500ms;
-	}
-	.rdp {
-		flex-basis: 50%;
-		background-color: rgba(0, 0, 0, 0.2);
-		background-blend-mode: multiply;
-		transition: 500ms;
-		background-size: 115%;
-
-		.material-icons.md-36 {
-			font-size: 36px;
-		}
-
-		.rdp-title {
-			text-align: center;
-			color: white;
-			font-family: Minecraft;
-			height: 100%;
-		}
-
-		.rdp-title h2 {
-			position: relative;
-			top: 0in;
-			opacity: 0;
-
-			transition: 500ms;
-		}
-
-		.rdp-btn {
-			position: relative;
-			top: 1.2in;
-			width: 150px;
-			border: 3px solid white;
-			margin: 0 auto;
-			padding-top: 10px;
-			padding-bottom: 0px;
-			background-color: rgba(255, 255, 255, 0);
-			transition: 500ms;
-			cursor: pointer;
-			border-radius: 15px;
-		}
-		.rdp-btn:hover {
-			background-color: rgba(255, 255, 255, 1);
-			border-radius: 3px;
-			color: black;
-		}
-
-		.opacity-100 {
-			opacity: 100%;
-		}
-	}
-
-	.rdp:hover {
-		background-color: rgba(0, 0, 0, 0.5);
-		background-size: 125%;
-	}
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 // Header Stuff
 .header-contain {
-	width: 100%;
-	height: $header-height;
-	background-size: cover;
+    width: 100%;
+    height: $header-height;
+    background-size: cover;
 
-	// Navigation
-	.navigation {
-		height: 32px;
-		display: flex;
+    // Navigation
+    .navigation {
+        height: 32px;
+        display: flex;
 
-		// Navigation Logo Stuffs
-		.nav-logo {
-			display: flex;
-			flex-basis: 50%;
-			min-width: 200px;
-			height: 47px;
-			position: absolute;
+        // Navigation Logo Stuffs
+        .nav-logo {
+            display: flex;
+            flex-basis: 50%;
+            min-width: 200px;
+            height: 47px;
+            position: absolute;
 
-			.logoIco {
-				width: 47px;
-				content: url("https://sakura-sedaia.com/assets/images/Favicon/favicon-32x32.png");
-			}
+            .logoIco {
+                width: 47px;
+                content: url("https://sakura-sedaia.com/assets/images/Favicon/favicon-32x32.png");
+            }
 
-			.logoTxt {
-				padding-left: 10px;
-				overflow-y: hidden;
-				padding-top: 10px;
-				height: 36px;
-				color: $light;
-				font-family: Minecraft;
-				position: relative;
-				transform: translatex(10px);
-				border-right: 3px solid $nav-border;
-				padding-right: 20px;
-				width: 140px;
+            .logoTxt {
+                padding-left: 10px;
+                overflow-y: hidden;
+                padding-top: 10px;
+                height: 36px;
+                color: $light;
+                font-family: Minecraft;
+                position: relative;
+                transform: translatex(10px);
+                border-right: 3px solid $nav-border;
+                padding-right: 20px;
+                width: 140px;
 
-				span {
-					position: absolute;
-					transform: translateY(2px);
-				}
-			}
-		}
+                span {
+                    position: absolute;
+                    transform: translateY(2px);
+                }
+            }
+        }
 
-		// Navbar Styles
-		.nav-contain {
-			display: flex;
-			width: 50vw;
-			height: 100%;
-			right: 0;
+        // Navbar Styles
+        .nav-contain {
+            display: flex;
+            width: 50vw;
+            height: 100%;
+            right: 0;
 
-			position: absolute;
+            position: absolute;
 
-			// Navigational Items
-			.nav-item {
-				flex-basis: 25%;
-				border-bottom: 5px solid rgba(255, 255, 255, 0);
-				overflow-y: hidden;
-				height: 32px;
-				padding-top: 10px;
-				background-color: rgba(0, 0, 0, 0);
-				text-align: center;
-				color: $light;
-				transition: 500ms;
-				cursor: pointer;
-				font-family: "Noto Sans JP";
-				font-size: 16px;
-			}
-			.nav-item[active="true"] {
-				border-bottom: 5px solid;
-				background-color: rgba(255, 255, 255, 1);
-				color: black;
-				border-color: $nav-border;
-			}
-			.nav-item:hover {
-				border-bottom: 5px solid $nav-border;
-				flex-basis: 25%;
-				overflow-y: hidden;
-				padding-top: 10px;
-				background-color: $shade;
-			}
-			// End Navigational Items
-		}
-	}
+            // Navigational Items
+            .nav-item {
+                flex-basis: 25%;
+                border-bottom: 5px solid rgba(255, 255, 255, 0);
+                overflow-y: hidden;
+                height: 32px;
+                padding-top: 10px;
+                background-color: rgba(0, 0, 0, 0);
+                text-align: center;
+                color: $light;
+                transition: 500ms;
+                cursor: pointer;
+                font-family: "Noto Sans JP";
+                font-size: 16px;
+            }
 
-	// Header Content
-	.header-text {
-		position: absolute;
-		transform: translateY(1in);
+            .nav-item[active="true"] {
+                border-bottom: 5px solid;
+                background-color: rgba(255, 255, 255, 1);
+                color: black;
+                border-color: $nav-border;
+            }
 
-		h1 {
-			font-family: PT_Sans;
-			font-weight: bold;
-			color: $light;
-			text-indent: 1in;
-		}
-		h4 {
-			color: $light;
-			font-family: Minecraft;
-			text-indent: 0.75in;
-		}
-	}
+            .nav-item:hover {
+                border-bottom: 5px solid $nav-border;
+                flex-basis: 25%;
+                overflow-y: hidden;
+                padding-top: 10px;
+                background-color: $shade;
+            }
+
+            // End Navigational Items
+        }
+    }
+
+    // Header Content
+    .header-text {
+        position: absolute;
+        transform: translateY(1in);
+
+        h1 {
+            font-family: PT_Sans;
+            font-weight: bold;
+            color: $light;
+            text-indent: 1in;
+        }
+
+        h4 {
+            color: $light;
+            font-family: Minecraft;
+            text-indent: 0.75in;
+        }
+    }
 }
 
 .xmasCounter {
-	border-top: 2px solid grey;
-	border-bottom: 2px solid grey;
-	padding: 10px;
-	background-color: rgba(223,223,223,1.00);
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    padding: 10px;
+    background-color: rgba(223, 223, 223, 1.00);
 }
 
 
 
 .deprication-warning {
-	border-top: 2px solid #ff2222;
-	border-bottom: 2px solid #ff2222;
-	padding: 10px;
-	background-color: rgb(173, 0, 0);
-	color: white;
-	font-family: "Open Sans";
-	
-	strong {
-		font-family: "Noto Sans JP";
-	}
+    border-top: 2px solid #ff2222;
+    border-bottom: 2px solid #ff2222;
+    padding: 10px;
+    background-color: rgb(173, 0, 0);
+    color: white;
+    font-family: "Open Sans";
+
+    strong {
+        font-family: "Noto Sans JP";
+    }
 }
 
-// Index.html stuff
-.index-content-section {
-	.about {
-		.title {
-			font-size: 20px;
-		}
-		p {
-			font-size: 14px;
-		}
-	}
+// EXTRA SCSS CODE FOR CODEPEN FUNTIONALITY, DO NOT COPY
 
-	.updates {
-		/* Unused Stuff */
-		content: none;
-	}
+// Copy Code following this
+.content-section {
+    width: 100%;
+    height: auto;
+
+    .about {
+        background-color: white;
+
+        .title {
+            padding: 0.5in;
+
+            h1 {
+                font-family: PT_Sans;
+            }
+
+            p {
+                font-family: "Source Sans Pro", sans-serif;
+            }
+        }
+    }
+
+    $height-tworow: 3.23in;
+
+    .index-rig-display {
+        width: 100%;
+        height: $height-tworow;
+        overflow: hidden;
+
+        .content {
+            position: relative;
+            z-index: 999;
+            font-family: "Source Sans Pro", sans-serif;
+            transform: translateY(-$height-tworow);
+            text-align: center;
+            background-blend-mode: linear;
+            background-image: linear-gradient(to top,
+                    rgba(0, 0, 0, 0.3),
+                    rgba(0, 0, 0, 0.1));
+
+            height: $height-tworow;
+            width: 100%;
+            margin: 0 auto;
+
+            .rig-display-text {
+                color: white;
+                padding-top: 50px;
+                font-family: PT_Sans;
+
+                padding-bottom: 30px;
+            }
+
+            //ffb3cb
+            .btn {
+                display: inline-block;
+                color: #fff;
+                cursor: pointer;
+                // display: block;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 45px;
+                margin: 0 0 2em;
+                max-width: 160px;
+                position: relative;
+                text-decoration: none;
+                text-transform: uppercase;
+                width: 100%;
+
+                //   @media(min-width: 400px) {
+                //     display: inline-block;
+                //     margin-right: 2.5em;
+
+                //     &:nth-of-type(even) {
+                //       margin-right: 0;
+                //     }
+                //   }
+
+                @media (min-width: 600px) {
+                    margin: 0 1em 2em;
+
+                    //     &:nth-of-type(even) {
+                    //       margin-right: 2.5em;
+                    //     }
+
+                    //     &:nth-of-type(5) {
+                    //       margin-right: 0;
+                    //     }
+                }
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            .btn-4 {
+                border: 1px solid;
+                overflow: hidden;
+                position: relative;
+                transition: 500ms;
+
+                span {
+                    z-index: 20;
+                }
+
+                &:after {
+                    background: #fff;
+                    content: "";
+                    height: 155px;
+                    left: -75px;
+                    opacity: 0.2;
+                    position: absolute;
+                    top: -50px;
+                    transform: rotate(35deg);
+                    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+                    width: 50px;
+                    z-index: -10;
+                }
+
+                &:before {
+                    background-color: #ffb3cb00;
+                    content: "";
+                    height: 155px;
+                    left: 0;
+                    position: absolute;
+                    width: 100%;
+                    z-index: -10;
+                    transition: 500ms;
+                }
+            }
+
+            .btn-4:hover {
+                color: black;
+
+                &:after {
+                    left: 120%;
+                    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+                }
+
+                &:before {
+                    background-color: #ffb3cb;
+                    content: "";
+                    height: 155px;
+                    left: 0;
+                    position: absolute;
+                    width: 100%;
+                    z-index: -10;
+                }
+            }
+        }
+
+        .background {
+            width: 100%;
+            margin: 0 auto;
+            z-index: -1;
+            height: $height-tworow;
+            background-position: center;
+            filter: blur(5px);
+            transform: scale(1.1);
+        }
+    }
+}
+
+.latest-video {
+    height: 4in;
+
+    .title {
+        text-align: center;
+
+        h1 {
+            font-family: "Open Sans";
+        }
+    }
+
+    .container {
+        display: flex;
+
+        .col {
+            flex-basis: 50%;
+        }
+
+        // Individual Elements
+        .video {
+            text-align: center;
+            flex-basis: 700px;
+
+            iframe {
+                display: inline;
+            }
+        }
+
+        .meta {
+
+            h2,
+            h3 {
+                font-family: "PT_sans";
+            }
+
+            div {
+                font-family: "Noto Sans JP";
+            }
+        }
+    }
+}
+
+/*
+# Integrate Google Material Icons
+# Website: https://material.io/resources/icons/?style=baseline
+*/
+
+// Begin Footer
+$border-color: rgb(50, 50, 50);
+$footer-row-one-height: 1.25in;
+
+.footer {
+    .footer-desktop {
+        background-color: rgb(35, 35, 35);
+        color: white;
+
+        .footer-top-container {
+            display: flex;
+            border-bottom: 2px solid $border-color;
+
+            .left-section {
+                min-width: 160px;
+                border-right: 2.5px solid $border-color;
+                transition: 500ms;
+                text-align: left;
+                flex-basis: 50%;
+                height: $footer-row-one-height;
+
+                div {
+                    padding-top: 12px;
+                    padding-left: 30px;
+                    list-style-type: none;
+                }
+            }
+
+            .right-section {
+                padding-left: 2.5px;
+                transition: 500ms;
+                min-width: 160px;
+                flex-basis: 50%;
+                border-left: 2px solid $border-color;
+                position: relative;
+                text-align: right;
+                height: $footer-row-one-height;
+
+                .footer-icon {
+                    padding-top: 10px;
+                    padding-right: 30px;
+
+                    .fab {
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+
+        .footer-bottom-container {
+            text-align: center;
+        }
+    }
+}
+
+
+// Specialty Links
+.yt-links-thick {
+    color: black;
+    transition: 250ms;
+    text-decoration: none;
+    border-bottom: 4px solid rgba(255, 0, 0, 0);
+}
+
+.yt-links-thick:hover {
+    color: red;
+    cursor: pointer;
+    border-bottom: 4px solid rgba(255, 0, 0, 1);
+}
+
+.yt-links-thin {
+    color: black;
+    transition: 250ms;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(255, 0, 0, 0);
+}
+
+.yt-links-thin:hover {
+    color: red;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(255, 0, 0, 1);
+}
+
+.sildeer-link {
+    color: black;
+    transition: 250ms;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(20, 230, 255, 0);
+}
+
+.sildeer-link:hover {
+    color: rgba(20, 230, 255, 1);
+    cursor: pointer;
+    border-bottom: 2px solid rgba(20, 230, 255, 1);
 }
 
 // sacr-rig.html and slacme-rig.html stuff
 // About the Rig
 .about-sacr {
-	.title-sacr {
-		width: 100%;
-		height: 100%;
+    .title-sacr {
+        width: 100%;
+        height: 100%;
 
-		.title-text {
-			position: absolute;
-			z-index: 0;
-			padding-left: 30px;
-			padding-right: 30px;
-			transform: translate(1in, 2in);
-			border-radius: 10px;
-			background-color: #00000090;
+        .title-text {
+            position: absolute;
+            z-index: 0;
+            padding-left: 30px;
+            padding-right: 30px;
+            transform: translate(1in, 2in);
+            border-radius: 10px;
+            background-color: #00000090;
 
-			h1 {
-				font-family: PT_Sans;
-				text-indent: 1in;
-				color: white;
-			}
-			h3 {
-				font-family: Minecraft;
-				font-size: 16px;
+            h1 {
+                font-family: PT_Sans;
+                text-indent: 1in;
+                color: white;
+            }
 
-				color: white;
-			}
-		}
-		.title-bg {
-			content: inherit;
-			background-color: #fff5f525;
-			background-blend-mode: overlay;
-			width: 100%;
-			height: 5.25in;
-			z-index: -1;
-			overflow: hidden;
-			background-position: 0in -2.5in;
-		}
-	}
+            h3 {
+                font-family: Minecraft;
+                font-size: 16px;
+
+                color: white;
+            }
+        }
+
+        .title-bg {
+            content: inherit;
+            background-color: #fff5f525;
+            background-blend-mode: overlay;
+            width: 100%;
+            height: 5.25in;
+            z-index: -1;
+            overflow: hidden;
+            background-position: 0in -2.5in;
+        }
+    }
 }
 
 // Download Features
 .rig-download-section {
-	height: 2in;
-	background-color: #333;
-	text-align: center;
-	padding: 1in;
-	color: #fff5f5;
-	display: flex;
+    height: 2in;
+    background-color: #333;
+    text-align: center;
+    padding: 1in;
+    color: #fff5f5;
+    display: flex;
 
-	h1 {
-		font-family: PT_Sans;
-	}
-	span {
-		font-family: "Roboto";
-	}
-	
-	.download-lr {
-		background-color: transparent;
-		border: none;
-		border-radius: 0.3rem;
-		-webkit-box-shadow: inset 0 0 0 2px #fff;
-		box-shadow: inset 0 0 0 2px #fff;
-		color: #fff !important;
-		display: block;
-		padding-bottom: 7px;
-		padding-left: 20px;
-		padding-right: 20px;
-		padding-top: 7px;
-		text-decoration: none !important;
-		-webkit-transition: color 250ms ease-out, background-color 150ms ease-in-out,
-			-webkit-box-shadow 150ms ease-in-out;
-		transition: color 250ms ease-out, background-color 150ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
-		-o-transition: color 250ms ease-out, background-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
-		transition: color 250ms ease-out, background-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
-		transition: color 250ms ease-out, background-color 150ms ease-in-out, box-shadow 150ms ease-in-out,
-			-webkit-box-shadow 150ms ease-in-out;
-		white-space: nowrap;
-		background-color: #13b6fb;
-		-webkit-box-shadow: 0 4px 0 0 #04a7eb;
-		box-shadow: 0 4px 0 0 #04a7eb;
-		font-size: 1.5rem;
-		width: 250px;
-		margin: 0 auto;
-		margin-top: 20px;
-		margin-bottom: 10px;
-		font-family: PT_Sans;
-		cursor: pointer;
-	}
-	.download-lr:hover {
-		background-color: #13b6fb95;
-		-webkit-box-shadow: 0 4px 0 0 #04a7eb95;
-		box-shadow: 0 4px 0 0 #04a7eb95;
-	}
-	.download-extra {
-		text-decoration: none;
-	}
-	.download-extra:hover {
-		text-decoration: underline;
-		cursor: pointer;
-	}
-	.rds-col {
-		flex-basis: 50%;
+    h1 {
+        font-family: PT_Sans;
+    }
 
-		img {
-			position: relative;
-			transform: translateY(-15%);
-		}
-	}
-	.rds-background {
-		flex-basis: 25%;
-		min-width: 600px;
-	}
+    span {
+        font-family: "Roboto";
+    }
+
+    .download-lr {
+        background-color: transparent;
+        border: none;
+        border-radius: 0.3rem;
+        -webkit-box-shadow: inset 0 0 0 2px #fff;
+        box-shadow: inset 0 0 0 2px #fff;
+        color: #fff !important;
+        display: block;
+        padding-bottom: 7px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 7px;
+        text-decoration: none !important;
+        -webkit-transition: color 250ms ease-out, background-color 150ms ease-in-out,
+            -webkit-box-shadow 150ms ease-in-out;
+        transition: color 250ms ease-out, background-color 150ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
+        -o-transition: color 250ms ease-out, background-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
+        transition: color 250ms ease-out, background-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
+        transition: color 250ms ease-out, background-color 150ms ease-in-out, box-shadow 150ms ease-in-out,
+            -webkit-box-shadow 150ms ease-in-out;
+        white-space: nowrap;
+        background-color: #13b6fb;
+        -webkit-box-shadow: 0 4px 0 0 #04a7eb;
+        box-shadow: 0 4px 0 0 #04a7eb;
+        font-size: 1.5rem;
+        width: 250px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-family: PT_Sans;
+        cursor: pointer;
+    }
+
+    .download-lr:hover {
+        background-color: #13b6fb95;
+        -webkit-box-shadow: 0 4px 0 0 #04a7eb95;
+        box-shadow: 0 4px 0 0 #04a7eb95;
+    }
+
+    .download-extra {
+        text-decoration: none;
+    }
+
+    .download-extra:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .rds-col {
+        flex-basis: 50%;
+
+        img {
+            position: relative;
+            transform: translateY(-15%);
+        }
+    }
+
+    .rds-background {
+        flex-basis: 25%;
+        min-width: 600px;
+    }
 
 }
 
 // Highlight Features
 .features-sacr {
-	margin-left: 1in;
-	margin-right: 1in;
+    margin-left: 1in;
+    margin-right: 1in;
 
-	h2 {
-		font-family: PT_Sans;
-		text-align: center;
-		font-size: 36px;
-	}
+    h2 {
+        font-family: PT_Sans;
+        text-align: center;
+        font-size: 36px;
+    }
 
-	.highlight-features {
-		width: 1000px;
-		margin: 0 auto;
-		background-color: #f3f3f3;
-		padding: 10px;
-		h2 {
-			text-align: left;
-			font-size: 24px;
-		}
-		.row-1-col {
-			.feat-overlay {
-				font-family: "Noto Sans JP";
-				height: 100px;
-			}
-		}
-	}
+    .highlight-features {
+        width: 1000px;
+        margin: 0 auto;
+        background-color: #f3f3f3;
+        padding: 10px;
+
+        h2 {
+            text-align: left;
+            font-size: 24px;
+        }
+
+        .row-1-col {
+            .feat-overlay {
+                font-family: "Noto Sans JP";
+                height: 100px;
+            }
+        }
+    }
 }
 
 // Rig Navigation Stuffs
@@ -398,167 +631,180 @@ $browserBackground: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns
 
 // Default Desktop Style for the Card based Navigation
 .cards-container {
-	text-align: center;
-	background-image: $browserBackground;
-	padding: 1in;
-	transition: $transition-duration;
-	.cards-list-item-outer {
-		display: inline-block;
+    text-align: center;
+    background-image: $browserBackground;
+    padding: 1in;
+    transition: $transition-duration;
 
-		position: relative;
+    .cards-list-item-outer {
+        display: inline-block;
 
-		.cards-list-item-inner {
-			// Actual Card CSS
-			cursor: pointer;
-			transition: $transition-duration;
-			background-color: rgba(25, 25, 25, 0.5);
-			color: white;
-			width: 400px;
-			font-family: PT_Sans;
-			border-radius: $rig-nav-border-radius;
+        position: relative;
 
-			.cards-list-item-thumbnail {
-				width: 400px;
-				height: 225px;
+        .cards-list-item-inner {
+            // Actual Card CSS
+            cursor: pointer;
+            transition: $transition-duration;
+            background-color: rgba(25, 25, 25, 0.5);
+            color: white;
+            width: 400px;
+            font-family: PT_Sans;
+            border-radius: $rig-nav-border-radius;
 
-				transition: $transition-duration;
-				margin-bottom: 20px;
-				border-bottom: 4px solid;
-				border-top-right-radius: $rig-nav-border-radius;
-				border-top-left-radius: $rig-nav-border-radius;
-			}
-			.sacr-thumbnail {
-				background-image: $sacrBackgroundImage;
-				background-size: cover;
-				background-position: center;
-				border-color: white;
-				transition: $transition-duration;
-			}
-			.slacme-thumbnail {
-				background-image: $slacmeBackgroundImage;
-				background-size: cover;
-				background-position: center;
-				border-color: white;
-				transition: $transition-duration;
-			}
+            .cards-list-item-thumbnail {
+                width: 400px;
+                height: 225px;
 
-			.cards-list-item-info {
-				position: relative;
-				text-align: center;
-				height: 160px;
-				.cards-list-item-title {
-					font-size: 20pt;
-					transition: $transition-duration;
-				}
-				.cards-list-item-excerp {
-					font-size: 12pt;
+                transition: $transition-duration;
+                margin-bottom: 20px;
+                border-bottom: 4px solid;
+                border-top-right-radius: $rig-nav-border-radius;
+                border-top-left-radius: $rig-nav-border-radius;
+            }
 
-					.links {
-						transition: $transition-duration;
-					}
-				}
-			}
-		}
-		.cards-list-item-inner:hover {
-			background-color: rgba(0, 0, 0, 0.7);
-			
-			// Set Color of Thumbnail Border
-			.sacr-thumbnail {
-				border-bottom-color: $sacr-hover;
-			}
-			.slacme-thumbnail {
-				border-bottom-color: $slacme-hover;
-			}
+            .sacr-thumbnail {
+                background-image: $sacrBackgroundImage;
+                background-size: cover;
+                background-position: center;
+                border-color: white;
+                transition: $transition-duration;
+            }
 
-			// Set Color of Title Text
-			.sacr-title {
-				color: $sacr-hover;
-			}
-			.slacme-title {
-				color: $slacme-hover;
-			}
+            .slacme-thumbnail {
+                background-image: $slacmeBackgroundImage;
+                background-size: cover;
+                background-position: center;
+                border-color: white;
+                transition: $transition-duration;
+            }
 
-			// Set Color of Links
-			.sacr-link {
-				color: $sacr-hover;
-			}
-			.slacme-link {
-				color: $slacme-hover;
-			}
-		}
+            .cards-list-item-info {
+                position: relative;
+                text-align: center;
+                height: 160px;
 
-		// Define backgrounds for Mobile Layout
-		.sacr-background::before {
-			content: "";
-			background-image: $sacrBackgroundImage;
-			background-position: center;
-			background-size: cover;
-			position: absolute;
-			top: 0px;
-			right: 0px;
-			bottom: 0px;
-			left: 0px;
-			opacity: 0%;
-			transition: $transition-duration;
-		}
-		.slacme-background::before {
-			content: "";
-			background-image: $slacmeBackgroundImage;
-			background-position: center;
-			background-size: cover;
-			position: absolute;
-			top: 0px;
-			right: 0px;
-			bottom: 0px;
-			left: 0px;
-			opacity: 0%;
-			transition: $transition-duration;
-		}
-	}
+                .cards-list-item-title {
+                    font-size: 20pt;
+                    transition: $transition-duration;
+                }
+
+                .cards-list-item-excerp {
+                    font-size: 12pt;
+
+                    .links {
+                        transition: $transition-duration;
+                    }
+                }
+            }
+        }
+
+        .cards-list-item-inner:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+
+            // Set Color of Thumbnail Border
+            .sacr-thumbnail {
+                border-bottom-color: $sacr-hover;
+            }
+
+            .slacme-thumbnail {
+                border-bottom-color: $slacme-hover;
+            }
+
+            // Set Color of Title Text
+            .sacr-title {
+                color: $sacr-hover;
+            }
+
+            .slacme-title {
+                color: $slacme-hover;
+            }
+
+            // Set Color of Links
+            .sacr-link {
+                color: $sacr-hover;
+            }
+
+            .slacme-link {
+                color: $slacme-hover;
+            }
+        }
+
+        // Define backgrounds for Mobile Layout
+        .sacr-background::before {
+            content: "";
+            background-image: $sacrBackgroundImage;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0%;
+            transition: $transition-duration;
+        }
+
+        .slacme-background::before {
+            content: "";
+            background-image: $slacmeBackgroundImage;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0%;
+            transition: $transition-duration;
+        }
+    }
 }
 
 
 // Start Mobile Layout
 @media screen and (max-width: 500px) {
-	.cards-container {
-		padding: 0;
-		width: 100%;
+    .cards-container {
+        padding: 0;
+        width: 100%;
 
-		.cards-list-item-outer {
-			display: block;
+        .cards-list-item-outer {
+            display: block;
 
-			.cards-list-item-inner {
-				width: 100%;
-				border-radius: 0;
-				background-blend-mode: multiply;
+            .cards-list-item-inner {
+                width: 100%;
+                border-radius: 0;
+                background-blend-mode: multiply;
 
-				.cards-list-item-thumbnail {
-					border-bottom: 0px solid white;
-					height: 10px;
-					width: 100%;
-				}
-				.sacr-thumbnail {
-					opacity: 0%;
-				}
-				.slacme-thumbnail {
-					opacity: 0%;
-				}
-			}
+                .cards-list-item-thumbnail {
+                    border-bottom: 0px solid white;
+                    height: 10px;
+                    width: 100%;
+                }
 
-			// Rig Backgrounds
-			.sacr-background::before {
-				background-image: $sacrBackgroundImage;
-				background-position: center;
-				background-size: cover;
+                .sacr-thumbnail {
+                    opacity: 0%;
+                }
 
-				opacity: 100%;
-			}
-			.slacme-background::before {
-				background-image: $slacmeBackgroundImage;
-				background-position: center;
-				background-size: cover;
-				opacity: 100%;
-			}
-		}
-	}
+                .slacme-thumbnail {
+                    opacity: 0%;
+                }
+            }
+
+            // Rig Backgrounds
+            .sacr-background::before {
+                background-image: $sacrBackgroundImage;
+                background-position: center;
+                background-size: cover;
+
+                opacity: 100%;
+            }
+
+            .slacme-background::before {
+                background-image: $slacmeBackgroundImage;
+                background-position: center;
+                background-size: cover;
+                opacity: 100%;
+            }
+        }
+    }
 }

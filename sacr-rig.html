@@ -17,51 +17,54 @@
 </head>
 
 <body>
-<!-- Header Start -->
-<header>
-	<div class="header-contain" id="header">
-		<!-- Navigation Start -->
-		<div class="navigation">
-			<div class="nav-logo">
-				<div class="logoIco"></div>
-				<div class="logoTxt" onclick="openInternal('index')"><span>Sakura Sedaia</span></div>
-			</div>
-
-			<div class="nav-contain">
-				<div class="nav-item" data-active="true" onclick="openInternal( 'index')">
-					Home
+	<!-- Header Start -->
+	<header>
+		<div class="header-contain" id="header">
+			<!-- Navigation Start -->
+			<div class="navigation">
+				<div class="nav-logo">
+					<div class="logoIco"></div>
+					<div class="logoTxt" onclick="openInternal('index')"><span>Sakura Sedaia</span></div>
 				</div>
 
-				<div class="nav-item" onclick="openInternal('rig-navigation')">Rigs</div>
-				<div class="nav-item" onclick="openInternal( 'projects')" hidden>
-					Projects
-				</div>
-				<div class="nav-item" onclick="openInternal( 'contact')" hidden>
-					Contact
+				<div class="nav-contain">
+					<div class="nav-item" data-active="true" onclick="openInternal( 'index')">
+						Home
+					</div>
+
+					<div class="nav-item" onclick="openInternal('rig-navigation')">Rigs</div>
+					<div class="nav-item" onclick="openInternal( 'projects')" hidden>
+						Projects
+					</div>
+					<div class="nav-item" onclick="openInternal( 'contact')" hidden>
+						Contact
+					</div>
 				</div>
 			</div>
+			<!-- Navigation End -->
+
+			<!-- Header Content -->
+			<div class="header-content">
+				<div class="header-text">
+					<h1>Personal Portfolio</h1>
+					<h4>Provided by you're local Internet Neko</h4>
+				</div>
+			</div>
+
 		</div>
-		<!-- Navigation End -->
-
-		<!-- Header Content -->
-		<div class="header-content">
-			<div class="header-text">
-				<h1>Personal Portfolio</h1>
-				<h4>Provided by you're local Internet Neko</h4>
-			</div>
+		<div class="xmasCounter" id="xmasContainer">Days until Christmas:
+			<span id="xmasCounter">Undefined</span>
 		</div>
+		<div class="dev-warning" id="devWarning">
+			<!-- HTML Not Displayed, Developer Mode Disabled -->
+		</div>
+	</header>
+	<!-- End Header -->
 
-	</div>
-	<div class="xmasCounter" id="xmasContainer">Days until Christmas:
-		<span id="xmasCounter">Undefined</span>
-	</div>
-	<div class="dev-warning" id="devWarning"><!-- HTML Not Displayed, Developer Mode Disabled --></div>
-</header>
-<!-- End Header -->
-			
 
 	<div class="about-sacr">
-		<div class="title-sacr" style="background-image: url(assets/images/MCRigBackgrouns/SACRThumbnail3.png);background-position: center;background-size: cover;">
+		<div class="title-sacr"
+			style="background-image: url(assets/images/MCRigBackgrouns/SACRThumbnail3.png);background-position: center;background-size: cover;">
 			<div class="title-text">
 				<h1>Sakura's Advanced Character Rig</h1>
 				<h3>Lightweight Advanced Minecraft Character Rig built and designed by an Animator for Animators</h3>
@@ -74,15 +77,14 @@
 		<!-- Rig Download -->
 		<div class="rig-download-section">
 			<div class="rds-col rds-background">
-				<img src="assets/images/WPRenders/SoWModTeam_Render.png" width="540px"
-					alt="background">
+				<img src="assets/images/WPRenders/SoWModTeam_Render.png" width="540px" alt="background">
 			</div>
 			<div class="rds-col">
 				<h1>Download SACR R4.1.1 LTS</h1>
 				<span class="file-details">File Size: 1.21MB |
-					<a onclick="openText('sacr-changelog-latest')"
-						class="download-extra">Changelog</a> |
-					<a onclick="openExternal('github.com/SakuraSedaia/SACR-MC-Rig/','secure')" class="download-extra">GitHub
+					<a onclick="openText('sacr-changelog-latest')" class="download-extra">Changelog</a> |
+					<a onclick="openExternal('github.com/SakuraSedaia/SACR-MC-Rig/','secure')"
+						class="download-extra">GitHub
 						Repo</a>
 				</span>
 				<div class="download-lr download-extra" onclick="downloadSACR(true)">Latest Release</div>

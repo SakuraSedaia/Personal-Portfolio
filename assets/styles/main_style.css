@@ -1,5 +1,7 @@
 @import url("../fonts/fonts.css");
-/* line 9, main_style.scss */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/* line 13, main_style.scss */
 html,
 body {
   margin: 0;
@@ -8,108 +10,31 @@ body {
   font-family: "Open Sans";
 }
 
-/* line 16, main_style.scss */
+/* line 21, main_style.scss */
 .links {
   color: white;
   text-decoration: none;
   transition: 500ms;
 }
 
-/* line 21, main_style.scss */
+/* line 27, main_style.scss */
 .links:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-/* line 26, main_style.scss */
-rigs-dropdown[id="rdp"] {
-  width: 100%;
-  display: flex;
-  position: absolute;
-  z-index: 999;
-  height: 0in;
-  overflow: hidden;
-  transition: 500ms;
-}
-/* line 35, main_style.scss */
-rigs-dropdown[id="rdp"] .close-rdp {
-  position: absolute;
-  color: white;
-  font-size: 48px;
-  width: 30px;
-  cursor: pointer;
-  right: -0.2in;
-  opacity: 0;
-  transition: 500ms;
-}
-/* line 46, main_style.scss */
-rigs-dropdown[id="rdp"] .rdp {
-  flex-basis: 50%;
-  background-color: rgba(0, 0, 0, 0.2);
-  background-blend-mode: multiply;
-  transition: 500ms;
-  background-size: 115%;
-}
-/* line 53, main_style.scss */
-rigs-dropdown[id="rdp"] .rdp .material-icons.md-36 {
-  font-size: 36px;
-}
-/* line 57, main_style.scss */
-rigs-dropdown[id="rdp"] .rdp .rdp-title {
-  text-align: center;
-  color: white;
-  font-family: Minecraft;
-  height: 100%;
-}
-/* line 64, main_style.scss */
-rigs-dropdown[id="rdp"] .rdp .rdp-title h2 {
-  position: relative;
-  top: 0in;
-  opacity: 0;
-  transition: 500ms;
-}
-/* line 72, main_style.scss */
-rigs-dropdown[id="rdp"] .rdp .rdp-btn {
-  position: relative;
-  top: 1.2in;
-  width: 150px;
-  border: 3px solid white;
-  margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 0px;
-  background-color: rgba(255, 255, 255, 0);
-  transition: 500ms;
-  cursor: pointer;
-  border-radius: 15px;
-}
-/* line 85, main_style.scss */
-rigs-dropdown[id="rdp"] .rdp .rdp-btn:hover {
-  background-color: white;
-  border-radius: 3px;
-  color: black;
-}
-/* line 91, main_style.scss */
-rigs-dropdown[id="rdp"] .rdp .opacity-100 {
-  opacity: 100%;
-}
-/* line 96, main_style.scss */
-rigs-dropdown[id="rdp"] .rdp:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  background-size: 125%;
-}
-
-/* line 103, main_style.scss */
+/* line 33, main_style.scss */
 .header-contain {
   width: 100%;
   height: 4in;
   background-size: cover;
 }
-/* line 109, main_style.scss */
+/* line 39, main_style.scss */
 .header-contain .navigation {
   height: 32px;
   display: flex;
 }
-/* line 114, main_style.scss */
+/* line 44, main_style.scss */
 .header-contain .navigation .nav-logo {
   display: flex;
   flex-basis: 50%;
@@ -117,12 +42,12 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   height: 47px;
   position: absolute;
 }
-/* line 121, main_style.scss */
+/* line 51, main_style.scss */
 .header-contain .navigation .nav-logo .logoIco {
   width: 47px;
   content: url("https://sakura-sedaia.com/assets/images/Favicon/favicon-32x32.png");
 }
-/* line 126, main_style.scss */
+/* line 56, main_style.scss */
 .header-contain .navigation .nav-logo .logoTxt {
   padding-left: 10px;
   overflow-y: hidden;
@@ -136,12 +61,12 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   padding-right: 20px;
   width: 140px;
 }
-/* line 139, main_style.scss */
+/* line 69, main_style.scss */
 .header-contain .navigation .nav-logo .logoTxt span {
   position: absolute;
   transform: translateY(2px);
 }
-/* line 147, main_style.scss */
+/* line 77, main_style.scss */
 .header-contain .navigation .nav-contain {
   display: flex;
   width: 50vw;
@@ -149,7 +74,7 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   right: 0;
   position: absolute;
 }
-/* line 156, main_style.scss */
+/* line 86, main_style.scss */
 .header-contain .navigation .nav-contain .nav-item {
   flex-basis: 25%;
   border-bottom: 5px solid rgba(255, 255, 255, 0);
@@ -164,14 +89,14 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   font-family: "Noto Sans JP";
   font-size: 16px;
 }
-/* line 170, main_style.scss */
+/* line 101, main_style.scss */
 .header-contain .navigation .nav-contain .nav-item[active="true"] {
   border-bottom: 5px solid;
   background-color: white;
   color: black;
   border-color: pink;
 }
-/* line 176, main_style.scss */
+/* line 108, main_style.scss */
 .header-contain .navigation .nav-contain .nav-item:hover {
   border-bottom: 5px solid pink;
   flex-basis: 25%;
@@ -179,26 +104,26 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   padding-top: 10px;
   background-color: rgba(25, 25, 25, 0.5);
 }
-/* line 188, main_style.scss */
+/* line 121, main_style.scss */
 .header-contain .header-text {
   position: absolute;
   transform: translateY(1in);
 }
-/* line 192, main_style.scss */
+/* line 125, main_style.scss */
 .header-contain .header-text h1 {
   font-family: PT_Sans;
   font-weight: bold;
   color: #fff5f5;
   text-indent: 1in;
 }
-/* line 198, main_style.scss */
+/* line 132, main_style.scss */
 .header-contain .header-text h4 {
   color: #fff5f5;
   font-family: Minecraft;
   text-indent: 0.75in;
 }
 
-/* line 206, main_style.scss */
+/* line 140, main_style.scss */
 .xmasCounter {
   border-top: 2px solid grey;
   border-bottom: 2px solid grey;
@@ -206,7 +131,7 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   background-color: #dfdfdf;
 }
 
-/* line 215, main_style.scss */
+/* line 149, main_style.scss */
 .deprication-warning {
   border-top: 2px solid #ff2222;
   border-bottom: 2px solid #ff2222;
@@ -215,31 +140,293 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   color: white;
   font-family: "Open Sans";
 }
-/* line 223, main_style.scss */
+/* line 157, main_style.scss */
 .deprication-warning strong {
   font-family: "Noto Sans JP";
 }
 
-/* line 231, main_style.scss */
-.index-content-section .about .title {
-  font-size: 20px;
+/* line 165, main_style.scss */
+.content-section {
+  width: 100%;
+  height: auto;
 }
-/* line 234, main_style.scss */
-.index-content-section .about p {
-  font-size: 14px;
+/* line 169, main_style.scss */
+.content-section .about {
+  background-color: white;
 }
-/* line 239, main_style.scss */
-.index-content-section .updates {
-  /* Unused Stuff */
-  content: none;
+/* line 172, main_style.scss */
+.content-section .about .title {
+  padding: 0.5in;
+}
+/* line 175, main_style.scss */
+.content-section .about .title h1 {
+  font-family: PT_Sans;
+}
+/* line 179, main_style.scss */
+.content-section .about .title p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+/* line 187, main_style.scss */
+.content-section .index-rig-display {
+  width: 100%;
+  height: 3.23in;
+  overflow: hidden;
+}
+/* line 192, main_style.scss */
+.content-section .index-rig-display .content {
+  position: relative;
+  z-index: 999;
+  font-family: "Source Sans Pro", sans-serif;
+  transform: translateY(-3.23in);
+  text-align: center;
+  background-blend-mode: linear;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+  height: 3.23in;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 207, main_style.scss */
+.content-section .index-rig-display .content .rig-display-text {
+  color: white;
+  padding-top: 50px;
+  font-family: PT_Sans;
+  padding-bottom: 30px;
+}
+/* line 216, main_style.scss */
+.content-section .index-rig-display .content .btn {
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 0 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  /* line 216, main_style.scss */
+  .content-section .index-rig-display .content .btn {
+    margin: 0 1em 2em;
+  }
+}
+/* line 252, main_style.scss */
+.content-section .index-rig-display .content .btn:hover {
+  text-decoration: none;
+}
+/* line 257, main_style.scss */
+.content-section .index-rig-display .content .btn-4 {
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+  transition: 500ms;
+}
+/* line 263, main_style.scss */
+.content-section .index-rig-display .content .btn-4 span {
+  z-index: 20;
+}
+/* line 267, main_style.scss */
+.content-section .index-rig-display .content .btn-4:after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.2;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;
+}
+/* line 281, main_style.scss */
+.content-section .index-rig-display .content .btn-4:before {
+  background-color: #ffb3cb00;
+  content: "";
+  height: 155px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+  transition: 500ms;
+}
+/* line 293, main_style.scss */
+.content-section .index-rig-display .content .btn-4:hover {
+  color: black;
+}
+/* line 296, main_style.scss */
+.content-section .index-rig-display .content .btn-4:hover:after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+/* line 301, main_style.scss */
+.content-section .index-rig-display .content .btn-4:hover:before {
+  background-color: #ffb3cb;
+  content: "";
+  height: 155px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+}
+/* line 313, main_style.scss */
+.content-section .index-rig-display .background {
+  width: 100%;
+  margin: 0 auto;
+  z-index: -1;
+  height: 3.23in;
+  background-position: center;
+  filter: blur(5px);
+  transform: scale(1.1);
 }
 
-/* line 248, main_style.scss */
+/* line 325, main_style.scss */
+.latest-video {
+  height: 4in;
+}
+/* line 328, main_style.scss */
+.latest-video .title {
+  text-align: center;
+}
+/* line 331, main_style.scss */
+.latest-video .title h1 {
+  font-family: "Open Sans";
+}
+/* line 336, main_style.scss */
+.latest-video .container {
+  display: flex;
+}
+/* line 339, main_style.scss */
+.latest-video .container .col {
+  flex-basis: 50%;
+}
+/* line 344, main_style.scss */
+.latest-video .container .video {
+  text-align: center;
+  flex-basis: 700px;
+}
+/* line 348, main_style.scss */
+.latest-video .container .video iframe {
+  display: inline;
+}
+/* line 355, main_style.scss */
+.latest-video .container .meta h2,
+.latest-video .container .meta h3 {
+  font-family: "PT_sans";
+}
+/* line 360, main_style.scss */
+.latest-video .container .meta div {
+  font-family: "Noto Sans JP";
+}
+
+/*
+# Integrate Google Material Icons
+# Website: https://material.io/resources/icons/?style=baseline
+*/
+/* line 377, main_style.scss */
+.footer .footer-desktop {
+  background-color: #232323;
+  color: white;
+}
+/* line 381, main_style.scss */
+.footer .footer-desktop .footer-top-container {
+  display: flex;
+  border-bottom: 2px solid #323232;
+}
+/* line 385, main_style.scss */
+.footer .footer-desktop .footer-top-container .left-section {
+  min-width: 160px;
+  border-right: 2.5px solid #323232;
+  transition: 500ms;
+  text-align: left;
+  flex-basis: 50%;
+  height: 1.25in;
+}
+/* line 393, main_style.scss */
+.footer .footer-desktop .footer-top-container .left-section div {
+  padding-top: 12px;
+  padding-left: 30px;
+  list-style-type: none;
+}
+/* line 400, main_style.scss */
+.footer .footer-desktop .footer-top-container .right-section {
+  padding-left: 2.5px;
+  transition: 500ms;
+  min-width: 160px;
+  flex-basis: 50%;
+  border-left: 2px solid #323232;
+  position: relative;
+  text-align: right;
+  height: 1.25in;
+}
+/* line 410, main_style.scss */
+.footer .footer-desktop .footer-top-container .right-section .footer-icon {
+  padding-top: 10px;
+  padding-right: 30px;
+}
+/* line 414, main_style.scss */
+.footer .footer-desktop .footer-top-container .right-section .footer-icon .fab {
+  font-size: 23px;
+}
+/* line 421, main_style.scss */
+.footer .footer-desktop .footer-bottom-container {
+  text-align: center;
+}
+
+/* line 429, main_style.scss */
+.yt-links-thick {
+  color: black;
+  transition: 250ms;
+  text-decoration: none;
+  border-bottom: 4px solid rgba(255, 0, 0, 0);
+}
+
+/* line 436, main_style.scss */
+.yt-links-thick:hover {
+  color: red;
+  cursor: pointer;
+  border-bottom: 4px solid red;
+}
+
+/* line 442, main_style.scss */
+.yt-links-thin {
+  color: black;
+  transition: 250ms;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255, 0, 0, 0);
+}
+
+/* line 449, main_style.scss */
+.yt-links-thin:hover {
+  color: red;
+  cursor: pointer;
+  border-bottom: 2px solid red;
+}
+
+/* line 455, main_style.scss */
+.sildeer-link {
+  color: black;
+  transition: 250ms;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(20, 230, 255, 0);
+}
+
+/* line 462, main_style.scss */
+.sildeer-link:hover {
+  color: #14e6ff;
+  cursor: pointer;
+  border-bottom: 2px solid #14e6ff;
+}
+
+/* line 471, main_style.scss */
 .about-sacr .title-sacr {
   width: 100%;
   height: 100%;
 }
-/* line 252, main_style.scss */
+/* line 475, main_style.scss */
 .about-sacr .title-sacr .title-text {
   position: absolute;
   z-index: 0;
@@ -249,19 +436,19 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   border-radius: 10px;
   background-color: #00000090;
 }
-/* line 261, main_style.scss */
+/* line 484, main_style.scss */
 .about-sacr .title-sacr .title-text h1 {
   font-family: PT_Sans;
   text-indent: 1in;
   color: white;
 }
-/* line 266, main_style.scss */
+/* line 490, main_style.scss */
 .about-sacr .title-sacr .title-text h3 {
   font-family: Minecraft;
   font-size: 16px;
   color: white;
 }
-/* line 273, main_style.scss */
+/* line 498, main_style.scss */
 .about-sacr .title-sacr .title-bg {
   content: inherit;
   background-color: #fff5f525;
@@ -273,7 +460,7 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   background-position: 0in -2.5in;
 }
 
-/* line 287, main_style.scss */
+/* line 512, main_style.scss */
 .rig-download-section {
   height: 2in;
   background-color: #333;
@@ -282,15 +469,15 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   color: #fff5f5;
   display: flex;
 }
-/* line 295, main_style.scss */
+/* line 520, main_style.scss */
 .rig-download-section h1 {
   font-family: PT_Sans;
 }
-/* line 298, main_style.scss */
+/* line 524, main_style.scss */
 .rig-download-section span {
   font-family: "Roboto";
 }
-/* line 302, main_style.scss */
+/* line 528, main_style.scss */
 .rig-download-section .download-lr {
   background-color: transparent;
   border: none;
@@ -321,78 +508,78 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   font-family: PT_Sans;
   cursor: pointer;
 }
-/* line 334, main_style.scss */
+/* line 561, main_style.scss */
 .rig-download-section .download-lr:hover {
   background-color: #13b6fb95;
   -webkit-box-shadow: 0 4px 0 0 #04a7eb95;
   box-shadow: 0 4px 0 0 #04a7eb95;
 }
-/* line 339, main_style.scss */
+/* line 567, main_style.scss */
 .rig-download-section .download-extra {
   text-decoration: none;
 }
-/* line 342, main_style.scss */
+/* line 571, main_style.scss */
 .rig-download-section .download-extra:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-/* line 346, main_style.scss */
+/* line 576, main_style.scss */
 .rig-download-section .rds-col {
   flex-basis: 50%;
 }
-/* line 349, main_style.scss */
+/* line 579, main_style.scss */
 .rig-download-section .rds-col img {
   position: relative;
   transform: translateY(-15%);
 }
-/* line 354, main_style.scss */
+/* line 585, main_style.scss */
 .rig-download-section .rds-background {
   flex-basis: 25%;
   min-width: 600px;
 }
 
-/* line 362, main_style.scss */
+/* line 593, main_style.scss */
 .features-sacr {
   margin-left: 1in;
   margin-right: 1in;
 }
-/* line 366, main_style.scss */
+/* line 597, main_style.scss */
 .features-sacr h2 {
   font-family: PT_Sans;
   text-align: center;
   font-size: 36px;
 }
-/* line 372, main_style.scss */
+/* line 603, main_style.scss */
 .features-sacr .highlight-features {
   width: 1000px;
   margin: 0 auto;
   background-color: #f3f3f3;
   padding: 10px;
 }
-/* line 377, main_style.scss */
+/* line 609, main_style.scss */
 .features-sacr .highlight-features h2 {
   text-align: left;
   font-size: 24px;
 }
-/* line 382, main_style.scss */
+/* line 615, main_style.scss */
 .features-sacr .highlight-features .row-1-col .feat-overlay {
   font-family: "Noto Sans JP";
   height: 100px;
 }
 
-/* line 400, main_style.scss */
+/* line 633, main_style.scss */
 .cards-container {
   text-align: center;
   background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/OreBackground.png");
   padding: 1in;
   transition: 250ms;
 }
-/* line 405, main_style.scss */
+/* line 639, main_style.scss */
 .cards-container .cards-list-item-outer {
   display: inline-block;
   position: relative;
 }
-/* line 410, main_style.scss */
+/* line 644, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner {
   cursor: pointer;
   transition: 250ms;
@@ -402,7 +589,7 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   font-family: PT_Sans;
   border-radius: 10px;
 }
-/* line 420, main_style.scss */
+/* line 654, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-thumbnail {
   width: 400px;
   height: 225px;
@@ -412,7 +599,7 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
-/* line 430, main_style.scss */
+/* line 665, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner .sacr-thumbnail {
   background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/SACRThumbnail3.PNG");
   background-size: cover;
@@ -420,7 +607,7 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   border-color: white;
   transition: 250ms;
 }
-/* line 437, main_style.scss */
+/* line 673, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner .slacme-thumbnail {
   background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/LACMThumbnail1.PNG");
   background-size: cover;
@@ -428,54 +615,54 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   border-color: white;
   transition: 250ms;
 }
-/* line 445, main_style.scss */
+/* line 681, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info {
   position: relative;
   text-align: center;
   height: 160px;
 }
-/* line 449, main_style.scss */
+/* line 686, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info .cards-list-item-title {
   font-size: 20pt;
   transition: 250ms;
 }
-/* line 453, main_style.scss */
+/* line 691, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info .cards-list-item-excerp {
   font-size: 12pt;
 }
-/* line 456, main_style.scss */
+/* line 694, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info .cards-list-item-excerp .links {
   transition: 250ms;
 }
-/* line 462, main_style.scss */
+/* line 701, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
-/* line 466, main_style.scss */
+/* line 705, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner:hover .sacr-thumbnail {
   border-bottom-color: #ffb4c8;
 }
-/* line 469, main_style.scss */
+/* line 709, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner:hover .slacme-thumbnail {
   border-bottom-color: #00b4c8;
 }
-/* line 474, main_style.scss */
+/* line 714, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner:hover .sacr-title {
   color: #ffb4c8;
 }
-/* line 477, main_style.scss */
+/* line 718, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner:hover .slacme-title {
   color: #00b4c8;
 }
-/* line 482, main_style.scss */
+/* line 723, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner:hover .sacr-link {
   color: #ffb4c8;
 }
-/* line 485, main_style.scss */
+/* line 727, main_style.scss */
 .cards-container .cards-list-item-outer .cards-list-item-inner:hover .slacme-link {
   color: #00b4c8;
 }
-/* line 491, main_style.scss */
+/* line 733, main_style.scss */
 .cards-container .cards-list-item-outer .sacr-background::before {
   content: "";
   background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/SACRThumbnail3.PNG");
@@ -489,7 +676,7 @@ rigs-dropdown[id="rdp"] .rdp:hover {
   opacity: 0%;
   transition: 250ms;
 }
-/* line 504, main_style.scss */
+/* line 747, main_style.scss */
 .cards-container .cards-list-item-outer .slacme-background::before {
   content: "";
   background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/LACMThumbnail1.PNG");
@@ -505,43 +692,43 @@ rigs-dropdown[id="rdp"] .rdp:hover {
 }
 
 @media screen and (max-width: 500px) {
-  /* line 523, main_style.scss */
+  /* line 766, main_style.scss */
   .cards-container {
     padding: 0;
     width: 100%;
   }
-  /* line 527, main_style.scss */
+  /* line 770, main_style.scss */
   .cards-container .cards-list-item-outer {
     display: block;
   }
-  /* line 530, main_style.scss */
+  /* line 773, main_style.scss */
   .cards-container .cards-list-item-outer .cards-list-item-inner {
     width: 100%;
     border-radius: 0;
     background-blend-mode: multiply;
   }
-  /* line 535, main_style.scss */
+  /* line 778, main_style.scss */
   .cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-thumbnail {
     border-bottom: 0px solid white;
     height: 10px;
     width: 100%;
   }
-  /* line 540, main_style.scss */
+  /* line 784, main_style.scss */
   .cards-container .cards-list-item-outer .cards-list-item-inner .sacr-thumbnail {
     opacity: 0%;
   }
-  /* line 543, main_style.scss */
+  /* line 788, main_style.scss */
   .cards-container .cards-list-item-outer .cards-list-item-inner .slacme-thumbnail {
     opacity: 0%;
   }
-  /* line 549, main_style.scss */
+  /* line 794, main_style.scss */
   .cards-container .cards-list-item-outer .sacr-background::before {
     background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/SACRThumbnail3.PNG");
     background-position: center;
     background-size: cover;
     opacity: 100%;
   }
-  /* line 556, main_style.scss */
+  /* line 802, main_style.scss */
   .cards-container .cards-list-item-outer .slacme-background::before {
     background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/LACMThumbnail1.PNG");
     background-position: center;
