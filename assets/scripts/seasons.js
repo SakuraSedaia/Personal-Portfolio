@@ -14,7 +14,9 @@ if ((xmasMonth == 11 && xmasDay <= 25) || (xmasMonth == 10 && xmasDay > 26)) {
 }
 
 if (christmas == true) {
-  console.info('DEBUG: It is Christmas Time, changing to Christmas Header Image')
+  console.info(
+    'DEBUG: It is Christmas Time, changing to Christmas Header Image'
+  )
 
   // Change Backgrounds
   header.style.backgroundImage =
@@ -29,7 +31,9 @@ if (christmas == true) {
   }
 }
 if (christmas == false) {
-  console.info('DEBUG: It is not Christmas Time, changing back to Normal Header Image')
+  console.info(
+    'DEBUG: It is not Christmas Time, changing back to Normal Header Image'
+  )
 
   // Change Backgrounds
   header.style.backgroundImage =
