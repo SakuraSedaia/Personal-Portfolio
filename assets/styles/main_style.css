@@ -2,136 +2,198 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 /* line 13, main_style.scss */
-html,
 body {
   margin: 0;
-  width: 100%;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   height: 100%;
-  font-family: "Open Sans";
+  width: 100%;
+}
+/* line 26, main_style.scss */
+body .viewport {
+  transition: 0.5s;
+}
+/* line 30, main_style.scss */
+body .sideNav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  font-family: minecraftia;
+}
+/* line 43, main_style.scss */
+body .sideNav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  font-family: PT_Sans;
+  border-bottom: 0px;
+}
+/* line 53, main_style.scss */
+body .sideNav a {
+  padding: 8px 8px 0px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+  border-bottom: 2px solid #555555;
+}
+/* line 63, main_style.scss */
+body .sideNav a:hover {
+  color: #f1f1f1;
 }
 
-/* line 21, main_style.scss */
+/* line 72, main_style.scss */
+.above-nav {
+  background-color: #222;
+  color: white;
+}
+/* line 76, main_style.scss */
+.above-nav .logo {
+  color: white;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  width: 100px;
+  text-align: center;
+  box-shadow: 0px 0 inset #222;
+  background-color: #292929;
+  text-decoration: none;
+  transition: 200ms;
+  text-indent: 0in;
+}
+/* line 88, main_style.scss */
+.above-nav .logo span {
+  pointer-events: none;
+}
+/* line 93, main_style.scss */
+.above-nav .xmasCounter {
+  color: white;
+  float: right;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  width: auto;
+  text-align: center;
+  box-shadow: 0px 0 inset #222;
+  background-color: #28d411;
+  text-decoration: none;
+  transition: 200ms;
+  text-indent: 0in;
+}
+/* line 106, main_style.scss */
+.above-nav .xmasCounter span {
+  pointer-events: none;
+}
+/* line 111, main_style.scss */
+.above-nav .info {
+  display: inline-block;
+  padding-left: 1em;
+}
+
+/* line 117, main_style.scss */
+.nav {
+  background-color: #242424;
+}
+/* line 120, main_style.scss */
+.nav .nav-link {
+  width: 100px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 0 0px inset var(--nav-active);
+  transition-property: all;
+}
+/* line 128, main_style.scss */
+.nav .nav-link:hover {
+  color: black;
+  box-shadow: 0 -3em inset var(--nav-active);
+}
+/* line 136, main_style.scss */
+.nav .disabled {
+  color: grey;
+  text-decoration: line-through;
+  border-bottom: 4px solid #F10000;
+  box-shadow: none;
+}
+/* line 142, main_style.scss */
+.nav .disabled:hover {
+  box-shadow: 0 -3em inset #F10000;
+}
+/* line 147, main_style.scss */
+.nav .active {
+  color: var(--nav-active);
+  border-bottom: 4px solid var(--nav-active);
+  box-shadow: none;
+}
+/* line 152, main_style.scss */
+.nav .active:hover {
+  box-shadow: 0 -3em inset var(--nav-active);
+  color: black;
+}
+
+/* 
+
+*/
+/* line 165, main_style.scss */
+.header-contain {
+  width: 100%;
+  height: 4in;
+  background-size: cover;
+  background-position: center;
+}
+/* line 171, main_style.scss */
+.header-contain .header-content {
+  background-image: url("https://sakura-sedaia.com/assets/images/WPRenders/BarSet_Preview4.png");
+  background-size: cover;
+}
+/* line 175, main_style.scss */
+.header-contain .header-content .header-text {
+  position: absolute;
+  transform: translateY(1.5in);
+}
+/* line 179, main_style.scss */
+.header-contain .header-content .header-text h1 {
+  font-family: PT_Sans;
+  font-weight: bold;
+  color: #fff5f5;
+  text-indent: 1in;
+}
+/* line 186, main_style.scss */
+.header-contain .header-content .header-text h4 {
+  color: #fff5f5;
+  font-family: Minecraft;
+  text-indent: 0.75in;
+}
+
+/* line 195, main_style.scss */
 .links {
   color: white;
   text-decoration: none;
   transition: 500ms;
 }
 
-/* line 27, main_style.scss */
+/* line 201, main_style.scss */
 .links:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-/* line 33, main_style.scss */
-.header-contain {
-  width: 100%;
-  height: 4in;
-  background-size: cover;
-}
-/* line 39, main_style.scss */
-.header-contain .navigation {
-  height: 32px;
-  display: flex;
-}
-/* line 44, main_style.scss */
-.header-contain .navigation .nav-logo {
-  display: flex;
-  flex-basis: 50%;
-  min-width: 200px;
-  height: 47px;
-  position: absolute;
-}
-/* line 51, main_style.scss */
-.header-contain .navigation .nav-logo .logoIco {
-  width: 47px;
-  content: url("https://sakura-sedaia.com/assets/images/Favicon/favicon-32x32.png");
-}
-/* line 56, main_style.scss */
-.header-contain .navigation .nav-logo .logoTxt {
-  padding-left: 10px;
-  overflow-y: hidden;
-  padding-top: 10px;
-  height: 36px;
-  color: #fff5f5;
-  font-family: Minecraft;
-  position: relative;
-  transform: translatex(10px);
-  border-right: 3px solid pink;
-  padding-right: 20px;
-  width: 140px;
-}
-/* line 69, main_style.scss */
-.header-contain .navigation .nav-logo .logoTxt span {
-  position: absolute;
-  transform: translateY(2px);
-}
-/* line 77, main_style.scss */
-.header-contain .navigation .nav-contain {
-  display: flex;
-  width: 50vw;
-  height: 100%;
-  right: 0;
-  position: absolute;
-}
-/* line 86, main_style.scss */
-.header-contain .navigation .nav-contain .nav-item {
-  flex-basis: 25%;
-  border-bottom: 5px solid rgba(255, 255, 255, 0);
-  overflow-y: hidden;
-  height: 32px;
-  padding-top: 10px;
-  background-color: rgba(0, 0, 0, 0);
-  text-align: center;
-  color: #fff5f5;
-  transition: 500ms;
-  cursor: pointer;
-  font-family: "Noto Sans JP";
-  font-size: 16px;
-}
-/* line 101, main_style.scss */
-.header-contain .navigation .nav-contain .nav-item[active="true"] {
-  border-bottom: 5px solid;
-  background-color: white;
-  color: black;
-  border-color: pink;
-}
-/* line 108, main_style.scss */
-.header-contain .navigation .nav-contain .nav-item:hover {
-  border-bottom: 5px solid pink;
-  flex-basis: 25%;
-  overflow-y: hidden;
-  padding-top: 10px;
-  background-color: rgba(25, 25, 25, 0.5);
-}
-/* line 121, main_style.scss */
-.header-contain .header-text {
-  position: absolute;
-  transform: translateY(1in);
-}
-/* line 125, main_style.scss */
-.header-contain .header-text h1 {
-  font-family: PT_Sans;
-  font-weight: bold;
-  color: #fff5f5;
-  text-indent: 1in;
-}
-/* line 132, main_style.scss */
-.header-contain .header-text h4 {
-  color: #fff5f5;
-  font-family: Minecraft;
-  text-indent: 0.75in;
-}
-
-/* line 140, main_style.scss */
-.xmasCounter {
-  border-top: 2px solid grey;
-  border-bottom: 2px solid grey;
-  padding: 10px;
-  background-color: #dfdfdf;
-}
-
-/* line 149, main_style.scss */
+/* line 211, main_style.scss */
 .deprication-warning {
   border-top: 2px solid #ff2222;
   border-bottom: 2px solid #ff2222;
@@ -140,39 +202,39 @@ body {
   color: white;
   font-family: "Open Sans";
 }
-/* line 157, main_style.scss */
+/* line 219, main_style.scss */
 .deprication-warning strong {
   font-family: "Noto Sans JP";
 }
 
-/* line 165, main_style.scss */
+/* line 227, main_style.scss */
 .content-section {
   width: 100%;
   height: auto;
 }
-/* line 169, main_style.scss */
+/* line 231, main_style.scss */
 .content-section .about {
   background-color: white;
 }
-/* line 172, main_style.scss */
+/* line 234, main_style.scss */
 .content-section .about .title {
   padding: 0.5in;
 }
-/* line 175, main_style.scss */
+/* line 237, main_style.scss */
 .content-section .about .title h1 {
   font-family: PT_Sans;
 }
-/* line 179, main_style.scss */
+/* line 241, main_style.scss */
 .content-section .about .title p {
   font-family: "Source Sans Pro", sans-serif;
 }
-/* line 187, main_style.scss */
+/* line 249, main_style.scss */
 .content-section .index-rig-display {
   width: 100%;
   height: 3.23in;
   overflow: hidden;
 }
-/* line 192, main_style.scss */
+/* line 254, main_style.scss */
 .content-section .index-rig-display .content {
   position: relative;
   z-index: 999;
@@ -185,14 +247,14 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-/* line 207, main_style.scss */
+/* line 269, main_style.scss */
 .content-section .index-rig-display .content .rig-display-text {
   color: white;
   padding-top: 50px;
   font-family: PT_Sans;
   padding-bottom: 30px;
 }
-/* line 216, main_style.scss */
+/* line 278, main_style.scss */
 .content-section .index-rig-display .content .btn {
   display: inline-block;
   color: #fff;
@@ -208,27 +270,27 @@ body {
   width: 100%;
 }
 @media (min-width: 600px) {
-  /* line 216, main_style.scss */
+  /* line 278, main_style.scss */
   .content-section .index-rig-display .content .btn {
     margin: 0 1em 2em;
   }
 }
-/* line 252, main_style.scss */
+/* line 314, main_style.scss */
 .content-section .index-rig-display .content .btn:hover {
   text-decoration: none;
 }
-/* line 257, main_style.scss */
+/* line 319, main_style.scss */
 .content-section .index-rig-display .content .btn-4 {
   border: 1px solid;
   overflow: hidden;
   position: relative;
   transition: 500ms;
 }
-/* line 263, main_style.scss */
+/* line 325, main_style.scss */
 .content-section .index-rig-display .content .btn-4 span {
   z-index: 20;
 }
-/* line 267, main_style.scss */
+/* line 329, main_style.scss */
 .content-section .index-rig-display .content .btn-4:after {
   background: #fff;
   content: "";
@@ -242,7 +304,7 @@ body {
   width: 50px;
   z-index: -10;
 }
-/* line 281, main_style.scss */
+/* line 343, main_style.scss */
 .content-section .index-rig-display .content .btn-4:before {
   background-color: #ffb3cb00;
   content: "";
@@ -253,16 +315,16 @@ body {
   z-index: -10;
   transition: 500ms;
 }
-/* line 293, main_style.scss */
+/* line 355, main_style.scss */
 .content-section .index-rig-display .content .btn-4:hover {
   color: black;
 }
-/* line 296, main_style.scss */
+/* line 358, main_style.scss */
 .content-section .index-rig-display .content .btn-4:hover:after {
   left: 120%;
   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
-/* line 301, main_style.scss */
+/* line 363, main_style.scss */
 .content-section .index-rig-display .content .btn-4:hover:before {
   background-color: #ffb3cb;
   content: "";
@@ -272,7 +334,7 @@ body {
   width: 100%;
   z-index: -10;
 }
-/* line 313, main_style.scss */
+/* line 375, main_style.scss */
 .content-section .index-rig-display .background {
   width: 100%;
   margin: 0 auto;
@@ -283,41 +345,41 @@ body {
   transform: scale(1.1);
 }
 
-/* line 325, main_style.scss */
+/* line 387, main_style.scss */
 .latest-video {
   height: 4in;
 }
-/* line 328, main_style.scss */
+/* line 390, main_style.scss */
 .latest-video .title {
   text-align: center;
 }
-/* line 331, main_style.scss */
+/* line 393, main_style.scss */
 .latest-video .title h1 {
   font-family: "Open Sans";
 }
-/* line 336, main_style.scss */
+/* line 398, main_style.scss */
 .latest-video .container {
   display: flex;
 }
-/* line 339, main_style.scss */
+/* line 401, main_style.scss */
 .latest-video .container .col {
   flex-basis: 50%;
 }
-/* line 344, main_style.scss */
+/* line 406, main_style.scss */
 .latest-video .container .video {
   text-align: center;
   flex-basis: 700px;
 }
-/* line 348, main_style.scss */
+/* line 410, main_style.scss */
 .latest-video .container .video iframe {
   display: inline;
 }
-/* line 355, main_style.scss */
+/* line 417, main_style.scss */
 .latest-video .container .meta h2,
 .latest-video .container .meta h3 {
   font-family: "PT_sans";
 }
-/* line 360, main_style.scss */
+/* line 422, main_style.scss */
 .latest-video .container .meta div {
   font-family: "Noto Sans JP";
 }
@@ -326,17 +388,17 @@ body {
 # Integrate Google Material Icons
 # Website: https://material.io/resources/icons/?style=baseline
 */
-/* line 377, main_style.scss */
+/* line 439, main_style.scss */
 .footer .footer-desktop {
   background-color: #232323;
   color: white;
 }
-/* line 381, main_style.scss */
+/* line 443, main_style.scss */
 .footer .footer-desktop .footer-top-container {
   display: flex;
   border-bottom: 2px solid #323232;
 }
-/* line 385, main_style.scss */
+/* line 447, main_style.scss */
 .footer .footer-desktop .footer-top-container .left-section {
   min-width: 160px;
   border-right: 2.5px solid #323232;
@@ -345,13 +407,13 @@ body {
   flex-basis: 50%;
   height: 1.25in;
 }
-/* line 393, main_style.scss */
+/* line 455, main_style.scss */
 .footer .footer-desktop .footer-top-container .left-section div {
   padding-top: 12px;
   padding-left: 30px;
   list-style-type: none;
 }
-/* line 400, main_style.scss */
+/* line 462, main_style.scss */
 .footer .footer-desktop .footer-top-container .right-section {
   padding-left: 2.5px;
   transition: 500ms;
@@ -362,21 +424,21 @@ body {
   text-align: right;
   height: 1.25in;
 }
-/* line 410, main_style.scss */
+/* line 472, main_style.scss */
 .footer .footer-desktop .footer-top-container .right-section .footer-icon {
   padding-top: 10px;
   padding-right: 30px;
 }
-/* line 414, main_style.scss */
+/* line 476, main_style.scss */
 .footer .footer-desktop .footer-top-container .right-section .footer-icon .fab {
   font-size: 23px;
 }
-/* line 421, main_style.scss */
+/* line 483, main_style.scss */
 .footer .footer-desktop .footer-bottom-container {
   text-align: center;
 }
 
-/* line 429, main_style.scss */
+/* line 491, main_style.scss */
 .yt-links-thick {
   color: black;
   transition: 250ms;
@@ -384,14 +446,14 @@ body {
   border-bottom: 4px solid rgba(255, 0, 0, 0);
 }
 
-/* line 436, main_style.scss */
+/* line 498, main_style.scss */
 .yt-links-thick:hover {
   color: red;
   cursor: pointer;
   border-bottom: 4px solid red;
 }
 
-/* line 442, main_style.scss */
+/* line 504, main_style.scss */
 .yt-links-thin {
   color: black;
   transition: 250ms;
@@ -399,14 +461,14 @@ body {
   border-bottom: 2px solid rgba(255, 0, 0, 0);
 }
 
-/* line 449, main_style.scss */
+/* line 511, main_style.scss */
 .yt-links-thin:hover {
   color: red;
   cursor: pointer;
   border-bottom: 2px solid red;
 }
 
-/* line 455, main_style.scss */
+/* line 517, main_style.scss */
 .sildeer-link {
   color: black;
   transition: 250ms;
@@ -414,327 +476,11 @@ body {
   border-bottom: 2px solid #adf6ff00;
 }
 
-/* line 462, main_style.scss */
+/* line 524, main_style.scss */
 .sildeer-link:hover {
   color: #adf6ff;
   cursor: pointer;
   border-bottom: 2px solid;
-}
-
-/* line 471, main_style.scss */
-.about-sacr .title-sacr {
-  width: 100%;
-  height: 100%;
-}
-/* line 475, main_style.scss */
-.about-sacr .title-sacr .title-text {
-  position: absolute;
-  z-index: 0;
-  padding-left: 30px;
-  padding-right: 30px;
-  transform: translate(1in, 2in);
-  border-radius: 10px;
-  background-color: #00000090;
-}
-/* line 484, main_style.scss */
-.about-sacr .title-sacr .title-text h1 {
-  font-family: PT_Sans;
-  text-indent: 1in;
-  color: white;
-}
-/* line 490, main_style.scss */
-.about-sacr .title-sacr .title-text h3 {
-  font-family: Minecraft;
-  font-size: 16px;
-  color: white;
-}
-/* line 498, main_style.scss */
-.about-sacr .title-sacr .title-bg {
-  content: inherit;
-  background-color: #fff5f525;
-  background-blend-mode: overlay;
-  width: 100%;
-  height: 5.25in;
-  z-index: -1;
-  overflow: hidden;
-  background-position: 0in -2.5in;
-}
-
-/* line 512, main_style.scss */
-.rig-download-section {
-  height: 2in;
-  background-color: #333;
-  text-align: center;
-  padding: 1in;
-  color: #fff5f5;
-  display: flex;
-}
-/* line 520, main_style.scss */
-.rig-download-section h1 {
-  font-family: PT_Sans;
-}
-/* line 524, main_style.scss */
-.rig-download-section span {
-  font-family: "Roboto";
-}
-/* line 528, main_style.scss */
-.rig-download-section .download-lr {
-  background-color: transparent;
-  border: none;
-  border-radius: 0.3rem;
-  -webkit-box-shadow: inset 0 0 0 2px #fff;
-  box-shadow: inset 0 0 0 2px #fff;
-  color: #fff !important;
-  display: block;
-  padding-bottom: 7px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 7px;
-  text-decoration: none !important;
-  -webkit-transition: color 250ms ease-out, background-color 150ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
-  transition: color 250ms ease-out, background-color 150ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
-  -o-transition: color 250ms ease-out, background-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
-  transition: color 250ms ease-out, background-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
-  transition: color 250ms ease-out, background-color 150ms ease-in-out, box-shadow 150ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
-  white-space: nowrap;
-  background-color: #13b6fb;
-  -webkit-box-shadow: 0 4px 0 0 #04a7eb;
-  box-shadow: 0 4px 0 0 #04a7eb;
-  font-size: 1.5rem;
-  width: 250px;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-family: PT_Sans;
-  cursor: pointer;
-}
-/* line 561, main_style.scss */
-.rig-download-section .download-lr:hover {
-  background-color: #13b6fb95;
-  -webkit-box-shadow: 0 4px 0 0 #04a7eb95;
-  box-shadow: 0 4px 0 0 #04a7eb95;
-}
-/* line 567, main_style.scss */
-.rig-download-section .download-extra {
-  text-decoration: none;
-}
-/* line 571, main_style.scss */
-.rig-download-section .download-extra:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-/* line 576, main_style.scss */
-.rig-download-section .rds-col {
-  flex-basis: 50%;
-}
-/* line 579, main_style.scss */
-.rig-download-section .rds-col img {
-  position: relative;
-  transform: translateY(-15%);
-}
-/* line 585, main_style.scss */
-.rig-download-section .rds-background {
-  flex-basis: 25%;
-  min-width: 600px;
-}
-
-/* line 593, main_style.scss */
-.features-sacr {
-  margin-left: 1in;
-  margin-right: 1in;
-}
-/* line 597, main_style.scss */
-.features-sacr h2 {
-  font-family: PT_Sans;
-  text-align: center;
-  font-size: 36px;
-}
-/* line 603, main_style.scss */
-.features-sacr .highlight-features {
-  width: 1000px;
-  margin: 0 auto;
-  background-color: #f3f3f3;
-  padding: 10px;
-}
-/* line 609, main_style.scss */
-.features-sacr .highlight-features h2 {
-  text-align: left;
-  font-size: 24px;
-}
-/* line 615, main_style.scss */
-.features-sacr .highlight-features .row-1-col .feat-overlay {
-  font-family: "Noto Sans JP";
-  height: 100px;
-}
-
-/* line 633, main_style.scss */
-.cards-container {
-  text-align: center;
-  background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/OreBackground.png");
-  padding: 1in;
-  transition: 250ms;
-}
-/* line 639, main_style.scss */
-.cards-container .cards-list-item-outer {
-  display: inline-block;
-  position: relative;
-}
-/* line 644, main_style.scss */
-.cards-container .cards-list-item-outer .cards-list-item-inner {
-  cursor: pointer;
-  transition: 250ms;
-  background-color: rgba(25, 25, 25, 0.5);
-  color: white;
-  width: 400px;
-  font-family: PT_Sans;
-  border-radius: 10px;
-}
-/* line 654, main_style.scss */
-.cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-thumbnail {
-  width: 400px;
-  height: 225px;
-  transition: 250ms;
-  margin-bottom: 20px;
-  border-bottom: 4px solid;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-/* line 665, main_style.scss */
-.cards-container .cards-list-item-outer .cards-list-item-inner .sacr-thumbnail {
-  background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/SACRThumbnail3.PNG");
-  background-size: cover;
-  background-position: center;
-  border-color: white;
-  transition: 250ms;
-}
-/* line 673, main_style.scss */
-.cards-container .cards-list-item-outer .cards-list-item-inner .slacme-thumbnail {
-  background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/LACMThumbnail1.PNG");
-  background-size: cover;
-  background-position: center;
-  border-color: white;
-  transition: 250ms;
-}
-/* line 681, main_style.scss */
-.cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info {
-  position: relative;
-  text-align: center;
-  height: 160px;
-}
-/* line 686, main_style.scss */
-.cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info .cards-list-item-title {
-  font-size: 20pt;
-  transition: 250ms;
-}
-/* line 691, main_style.scss */
-.cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info .cards-list-item-excerp {
-  font-size: 12pt;
-}
-/* line 694, main_style.scss */
-.cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-info .cards-list-item-excerp .links {
-  transition: 250ms;
-}
-/* line 701, main_style.scss */
-.cards-container .cards-list-item-outer .cards-list-item-inner:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-/* line 705, main_style.scss */
-.cards-container .cards-list-item-outer .cards-list-item-inner:hover .sacr-thumbnail {
-  border-bottom-color: #ffb4c8;
-}
-/* line 709, main_style.scss */
-.cards-container .cards-list-item-outer .cards-list-item-inner:hover .slacme-thumbnail {
-  border-bottom-color: #00b4c8;
-}
-/* line 714, main_style.scss */
-.cards-container .cards-list-item-outer .cards-list-item-inner:hover .sacr-title {
-  color: #ffb4c8;
-}
-/* line 718, main_style.scss */
-.cards-container .cards-list-item-outer .cards-list-item-inner:hover .slacme-title {
-  color: #00b4c8;
-}
-/* line 723, main_style.scss */
-.cards-container .cards-list-item-outer .cards-list-item-inner:hover .sacr-link {
-  color: #ffb4c8;
-}
-/* line 727, main_style.scss */
-.cards-container .cards-list-item-outer .cards-list-item-inner:hover .slacme-link {
-  color: #00b4c8;
-}
-/* line 733, main_style.scss */
-.cards-container .cards-list-item-outer .sacr-background::before {
-  content: "";
-  background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/SACRThumbnail3.PNG");
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0%;
-  transition: 250ms;
-}
-/* line 747, main_style.scss */
-.cards-container .cards-list-item-outer .slacme-background::before {
-  content: "";
-  background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/LACMThumbnail1.PNG");
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0%;
-  transition: 250ms;
-}
-
-@media screen and (max-width: 500px) {
-  /* line 766, main_style.scss */
-  .cards-container {
-    padding: 0;
-    width: 100%;
-  }
-  /* line 770, main_style.scss */
-  .cards-container .cards-list-item-outer {
-    display: block;
-  }
-  /* line 773, main_style.scss */
-  .cards-container .cards-list-item-outer .cards-list-item-inner {
-    width: 100%;
-    border-radius: 0;
-    background-blend-mode: multiply;
-  }
-  /* line 778, main_style.scss */
-  .cards-container .cards-list-item-outer .cards-list-item-inner .cards-list-item-thumbnail {
-    border-bottom: 0px solid white;
-    height: 10px;
-    width: 100%;
-  }
-  /* line 784, main_style.scss */
-  .cards-container .cards-list-item-outer .cards-list-item-inner .sacr-thumbnail {
-    opacity: 0%;
-  }
-  /* line 788, main_style.scss */
-  .cards-container .cards-list-item-outer .cards-list-item-inner .slacme-thumbnail {
-    opacity: 0%;
-  }
-  /* line 794, main_style.scss */
-  .cards-container .cards-list-item-outer .sacr-background::before {
-    background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/SACRThumbnail3.PNG");
-    background-position: center;
-    background-size: cover;
-    opacity: 100%;
-  }
-  /* line 802, main_style.scss */
-  .cards-container .cards-list-item-outer .slacme-background::before {
-    background-image: url("https://sakura-sedaia.com/assets/images/MCRigBackgrouns/LACMThumbnail1.PNG");
-    background-position: center;
-    background-size: cover;
-    opacity: 100%;
-  }
 }
 
 /*# sourceMappingURL=main_style.css.map */

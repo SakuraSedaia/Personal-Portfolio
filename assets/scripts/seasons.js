@@ -37,10 +37,10 @@ if (christmas == false) {
 
   // Change Backgrounds
   header.style.backgroundImage =
-    'url(assets/images/WPRenders/FelinaSakura-FeldenRoad.png)'
+    'url(assets/images/WPRenders/BarSet_Preview4.png)'
   header.style.backgroundPosition = 'center'
 
   // Modify HTML Elements
   xmasCounter.innerText = 'Not Christmas Time'
-  document.getElementById('xmasContainer').setAttribute('hidden', null)
+  document.getElementById('xmasContainer').style.visibility = 'hidden'
 }
