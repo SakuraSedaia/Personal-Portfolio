@@ -14,7 +14,9 @@ if ((xmasMonth == 11 && xmasDay <= 25) || (xmasMonth == 10 && xmasDay > 26)) {
 }
 
 if (christmas == true) {
-  console.info('DEBUG: It is Christmas Time, changing to Christmas Header Image')
+  console.info(
+    'DEBUG: It is Christmas Time, changing to Christmas Header Image'
+  )
 
   // Change Backgrounds
   header.style.backgroundImage =
@@ -29,14 +31,16 @@ if (christmas == true) {
   }
 }
 if (christmas == false) {
-  console.info('DEBUG: It is not Christmas Time, changing back to Normal Header Image')
+  console.info(
+    'DEBUG: It is not Christmas Time, changing back to Normal Header Image'
+  )
 
   // Change Backgrounds
   header.style.backgroundImage =
-    'url(assets/images/WPRenders/FelinaSakura-FeldenRoad.png)'
+    'url(assets/images/WPRenders/BarSet_Preview4.png)'
   header.style.backgroundPosition = 'center'
 
   // Modify HTML Elements
   xmasCounter.innerText = 'Not Christmas Time'
-  document.getElementById('xmasContainer').setAttribute('hidden', null)
+  document.getElementById('xmasContainer').style.visibility = 'hidden'
 }
