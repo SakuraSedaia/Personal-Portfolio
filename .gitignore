@@ -2,3 +2,4 @@ assets/styles/main_style_css.css
 *.py
 Website Assets/*
 personal-portfolio.code-workspace
+.vscode/*
