@@ -19,54 +19,47 @@
 </head>
 
 <body>
-  <!-- Header Start -->
-  <header>
-    <div class="header-contain" id="header">
-      <!-- Navigation Start -->
-      <div class="navigation">
-        <div class="nav-logo">
-          <div class="logoIco"></div>
-          <div class="logoTxt" onclick="openInternal('index')">
-            <span>Sakura Sedaia</span>
-          </div>
-        </div>
+  <div class="sideNav" id="sideNav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a onclick="openInternal('sacr-rig')">SACR</a>
+    <a onclick="openInternal('slacme-rig')">SLACME</a>
+    <a onclick="openExternal('git.sakura-sedaia.com/assets')">Assets</a>
+  </div>
+  <div class="viewport" id="viewport">
 
-        <div class="nav-contain">
-          <div class="nav-item" data-active="true" onclick="openInternal( 'index')">
-            Home
-          </div>
-
-          <div class="nav-item" onclick="openInternal('rig-navigation')">
-            Rigs
-          </div>
-          <div class="nav-item" onclick="openInternal( 'projects')" hidden>
-            Projects
-          </div>
-          <div class="nav-item" onclick="openInternal( 'contact')" hidden>
-            Contact
-          </div>
-        </div>
+    <div class="above-nav">
+      <div class="logo" onclick="openInternal('index')"><span>Sakura Sedaia<span></div>
+      <div class="info">Personal Portfolio</div>
+      <div class="xmasCounter" id="xmasContainer">Days until Christmas:
+        <span id="xmasCounter">Undefined</span>
       </div>
-      <!-- Navigation End -->
-
+    </div>
+    <nav class="nav">
+      <div class="nav-link active" aria-current="page" onclick="openInternal('index')">Home</div>
+      <div class="nav-link" onclick="openNav()">Rigs</div>
+      <div class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Projects</div>
+      <div class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</div>
+    </nav>
+    <div class="header-contain" id="header"
+      style="background-image: url('https://sakura-sedaia.com/assets/images/WPRenders/BarSet_Preview4.png');">
       <!-- Header Content -->
       <div class="header-content">
         <div class="header-text">
-          <h1>Personal Portfolio</h1>
+          <h1>Personal Portfolio - Home</h1>
           <h4>Provided by you're local Internet Neko</h4>
         </div>
       </div>
+
     </div>
-    <div class="xmasCounter" id="xmasContainer">
-      Days until Christmas:
-      <span id="xmasCounter">Undefined</span>
-    </div>
-    <div class="dev-warning" id="devWarning">
-      <!-- HTML Not Displayed, Developer Mode Disabled -->
-    </div>
-  </header>
+
+  </div>
+
+  </div>
   <!-- End Header -->
 
+  <div class="dev-warning" id="devWarning">
+    <!-- HTML Not Displayed, Developer Mode Disabled -->
+  </div>
   <!-- Begin page Content -->
   <div class="content-section">
     <div class="about">
@@ -80,7 +73,8 @@
           a carreer and 3D Animation into a suitable hobby. I currently have
           an IRL Job and work within many online Minecraft production
           studio's. The most prominant one being
-          <a onclick="openExternal('www.youtube.com/channel/UCbT_Y7FKTmZxr-EadQs0GNA')" class="sildeer-link" href="#">Silver Deer Entertainment</a>, for which I am writting and
+          <a onclick="openExternal('www.youtube.com/channel/UCbT_Y7FKTmZxr-EadQs0GNA')" class="sildeer-link"
+            href="#">Silver Deer Entertainment</a>, for which I am writting and
           directing a Zombie Survival Machinima
           called Parallel Z.
         </p>
@@ -88,8 +82,7 @@
     </div>
     <div class="second-row">
       <div class="index-rig-display">
-        <div class="background"
-          style="background-image: url('assets/images/MCRigBackgrouns/SACRThumbnail1.png')">
+        <div class="background" style="background-image: url('assets/images/MCRigBackgrouns/SACRThumbnail1.png')">
         </div>
         <div class="content">
           <div class="rig-display-text">
@@ -123,19 +116,17 @@
             <h3>Title:</h3>
             <div>
               <a href="#" class="yt-links-thin"
-                onclick="openExternal('https://www.youtube.com/channel/UCGuwtqpTXQELvMYkv8T1zlw')">Sakura Caramelldansen
-                Dance (Filler Content)</a>
+                onclick="openExternal('www.youtube.com/watch?v=BXT9TcYnQLY&t=1134s',1)">NEW YEARS STREAM!!!!</a>
             </div>
             <br />
             <h3><strong>Short Description</strong></h3>
             <div>
-              Oh look it's a random video showing yet another animated dance,
-              how original.. anyways I got the idea after watching some random
-              videos and this dance has always intrigued me, anyways enjoy it
+              The Map Download:<br>
+              <a class="mc-link" onclick="openExternal('www.minecraft.net/en-us/minecraft-java-community-celebration',1)">"Minecraft Community Celebration"</a>
             </div>
             <br />
             <div>
-              <a class="yt-links-thin">View the full Description on youtube.com</a>
+              <a class="yt-links-thin" onclick="openExternal('www.youtube.com/watch?v=BXT9TcYnQLY&t=1134s',1)">View the full Description on youtube.com</a>
             </div>
           </div>
         </div>
@@ -149,13 +140,13 @@
       <div class="footer-top-container">
         <div class="left-section footer-div">
           <div>
-            <a onclick="openExternal('index')" class="links" href="#">Home</a>
+            <a onclick="openInternal('index')" class="links" href="#">Home</a>
           </div>
           <div>
-            <a onclick="openExternal('sacr-rig')" class="links" href="#">SACR Rig</a>
+            <a onclick="openInternal('sacr-rig')" class="links" href="#">SACR Rig</a>
           </div>
           <div>
-            <a onclick="openExternal('slacme-rig')" class="links" href="#">SLACME Rig</a>
+            <a onclick="openInternal('slacme-rig')" class="links" href="#">SLACME Rig</a>
           </div>
         </div>
 

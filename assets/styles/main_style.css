@@ -1,10 +1,11 @@
 @import url("../fonts/fonts.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-/* line 13, main_style.scss */
+@import url("bootstrap-integration.css");
+/* line 14, main_style.scss */
 body {
   margin: 0;
-  font-family: var(--font-family);
+  font-family: "PT_Sans";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -15,11 +16,11 @@ body {
   height: 100%;
   width: 100%;
 }
-/* line 26, main_style.scss */
+/* line 27, main_style.scss */
 body .viewport {
   transition: 0.5s;
 }
-/* line 30, main_style.scss */
+/* line 31, main_style.scss */
 body .sideNav {
   height: 100%;
   width: 0px;
@@ -33,17 +34,17 @@ body .sideNav {
   transition: 0.5s;
   font-family: minecraftia;
 }
-/* line 43, main_style.scss */
+/* line 44, main_style.scss */
 body .sideNav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-  font-family: PT_Sans;
+  font-family: "PT_Sans";
   border-bottom: 0px;
 }
-/* line 53, main_style.scss */
+/* line 54, main_style.scss */
 body .sideNav a {
   padding: 8px 8px 0px 32px;
   text-decoration: none;
@@ -54,17 +55,21 @@ body .sideNav a {
   cursor: pointer;
   border-bottom: 2px solid #555555;
 }
-/* line 63, main_style.scss */
+/* line 64, main_style.scss */
 body .sideNav a:hover {
   color: #f1f1f1;
 }
+/* line 69, main_style.scss */
+body .sideNav .active {
+  color: #FCB5DE;
+}
 
-/* line 72, main_style.scss */
+/* line 77, main_style.scss */
 .above-nav {
   background-color: #222;
   color: white;
 }
-/* line 76, main_style.scss */
+/* line 81, main_style.scss */
 .above-nav .logo {
   color: white;
   display: inline-block;
@@ -77,15 +82,15 @@ body .sideNav a:hover {
   transition: 200ms;
   text-indent: 0in;
 }
-/* line 88, main_style.scss */
+/* line 93, main_style.scss */
 .above-nav .logo span {
   pointer-events: none;
 }
-/* line 93, main_style.scss */
+/* line 98, main_style.scss */
 .above-nav .xmasCounter {
   color: white;
   float: right;
-  display: inline-block;
+  display: inline;
   padding: 0.5rem 1rem;
   width: auto;
   text-align: center;
@@ -95,105 +100,105 @@ body .sideNav a:hover {
   transition: 200ms;
   text-indent: 0in;
 }
-/* line 106, main_style.scss */
+/* line 111, main_style.scss */
 .above-nav .xmasCounter span {
   pointer-events: none;
 }
-/* line 111, main_style.scss */
+/* line 116, main_style.scss */
 .above-nav .info {
   display: inline-block;
   padding-left: 1em;
 }
 
-/* line 117, main_style.scss */
+/* line 122, main_style.scss */
 .nav {
   background-color: #242424;
 }
-/* line 120, main_style.scss */
+/* line 125, main_style.scss */
 .nav .nav-link {
   width: 100px;
   text-align: center;
   color: white;
   cursor: pointer;
-  box-shadow: 0 0 0 0px inset var(--nav-active);
+  box-shadow: 0 0 0 0px inset #FCB5DE;
   transition-property: all;
 }
-/* line 128, main_style.scss */
+/* line 133, main_style.scss */
 .nav .nav-link:hover {
   color: black;
-  box-shadow: 0 -3em inset var(--nav-active);
+  box-shadow: 0 -3em inset #FCB5DE;
 }
-/* line 136, main_style.scss */
+/* line 141, main_style.scss */
 .nav .disabled {
   color: grey;
   text-decoration: line-through;
   border-bottom: 4px solid #F10000;
   box-shadow: none;
 }
-/* line 142, main_style.scss */
+/* line 147, main_style.scss */
 .nav .disabled:hover {
   box-shadow: 0 -3em inset #F10000;
 }
-/* line 147, main_style.scss */
+/* line 152, main_style.scss */
 .nav .active {
-  color: var(--nav-active);
-  border-bottom: 4px solid var(--nav-active);
+  color: #FCB5DE;
+  border-bottom: 4px solid #FCB5DE;
   box-shadow: none;
 }
-/* line 152, main_style.scss */
+/* line 157, main_style.scss */
 .nav .active:hover {
-  box-shadow: 0 -3em inset var(--nav-active);
+  box-shadow: 0 -3em inset #FCB5DE;
   color: black;
 }
 
 /* 
 
 */
-/* line 165, main_style.scss */
+/* line 170, main_style.scss */
 .header-contain {
   width: 100%;
-  height: 4in;
+  height: 5in;
   background-size: cover;
   background-position: center;
 }
-/* line 171, main_style.scss */
+/* line 176, main_style.scss */
 .header-contain .header-content {
   background-image: url("https://sakura-sedaia.com/assets/images/WPRenders/BarSet_Preview4.png");
   background-size: cover;
 }
-/* line 175, main_style.scss */
+/* line 180, main_style.scss */
 .header-contain .header-content .header-text {
   position: absolute;
   transform: translateY(1.5in);
 }
-/* line 179, main_style.scss */
+/* line 184, main_style.scss */
 .header-contain .header-content .header-text h1 {
   font-family: PT_Sans;
   font-weight: bold;
   color: #fff5f5;
   text-indent: 1in;
 }
-/* line 186, main_style.scss */
+/* line 191, main_style.scss */
 .header-contain .header-content .header-text h4 {
   color: #fff5f5;
   font-family: Minecraft;
   text-indent: 0.75in;
 }
 
-/* line 195, main_style.scss */
+/* line 200, main_style.scss */
 .links {
   color: white;
   text-decoration: none;
   transition: 500ms;
 }
 
-/* line 201, main_style.scss */
+/* line 206, main_style.scss */
 .links:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-/* line 211, main_style.scss */
+/* line 216, main_style.scss */
 .deprication-warning {
   border-top: 2px solid #ff2222;
   border-bottom: 2px solid #ff2222;
@@ -202,39 +207,39 @@ body .sideNav a:hover {
   color: white;
   font-family: "Open Sans";
 }
-/* line 219, main_style.scss */
+/* line 224, main_style.scss */
 .deprication-warning strong {
   font-family: "Noto Sans JP";
 }
 
-/* line 227, main_style.scss */
+/* line 232, main_style.scss */
 .content-section {
   width: 100%;
   height: auto;
 }
-/* line 231, main_style.scss */
+/* line 236, main_style.scss */
 .content-section .about {
   background-color: white;
 }
-/* line 234, main_style.scss */
+/* line 239, main_style.scss */
 .content-section .about .title {
   padding: 0.5in;
 }
-/* line 237, main_style.scss */
+/* line 242, main_style.scss */
 .content-section .about .title h1 {
   font-family: PT_Sans;
 }
-/* line 241, main_style.scss */
+/* line 246, main_style.scss */
 .content-section .about .title p {
   font-family: "Source Sans Pro", sans-serif;
 }
-/* line 249, main_style.scss */
+/* line 254, main_style.scss */
 .content-section .index-rig-display {
   width: 100%;
   height: 3.23in;
   overflow: hidden;
 }
-/* line 254, main_style.scss */
+/* line 259, main_style.scss */
 .content-section .index-rig-display .content {
   position: relative;
   z-index: 999;
@@ -247,14 +252,14 @@ body .sideNav a:hover {
   width: 100%;
   margin: 0 auto;
 }
-/* line 269, main_style.scss */
+/* line 274, main_style.scss */
 .content-section .index-rig-display .content .rig-display-text {
   color: white;
   padding-top: 50px;
   font-family: PT_Sans;
   padding-bottom: 30px;
 }
-/* line 278, main_style.scss */
+/* line 283, main_style.scss */
 .content-section .index-rig-display .content .btn {
   display: inline-block;
   color: #fff;
@@ -270,27 +275,27 @@ body .sideNav a:hover {
   width: 100%;
 }
 @media (min-width: 600px) {
-  /* line 278, main_style.scss */
+  /* line 283, main_style.scss */
   .content-section .index-rig-display .content .btn {
     margin: 0 1em 2em;
   }
 }
-/* line 314, main_style.scss */
+/* line 319, main_style.scss */
 .content-section .index-rig-display .content .btn:hover {
   text-decoration: none;
 }
-/* line 319, main_style.scss */
+/* line 324, main_style.scss */
 .content-section .index-rig-display .content .btn-4 {
   border: 1px solid;
   overflow: hidden;
   position: relative;
   transition: 500ms;
 }
-/* line 325, main_style.scss */
+/* line 330, main_style.scss */
 .content-section .index-rig-display .content .btn-4 span {
   z-index: 20;
 }
-/* line 329, main_style.scss */
+/* line 334, main_style.scss */
 .content-section .index-rig-display .content .btn-4:after {
   background: #fff;
   content: "";
@@ -304,7 +309,7 @@ body .sideNav a:hover {
   width: 50px;
   z-index: -10;
 }
-/* line 343, main_style.scss */
+/* line 348, main_style.scss */
 .content-section .index-rig-display .content .btn-4:before {
   background-color: #ffb3cb00;
   content: "";
@@ -315,16 +320,16 @@ body .sideNav a:hover {
   z-index: -10;
   transition: 500ms;
 }
-/* line 355, main_style.scss */
+/* line 360, main_style.scss */
 .content-section .index-rig-display .content .btn-4:hover {
   color: black;
 }
-/* line 358, main_style.scss */
+/* line 363, main_style.scss */
 .content-section .index-rig-display .content .btn-4:hover:after {
   left: 120%;
   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
-/* line 363, main_style.scss */
+/* line 368, main_style.scss */
 .content-section .index-rig-display .content .btn-4:hover:before {
   background-color: #ffb3cb;
   content: "";
@@ -334,7 +339,7 @@ body .sideNav a:hover {
   width: 100%;
   z-index: -10;
 }
-/* line 375, main_style.scss */
+/* line 380, main_style.scss */
 .content-section .index-rig-display .background {
   width: 100%;
   margin: 0 auto;
@@ -345,41 +350,41 @@ body .sideNav a:hover {
   transform: scale(1.1);
 }
 
-/* line 387, main_style.scss */
+/* line 392, main_style.scss */
 .latest-video {
   height: 4in;
 }
-/* line 390, main_style.scss */
+/* line 395, main_style.scss */
 .latest-video .title {
   text-align: center;
 }
-/* line 393, main_style.scss */
+/* line 398, main_style.scss */
 .latest-video .title h1 {
   font-family: "Open Sans";
 }
-/* line 398, main_style.scss */
+/* line 403, main_style.scss */
 .latest-video .container {
   display: flex;
 }
-/* line 401, main_style.scss */
+/* line 406, main_style.scss */
 .latest-video .container .col {
   flex-basis: 50%;
 }
-/* line 406, main_style.scss */
+/* line 411, main_style.scss */
 .latest-video .container .video {
   text-align: center;
   flex-basis: 700px;
 }
-/* line 410, main_style.scss */
+/* line 415, main_style.scss */
 .latest-video .container .video iframe {
   display: inline;
 }
-/* line 417, main_style.scss */
+/* line 422, main_style.scss */
 .latest-video .container .meta h2,
 .latest-video .container .meta h3 {
   font-family: "PT_sans";
 }
-/* line 422, main_style.scss */
+/* line 427, main_style.scss */
 .latest-video .container .meta div {
   font-family: "Noto Sans JP";
 }
@@ -388,17 +393,17 @@ body .sideNav a:hover {
 # Integrate Google Material Icons
 # Website: https://material.io/resources/icons/?style=baseline
 */
-/* line 439, main_style.scss */
+/* line 444, main_style.scss */
 .footer .footer-desktop {
   background-color: #232323;
   color: white;
 }
-/* line 443, main_style.scss */
+/* line 448, main_style.scss */
 .footer .footer-desktop .footer-top-container {
   display: flex;
   border-bottom: 2px solid #323232;
 }
-/* line 447, main_style.scss */
+/* line 452, main_style.scss */
 .footer .footer-desktop .footer-top-container .left-section {
   min-width: 160px;
   border-right: 2.5px solid #323232;
@@ -407,13 +412,13 @@ body .sideNav a:hover {
   flex-basis: 50%;
   height: 1.25in;
 }
-/* line 455, main_style.scss */
+/* line 460, main_style.scss */
 .footer .footer-desktop .footer-top-container .left-section div {
   padding-top: 12px;
   padding-left: 30px;
   list-style-type: none;
 }
-/* line 462, main_style.scss */
+/* line 467, main_style.scss */
 .footer .footer-desktop .footer-top-container .right-section {
   padding-left: 2.5px;
   transition: 500ms;
@@ -424,21 +429,21 @@ body .sideNav a:hover {
   text-align: right;
   height: 1.25in;
 }
-/* line 472, main_style.scss */
+/* line 477, main_style.scss */
 .footer .footer-desktop .footer-top-container .right-section .footer-icon {
   padding-top: 10px;
   padding-right: 30px;
 }
-/* line 476, main_style.scss */
+/* line 481, main_style.scss */
 .footer .footer-desktop .footer-top-container .right-section .footer-icon .fab {
   font-size: 23px;
 }
-/* line 483, main_style.scss */
+/* line 488, main_style.scss */
 .footer .footer-desktop .footer-bottom-container {
   text-align: center;
 }
 
-/* line 491, main_style.scss */
+/* line 496, main_style.scss */
 .yt-links-thick {
   color: black;
   transition: 250ms;
@@ -446,14 +451,14 @@ body .sideNav a:hover {
   border-bottom: 4px solid rgba(255, 0, 0, 0);
 }
 
-/* line 498, main_style.scss */
+/* line 503, main_style.scss */
 .yt-links-thick:hover {
   color: red;
   cursor: pointer;
   border-bottom: 4px solid red;
 }
 
-/* line 504, main_style.scss */
+/* line 509, main_style.scss */
 .yt-links-thin {
   color: black;
   transition: 250ms;
@@ -461,14 +466,14 @@ body .sideNav a:hover {
   border-bottom: 2px solid rgba(255, 0, 0, 0);
 }
 
-/* line 511, main_style.scss */
+/* line 516, main_style.scss */
 .yt-links-thin:hover {
   color: red;
   cursor: pointer;
   border-bottom: 2px solid red;
 }
 
-/* line 517, main_style.scss */
+/* line 522, main_style.scss */
 .sildeer-link {
   color: black;
   transition: 250ms;
@@ -476,9 +481,24 @@ body .sideNav a:hover {
   border-bottom: 2px solid #adf6ff00;
 }
 
-/* line 524, main_style.scss */
+/* line 529, main_style.scss */
 .sildeer-link:hover {
   color: #adf6ff;
+  cursor: pointer;
+  border-bottom: 2px solid;
+}
+
+/* line 534, main_style.scss */
+.mc-link {
+  color: black;
+  transition: 250ms;
+  text-decoration: none;
+  border-bottom: 2px solid #adf6ff00;
+}
+
+/* line 541, main_style.scss */
+.mc-link:hover {
+  color: #11ec1c;
   cursor: pointer;
   border-bottom: 2px solid;
 }

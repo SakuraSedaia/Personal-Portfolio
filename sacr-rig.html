@@ -11,54 +11,57 @@
 	<link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" />
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-	<link href="assets/styles/main_style.css" rel="stylesheet"/>
-	<link href="assets/styles/sacr-rig.css" rel="stylesheet"/>
+	<link href="assets/styles/main_style.css" rel="stylesheet" />
+	<link href="assets/styles/rigs.css" rel="stylesheet" />
+
 	<!-- FontAwesome Kit -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
 </head>
 
 <body>
 	<div class="sideNav" id="sideNav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a onclick="openInternal('sacr-rig')" class="active">SACR</a>
-        <a>SLACME</a>
-        <a>Assets</a>
-    </div>
-    <div class="viewport" id="viewport">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a onclick="openInternal('sacr-rig')" class="active">SACR</a>
+		<a onclick="openInternal('slacme-rig')">SLACME</a>
+		<a onclick="openExternal('git.sakura-sedaia.com/assets')">Assets</a>
+	</div>
+	<div class="viewport" id="viewport">
 
-        <div class="above-nav">
-            <div class="logo" onclick="openInternal('index')"><span>Sakura Sedaia</span></div>
-            <div class="info">Personal Portfolio</div>
-            <div class="xmasCounter" id="xmasContainer">Days until Christmas:
-                <span id="xmasCounter">Undefined</span>
-            </div>
-        </div>
-        <nav class="nav">
-            <div class="nav-link" href="#" onclick="openInternal('index')">Home</div>
-            <div class="nav-link  active"  aria-current="page" onclick="openNav()">Rigs</div>
-            <div class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Projects</div>
-            <div class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</div>
-        </nav>
-        <div class="header-contain" id="header"
-            style="background-image: url('assets/images/WPRenders/BarSet_Preview4.png');">
-            <!-- Header Content -->
-            <div class="header-content">
-                <div class="header-text">
-                    <h1>Personal Portfolio</h1>
-                    <h4>Provided by you're local Internet Neko</h4>
-                </div>
-            </div>
+		<div class="above-nav">
+			<div class="logo" onclick="openInternal('index')"><span>Sakura Sedaia</span></div>
+			<div class="info">Personal Portfolio</div>
+			<div class="xmasCounter" id="xmasContainer">Days until Christmas:
+				<span id="xmasCounter">Undefined</span>
+			</div>
+		</div>
+		<nav class="nav">
+			<div class="nav-link" href="#" onclick="openInternal('index')">Home</div>
+			<div class="nav-link  active" aria-current="page" onclick="openNav()">Rigs</div>
+			<div class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Projects</div>
+			<div class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</div>
+		</nav>
+		<div class="header-contain" id="header"
+			style="background-image: url('assets/images/WPRenders/BarSet_Preview4.png');">
+			<!-- Header Content -->
+			<div class="header-content">
+				<div class="header-text">
+					<h1>Personal Portfolio</h1>
+					<h4>Rigs Section</h4>
+				</div>
+			</div>
 
-        </div>
+		</div>
 
-    </div>
+	</div>
 
-    </div>
+	</div>
+	<!-- End Header -->
+
 	<div class="dev-warning" id="devWarning">
 		<!-- HTML Not Displayed, Developer Mode Disabled -->
 	</div>
 
-<div class="about-sacr">
+	<div class="about-sacr">
 		<div class="title-sacr"
 			style="background-image: url(assets/images/WPRenders/Sakura_OnyxV2_BlueAngel.png);background-position: center;background-size: cover;">
 			<div class="title-text">
@@ -123,7 +126,42 @@
 
 		</div>
 	</div>
+	<!-- Footer -->
+	<div class="footer">
+		<div class="footer-desktop">
+			<div class="footer-top-container">
+				<div class="left-section footer-div">
+					<div>
+						<a onclick="openInternal('index')" class="links" href="#">Home</a>
+					</div>
+					<div>
+						<a onclick="openInternal('sacr-rig')" class="links" href="#">SACR Rig</a>
+					</div>
+					<div>
+						<a onclick="openInternal('slacme-rig')" class="links" href="#">SLACME Rig</a>
+					</div>
+				</div>
 
+				<div class="right-section footer-div">
+					<div class="footer-icon links">
+						<i class="fab fa-github" onclick="openExternal('git.sakura-sedaia.com',1)"></i>
+						Github
+					</div>
+					<div class="footer-icon links">
+						<i class="fab fa-google" onclick="openExternal('domains.google/',1)"></i>
+						Google Domains
+					</div>
+					<div class="footer-icon links">
+						<i class="fab fa-codepen" onclick="openExternal('codepen.io',1)"></i>
+						Codepen
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom-container">
+				<div class="footer-content">&copy; 2020 by Sakura Sedaia</div>
+			</div>
+		</div>
+	</div>
 	<script src="assets/scripts/seasons.js"></script>
 	<script src="assets/scripts/responsive.js"></script>
 </body>

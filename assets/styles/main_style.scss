@@ -3,11 +3,8 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("bootstrap-integration.css");
 
-:root {
-    --nav-active: #FCB5DE;
-    --font-family: "PT_Sans"
-}
-
+$nav-active: #FCB5DE;
+$font-family: "PT_Sans";
 $header-height: 5in;
 $light: #fff5f5;
 $shade: rgba(25, 25, 25, 0.5);
@@ -16,7 +13,7 @@ $nav-border: pink;
 // Universal
 body {
     margin: 0;
-    font-family: var(--font-family);
+    font-family: $font-family;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -130,12 +127,12 @@ body {
         text-align: center;
         color: white;
         cursor: pointer;
-        box-shadow: 0 0 0 0px inset var(--nav-active);
+        box-shadow: 0 0 0 0px inset $nav-active;
         transition-property: all;
 
         &:hover {
             color: black;
-            box-shadow: 0 -3em inset var(--nav-active);
+            box-shadow: 0 -3em inset $nav-active;
         }
 
     }
@@ -153,12 +150,12 @@ body {
     }
 
     .active {
-        color: var(--nav-active);
-        border-bottom: 4px solid var(--nav-active);
+        color: $nav-active;
+        border-bottom: 4px solid $nav-active;
         box-shadow: none;
 
         &:hover {
-            box-shadow: 0 -3em inset var(--nav-active);
+            box-shadow: 0 -3em inset $nav-active;
             color: black;
         }
     }
@@ -531,6 +528,18 @@ $footer-row-one-height: 1.25in;
 
 .sildeer-link:hover {
     color: #adf6ff;
+    cursor: pointer;
+    border-bottom: 2px solid;
+}
+.mc-link {
+    color: black;
+    transition: 250ms;
+    text-decoration: none;
+    border-bottom: 2px solid #adf6ff00;
+}
+
+.mc-link:hover {
+    color: #11ec1c;
     cursor: pointer;
     border-bottom: 2px solid;
 }

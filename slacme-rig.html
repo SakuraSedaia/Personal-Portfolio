@@ -4,6 +4,7 @@
 <head>
 	<title>Sakura Sedaia</title>
 
+
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,63 +12,60 @@
 	<link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" />
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-	<link href="assets/styles/main_style.css" rel="stylesheet" type="text/css" />
+	<link href="assets/styles/main_style.css" rel="stylesheet" />
+	<link href="assets/styles/rigs.css" rel="stylesheet" />
 
 	<!-- FontAwesome Kit -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
 </head>
 
 <body>
-	<!-- Header Start -->
-	<header>
-		<div class="header-contain" id="header">
-			<!-- Navigation Start -->
-			<div class="navigation">
-				<div class="nav-logo">
-					<div class="logoIco"></div>
-					<div class="logoTxt" onclick="openInternal('index')"><span>Sakura Sedaia</span></div>
-				</div>
+	<div class="sideNav" id="sideNav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a onclick="openInternal('sacr-rig')">SACR</a>
+		<a onclick="openInternal('slacme-rig')" class="active">SLACME</a>
+		<a onclick="openExternal('git.sakura-sedaia.com/assets')">Assets</a>
+	</div>
+	<div class="viewport" id="viewport">
 
-				<div class="nav-contain">
-					<div class="nav-item" data-active="true" onclick="openInternal( 'index')">
-						Home
-					</div>
-
-					<div class="nav-item" onclick="openInternal('rig-navigation')">Rigs</div>
-					<div class="nav-item" onclick="openInternal( 'projects')" hidden>
-						Projects
-					</div>
-					<div class="nav-item" onclick="openInternal( 'contact')" hidden>
-						Contact
-					</div>
-				</div>
+		<div class="above-nav">
+			<div class="logo" onclick="openInternal('index')"><span>Sakura Sedaia<span></div>
+			<div class="info">Personal Portfolio</div>
+			<div class="xmasCounter" id="xmasContainer">Days until Christmas:
+				<span id="xmasCounter">Undefined</span>
 			</div>
-			<!-- Navigation End -->
-
+		</div>
+		<nav class="nav">
+			<div class="nav-link" href="#">Home</div>
+			<div class="nav-link" onclick="openNav()">Rigs</div>
+			<div class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Projects</div>
+			<div class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</div>
+		</nav>
+		<div class="header-contain" id="header"
+			style="background-image: url('https://sakura-sedaia.com/assets/images/WPRenders/BarSet_Preview4.png');">
 			<!-- Header Content -->
 			<div class="header-content">
 				<div class="header-text">
 					<h1>Personal Portfolio</h1>
-					<h4>Provided by you're local Internet Neko</h4>
+					<h4>Rigs Section</h4>
 				</div>
 			</div>
 
 		</div>
-		<div class="xmasCounter" id="xmasContainer">Days until Christmas:
-			<span id="xmasCounter">Undefined</span>
-		</div>
 
-		<div class="dev-warning" id="devWarning">
-			<!-- HTML Not Displayed, Developer Mode Disabled -->
-		</div>
+	</div>
 
-		<div class="deprication-warning">
-			<strong>ATTENTION: </strong>
-			rig is now Depricated, no further Updates will be made for it
-		</div>
-	</header>
+	</div>
 	<!-- End Header -->
 
+	<div class="dev-warning" id="devWarning">
+		<!-- HTML Not Displayed, Developer Mode Disabled -->
+	</div>
+
+	<div class="deprication-warning">
+		<strong>ATTENTION: </strong>
+		rig is now Depricated, no further Updates will be made for it
+	</div>
 	<div class="about-sacr">
 		<div class="title-sacr"
 			style="background-image: url(assets/images/MCRigBackgrouns/LACMThumbnail1.PNG);background-position: 0 -1in;">
@@ -127,10 +125,45 @@
 			</div>
 		</div>
 	</div>
+	<!-- Footer -->
+	<div class="footer">
+		<div class="footer-desktop">
+			<div class="footer-top-container">
+				<div class="left-section footer-div">
+					<div>
+						<a onclick="openInternal('index')" class="links" href="#">Home</a>
+					</div>
+					<div>
+						<a onclick="openInternal('sacr-rig')" class="links" href="#">SACR Rig</a>
+					</div>
+					<div>
+						<a onclick="openInternal('slacme-rig')" class="links" href="#">SLACME Rig</a>
+					</div>
+				</div>
+
+				<div class="right-section footer-div">
+					<div class="footer-icon links">
+						<i class="fab fa-github" onclick="openExternal('github.com/SakuraSedaia',1)"></i>
+						Github
+					</div>
+					<div class="footer-icon links">
+						<i class="fab fa-google" onclick="openExternal('domains.google/',1)"></i>
+						Google Domains
+					</div>
+					<div class="footer-icon links">
+						<i class="fab fa-codepen" onclick="openExternal('codepen.io',1)"></i>
+						Codepen
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom-container">
+				<div class="footer-content">&copy; 2020 by Sakura Sedaia</div>
+			</div>
+		</div>
+	</div>
 
 
 	<!-- Scripts -->
-	<script src="assets/scripts/age.js"></script>
 	<script src="assets/scripts/seasons.js"></script>
 	<script src="assets/scripts/responsive.js"></script>
 </body>

@@ -39,41 +39,44 @@ This Developer Script is a document designed by Sakura to provide easier tools f
 */
 
 // Console Debug Timers
-console.timeEnd("Developer Scripts Imported in")
-console.time("Initiased Developer Script in")
+console.timeEnd('Developer Scripts Imported in')
+console.time('Initiased Developer Script in')
 
 // Developer Tools
 var devHTMLWarning = true // Toggle whether to use the Internal HTML Style
 var devRefreshInterval = 0 // Sets the Refresh Interval for Dev Refresh, set to 0 to disable
-var usePopupWarning = false // Toggles whether or not a window.alert popup will be used to announce broken 
-var devWarningDiv = document.getElementById('devWarning');
-
+var usePopupWarning = false // Toggles whether or not a window.alert popup will be used to announce broken
+var devWarningDiv = document.getElementById('devWarning')
 
 if (devMode == true && usePopupWarning == true) {
-	// Function to display the Critical Error Alert
-	window.alert("Attention, this site is currently missing something integral, please be patient as a Fix will be being applied soon")
+  // Function to display the Critical Error Alert
+  window.alert(
+    'Attention, this site is currently missing something integral, please be patient as a Fix will be being applied soon'
+  )
 }
 
 if (devMode == true && devRefreshInterval > 0) {
-	// Display Warning in Console that the Automated Refresh is activated
-	console.warn('Developer Refresh activated, refreshing in: ' + devRefreshInterval)
-	
-	
-  	window.setTimeout('window.location.reload()', devRefreshInterval)
-} 
+  // Display Warning in Console that the Automated Refresh is activated
+  console.warn(
+    'Developer Refresh activated, refreshing in: ' + devRefreshInterval
+  )
+
+  window.setTimeout('window.location.reload()', devRefreshInterval)
+}
 
 if (devMode == true && devHTMLWarning == true) {
-	console.time("HTML Developer Warning generated in:")
-	devWarningDiv.innerHTML = '<strong>Warning: </strong>This site is still in Development, please report any issues to Sakura at <a href="#" onclick="emailSaki()">this Email</a>'
+  console.time('HTML Developer Warning generated in:')
+  devWarningDiv.innerHTML = '<strong>Warning: </strong>This site is still in Development, please report any issues to Sakura at <a href="#" onclick="emailSaki()">this Email</a>'
 
-	// Set Div Warning CSS
-	devWarningDiv.style.borderTop = '2px solid #9c9208'
-	devWarningDiv.style.borderBottom = '2px solid #9c9208'
-	devWarningDiv.style.padding = "10px"
-	devWarningDiv.style.backgroundColor = " rgb(255, 238, 2)"
-	devWarningDiv.style.color = "black"
-	devWarningDiv.style.fontFamily = "Open Sans"
-	devWarningDiv.childNodes[0].style.fontFamily = "Noto Sans JP"
-	console.timeEnd("HTML Developer Warning generated in:")
+  // Set Div Warning CSS
+  devWarningDiv.style.boxShadow = '0 -4px inset #9c9208'
+  devWarningDiv.style.padding = '7.5px'
+  devWarningDiv.style.paddingLeft = '25px'
+  devWarningDiv.style.paddingBottom = '10px'
+  devWarningDiv.style.backgroundColor = ' rgb(255, 238, 2)'
+  devWarningDiv.style.color = 'black'
+  devWarningDiv.style.fontFamily = 'Open Sans'
+  devWarningDiv.childNodes[0].style.fontFamily = 'Noto Sans JP'
+  console.timeEnd('HTML Developer Warning generated in:')
 }
-console.timeEnd("Initiased Developer Script in")
+console.timeEnd('Initiased Developer Script in')

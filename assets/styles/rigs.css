@@ -1,9 +1,9 @@
-/* line 3, sacr-rig.scss */
+/* line 2, rigs.scss */
 .about-sacr .title-sacr {
   width: 100%;
   height: 100%;
 }
-/* line 7, sacr-rig.scss */
+/* line 6, rigs.scss */
 .about-sacr .title-sacr .title-text {
   position: absolute;
   z-index: 0;
@@ -13,19 +13,19 @@
   border-radius: 10px;
   background-color: #00000090;
 }
-/* line 16, sacr-rig.scss */
+/* line 15, rigs.scss */
 .about-sacr .title-sacr .title-text h1 {
   font-family: PT_Sans;
   text-indent: 1in;
   color: white;
 }
-/* line 22, sacr-rig.scss */
+/* line 21, rigs.scss */
 .about-sacr .title-sacr .title-text h3 {
   font-family: Minecraft;
   font-size: 16px;
   color: white;
 }
-/* line 30, sacr-rig.scss */
+/* line 29, rigs.scss */
 .about-sacr .title-sacr .title-bg {
   content: inherit;
   background-color: #fff5f525;
@@ -37,7 +37,7 @@
   background-position: 0in -2.5in;
 }
 
-/* line 44, sacr-rig.scss */
+/* line 43, rigs.scss */
 .rig-download-section {
   height: 2in;
   background-color: #333;
@@ -46,15 +46,15 @@
   color: #fff5f5;
   display: flex;
 }
-/* line 52, sacr-rig.scss */
+/* line 51, rigs.scss */
 .rig-download-section h1 {
   font-family: PT_Sans;
 }
-/* line 56, sacr-rig.scss */
+/* line 55, rigs.scss */
 .rig-download-section span {
   font-family: "Roboto";
 }
-/* line 60, sacr-rig.scss */
+/* line 59, rigs.scss */
 .rig-download-section .download-lr {
   background-color: transparent;
   border: none;
@@ -85,63 +85,63 @@
   font-family: PT_Sans;
   cursor: pointer;
 }
-/* line 93, sacr-rig.scss */
+/* line 92, rigs.scss */
 .rig-download-section .download-lr:hover {
   background-color: #13b6fb95;
   -webkit-box-shadow: 0 4px 0 0 #04a7eb95;
   box-shadow: 0 4px 0 0 #04a7eb95;
 }
-/* line 99, sacr-rig.scss */
+/* line 98, rigs.scss */
 .rig-download-section .download-extra {
   text-decoration: none;
 }
-/* line 103, sacr-rig.scss */
+/* line 102, rigs.scss */
 .rig-download-section .download-extra:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-/* line 108, sacr-rig.scss */
+/* line 107, rigs.scss */
 .rig-download-section .rds-col {
   flex-basis: 50%;
 }
-/* line 111, sacr-rig.scss */
+/* line 110, rigs.scss */
 .rig-download-section .rds-col img {
   position: relative;
   transform: translateY(-15%);
 }
-/* line 117, sacr-rig.scss */
+/* line 116, rigs.scss */
 .rig-download-section .rds-background {
   flex-basis: 25%;
   min-width: 600px;
 }
 
-/* line 125, sacr-rig.scss */
+/* line 124, rigs.scss */
 .features-sacr {
   margin-left: 1in;
   margin-right: 1in;
 }
-/* line 129, sacr-rig.scss */
+/* line 128, rigs.scss */
 .features-sacr h2 {
   font-family: PT_Sans;
   text-align: center;
   font-size: 36px;
 }
-/* line 135, sacr-rig.scss */
+/* line 134, rigs.scss */
 .features-sacr .highlight-features {
   width: 1000px;
   margin: 0 auto;
   background-color: #f3f3f3;
   padding: 10px;
 }
-/* line 141, sacr-rig.scss */
+/* line 140, rigs.scss */
 .features-sacr .highlight-features h2 {
   text-align: left;
   font-size: 24px;
 }
-/* line 147, sacr-rig.scss */
+/* line 146, rigs.scss */
 .features-sacr .highlight-features .row-1-col .feat-overlay {
   font-family: "Noto Sans JP";
   height: 100px;
 }
 
-/*# sourceMappingURL=sacr-rig.css.map */
+/*# sourceMappingURL=rigs.css.map */
