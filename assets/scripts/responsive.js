@@ -51,7 +51,7 @@ function emailSaki () {
       'You are about to be redirected to your choice of E-Mail, are you sure you want to continue?'
     )
   ) {
-    window.open('mailto:sakus@outlook.com')
+    window.open('mailto:sakusedaia@outlook.com')
   }
 }
 
@@ -79,7 +79,7 @@ function downloadSLACME (state) {
     console.error('Rig download Disabled')
   }
 }
-var devMode = true
+var devMode = false
 
 if (devMode == true) {
   devModeScript('assets/scripts/dev-mode.js')
