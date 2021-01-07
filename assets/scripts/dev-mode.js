@@ -45,6 +45,7 @@ console.time('Initiased Developer Script in')
 // Developer Tools
 var devHTMLWarning = true // Toggle whether to use the Internal HTML Style
 var devRefreshInterval = 0 // Sets the Refresh Interval for Dev Refresh, set to 0 to disable
+
 var usePopupWarning = false // Toggles whether or not a window.alert popup will be used to announce broken
 var devWarningDiv = document.getElementById('devWarning')
 
@@ -54,6 +55,7 @@ if (devMode == true && usePopupWarning == true) {
     'Attention, this site is currently missing something integral, please be patient as a Fix will be being applied soon'
   )
 }
+
 
 if (devMode == true && devRefreshInterval > 0) {
   // Display Warning in Console that the Automated Refresh is activated
@@ -80,3 +82,4 @@ if (devMode == true && devHTMLWarning == true) {
   console.timeEnd('HTML Developer Warning generated in:')
 }
 console.timeEnd('Initiased Developer Script in')
+
