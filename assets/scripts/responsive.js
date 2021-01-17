@@ -79,7 +79,7 @@ function downloadSLACME (state) {
     console.error('Rig download Disabled')
   }
 }
-var devMode = false
+var devMode = true
 
 if (devMode == true) {
   devModeScript('assets/scripts/dev-mode.js')

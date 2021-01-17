@@ -1,8 +1,8 @@
 /*
 
-dev-mode.js
+File: dev-mode.js
 
-A developer Script by Sakura
+A developer script by Sakura
 
 
 ##### Injector's #####
