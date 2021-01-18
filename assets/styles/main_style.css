@@ -503,4 +503,15 @@ body .sideNav .active {
   border-bottom: 2px solid;
 }
 
+/* line 547, main_style.scss */
+.lost-angel {
+  background-image: url("../images/WPRenders/LostAngelAnnouncement.png");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  text-align: center;
+  padding-top: 1in;
+  padding-bottom: 1in;
+}
+
 /*# sourceMappingURL=main_style.css.map */
