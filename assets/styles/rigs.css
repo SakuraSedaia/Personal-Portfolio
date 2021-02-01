@@ -144,4 +144,50 @@
   height: 100px;
 }
 
+/* line 155, rigs.scss */
+.sacr-experimental .overlay {
+  background-image: url(../images/MCRigBackgrouns/SACRThumbnail2.PNG);
+  color: white;
+  background-color: #33333390;
+  background-blend-mode: multiply;
+}
+/* line 161, rigs.scss */
+.sacr-experimental .overlay .header {
+  border: 2px solid white;
+}
+/* line 165, rigs.scss */
+.sacr-experimental .overlay .header h1 {
+  border-bottom: 2px solid white;
+}
+/* line 172, rigs.scss */
+.sacr-experimental .overlay .download .button {
+  background-color: red;
+  text-align: center;
+  width: 60%;
+}
+/* line 177, rigs.scss */
+.sacr-experimental .overlay .download .button div {
+  padding: 5px;
+  border: 4px solid;
+  text-align: center;
+  display: inline-block;
+}
+/* line 187, rigs.scss */
+.sacr-experimental .overlay .download .button .latest {
+  background-color: #20AB00;
+  border-color: #1D5200;
+  width: 250px;
+  border-radius: 10px;
+}
+/* line 194, rigs.scss */
+.sacr-experimental .overlay .download .button .browse-git {
+  background-color: #222;
+  border-color: #111;
+  color: white;
+  width: 192.3076923077px;
+  border-top-width: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 /*# sourceMappingURL=rigs.css.map */

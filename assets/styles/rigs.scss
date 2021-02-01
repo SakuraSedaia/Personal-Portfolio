@@ -150,3 +150,68 @@
         }
     }
 }
+
+.sacr-experimental {
+	.overlay { // Only used to separate Background from Main Element
+		background-image: url(../images/MCRigBackgrouns/SACRThumbnail2.PNG);
+		color: white;
+		background-color: #33333390;
+		background-blend-mode: multiply;
+		
+		.header { // Header Element
+				
+				border: 2px solid white;
+			
+			h1 {
+				border-bottom: 2px solid white;
+			}
+		} // End Header Elements
+		
+		.download { // Download Section
+			
+			.button { // Buttons
+				background-color: red;
+				text-align: center;
+				width: 60%;
+				
+				div {
+					padding: 5px;
+					border: 4px solid;
+					text-align: center;
+					display: inline-block;
+				}
+				
+				$border-radius: 10px;
+				$button-width: 250px;
+				
+				.latest { // Download Latest Release
+					background-color: #20AB00;
+					border-color: #1D5200;
+					width: $button-width;
+					border-radius: $border-radius;
+				} // End Latest
+				
+				.browse-git { // Browse Experimental Github
+					background-color: #222;
+					border-color: #111;
+					color: white;
+					width: $button-width / 1.3;
+					border-top-width: 0px;
+					border-bottom-left-radius: $border-radius;
+					border-bottom-right-radius: $border-radius;
+				} // End Git
+				
+			} // End Button Elements
+			
+			.stats { // Download Statistics
+				
+				.latest-build { // Contianer for Latest Version Text
+					
+					.version { // Actual Number
+						
+					} // End Version
+				} // End Latest Buld
+			} // End Stats
+		} // End Download
+	} // End Overlay
+} // End Experimental Section
