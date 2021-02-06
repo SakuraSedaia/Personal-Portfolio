@@ -387,23 +387,30 @@ body .sideNav .active {
 /* line 427, main_style.scss */
 .latest-video .container .meta div {
   font-family: "Noto Sans JP";
+  padding-bottom: 5px;
+}
+/* line 432, main_style.scss */
+.latest-video .container .meta .vid-divider {
+  border-top: 2px solid black;
+  padding-top: 10px;
+  padding-bottom: 0px;
 }
 
 /*
 # Integrate Google Material Icons
 # Website: https://material.io/resources/icons/?style=baseline
 */
-/* line 444, main_style.scss */
+/* line 452, main_style.scss */
 .footer .footer-desktop {
   background-color: #232323;
   color: white;
 }
-/* line 448, main_style.scss */
+/* line 456, main_style.scss */
 .footer .footer-desktop .footer-top-container {
   display: flex;
   border-bottom: 2px solid #323232;
 }
-/* line 452, main_style.scss */
+/* line 460, main_style.scss */
 .footer .footer-desktop .footer-top-container .left-section {
   min-width: 160px;
   border-right: 2.5px solid #323232;
@@ -412,13 +419,13 @@ body .sideNav .active {
   flex-basis: 50%;
   height: 1.25in;
 }
-/* line 460, main_style.scss */
+/* line 468, main_style.scss */
 .footer .footer-desktop .footer-top-container .left-section div {
   padding-top: 12px;
   padding-left: 30px;
   list-style-type: none;
 }
-/* line 467, main_style.scss */
+/* line 475, main_style.scss */
 .footer .footer-desktop .footer-top-container .right-section {
   padding-left: 2.5px;
   transition: 500ms;
@@ -429,21 +436,21 @@ body .sideNav .active {
   text-align: right;
   height: 1.25in;
 }
-/* line 477, main_style.scss */
+/* line 485, main_style.scss */
 .footer .footer-desktop .footer-top-container .right-section .footer-icon {
   padding-top: 10px;
   padding-right: 30px;
 }
-/* line 481, main_style.scss */
+/* line 489, main_style.scss */
 .footer .footer-desktop .footer-top-container .right-section .footer-icon .fab {
   font-size: 23px;
 }
-/* line 488, main_style.scss */
+/* line 496, main_style.scss */
 .footer .footer-desktop .footer-bottom-container {
   text-align: center;
 }
 
-/* line 496, main_style.scss */
+/* line 504, main_style.scss */
 .yt-links-thick {
   color: black;
   transition: 250ms;
@@ -451,14 +458,14 @@ body .sideNav .active {
   border-bottom: 4px solid rgba(255, 0, 0, 0);
 }
 
-/* line 503, main_style.scss */
+/* line 511, main_style.scss */
 .yt-links-thick:hover {
   color: red;
   cursor: pointer;
   border-bottom: 4px solid red;
 }
 
-/* line 509, main_style.scss */
+/* line 517, main_style.scss */
 .yt-links-thin {
   color: black;
   transition: 250ms;
@@ -466,14 +473,14 @@ body .sideNav .active {
   border-bottom: 2px solid rgba(255, 0, 0, 0);
 }
 
-/* line 516, main_style.scss */
+/* line 524, main_style.scss */
 .yt-links-thin:hover {
   color: red;
   cursor: pointer;
   border-bottom: 2px solid red;
 }
 
-/* line 522, main_style.scss */
+/* line 530, main_style.scss */
 .sildeer-link {
   color: black;
   transition: 250ms;
@@ -481,14 +488,29 @@ body .sideNav .active {
   border-bottom: 2px solid #adf6ff00;
 }
 
-/* line 529, main_style.scss */
+/* line 537, main_style.scss */
 .sildeer-link:hover {
   color: #adf6ff;
   cursor: pointer;
   border-bottom: 2px solid;
 }
 
-/* line 534, main_style.scss */
+/* line 542, main_style.scss */
+.frostlight-link {
+  color: black;
+  transition: 250ms;
+  text-decoration: none;
+  border-bottom: 2px solid #adf6ff00;
+}
+
+/* line 549, main_style.scss */
+.frostlight-link:hover {
+  color: #6AF5A5;
+  cursor: pointer;
+  border-bottom: 2px solid;
+}
+
+/* line 554, main_style.scss */
 .mc-link {
   color: black;
   transition: 250ms;
@@ -496,22 +518,11 @@ body .sideNav .active {
   border-bottom: 2px solid #adf6ff00;
 }
 
-/* line 541, main_style.scss */
+/* line 561, main_style.scss */
 .mc-link:hover {
   color: #11ec1c;
   cursor: pointer;
   border-bottom: 2px solid;
-}
-
-/* line 547, main_style.scss */
-.lost-angel {
-  background-image: url("../images/WPRenders/LostAngelAnnouncement.png");
-  background-size: cover;
-  background-position: center center;
-  color: white;
-  text-align: center;
-  padding-top: 1in;
-  padding-bottom: 1in;
 }
 
 /*# sourceMappingURL=main_style.css.map */
