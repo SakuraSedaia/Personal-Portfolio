@@ -58,8 +58,8 @@ function emailSaki () {
 // Rig Downloads
 function downloadSACR (state) {
   if (state == true) {
-    window.open('assets/misc/SACR R4.1.1 LTS.zip')
-    console.info('Rig Download started')
+    window.open('assets/misc/SACR R4.2.zip')
+    console.info('Rig Download started\nRig Version: 4.2')
   } else if (state == false) {
     window.alert(
       "I'm sorry, but this download link is disabled Temporarily, please try again later"
@@ -71,7 +71,7 @@ function downloadSACR (state) {
 function downloadSLACME (state) {
   if (state == true) {
     window.open('assets/misc/LACM - Sakuras Edit V2.zip')
-    console.info('Rig Download started')
+    console.info('Rig Download started\nRig Version: 2')
   } else if (state == false) {
     window.alert(
       "I'm sorry, but this download link is disabled Temporarily, please try again later"
@@ -79,6 +79,13 @@ function downloadSLACME (state) {
     console.error('Rig download Disabled')
   }
 }
+function openSACRPromotional() {
+	if(window.confirm("You are about to enter an External Page, are you sure you want to continue?")) {
+		window.open("https://www.youtube.com/channel/UCImraZRU4IhVWTyKWDGxJPg","_blank");
+	}
+}
+
+
 var devMode = false
 
 if (devMode == true) {

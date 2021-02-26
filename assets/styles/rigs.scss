@@ -24,6 +24,17 @@
 
                 color: white;
             }
+			
+			.credit {
+				color: white;
+				text-align: center;
+				cursor: pointer;
+				transition: 250ms;
+		
+				&:hover {
+					color: lightpink;
+				}
+			}
         }
 
         .title-bg {
@@ -110,12 +121,20 @@
         img {
             position: relative;
             transform: translateY(-15%);
+			transition: 250ms;
+			box-shadow: 0 0 3px black;
+			cursor: pointer;
+			
+			&:hover {
+				box-shadow: 0 0 10px black;
+			}
         }
     }
 
     .rds-background {
         flex-basis: 25%;
         min-width: 600px;
+		
     }
 
 }
