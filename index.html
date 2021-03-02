@@ -2,8 +2,10 @@
 <html>
 
 <head>
+  <!-- Doc Title -->
   <title>Sakura Sedaia</title>
-
+	
+  <!-- Metadata -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,22 +14,25 @@
 
   <!-- Internal Stylesheets -->
   <link href="assets/styles/main_style.css" rel="stylesheet" />
-	<link href="assets/styles/lost_angel_css.css" rel="stylesheet" />
+  <link href="assets/styles/lost_angel_css.css" rel="stylesheet" />
 
   <!-- External Stylesheets -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link href="assets/styles/main_style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+  <!-- Side Navigation -->
   <div class="sideNav" id="sideNav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a onclick="openInternal('sacr-rig')">SACR</a>
     <a onclick="openInternal('slacme-rig')">SLACME</a>
     <a onclick="openExternal('git.sakura-sedaia.com/assets')">Assets</a>
   </div>
+	
+  <!-- Viewport Begin -->
   <div class="viewport" id="viewport">
 
+    <!-- Top Navigation Content -->
     <div class="above-nav">
       <div class="logo" onclick="openInternal('index')"><span>Sakura Sedaia</span></div>
       <div class="info">Personal Portfolio</div>
@@ -35,14 +40,22 @@
         <span id="xmasCounter">Undefined</span>
       </div>
     </div>
+	  
+    <!-- Bottom Navigation Content -->
     <nav class="nav">
       <div class="nav-link active" aria-current="page" onclick="openInternal('index')">Home</div>
       <div class="nav-link" onclick="openNav()">Rigs</div>
       <div class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Projects</div>
       <div class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</div>
     </nav>
-    <div class="header-contain" id="header"
-      style="background-image: url('https://sakura-sedaia.com/assets/images/WPRenders/BarSet_Preview4.png');">
+	  
+<!-- 
+# Header Container 
+#
+# Header Image is defined here in the HTML on the Style Attribute for the Header Container, it is not in the SCSS File
+-->
+    <div class="header-contain" id="header" style="background-image: url('https://sakura-sedaia.com/assets/images/WPRenders/BarSet_Preview4.png');">
+
       <!-- Header Content -->
       <div class="header-content">
         <div class="header-text">
@@ -60,7 +73,7 @@
   <div class="dev-warning" id="devWarning">
     <!-- HTML Not Displayed, Developer Mode Disabled -->
   </div>
-	
+	<!-- Slacme Deprication Warning -->
 	<div class="deprication-warning">
 		<strong>ATTENTION: </strong>
 		The SLACME Rig will be removed from this website by March 1st, if you wish to download the rig before it is taken down from the page
@@ -68,6 +81,8 @@
 	
   <!-- Begin page Content -->
   <div class="content-section">
+	  
+	  <!-- About Section -->
     <div class="about">
       <div class="title">
         <h1>Who am I</h1>
@@ -83,6 +98,8 @@
         </p>
       </div>
     </div>
+	  
+	  <!-- Index Rig Display -->
     <div class="second-row">
       <div class="index-rig-display">
         <div class="background" style="background-image: url('assets/images/MCRigBackgrouns/SACRThumbnail1.png')">
@@ -99,6 +116,7 @@
         </div>
       </div>
 
+	    <!-- Latest Video -->
       <div class="latest-video">
         <div class="title">
           <h1>
@@ -134,6 +152,8 @@
         </div>
       </div>
     </div>
+	  
+	  <!-- Lost Angel Announcement -->
     <div class="lost-angel-frontpage">
       <h1>The Lost Angel</h1>
       <h2>A fight for survival</h2>
@@ -177,6 +197,8 @@
       </div>
     </div>
   </div>
+	
+	
   <!-- Scripts -->
   <script src="assets/scripts/age.js"></script>
   <script src="assets/scripts/seasons.js"></script>
