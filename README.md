@@ -1,4 +1,4 @@
-# Personal-Portfolio Private Repository
+# Personal-Portfolio Public Repository
 
 > This site is mostly coded by Sakura, a few assets in this site are provided by third parties however, and they will be listed here
 
