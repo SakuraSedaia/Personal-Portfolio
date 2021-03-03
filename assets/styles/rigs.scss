@@ -44,79 +44,152 @@
     height: 2in;
     background-color: #333;
     text-align: center;
-    padding: 1in;
-    color: #fff5f5;
-    display: flex;
+    height: auto;
 
-    h1 {
-        font-family: PT_Sans;
-    }
+    .rds-col-container {
+        color: #fff5f5;
+        display: flex;
+		height: 100%;
 
-    span {
-        font-family: "Roboto";
-    }
+        .rds-col {
+            flex-basis: 50%;
+			height: 100%;
+			
+        padding: 1in;
 
-    .download-lr {
-        background-color: transparent;
-        border: none;
-        border-radius: 0.3rem;
-        -webkit-box-shadow: inset 0 0 0 2px #fff;
-        box-shadow: inset 0 0 0 2px #fff;
-        color: #fff !important;
-        display: block;
-        padding-bottom: 7px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 7px;
-        text-decoration: none !important;
-        -webkit-transition: color 250ms ease-out, background-color 150ms ease-in-out,
-            -webkit-box-shadow 150ms ease-in-out;
-        transition: color 250ms ease-out, background-color 150ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
-        -o-transition: color 250ms ease-out, background-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
-        transition: color 250ms ease-out, background-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
-        transition: color 250ms ease-out, background-color 150ms ease-in-out, box-shadow 150ms ease-in-out,
-            -webkit-box-shadow 150ms ease-in-out;
-        white-space: nowrap;
-        background-color: #13b6fb;
-        -webkit-box-shadow: 0 4px 0 0 #04a7eb;
-        box-shadow: 0 4px 0 0 #04a7eb;
-        font-size: 1.5rem;
-        width: 250px;
-        margin: 0 auto;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        font-family: PT_Sans;
-        cursor: pointer;
-    }
+            &[data-label="Latest"] {
+				background-image: url("../images/MCRigBackgrouns/SACRThumbnail5.jpg");
+				background-size: cover;
+				background-position: center center;
+				background-color: #00000050;
+				background-blend-mode: multiply;
+				
+                h1 {
+                    font-family: PT_Sans;
+                }
 
-    .download-lr:hover {
-        background-color: #13b6fb95;
-        -webkit-box-shadow: 0 4px 0 0 #04a7eb95;
-        box-shadow: 0 4px 0 0 #04a7eb95;
-    }
+                span {
+                    font-family: "Roboto";
+                }
 
-    .download-extra {
-        text-decoration: none;
-    }
+                .download-lr {
+                    background-color: transparent;
+                    border: none;
+                    border-radius: 0.3rem;
+                    -webkit-box-shadow: inset 0 0 0 2px #fff;
+                    box-shadow: inset 0 0 0 2px #fff;
+                    color: #fff !important;
+                    display: block;
+                    padding-bottom: 7px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 7px;
+                    text-decoration: none !important;
+                    -webkit-transition: color 250ms ease-out, background-color 150ms ease-in-out,
+                        -webkit-box-shadow 150ms ease-in-out;
+                    transition: color 250ms ease-out, background-color 150ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
+                    -o-transition: color 250ms ease-out, background-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
+                    transition: color 250ms ease-out, background-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
+                    transition: color 250ms ease-out, background-color 150ms ease-in-out, box-shadow 150ms ease-in-out,
+                        -webkit-box-shadow 150ms ease-in-out;
+                    white-space: nowrap;
+                    background-color: #13b6fb;
+                    -webkit-box-shadow: 0 4px 0 0 #04a7eb;
+                    box-shadow: 0 4px 0 0 #04a7eb;
+                    font-size: 1.5rem;
+                    width: 250px;
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                    font-family: PT_Sans;
+                    cursor: pointer;
+                }
 
-    .download-extra:hover {
-        text-decoration: underline;
-        cursor: pointer;
-    }
+                .download-lr:hover {
+                    background-color: #13b6fb95;
+                    -webkit-box-shadow: 0 4px 0 0 #04a7eb95;
+                    box-shadow: 0 4px 0 0 #04a7eb95;
+                }
 
-    .rds-col {
-        flex-basis: 50%;
+                .download-extra {
+                    text-decoration: none;
+                }
 
-        img {
-            position: relative;
-            transform: translateY(-15%);
+                .download-extra:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+
+            &[data-label="Experimental"] {
+				background-image: url("../images/MCRigBackgrouns/SACRThumbnail1.png");
+				background-size: cover;
+				background-position: center center;
+				background-color: #00000050;
+				background-blend-mode: multiply;
+				
+                h1 {
+                    font-family: PT_Sans;
+                }
+
+                span {
+                    font-family: "Roboto";
+                }
+
+                .download-lr {
+                    background-color: transparent;
+                    border: none;
+                    border-radius: 0.3rem;
+                    -webkit-box-shadow: inset 0 0 0 2px #fff;
+                    box-shadow: inset 0 0 0 2px #fff;
+                    color: #fff !important;
+                    display: block;
+                    padding-bottom: 7px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 7px;
+                    text-decoration: none !important;
+                    -webkit-transition: color 250ms ease-out, background-color 150ms ease-in-out,
+                        -webkit-box-shadow 150ms ease-in-out;
+                    transition: color 250ms ease-out, background-color 150ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
+                    -o-transition: color 250ms ease-out, background-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
+                    transition: color 250ms ease-out, background-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
+                    transition: color 250ms ease-out, background-color 150ms ease-in-out, box-shadow 150ms ease-in-out,
+                        -webkit-box-shadow 150ms ease-in-out;
+                    white-space: nowrap;
+                    background-color: #13b6fb;
+                    -webkit-box-shadow: 0 4px 0 0 #04a7eb;
+                    box-shadow: 0 4px 0 0 #04a7eb;
+                    font-size: 1.5rem;
+                    width: 250px;
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                    font-family: PT_Sans;
+                    cursor: pointer;
+                }
+
+                .download-lr:hover {
+                    background-color: #13b6fb95;
+                    -webkit-box-shadow: 0 4px 0 0 #04a7eb95;
+                    box-shadow: 0 4px 0 0 #04a7eb95;
+                }
+
+                .download-extra {
+                    text-decoration: none;
+                }
+
+                .download-extra:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+
+
         }
     }
 
-    .rds-background {
-        flex-basis: 25%;
-        min-width: 600px;
-    }
+    
 
 }
 
@@ -150,68 +223,3 @@
         }
     }
 }
-
-.sacr-experimental {
-	.overlay { // Only used to separate Background from Main Element
-		background-image: url(../images/MCRigBackgrouns/SACRThumbnail2.PNG);
-		color: white;
-		background-color: #33333390;
-		background-blend-mode: multiply;
-		
-		.header { // Header Element
-				
-				border: 2px solid white;
-			
-			h1 {
-				border-bottom: 2px solid white;
-			}
-		} // End Header Elements
-		
-		.download { // Download Section
-			
-			.button { // Buttons
-				background-color: red;
-				text-align: center;
-				width: 60%;
-				
-				div {
-					padding: 5px;
-					border: 4px solid;
-					text-align: center;
-					display: inline-block;
-				}
-				
-				$border-radius: 10px;
-				$button-width: 250px;
-				
-				.latest { // Download Latest Release
-					background-color: #20AB00;
-					border-color: #1D5200;
-					width: $button-width;
-					border-radius: $border-radius;
-				} // End Latest
-				
-				.browse-git { // Browse Experimental Github
-					background-color: #222;
-					border-color: #111;
-					color: white;
-					width: $button-width / 1.3;
-					border-top-width: 0px;
-					border-bottom-left-radius: $border-radius;
-					border-bottom-right-radius: $border-radius;
-				} // End Git
-				
-			} // End Button Elements
-			
-			.stats { // Download Statistics
-				
-				.latest-build { // Contianer for Latest Version Text
-					
-					.version { // Actual Number
-						
-					} // End Version
-				} // End Latest Buld
-			} // End Stats
-		} // End Download
-	} // End Overlay
-} // End Experimental Section

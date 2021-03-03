@@ -73,20 +73,30 @@
 
 		<!-- Rig Download -->
 		<div class="rig-download-section">
-			<div class="rds-col rds-background">
-				<img src="assets/images/MCRigBackgrouns/SACRThumbnail4.jpg" width="540px" alt="background">
+
+			<div class="rds-col-container">
+
+				<div class="rds-col" data-label="Latest">
+					<h1>Download SACR R4.2 LTS</h1>
+					<span class="file-details">File Size: 3.30MB |
+						<a onclick="openText('sacr-changelog-latest')" class="download-extra">Changelog</a> |
+						<a onclick="openExternal('github.com/SakuraSedaia/SACR-MC-Rig/','secure')"
+							class="download-extra">GitHub
+							Repo</a>
+					</span>
+					<div class="download-lr download-extra" onclick="downloadSACR(true)">Latest Release</div>
+					<div onclick="openInternal('slacme-rig')" class="links">Go to Sakura's LACM Edit</div>
+
+				</div>
+
+				<div class="rds-col" data-label="Experimental">
+					<h1>Download SACR Experimental</h1>
+					<span class="file-details">File Size: 3.30MB</span>
+					<div class="download-lr download-extra" onclick="downloadSACR(true)">Latest Experimental</div>
+					<div onclick="openInternal('slacme-rig')" class="links">Go to the Experimental Github</div>
+				</div>
 			</div>
-			<div class="rds-col">
-				<h1>Download SACR R4.1.2 LTS</h1>
-				<span class="file-details">File Size: 3.30MB |
-					<a onclick="openText('sacr-changelog-latest')" class="download-extra">Changelog</a> |
-					<a onclick="openExternal('github.com/SakuraSedaia/SACR-MC-Rig/','secure')"
-						class="download-extra">GitHub
-						Repo</a>
-				</span>
-				<div class="download-lr download-extra" onclick="downloadSACR(true)">Latest Release</div>
-				<div onclick="openInternal('slacme-rig')" class="links">Go to Sakura's LACM Edit</div>
-			</div>
+
 
 		</div>
 
@@ -100,7 +110,7 @@
 						<h2>Light Weight</h2>
 						<div class="feat-overlay">
 							SACR's Optimized package should allow most mid-range computers and above to run the Standard
-							Build easily,
+							Build easily.
 						</div>
 					</div>
 					<div class="row-1-col feat-two">
@@ -123,26 +133,15 @@
 			</div>
 
 		</div>
-		<div class="sacr-experimental">
-			<div class="overlay">
-				<div class="header">
-					<h1>Experimental SACR Builds</h1>
-					<p>Want to test out new features before they are implemented into the Stable Builds? Feel free to download the latest Experimental Builds from right below</p>
-				</div>
-				<div class="download">
-					<h3>Downloads</h3>
-					<div class="button">
-						<div class="latest">Latest Build</div>
-						<br>
-						<div class="browse-git">Older Builds</div>
-					</div>
-					<div class="stats">
-						<span class="latest-build">Latest Build: <span class="version">E4.2_1</span> | <span class="file-size">5.63 MB</span></span>
-					</div>
-				</div>
-			</div>
-		</div>
+
+
+
+
+
+
 	</div>
+
+
 	<!-- Footer -->
 	<div class="footer">
 		<div class="footer-desktop">
