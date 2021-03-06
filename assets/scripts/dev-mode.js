@@ -56,7 +56,6 @@ if (devMode == true && usePopupWarning == true) {
   )
 }
 
-
 if (devMode == true && devRefreshInterval > 0) {
   // Display Warning in Console that the Automated Refresh is activated
   console.warn(
@@ -68,7 +67,8 @@ if (devMode == true && devRefreshInterval > 0) {
 
 if (devMode == true && devHTMLWarning == true) {
   console.time('HTML Developer Warning generated in:')
-  devWarningDiv.innerHTML = '<strong>Warning: </strong>This site is still in Development, please report any issues to Sakura at <a href="#" onclick="emailSaki()">this Email</a>'
+  devWarningDiv.innerHTML =
+    '<strong>Warning: </strong>This site is still in Development, please report any issues to Sakura at <a href="#" onclick="emailSaki()">this Email</a>'
 
   // Set Div Warning CSS
   devWarningDiv.style.boxShadow = '0 -4px inset #9c9208'
@@ -82,4 +82,3 @@ if (devMode == true && devHTMLWarning == true) {
   console.timeEnd('HTML Developer Warning generated in:')
 }
 console.timeEnd('Initiased Developer Script in')
-

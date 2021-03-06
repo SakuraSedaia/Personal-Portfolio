@@ -3,3 +3,4 @@ assets/styles/main_style_css.css
 Website Assets/*
 personal-portfolio.code-workspace
 .vscode/*
+*.min*

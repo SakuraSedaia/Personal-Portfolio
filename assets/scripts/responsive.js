@@ -68,12 +68,18 @@ function downloadSACR (state) {
   }
 }
 
-function openSACRPromotional() {
-	if(window.confirm("You are about to enter an External Page, are you sure you want to continue?")) {
-		window.open("https://www.youtube.com/channel/UCImraZRU4IhVWTyKWDGxJPg","_blank");
-	}
+function openSACRPromotional () {
+  if (
+    window.confirm(
+      'You are about to enter an External Page, are you sure you want to continue?'
+    )
+  ) {
+    window.open(
+      'https://www.youtube.com/channel/UCImraZRU4IhVWTyKWDGxJPg',
+      '_blank'
+    )
+  }
 }
-
 
 var devMode = false
 
