@@ -1,5 +1,4 @@
 /* CSS Document */
-/* line 3, lost_angel_css.scss */
 .lost-angel-frontpage {
   background-image: url("../images/WPRenders/LostAngelAnnouncement.png");
   background-size: cover;
@@ -7,7 +6,4 @@
   color: white;
   text-align: center;
   padding-top: 1in;
-  padding-bottom: 1in;
-}
-
-/*# sourceMappingURL=lost_angel_css.css.map */
+  padding-bottom: 1in; }
