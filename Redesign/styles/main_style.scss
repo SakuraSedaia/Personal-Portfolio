@@ -1,0 +1,545 @@
+@import url("../fonts/fonts.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("bootstrap-integration.css");
+
+$nav-active: #FCB5DE;
+$font-family: "PT_Sans";
+$header-height: 5in;
+$light: #fff5f5;
+$shade: rgba(25, 25, 25, 0.5);
+$nav-border: pink;
+
+// Universal
+body {
+    margin: 0;
+    font-family: $font-family;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    width: 100%;
+
+    .viewport {
+        transition: 0.5s;
+    }
+
+    .sideNav {
+        height: 100%;
+        width: 0px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+        font-family: minecraftia;
+
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            font-family: "PT_Sans";
+            border-bottom: 0px;
+        }
+
+        a {
+            padding: 8px 8px 0px 32px;
+            text-decoration: none;
+            font-size: 16px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+            cursor: pointer;
+            border-bottom: 2px solid #555555;
+
+            &:hover {
+                color: #f1f1f1;
+            }
+        }
+
+        .active {
+            color: #FCB5DE;
+        }
+
+
+    }
+}
+
+.above-nav {
+    background-color: #222;
+    color: white;
+
+    .logo {
+        color: white;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        width: 100px;
+        text-align: center;
+        box-shadow: 0px 0 inset #222;
+        background-color: #292929;
+        text-decoration: none;
+        transition: 200ms;
+        text-indent: 0in;
+
+        span {
+            pointer-events: none;
+        }
+    }
+
+    .xmasCounter {
+        color: white;
+        float: right;
+        display: inline;
+        padding: 0.5rem 1rem;
+        width: auto;
+        text-align: center;
+        box-shadow: 0px 0 inset #222;
+        background-color: #28d411;
+        text-decoration: none;
+        transition: 200ms;
+        text-indent: 0in;
+
+        span {
+            pointer-events: none;
+        }
+    }
+
+    .info {
+        display: inline-block;
+        padding-left: 1em;
+    }
+}
+
+.nav {
+    background-color: #242424; // Sets the background of the Navigation to a dark Grey
+
+    .nav-link {
+        width: 100px;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+        box-shadow: 0 0 0 0px inset $nav-active;
+        transition-property: all;
+
+        &:hover {
+            color: black;
+            box-shadow: 0 -3em inset $nav-active;
+        }
+
+    }
+
+
+    .disabled {
+        color: grey;
+        text-decoration: line-through;
+        border-bottom: 4px solid #F10000;
+        box-shadow: none;
+
+        &:hover {
+            box-shadow: 0 -3em inset #F10000;
+        }
+    }
+
+    .active {
+        color: $nav-active;
+        border-bottom: 4px solid $nav-active;
+        box-shadow: none;
+
+        &:hover {
+            box-shadow: 0 -3em inset $nav-active;
+            color: black;
+        }
+    }
+
+}
+
+/* 
+
+*/
+
+// Header Content
+.header-contain {
+    width: 100%;
+    height: $header-height;
+    background-size: cover;
+    background-position: center;
+
+    .header-content {
+        background-image: url('https://sakura-sedaia.com/assets/images/WPRenders/BarSet_Preview4.png');
+        background-size: cover;
+
+        .header-text {
+            position: absolute;
+            transform: translateY(1.5in);
+
+            h1 {
+                font-family: PT_Sans;
+                font-weight: bold;
+                color: $light;
+                text-indent: 1in;
+            }
+
+            h4 {
+                color: $light;
+                font-family: Minecraft;
+                text-indent: 0.75in;
+            }
+        }
+    }
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.links:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+// Header Stuff
+
+
+
+
+.deprication-warning {
+    border-top: 2px solid #ff2222;
+    border-bottom: 2px solid #ff2222;
+    padding: 10px;
+    background-color: rgb(173, 0, 0);
+    color: white;
+    font-family: "Open Sans";
+
+    strong {
+        font-family: "Noto Sans JP";
+    }
+}
+
+// EXTRA SCSS CODE FOR CODEPEN FUNTIONALITY, DO NOT COPY
+
+// Copy Code following this
+.content-section {
+    width: 100%;
+    height: auto;
+
+    .about {
+        background-color: white;
+
+        .title {
+            padding: 0.5in;
+
+            h1 {
+                font-family: PT_Sans;
+            }
+
+            p {
+                font-family: "Source Sans Pro", sans-serif;
+            }
+        }
+    }
+
+    $height-tworow: 3.23in;
+
+    .index-rig-display {
+        width: 100%;
+        height: $height-tworow;
+        overflow: hidden;
+
+        .content {
+            position: relative;
+            z-index: 999;
+            font-family: "Source Sans Pro", sans-serif;
+            transform: translateY(-$height-tworow);
+            text-align: center;
+            background-blend-mode: linear;
+            background-image: linear-gradient(to top,
+                    rgba(0, 0, 0, 0.3),
+                    rgba(0, 0, 0, 0.1));
+
+            height: $height-tworow;
+            width: 100%;
+            margin: 0 auto;
+
+            .rig-display-text {
+                color: white;
+                padding-top: 50px;
+                font-family: PT_Sans;
+
+                padding-bottom: 30px;
+            }
+
+            //ffb3cb
+            .btn {
+                display: inline-block;
+                color: #fff;
+                cursor: pointer;
+                // display: block;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 45px;
+                margin: 0 0 2em;
+                max-width: 160px;
+                position: relative;
+                text-decoration: none;
+                text-transform: uppercase;
+                width: 100%;
+
+                //   @media(min-width: 400px) {
+                //     display: inline-block;
+                //     margin-right: 2.5em;
+
+                //     &:nth-of-type(even) {
+                //       margin-right: 0;
+                //     }
+                //   }
+
+                @media (min-width: 600px) {
+                    margin: 0 1em 2em;
+
+                    //     &:nth-of-type(even) {
+                    //       margin-right: 2.5em;
+                    //     }
+
+                    //     &:nth-of-type(5) {
+                    //       margin-right: 0;
+                    //     }
+                }
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            .btn-4 {
+                border: 1px solid;
+                overflow: hidden;
+                position: relative;
+                transition: 500ms;
+
+                span {
+                    z-index: 20;
+                }
+
+                &:after {
+                    background: #fff;
+                    content: "";
+                    height: 155px;
+                    left: -75px;
+                    opacity: 0.2;
+                    position: absolute;
+                    top: -50px;
+                    transform: rotate(35deg);
+                    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+                    width: 50px;
+                    z-index: -10;
+                }
+
+                &:before {
+                    background-color: #ffb3cb00;
+                    content: "";
+                    height: 155px;
+                    left: 0;
+                    position: absolute;
+                    width: 100%;
+                    z-index: -10;
+                    transition: 500ms;
+                }
+            }
+
+            .btn-4:hover {
+                color: black;
+
+                &:after {
+                    left: 120%;
+                    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+                }
+
+                &:before {
+                    background-color: #ffb3cb;
+                    content: "";
+                    height: 155px;
+                    left: 0;
+                    position: absolute;
+                    width: 100%;
+                    z-index: -10;
+                }
+            }
+        }
+
+        .background {
+            width: 100%;
+            margin: 0 auto;
+            z-index: -1;
+            height: $height-tworow;
+            background-position: center;
+            filter: blur(5px);
+            transform: scale(1.1);
+        }
+    }
+}
+
+.latest-video {
+    height: 4in;
+
+    .title {
+        text-align: center;
+
+        h1 {
+            font-family: "Open Sans";
+        }
+    }
+
+    .container {
+        display: flex;
+
+        .col {
+            flex-basis: 50%;
+        }
+
+        // Individual Elements
+        .video {
+            text-align: center;
+            flex-basis: 700px;
+
+            iframe {
+                display: inline;
+            }
+        }
+
+        .meta {
+
+            h2,
+            h3 {
+                font-family: "PT_sans";
+            }
+
+            div {
+                font-family: "Noto Sans JP";
+            }
+        }
+    }
+}
+
+/*
+# Integrate Google Material Icons
+# Website: https://material.io/resources/icons/?style=baseline
+*/
+
+// Begin Footer
+$border-color: rgb(50, 50, 50);
+$footer-row-one-height: 1.25in;
+
+.footer {
+    .footer-desktop {
+        background-color: rgb(35, 35, 35);
+        color: white;
+
+        .footer-top-container {
+            display: flex;
+            border-bottom: 2px solid $border-color;
+
+            .left-section {
+                min-width: 160px;
+                border-right: 2.5px solid $border-color;
+                transition: 500ms;
+                text-align: left;
+                flex-basis: 50%;
+                height: $footer-row-one-height;
+
+                div {
+                    padding-top: 12px;
+                    padding-left: 30px;
+                    list-style-type: none;
+                }
+            }
+
+            .right-section {
+                padding-left: 2.5px;
+                transition: 500ms;
+                min-width: 160px;
+                flex-basis: 50%;
+                border-left: 2px solid $border-color;
+                position: relative;
+                text-align: right;
+                height: $footer-row-one-height;
+
+                .footer-icon {
+                    padding-top: 10px;
+                    padding-right: 30px;
+
+                    .fab {
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+
+        .footer-bottom-container {
+            text-align: center;
+        }
+    }
+}
+
+
+// Specialty Links
+.yt-links-thick {
+    color: black;
+    transition: 250ms;
+    text-decoration: none;
+    border-bottom: 4px solid rgba(255, 0, 0, 0);
+}
+
+.yt-links-thick:hover {
+    color: red;
+    cursor: pointer;
+    border-bottom: 4px solid rgba(255, 0, 0, 1);
+}
+
+.yt-links-thin {
+    color: black;
+    transition: 250ms;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(255, 0, 0, 0);
+}
+
+.yt-links-thin:hover {
+    color: red;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(255, 0, 0, 1);
+}
+
+.sildeer-link {
+    color: black;
+    transition: 250ms;
+    text-decoration: none;
+    border-bottom: 2px solid #adf6ff00;
+}
+
+.sildeer-link:hover {
+    color: #adf6ff;
+    cursor: pointer;
+    border-bottom: 2px solid;
+}
+.mc-link {
+    color: black;
+    transition: 250ms;
+    text-decoration: none;
+    border-bottom: 2px solid #adf6ff00;
+}
+
+.mc-link:hover {
+    color: #11ec1c;
+    cursor: pointer;
+    border-bottom: 2px solid;
+}
