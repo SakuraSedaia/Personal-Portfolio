@@ -58,7 +58,7 @@ function emailSaki () {
 // Rig Downloads
 function downloadSACR (state) {
   if (state == true) {
-    window.open('assets/misc/SACR R4.1.1 LTS.zip');
+    window.open('assets/rigstuff/SACR R4.2.zip');
     console.info('Rig Download started');
   } else if (state == false) {
     window.alert(
@@ -68,17 +68,6 @@ function downloadSACR (state) {
   }
 }
 
-function downloadSLACME (state) {
-  if (state == true) {
-    window.open('assets/misc/LACM - Sakuras Edit V2.zip');
-    console.info('Rig Download started');
-  } else if (state == false) {
-    window.alert(
-      "I'm sorry, but this download link is disabled Temporarily, please try again later"
-    );
-    console.error('Rig download Disabled');
-  }
-}
 var devMode = true;
 
 if (devMode == true) {

@@ -9,7 +9,6 @@ $header-height: 5in;
 $light: #fff5f5;
 $shade: rgba(25, 25, 25, 0.5);
 $nav-border: pink;
-
 // Universal
 body {
     margin: 0;
@@ -82,7 +81,7 @@ body {
         color: white;
         display: inline-block;
         padding: 0.5rem 1rem;
-        width: 100px;
+        width: 200px;
         text-align: center;
         box-shadow: 0px 0 inset #222;
         background-color: #292929;
@@ -90,9 +89,19 @@ body {
         transition: 200ms;
         text-indent: 0in;
 
-        span {
+        .text {
             pointer-events: none;
+			position: relative;
+			display: inline-block;
+			transform: translateY(-3px);
         }
+		
+		.material-icons {
+			cursor: pointer;
+			position: relative;
+			display: inline-block;
+			transform: translateY(2px);
+		}
     }
 
     .xmasCounter {
@@ -174,7 +183,7 @@ body {
     background-position: center;
 
     .header-content {
-        background-image: url('https://sakura-sedaia.com/assets/images/WPRenders/BarSet_Preview4.png');
+        
         background-size: cover;
 
         .header-text {
@@ -197,22 +206,9 @@ body {
     }
 }
 
-.links {
-    color: white;
-    text-decoration: none;
-    transition: 500ms;
-}
 
-.links:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
 
 // Header Stuff
-
-
-
-
 .deprication-warning {
     border-top: 2px solid #ff2222;
     border-bottom: 2px solid #ff2222;
@@ -226,9 +222,7 @@ body {
     }
 }
 
-// EXTRA SCSS CODE FOR CODEPEN FUNTIONALITY, DO NOT COPY
 
-// Copy Code following this
 .content-section {
     width: 100%;
     height: auto;
@@ -255,7 +249,6 @@ body {
         width: 100%;
         height: $height-tworow;
         overflow: hidden;
-
         .content {
             position: relative;
             z-index: 999;
@@ -282,7 +275,7 @@ body {
             //ffb3cb
             .btn {
                 display: inline-block;
-                color: #fff;
+                color: #000;
                 cursor: pointer;
                 // display: block;
                 font-size: 16px;
@@ -294,85 +287,15 @@ body {
                 text-decoration: none;
                 text-transform: uppercase;
                 width: 100%;
-
-                //   @media(min-width: 400px) {
-                //     display: inline-block;
-                //     margin-right: 2.5em;
-
-                //     &:nth-of-type(even) {
-                //       margin-right: 0;
-                //     }
-                //   }
-
-                @media (min-width: 600px) {
-                    margin: 0 1em 2em;
-
-                    //     &:nth-of-type(even) {
-                    //       margin-right: 2.5em;
-                    //     }
-
-                    //     &:nth-of-type(5) {
-                    //       margin-right: 0;
-                    //     }
-                }
+				background-color: #FFFFFF50;
+				
+					box-shadow: 1px 1px 5px black;
+				transition: 200ms;
 
                 &:hover {
                     text-decoration: none;
-                }
-            }
-
-            .btn-4 {
-                border: 1px solid;
-                overflow: hidden;
-                position: relative;
-                transition: 500ms;
-
-                span {
-                    z-index: 20;
-                }
-
-                &:after {
-                    background: #fff;
-                    content: "";
-                    height: 155px;
-                    left: -75px;
-                    opacity: 0.2;
-                    position: absolute;
-                    top: -50px;
-                    transform: rotate(35deg);
-                    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-                    width: 50px;
-                    z-index: -10;
-                }
-
-                &:before {
-                    background-color: #ffb3cb00;
-                    content: "";
-                    height: 155px;
-                    left: 0;
-                    position: absolute;
-                    width: 100%;
-                    z-index: -10;
-                    transition: 500ms;
-                }
-            }
-
-            .btn-4:hover {
-                color: black;
-
-                &:after {
-                    left: 120%;
-                    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-                }
-
-                &:before {
-                    background-color: #ffb3cb;
-                    content: "";
-                    height: 155px;
-                    left: 0;
-                    position: absolute;
-                    width: 100%;
-                    z-index: -10;
+					box-shadow: 5px 5px 10px black;
+					background-color: white;
                 }
             }
         }
@@ -385,112 +308,22 @@ body {
             background-position: center;
             filter: blur(5px);
             transform: scale(1.1);
+			background-image: url("../images/MCRigBackgrouns/SACRThumbnail5.jpg");
         }
     }
 }
 
-.latest-video {
-    height: 4in;
-
-    .title {
-        text-align: center;
-
-        h1 {
-            font-family: "Open Sans";
-        }
-    }
-
-    .container {
-        display: flex;
-
-        .col {
-            flex-basis: 50%;
-        }
-
-        // Individual Elements
-        .video {
-            text-align: center;
-            flex-basis: 700px;
-
-            iframe {
-                display: inline;
-            }
-        }
-
-        .meta {
-
-            h2,
-            h3 {
-                font-family: "PT_sans";
-            }
-
-            div {
-                font-family: "Noto Sans JP";
-            }
-        }
-    }
+// Links
+.links {
+    color: white;
+    text-decoration: none;
+    transition: 500ms;
 }
 
-/*
-# Integrate Google Material Icons
-# Website: https://material.io/resources/icons/?style=baseline
-*/
-
-// Begin Footer
-$border-color: rgb(50, 50, 50);
-$footer-row-one-height: 1.25in;
-
-.footer {
-    .footer-desktop {
-        background-color: rgb(35, 35, 35);
-        color: white;
-
-        .footer-top-container {
-            display: flex;
-            border-bottom: 2px solid $border-color;
-
-            .left-section {
-                min-width: 160px;
-                border-right: 2.5px solid $border-color;
-                transition: 500ms;
-                text-align: left;
-                flex-basis: 50%;
-                height: $footer-row-one-height;
-
-                div {
-                    padding-top: 12px;
-                    padding-left: 30px;
-                    list-style-type: none;
-                }
-            }
-
-            .right-section {
-                padding-left: 2.5px;
-                transition: 500ms;
-                min-width: 160px;
-                flex-basis: 50%;
-                border-left: 2px solid $border-color;
-                position: relative;
-                text-align: right;
-                height: $footer-row-one-height;
-
-                .footer-icon {
-                    padding-top: 10px;
-                    padding-right: 30px;
-
-                    .fab {
-                        font-size: 23px;
-                    }
-                }
-            }
-        }
-
-        .footer-bottom-container {
-            text-align: center;
-        }
-    }
+.links:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
-
 
 // Specialty Links
 .yt-links-thick {
@@ -519,15 +352,15 @@ $footer-row-one-height: 1.25in;
     border-bottom: 2px solid rgba(255, 0, 0, 1);
 }
 
-.sildeer-link {
+.about-link {
     color: black;
     transition: 250ms;
     text-decoration: none;
     border-bottom: 2px solid #adf6ff00;
 }
 
-.sildeer-link:hover {
-    color: #adf6ff;
+.about-link:hover {
+    color: #D60000;
     cursor: pointer;
     border-bottom: 2px solid;
 }
