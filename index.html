@@ -35,7 +35,7 @@
     <div class="header-contain" id="header">
 		<div class="above-nav">
       <div class="logo"   href="javascript:void(0)" onclick="openNav()">
-		  <span class="material-icons">menu</span>
+		  <span class="material-icons" id="sideNavBurger">menu</span>
 		  <span class="text">Sakura Sedaia</span>
 	</div>
       <div class="info">Personal Portfolio</div>
@@ -57,16 +57,14 @@
 
   <!-- End Header -->
 
-  <div class="dev-warning" id="devWarning">
-    <!-- HTML Not Displayed, Developer Mode Disabled -->
-  </div>
+	  
   <!-- Begin page Content -->
   <div class="content-section">
     <div class="about">
       <div class="title">
         <h1>Who am I</h1>
         <p>
-          I am a <a id="age">null</a> year old 3D Animator and Website Designer from Iowa, I started 3D Animation when I was 12 and Website Design when I was 14. I mainly work with Minecraft Animation and build simple websites, I eventually hope to turn Website Design into a carreer and 3D Animation into a suitable hobby. Not much is going on Channel wise due to Education reasons, but once education is done and I am available I will be ramping up production on two of my series, Parallel Z and Lost Angel. As well as continuing efforts on <em>"The Beginnings"</em> by <a class="about-link" onclick="openExternal('',1)">Frostlight</a>, <em>"Songs of War Seasons 2-3"</em> by <a class="about-link" onclick="openExternal('',1)">Knights of Ardonia</a>, and <em>"Operia"</em> by <a class="about-link" onclick="openExternal('www.youtube.com/channel/UCFls8rTZA1rCgFmWUBcmdlg',1)">RedBlue115</a>.
+          I am a <a id="age">null</a> year old 3D Animator and Website Designer from Iowa, I started 3D Animation when I was 12 and Website Design when I was 14. I mainly work with Minecraft Animation and build simple websites, I eventually hope to turn Website Design into a carreer and 3D Animation into a suitable hobby. Not much is going on Channel wise due to Education reasons, but once education is done and I am available I will be ramping up production on two of my series, Parallel Z and Lost Angel. As well as continuing efforts on <em>"The Beginnings"</em> by <a class="yt-links-thin" onclick="openExternal('',1)">Frostlight</a>, <em>"Songs of War Seasons 2-3"</em> by <a class="yt-links-thin" onclick="openExternal('',1)">Knights of Ardonia</a>, and <em>"Operia"</em> by <a class="yt-links-thin" onclick="openExternal('www.youtube.com/channel/UCFls8rTZA1rCgFmWUBcmdlg',1)">RedBlue115</a>.
         </p>
       </div>
     </div>
@@ -92,10 +90,8 @@
 	</div>
   
   <!-- Scripts -->
-  <script src="assets/scripts/age.js"></script>
-  <script src="assets/scripts/seasons.js"></script>
   <script src="assets/scripts/responsive.js"></script>
-  <script>
+  <script id="ageScriptStartup">
     // Age Display Set
     var ageDisplay = document.getElementById('age')
     ageDisplay.innerHTML = sakuraAge

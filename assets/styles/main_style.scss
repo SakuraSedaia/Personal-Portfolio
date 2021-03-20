@@ -9,6 +9,7 @@ $header-height: 5in;
 $light: #fff5f5;
 $shade: rgba(25, 25, 25, 0.5);
 $nav-border: pink;
+
 // Universal
 body {
     margin: 0;
@@ -68,8 +69,6 @@ body {
         .active {
             color: #FCB5DE;
         }
-
-
     }
 }
 
@@ -81,13 +80,14 @@ body {
         color: white;
         display: inline-block;
         padding: 0.5rem 1rem;
-        width: 200px;
-        text-align: center;
+        width: 130px;
+        text-align: left;
         box-shadow: 0px 0 inset #222;
         background-color: #292929;
         text-decoration: none;
         transition: 200ms;
         text-indent: 0in;
+			cursor: pointer;
 
         .text {
             pointer-events: none;
@@ -97,7 +97,7 @@ body {
         }
 		
 		.material-icons {
-			cursor: pointer;
+            pointer-events: none;
 			position: relative;
 			display: inline-block;
 			transform: translateY(2px);
@@ -168,7 +168,6 @@ body {
             color: black;
         }
     }
-
 }
 
 /* 
@@ -350,29 +349,4 @@ body {
     color: red;
     cursor: pointer;
     border-bottom: 2px solid rgba(255, 0, 0, 1);
-}
-
-.about-link {
-    color: black;
-    transition: 250ms;
-    text-decoration: none;
-    border-bottom: 2px solid #adf6ff00;
-}
-
-.about-link:hover {
-    color: #D60000;
-    cursor: pointer;
-    border-bottom: 2px solid;
-}
-.mc-link {
-    color: black;
-    transition: 250ms;
-    text-decoration: none;
-    border-bottom: 2px solid #adf6ff00;
-}
-
-.mc-link:hover {
-    color: #11ec1c;
-    cursor: pointer;
-    border-bottom: 2px solid;
 }
