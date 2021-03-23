@@ -166,7 +166,8 @@ if (devMode == true) {
 }
 
 
-var getLastScript = document.body.childNodes[document.body.childNodes.length-1]
+var getLastScript = document.getElementsByTagName('script')[document.getElementsByTagName('script').length-1]
+console.log(getLastScript)
 // Import Dev Tool Script
 function devModeScript (url) {
   var script = document.createElement('script') // create a script DOM node

@@ -248,6 +248,8 @@ body {
         width: 100%;
         height: $height-tworow;
         overflow: hidden;
+		
+		
         .content {
             position: relative;
             z-index: 999;
@@ -262,7 +264,19 @@ body {
             height: $height-tworow;
             width: 100%;
             margin: 0 auto;
-
+&::before {
+			width: 100%;
+            margin: 0 auto;
+            z-index: -1;
+            height: $height-tworow;
+            background-position: center;
+            filter: blur(5px);
+            transform: scale(1.1);
+			background-image: url("../images/MCRigBackgrouns/SACRThumbnail5.jpg");
+			content: "";
+			position: relative;
+			z-index: -1;
+		}
             .rig-display-text {
                 color: white;
                 padding-top: 50px;
@@ -299,16 +313,6 @@ body {
             }
         }
 
-        .background {
-            width: 100%;
-            margin: 0 auto;
-            z-index: -1;
-            height: $height-tworow;
-            background-position: center;
-            filter: blur(5px);
-            transform: scale(1.1);
-			background-image: url("../images/MCRigBackgrouns/SACRThumbnail5.jpg");
-        }
     }
 }
 
