@@ -14,6 +14,7 @@ function openNav () {
   sideNav.style.width = '250px'
   viewport.style.marginLeft = '250px'
   sideNavBurger.innerHTML = "menu_open"
+  sideNavBurger.parentElement.setAttribute('onclick','closeNav()')
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
@@ -21,6 +22,7 @@ function closeNav () {
   sideNav.style.width = '0'
   viewport.style.marginLeft = '0'
   sideNavBurger.innerHTML = "menu"
+  sideNavBurger.parentElement.setAttribute('onclick','openNav()')
 }
 
 // Links
