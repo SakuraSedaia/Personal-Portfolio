@@ -44,7 +44,7 @@ console.time('Initiased Developer Script in')
 
 // Developer Tools
 var devHTMLWarning = true // Toggle whether to use the Internal HTML Style
-var devRefreshInterval = 0 // Sets the Refresh Interval for Dev Refresh, set to 0 to disable
+var devRefreshInterval = 3000 // Sets the Refresh Interval for Dev Refresh, set to 0 to disable
 
 var usePopupWarning = false // Toggles whether or not a window.alert popup will be used to announce broken
 var devWarningDiv = document.getElementById('devWarning')

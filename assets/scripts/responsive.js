@@ -27,23 +27,25 @@ function closeNav () {
 
 // Links
 function openInternal (url) {
-  // Internal Links
   window.open(url + '.html', '_self');
 }
 var securityBadge;
 
 function openExternal (url, isSiteSecure) {
-  if (isSiteSecure == 'secure' || isSiteSecure == 1) {
+  if (isSiteSecure == ('secure' || 1)) {
     securityBadge = 'https://'
-  } else if (isSiteSecure != 'secure' || isSiteSecure == 0) {
+  } else if ((isSiteSecure != 'secure') || (isSiteSecure == 0)) {
     securityBadge = 'http://'
   }
-  // External Links
-  if (window.confirm('Are you sure you want to go to an external page?')) {
-    window.open(securityBadge + url, '_blank');
+  if ((url == "noData") || (isSiteSecure == -1)) {
+    window.alert("Error 404: Missing Page\nWas not able to connect/locate to Webpage, please try again later")
+  } else {
+    if (window.confirm('Are you sure you want to go to an external page?') || ((url != "noData") || (isSiteSecure != -1))) {
+      window.open(securityBadge + url, '_blank');
+    }
   }
+  
 }
-
 function openText (url) {
   // Internal Links
   window.open('assets/text/' + url + '.txt', '_blank')
@@ -143,6 +145,7 @@ if (christmas == true) {
     xmasCounter.innerText = 30 - xmasDay + 25
   }
 }
+
 if (christmas == false) {
   console.info(
     'DEBUG: It is not Christmas Time, changing back to Normal Header Image'
@@ -156,7 +159,6 @@ if (christmas == false) {
   xmasCounter.innerText = 'Not Christmas Time'
   document.getElementById('xmasContainer').style.visibility = 'hidden'
 }
-
 
 var devMode = true;
 
