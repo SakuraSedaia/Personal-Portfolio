@@ -1,0 +1,115 @@
+/* Import Base Site */
+@import url("../../assets/fonts/fonts.css");
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: "PT_Sans";
+}
+
+h2 {
+    font-family: "Noto Sans JP", sans-serif;
+    background: rgb(124, 59, 217);
+    background: linear-gradient(42deg,
+            rgb(107, 95, 124) 0%,
+            rgba(146, 59, 217, 1) 100%);
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    color: #f5f5f5;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h3 {
+    font-family: "Minecraft";
+}
+
+.return-to-main {
+    position: absolute;
+    text-decoration: underline;
+}
+
+.return-to-main:before {
+    content: "< ";
+}
+
+.header-contain {
+    text-align: center;
+    background-image: url('images/backgrounds/SoWModTeam_Render.png');
+    padding: 1in;
+}
+
+.portal {
+    text-align: center;
+}
+
+
+.sacr-diagram {
+    text-align: center;
+}
+
+.sacr-diagram div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.diagram-item {
+    letter-spacing: 0px;
+    background-color: grey;
+    display: inline-block;
+    image-rendering: crisp-edges;
+    background-size: cover;
+    content: "";
+    color: rgba(242, 242, 242, 0.0);
+
+    background-color: rgba(0, 0, 0, 0.0);
+    transition-duration: 250ms;
+    cursor: pointer;
+}
+
+.diagram-item:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    color: rgba(242, 242, 242, 1.0);
+}
+
+.diagram-item span {
+    pointer-events: none;
+
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.w-sml {
+    width: 50px;
+}
+
+.w-mid {
+    width: 100px
+}
+
+.w-lrg {
+    width: 150px;
+}
+
+.h-sml {
+    height: 50px;
+}
+
+.h-mid {
+    height: 100px;
+}
+
+.h-lrg {
+    height: 150px;
+}
