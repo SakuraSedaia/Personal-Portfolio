@@ -2,6 +2,16 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("bootstrap-integration.css");
+.dev-warning {
+  text-align: center;
+  background-color: #222;
+  padding: 5px;
+  color: white;
+}
+.dev-warning a {
+  color: pink;
+  font-weight: 600;
+}
 body {
   margin: 0;
   font-family: "PT_Sans";
