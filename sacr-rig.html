@@ -1,257 +1,201 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Sakura Sedaia</title>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <title>Sakura Sedaia</title>
 
-    <link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link href="assets/styles/main_style.css" rel="stylesheet" />
-    <link href="assets/styles/rigs.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" />
 
-    <!-- FontAwesome Kit -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
-    />
-  </head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="assets/styles/main_style.css" rel="stylesheet" />
+  <link href="assets/styles/rigs.css" rel="stylesheet" />
 
-  <body>
-    <div class="dev-warning">
-      <h2>ATTENTION</h2>
-      <p>A pre-release version of the SACR Wiki has been released, be sure to check it out <a href="sacr-wiki/wiki.html">here</a></p>
-    </div>
-    <div class="sideNav" id="sideNav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <a onclick="openInternal('sacr-rig')" class="active">SACR</a>
-      <a onclick="openExternal('git.sakura-sedaia.com/assets')"
-        >Assets &#40;Ext&#41;</a
-      >
-    </div>
-    <div class="viewport" id="viewport">
-      <div class="above-nav">
-        <div class="logo" onclick="openInternal('index')">
-          <span>Sakura Sedaia</span>
-        </div>
-        <div class="info">Personal Portfolio</div>
-        <div class="xmasCounter" id="xmasContainer">
-          Days until Christmas:
-          <span id="xmasCounter">Undefined</span>
-        </div>
+  <!-- FontAwesome Kit -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css" />
+</head>
+
+<body>
+  <div class="dev-warning">
+    <h2>ATTENTION</h2>
+    <p>A pre-release version of the SACR Wiki has been released, be sure to check it out <a
+        href="sacr-wiki/wiki.html">here</a></p>
+  </div>
+  <div class="sideNav" id="sideNav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a onclick="openInternal('sacr-rig')" class="active">SACR</a>
+    <a onclick="openExternal('git.sakura-sedaia.com/assets')">Assets &#40;Ext&#41;</a>
+    <a onclick="openInternal('sacr-wiki/wiki')">Rig Wiki</a>
+  </div>
+  <div class="viewport" id="viewport">
+    <div class="above-nav">
+      <div class="logo" onclick="openInternal('index')">
+        <span>Sakura Sedaia</span>
       </div>
-      <nav class="nav">
-        <div class="nav-link" href="#" onclick="openInternal('index')">
-          Home
-        </div>
-        <div class="nav-link active" aria-current="page" onclick="openNav()">
-          Rigs
-        </div>
-        <div
-          class="nav-link disabled"
-          href="#"
-          tabindex="-1"
-          aria-disabled="true"
-        >
-          Projects
-        </div>
-        <div
-          class="nav-link disabled"
-          href="#"
-          tabindex="-1"
-          aria-disabled="true"
-        >
-          Contact
-        </div>
-      </nav>
-      <div
-        class="header-contain"
-        id="header"
-        style="
+      <div class="info">Personal Portfolio</div>
+      <div class="xmasCounter" id="xmasContainer">
+        Days until Christmas:
+        <span id="xmasCounter">Undefined</span>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="nav-link" href="#" onclick="openInternal('index')">
+        Home
+      </div>
+      <div class="nav-link active" aria-current="page" onclick="openNav()">
+        Rigs
+      </div>
+      <div class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+        Projects
+      </div>
+      <div class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+        Contact
+      </div>
+    </nav>
+    <div class="header-contain" id="header" style="
           background-image: url('assets/images/WPRenders/BarSet_Preview4.png');
-        "
-      >
-        <!-- Header Content -->
-        <div class="header-content">
-          <div class="header-text">
-            <h1>Personal Portfolio</h1>
-            <h4>Rigs Section</h4>
-          </div>
+        ">
+      <!-- Header Content -->
+      <div class="header-content">
+        <div class="header-text">
+          <h1>Personal Portfolio</h1>
+          <h4>Rigs Section</h4>
         </div>
       </div>
-      <!-- End Header -->
-      <div class="dev-warning" id="devWarning">
-        <!-- HTML Not Displayed, Developer Mode Disabled -->
-      </div>
+    </div>
+    <!-- End Header -->
+    <div class="dev-warning" id="devWarning">
+      <!-- HTML Not Displayed, Developer Mode Disabled -->
+    </div>
 
-      <div class="about-sacr">
-        <div
-          class="title-sacr"
-          style="
+    <div class="about-sacr">
+      <div class="title-sacr" style="
             background-image: url(assets/images/MCRigBackgrouns/SACRThumbnail5.jpg);
             background-position: center;
             background-size: cover;
-          "
-        >
-          <div class="title-text">
-            <h1>Sakura's Advanced Character Rig</h1>
-            <h3>
-              Lightweight Advanced Minecraft Character Rig built and designed by
-              an Animator for Animators
-            </h3>
-            <div class="credit" onclick="openSACRPromotional()">
-              Splash Art by: Chiefsam34#9456
-            </div>
+          ">
+        <div class="title-text">
+          <h1>Sakura's Advanced Character Rig</h1>
+          <h3>
+            Lightweight Advanced Minecraft Character Rig built and designed by
+            an Animator for Animators
+          </h3>
+          <div class="credit" onclick="openSACRPromotional()">
+            Splash Art by: Chiefsam34#9456
           </div>
-          <div
-            class="title-bg"
-            style="
+        </div>
+        <div class="title-bg" style="
               background-image: url('assets/images/WPRenders/Sakura_EnderEgg_Discovery_V2.jpg');
-            "
-          ></div>
-        </div>
+            "></div>
+      </div>
 
-        <!-- Rig Download -->
-        <div class="rig-download-section">
-          <div class="rds-col">
-            <div class="rds-background">
-              <img
-                src="assets/images/Thumbnails/SACR R4.2 Promotional Art.jpg"
-                width="540px"
-                alt="background"
-                onclick="openSACRPromotional()"
-              />
-            </div>
-          </div>
-
-          <div class="rds-col">
-            <h1>Download SACR R4.2</h1>
-            <span class="file-details"
-              >File Size: 779 Kb |
-              <a
-                onclick="openText('sacr-changelog-latest')"
-                class="download-extra"
-                >Changelog</a
-              >
-              |
-              <a
-                onclick="openExternal('github.com/SakuraSedaia/SACR-MC-Rig/','secure')"
-                class="download-extra"
-                >GitHub Repo</a
-              >
-            </span>
-            <div
-              class="download-lr download-extra"
-              onclick="downloadSACR(true)"
-            >
-              Latest Release
-            </div>
+      <!-- Rig Download -->
+      <div class="rig-download-section">
+        <div class="rds-col">
+          <div class="rds-background">
+            <img src="assets/images/Thumbnails/SACR R4.2 Promotional Art.jpg" width="540px" alt="background"
+              onclick="openSACRPromotional()" />
           </div>
         </div>
 
-        <!-- Features section -->
-        <div class="features-sacr">
-          <h2>Highlight Features</h2>
+        <div class="rds-col">
+          <h1>Download SACR R4.2</h1>
+          <span class="file-details">File Size: 779 Kb |
+            <a onclick="openText('sacr-changelog-latest')" class="download-extra">Changelog</a>
+            |
+            <a onclick="openExternal('github.com/SakuraSedaia/SACR-MC-Rig/','secure')" class="download-extra">GitHub
+              Repo</a>
+          </span>
+          <div class="download-lr download-extra" onclick="downloadSACR(true)">
+            Latest Release
+          </div>
+        </div>
+      </div>
 
-          <div class="highlight-features">
-            <div class="row-1">
-              <div class="row-1-col feat-one">
-                <h2>Light Weight</h2>
-                <div class="feat-overlay">
-                  SACR's Optimized package should allow most mid-range computers
-                  and above to run the Standard Build easily,
-                </div>
+      <!-- Features section -->
+      <div class="features-sacr">
+        <h2>Highlight Features</h2>
+
+        <div class="highlight-features">
+          <div class="row-1">
+            <div class="row-1-col feat-one">
+              <h2>Light Weight</h2>
+              <div class="feat-overlay">
+                SACR's Optimized package should allow most mid-range computers
+                and above to run the Standard Build easily,
               </div>
-              <div class="row-1-col feat-two">
-                <h2>Feature Packed</h2>
-                <div class="feat-overlay">
-                  <p>
-                    SACR is packed with enough features to be able to get the
-                    job done and more, utilize the Lattice system to create your
-                    own Mesh Preset and extrude the rig to your hearts content,
-                    even try out it's embedded Teeth and Female Modes for your
-                    special rigs
-                  </p>
-                </div>
+            </div>
+            <div class="row-1-col feat-two">
+              <h2>Feature Packed</h2>
+              <div class="feat-overlay">
+                <p>
+                  SACR is packed with enough features to be able to get the
+                  job done and more, utilize the Lattice system to create your
+                  own Mesh Preset and extrude the rig to your hearts content,
+                  even try out it's embedded Teeth and Female Modes for your
+                  special rigs
+                </p>
               </div>
-              <div class="row-1-col feat-three">
-                <h2>Long-Term Support</h2>
-                <div class="feat-overlay">
-                  <p>
-                    The SACR's Long-Term Support Status means the rig will
-                    continue to be updated with minor feature updates and bug
-                    fixes for a extended amount of time, though this means major
-                    content updates
-                  </p>
-                </div>
+            </div>
+            <div class="row-1-col feat-three">
+              <h2>Long-Term Support</h2>
+              <div class="feat-overlay">
+                <p>
+                  The SACR's Long-Term Support Status means the rig will
+                  continue to be updated with minor feature updates and bug
+                  fixes for a extended amount of time, though this means major
+                  content updates
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <div class="footer">
-      <div class="footer-desktop">
-        <div class="footer-top-container">
-          <div class="left-section footer-div">
-            <div>
-              <a onclick="openInternal('index')" class="links" href="#">Home</a>
-            </div>
-            <div>
-              <a onclick="openInternal('sacr-rig')" class="links" href="#"
-                >SACR Rig</a
-              >
-            </div>
-            <div>
-              <a
-                onclick="openExternal('git.sakura-sedaia.com/Blender-Assets',1)"
-                class="links"
-                href="#"
-                >Assets &#40;Ext&#41;</a
-              >
-            </div>
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-desktop">
+      <div class="footer-top-container">
+        <div class="left-section footer-div">
+          <div>
+            <a onclick="openInternal('index')" class="links" href="#">Home</a>
           </div>
-
-          <div class="right-section footer-div">
-            <div class="footer-icon links">
-              <i
-                class="fab fa-github"
-                onclick="openExternal('git.sakura-sedaia.com',1)"
-              ></i>
-              Github
-            </div>
-            <div class="footer-icon links">
-              <i
-                class="fab fa-google"
-                onclick="openExternal('domains.google/',1)"
-              ></i>
-              Google Domains
-            </div>
-            <div class="footer-icon links">
-              <i
-                class="fab fa-codepen"
-                onclick="openExternal('codepen.io',1)"
-              ></i>
-              Codepen
-            </div>
+          <div>
+            <a onclick="openInternal('sacr-rig')" class="links" href="#">SACR Rig</a>
+          </div>
+          <div>
+            <a onclick="openExternal('git.sakura-sedaia.com/Blender-Assets',1)" class="links" href="#">Assets
+              &#40;Ext&#41;</a>
           </div>
         </div>
-        <div class="footer-bottom-container">
-          <div class="footer-content">&copy; 2020 by Sakura Sedaia</div>
+
+        <div class="right-section footer-div">
+          <div class="footer-icon links">
+            <i class="fab fa-github" onclick="openExternal('git.sakura-sedaia.com',1)"></i>
+            Github
+          </div>
+          <div class="footer-icon links">
+            <i class="fab fa-google" onclick="openExternal('domains.google/',1)"></i>
+            Google Domains
+          </div>
+          <div class="footer-icon links">
+            <i class="fab fa-codepen" onclick="openExternal('codepen.io',1)"></i>
+            Codepen
+          </div>
         </div>
       </div>
+      <div class="footer-bottom-container">
+        <div class="footer-content">&copy; 2020 by Sakura Sedaia</div>
+      </div>
     </div>
-    <script src="assets/scripts/seasons.js"></script>
-    <script src="assets/scripts/responsive.js"></script>
-  </body>
+  </div>
+  <script src="assets/scripts/seasons.js"></script>
+  <script src="assets/scripts/responsive.js"></script>
+</body>
+
 </html>

@@ -1,281 +1,225 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Doc Title -->
-    <title>Sakura Sedaia</title>
 
-    <!-- Metadata -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <!-- Doc Title -->
+  <title>Sakura Sedaia</title>
 
-    <link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" />
+  <!-- Metadata -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Internal Stylesheets -->
-    <link href="assets/styles/main_style.css" rel="stylesheet" />
-    <link href="assets/styles/lost_angel_css.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" />
 
-    <!-- External Stylesheets -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-  </head>
+  <!-- Internal Stylesheets -->
+  <link href="assets/styles/main_style.css" rel="stylesheet" />
+  <link href="assets/styles/lost_angel_css.css" rel="stylesheet" />
 
-  <body>
-    <div class="dev-warning">
-      <h2>ATTENTION</h2>
-      <p>A pre-release version of the SACR Wiki has been released, be sure to check it out <a href="sacr-wiki/wiki.html">here</a></p>
-    </div>
-    <!-- Side Navigation -->
-    <div class="sideNav" id="sideNav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <a onclick="openInternal('sacr-rig')">SACR</a>
+  <!-- External Stylesheets -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
 
-      <a onclick="openExternal('git.sakura-sedaia.com/assets')"
-        >Assets &#40;Ext&#41;</a
-      >
-    </div>
+<body>
+  <div class="dev-warning">
+    <h2>ATTENTION</h2>
+    <p>A pre-release version of the SACR Wiki has been released, be sure to check it out <a
+        href="sacr-wiki/wiki.html">here</a></p>
+  </div>
+  <!-- Side Navigation -->
+  <div class="sideNav" id="sideNav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a onclick="openInternal('sacr-rig')">SACR</a>
 
-    <!-- Viewport Begin -->
-    <div class="viewport" id="viewport">
-      <!-- Top Navigation Content -->
-      <div class="above-nav">
-        <div class="logo" onclick="openInternal('index')">
-          <span>Sakura Sedaia</span>
-        </div>
-        <div class="info">Personal Portfolio</div>
-        <div class="xmasCounter" id="xmasContainer">
-          Days until Christmas:
-          <span id="xmasCounter">Undefined</span>
-        </div>
+    <a onclick="openExternal('git.sakura-sedaia.com/assets')">Assets &#40;Ext&#41;</a>
+
+    <a onclick="openInternal('sacr-wiki/wiki')">Rig Wiki</a>
+  </div>
+
+  <!-- Viewport Begin -->
+  <div class="viewport" id="viewport">
+    <!-- Top Navigation Content -->
+    <div class="above-nav">
+      <div class="logo" onclick="openInternal('index')">
+        <span>Sakura Sedaia</span>
       </div>
+      <div class="info">Personal Portfolio</div>
+      <div class="xmasCounter" id="xmasContainer">
+        Days until Christmas:
+        <span id="xmasCounter">Undefined</span>
+      </div>
+    </div>
 
-      <!-- Bottom Navigation Content -->
-      <nav class="nav">
-        <div
-          class="nav-link active"
-          aria-current="page"
-          onclick="openInternal('index')"
-        >
-          Home
-        </div>
-        <div class="nav-link" onclick="openNav()">Rigs</div>
-        <div
-          class="nav-link disabled"
-          href="#"
-          tabindex="-1"
-          aria-disabled="true"
-        >
-          Projects
-        </div>
-        <div
-          class="nav-link disabled"
-          href="#"
-          tabindex="-1"
-          aria-disabled="true"
-        >
-          Contact
-        </div>
-      </nav>
+    <!-- Bottom Navigation Content -->
+    <nav class="nav">
+      <div class="nav-link active" aria-current="page" onclick="openInternal('index')">
+        Home
+      </div>
+      <div class="nav-link" onclick="openNav()">Rigs</div>
+      <div class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+        Projects
+      </div>
+      <div class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+        Contact
+      </div>
+    </nav>
 
-      <!-- 
+    <!-- 
 # Header Container 
 #
 # Header Image is defined here in the HTML on the Style Attribute for the Header Container, it is not in the SCSS File
 -->
-      <div
-        class="header-contain"
-        id="header"
-        style="
+    <div class="header-contain" id="header" style="
           background-image: url('https://sakura-sedaia.com/assets/images/WPRenders/BarSet_Preview4.png');
-        "
-      >
-        <!-- Header Content -->
-        <div class="header-content">
-          <div class="header-text">
-            <h1>Personal Portfolio - Home</h1>
-            <h4>Provided by you're local Internet Neko</h4>
-          </div>
+        ">
+      <!-- Header Content -->
+      <div class="header-content">
+        <div class="header-text">
+          <h1>Personal Portfolio - Home</h1>
+          <h4>Provided by you're local Internet Neko</h4>
         </div>
       </div>
-      <!-- End Header -->
-      <div class="dev-warning" id="devWarning">
-        <!-- HTML Not Displayed, Developer Mode Disabled -->
+    </div>
+    <!-- End Header -->
+    <div class="dev-warning" id="devWarning">
+      <!-- HTML Not Displayed, Developer Mode Disabled -->
+    </div>
+
+    <!-- Begin page Content -->
+    <div class="content-section">
+      <!-- About Section -->
+      <div class="about">
+        <div class="title">
+          <h1>Who am I</h1>
+          <p>
+            I am a <a id="age">null</a> year old 3D Animator and Website
+            Designer from Iowa, I started 3D Animation when I was 12 and
+            Website Design when I was 14. I mainly work with Minecraft
+            Animation and build simple websites, I eventually hope to turn
+            Website Design into a carreer and 3D Animation into a suitable
+            hobby. I currently have an IRL Job and work within many online
+            Minecraft production studio's. Currently I am working on 3
+            different Projects. The Begnnings by
+            <a class="frostlight-link">Frostlight Studios</a>, Parralel Z by
+            <a class="sildeer-link">Silver Deer Entertainment</a>, and The
+            Lost Angel, Directed by me
+          </p>
+        </div>
       </div>
 
-      <!-- Begin page Content -->
-      <div class="content-section">
-        <!-- About Section -->
-        <div class="about">
-          <div class="title">
-            <h1>Who am I</h1>
-            <p>
-              I am a <a id="age">null</a> year old 3D Animator and Website
-              Designer from Iowa, I started 3D Animation when I was 12 and
-              Website Design when I was 14. I mainly work with Minecraft
-              Animation and build simple websites, I eventually hope to turn
-              Website Design into a carreer and 3D Animation into a suitable
-              hobby. I currently have an IRL Job and work within many online
-              Minecraft production studio's. Currently I am working on 3
-              different Projects. The Begnnings by
-              <a class="frostlight-link">Frostlight Studios</a>, Parralel Z by
-              <a class="sildeer-link">Silver Deer Entertainment</a>, and The
-              Lost Angel, Directed by me
-            </p>
-          </div>
-        </div>
-
-        <!-- Index Rig Display -->
-        <div class="second-row">
-          <div class="index-rig-display">
-            <div
-              class="background"
-              style="
+      <!-- Index Rig Display -->
+      <div class="second-row">
+        <div class="index-rig-display">
+          <div class="background" style="
                 background-image: url('assets/images/MCRigBackgrouns/SACRThumbnail1.png');
-              "
-            ></div>
-            <div class="content">
-              <div class="rig-display-text">
-                <h2>Check out the SACR and my Asset's page</h2>
-                <p>All 100% free with no flags attatched</p>
-              </div>
-              <div class="rig-nav">
-                <div class="btn btn-4">View SACR</div>
-                <div class="btn btn-4">View Assets</div>
-              </div>
+              "></div>
+          <div class="content">
+            <div class="rig-display-text">
+              <h2>Check out the SACR and my Asset's page</h2>
+              <p>All 100% free with no flags attatched</p>
             </div>
-          </div>
-
-          <!-- Latest Video -->
-          <div class="latest-video">
-            <div class="title">
-              <h1>
-                Latest
-                <a
-                  href="#"
-                  class="yt-links-thick"
-                  onclick="openExternal('www.youtube.com/watch?v=oxc3xX1p_uQ&feature=youtu.be')"
-                  >YouTube</a
-                >
-                Video Release
-              </h1>
-            </div>
-            <div class="container">
-              <div class="col video">
-                <iframe
-                  width="480"
-                  height="270"
-                  src="https://www.youtube.com/embed/oxc3xX1p_uQ"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-
-              <div class="col meta">
-                <h3>Title:</h3>
-                <div>
-                  <a
-                    href="#"
-                    class="yt-links-thin"
-                    onclick="openExternal('www.youtube.com/watch?v=oxc3xX1p_uQ&feature=youtu.be',1)"
-                    >Live Stream // Songs of War Animation</a
-                  >
-                </div>
-                <h3><strong>Short Description</strong></h3>
-                <div>
-                  <p>Music by <a class="yt-links-thin">AfterInfinity</a></p>
-                  <a
-                    class="koa-link"
-                    onclick="openExternal('discord.gg/fSFhrAGC6R',1)"
-                    >Knights of Ardonia Discord</a
-                  >
-                </div>
-                <div class="vid-divider">
-                  <a
-                    class="yt-links-thin"
-                    onclick="openExternal('www.youtube.com/watch?v=oxc3xX1p_uQ&feature=youtu.be',1)"
-                    >View the full Description on youtube.com</a
-                  >
-                </div>
-              </div>
+            <div class="rig-nav">
+              <div class="btn btn-4">View SACR</div>
+              <div class="btn btn-4">View Assets</div>
             </div>
           </div>
         </div>
 
-        <!-- Lost Angel Announcement -->
-        <div class="lost-angel-frontpage">
-          <h1>The Lost Angel</h1>
-          <h2>A fight for survival</h2>
-          <p>No set release date, more information coming soon</p>
+        <!-- Latest Video -->
+        <div class="latest-video">
+          <div class="title">
+            <h1>
+              Latest
+              <a href="#" class="yt-links-thick"
+                onclick="openExternal('www.youtube.com/watch?v=oxc3xX1p_uQ&feature=youtu.be')">YouTube</a>
+              Video Release
+            </h1>
+          </div>
+          <div class="container">
+            <div class="col video">
+              <iframe width="480" height="270" src="https://www.youtube.com/embed/oxc3xX1p_uQ" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+
+            <div class="col meta">
+              <h3>Title:</h3>
+              <div>
+                <a href="#" class="yt-links-thin"
+                  onclick="openExternal('www.youtube.com/watch?v=oxc3xX1p_uQ&feature=youtu.be',1)">Live Stream // Songs
+                  of War Animation</a>
+              </div>
+              <h3><strong>Short Description</strong></h3>
+              <div>
+                <p>Music by <a class="yt-links-thin">AfterInfinity</a></p>
+                <a class="koa-link" onclick="openExternal('discord.gg/fSFhrAGC6R',1)">Knights of Ardonia Discord</a>
+              </div>
+              <div class="vid-divider">
+                <a class="yt-links-thin"
+                  onclick="openExternal('www.youtube.com/watch?v=oxc3xX1p_uQ&feature=youtu.be',1)">View the full
+                  Description on youtube.com</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Footer -->
-    <div class="footer">
-      <div class="footer-desktop">
-        <div class="footer-top-container">
-          <div class="left-section footer-div">
-            <div>
-              <a onclick="openInternal('index')" class="links" href="#">Home</a>
-            </div>
-            <div>
-              <a onclick="openInternal('sacr-rig')" class="links" href="#"
-                >SACR Rig</a
-              >
-            </div>
-            <div>
-              <a
-                onclick="openExternal('git.sakura-sedaia.com/Blender-Assets',1)"
-                class="links"
-                href="#"
-                >Assets &#40;Ext&#41;</a
-              >
-            </div>
-          </div>
-
-          <div class="right-section footer-div">
-            <div class="footer-icon links">
-              <i
-                class="fab fa-github"
-                onclick="openExternal('github.com/SakuraSedaia',1)"
-              ></i>
-              Github
-            </div>
-            <div class="footer-icon links">
-              <i
-                class="fab fa-google"
-                onclick="openExternal('domains.google/',1)"
-              ></i>
-              Google Domains
-            </div>
-            <div class="footer-icon links">
-              <i
-                class="fab fa-codepen"
-                onclick="openExternal('codepen.io',1)"
-              ></i>
-              Codepen
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom-container">
-          <div class="footer-content">&copy; 2020 by Sakura Sedaia</div>
-        </div>
+      <!-- Lost Angel Announcement -->
+      <div class="lost-angel-frontpage">
+        <h1>The Lost Angel</h1>
+        <h2>A fight for survival</h2>
+        <p>No set release date, more information coming soon</p>
       </div>
     </div>
+  </div>
 
-    <!-- Scripts -->
-    <script src="assets/scripts/age.js"></script>
-    <script src="assets/scripts/seasons.js"></script>
-    <script src="assets/scripts/responsive.js"></script>
-    <script>
-      // Age Display Set
-      var ageDisplay = document.getElementById("age");
-      ageDisplay.innerHTML = sakuraAge;
-    </script>
-  </body>
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-desktop">
+      <div class="footer-top-container">
+        <div class="left-section footer-div">
+          <div>
+            <a onclick="openInternal('index')" class="links" href="#">Home</a>
+          </div>
+          <div>
+            <a onclick="openInternal('sacr-rig')" class="links" href="#">SACR Rig</a>
+          </div>
+          <div>
+            <a onclick="openExternal('git.sakura-sedaia.com/Blender-Assets',1)" class="links" href="#">Assets
+              &#40;Ext&#41;</a>
+          </div>
+        </div>
+
+        <div class="right-section footer-div">
+          <div class="footer-icon links">
+            <i class="fab fa-github" onclick="openExternal('github.com/SakuraSedaia',1)"></i>
+            Github
+          </div>
+          <div class="footer-icon links">
+            <i class="fab fa-google" onclick="openExternal('domains.google/',1)"></i>
+            Google Domains
+          </div>
+          <div class="footer-icon links">
+            <i class="fab fa-codepen" onclick="openExternal('codepen.io',1)"></i>
+            Codepen
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom-container">
+        <div class="footer-content">&copy; 2020 by Sakura Sedaia</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/scripts/age.js"></script>
+  <script src="assets/scripts/seasons.js"></script>
+  <script src="assets/scripts/responsive.js"></script>
+  <script>
+    // Age Display Set
+    var ageDisplay = document.getElementById("age");
+    ageDisplay.innerHTML = sakuraAge;
+  </script>
+</body>
+
 </html>
