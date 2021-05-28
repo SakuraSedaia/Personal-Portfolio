@@ -58,8 +58,8 @@ function emailSaki () {
 // Rig Downloads
 function downloadSACR (state) {
   if (state == true) {
-    window.open('assets/misc/SACR R4.2.zip')
-    console.info('Rig Download started\nRig Version: 4.2')
+    window.open('assets/misc/SACR_R5.zip')
+    console.info('Rig Download started\nRig Version: 5')
   } else if (state == false) {
     window.alert(
       "I'm sorry, but this download link is disabled Temporarily, please try again later"
