@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* Import fonts */
+@import url("https://sakura-sedaia.com/assets/fonts/fonts.css");
+/* Global Styles */
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: #f5f5f5;
+}
+
+body {
+  background-color: #dfdfdf;
+}
+
+.link[data-style=default] {
+  color: black;
+  cursor: pointer;
+  transition-duration: 235ms;
+}
+.link[data-style=default]:hover {
+  color: #7c3bd9;
+  box-shadow: 0px -1.5px inset #7c3bd9;
+}
+.header {
+  background-size: cover;
+  background-position: center center;
+  background-color: rgba(242, 242, 242,.2);
+  color:rgba(255, 255, 255, 0.2);
+  background-blend-mode: overlay;
+  background-image: url('../images/WPRenders/FelinaSakura-FeldenRoad.png');
+}
+.header .header-content {
+  text-align: center;
+}
+.header .header-content .header-top {
+  background-color: rgba(25, 25, 25, 0.2);
+  width: 100%;
+  margin-bottom: 30px;
+}
+.header .header-content .header-top .header-info {
+  background-color: rgba(25, 25, 25, 0.2);
+  display: inline-block;
+}
+.header .header-content .header-middle {
+  width: 65%;
+  min-width: 450px;
+  background-color: rgba(25, 25, 25, 0.25);
+  border-radius: 15px;
+  text-align: center;
+  display: inline-block;
+}
+.header .header-content .header-middle h1 {
+  font-family: "PT_Sans";
+}
+.header .header-content .header-middle h2 {
+  font-family: "Noto Sans JP";
+}
+.header .header-content .header-bottom {
+  margin-top: 30px;
+  background-color: rgba(25, 25, 25, 0.2);
+  display: inline-block;
+}
+.header .header-content .header-bottom .header-art {
+  background-color: rgba(25, 25, 25, 0.2);
+}
+.header .header-content .navigation .nav-content {
+  text-align: center;
+  letter-spacing: 0px;
+}
+.header .header-content .navigation .nav-content .nav-item {
+  padding: 10px;
+  width: 200px;
+  margin: 0;
+  display: inline-block;
+  color: black;
+  background-color: rgba(201, 35, 137, 0.5);
+}
+
+.footer {
+  background-color: #dedae8;
+  color: #d0ccd9;
+  border-top: 10px solid #d0ccd9;
+  padding-bottom: 1em;
+}
+.footer .clusterfuck {
+  padding-bottom: 1em;
+  display: flex;
+  color: black;
+}
+.footer .clusterfuck div {
+  flex-basis: 33.33%;
+  text-align: center;
+  position: relative;
+  color: black;
+}
+.footer .clusterfuck div h4 {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 0;
+}
+.footer .clusterfuck div div {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  margin-top: 0.3em;
+}
+
+.trademarks {
+  color: black;
+  font-family: "Source Code Pro", monospace;
+  font-size: 12px;
+  margin: 3em;
+  padding-bottom: 1em;
+}
+
+.faq {
+  color: lightgrey;
+}
+.faq .faq-content {
+  color: black;
+  text-align: center;
+  margin-left: 1in;
+  margin-right: 1in;
+  background-color: rgba(242, 242, 242, 0.5);
+}
+.faq .faq-content h2 {
+  background-color: black;
+  color: #f5f5f5;
+  width: 200px;
+  display: inline-block;
+  font-family: "PT_Sans";
+}
+.faq .faq-content .faq-question {
+  font-family: "Noto Sans JP";
+  padding: 20px;
+  padding-bottom: 25px;
+}
+.faq .faq-content .faq-question .faq-question-head {
+  background-color: rgba(25, 25, 25, 0.75);
+  color: white;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.faq .faq-content .faq-footer {
+  font-family: "Source Sans Pro";
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+/*# sourceMappingURL=main-style.css.map */

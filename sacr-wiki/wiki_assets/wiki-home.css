@@ -4,7 +4,7 @@
 :root {
     /* SACR Diagram */
     --skin-file: url(images/skins/Sakura_TalonModified_NoLayers.png);
-    --diagram-arm-width: 37.5px; /* ## ARM DIMENSIONS | Steve Width: 50px | Alex Width: 37.5px*/
+    --diagram-arm-width: 37px; /* ## ARM DIMENSIONS | Steve Width: 50px | Alex Width: 37px*/
 }
 
 .dev-warning {
@@ -57,6 +57,7 @@ h3 {
 
 p {
     color: black;
+    font-family: "Source Sans Pro";
 }
 
 .link[data-style=default] {
@@ -128,6 +129,7 @@ p {
     padding-top: .2in;
     padding-bottom: .2in;
     background-color: rgba(242, 242, 242, .9);
+    border-radius: 10px;
 }
 
 .sacr-section {
@@ -326,4 +328,26 @@ p {
     background-color: rgba(242, 242, 242, .9);
     margin-left: 1in;
     margin-right: 1in;
+}
+.assets-col-contain {
+    display: flex;
+    border-top: rgba(59, 59, 59, 0.76) solid 3px;
+    border-bottom: rgba(59, 59, 59, 0.76) solid 3px;
+    text-align: center;
+}
+.assets-col-contain .flexbox-2 .asset-item {
+    background-color: rgba(0, 0, 0, 0.116);
+    padding: 1em;
+}
+.assets-col-contain .flexbox-2 .asset-item h3 {
+    background-color:rgba(22, 22, 22, 1);
+    color: white;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    display: inline-block;
+}
+.assets-col-contain .flexbox-2 .asset-item p {
+    margin-top: 0;
+    font-size: 14pt;
 }

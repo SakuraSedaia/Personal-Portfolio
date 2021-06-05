@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="dev-warning pattern-diagonal-stripes-lg">
+    <div class="dev-warning pattern-diagonal-stripes-lg" hidden>
         <span>
             <h2>WARNING:</h2>
             <p>This site is still under heavy development, please pardon any bugs, issues, or missing content for the
@@ -60,30 +60,29 @@
                 </div>
                 <div class="flexbox-2 sacr-diagram">
                     <h3>SACR Rig Regions</h3>
-                    <p><strong>NOTE:</strong> Clicking these will result in nothing as they have not been fully implemented yet</p>
                     <div class="sacr-flex-container">
                         <div>
-                            <div class="diagram-item" id="sacrHead">
+                            <div class="diagram-item" id="sacrHead" onclick="openInternal('sacr-head-wiki.html')">
                                 <span style="padding-top: 25px;">Head</span>
                             </div>
                         </div>
                         <div>
                             <div class="diagram-item" id="sacrArmR">
-                                <span style="padding-top: 50px;">Arm R</span>
+                                <span style="padding-top: 50px;">Right<br>Arm</span>
                             </div>
                             <div class="diagram-item" id="sacrTorso">
                                 <span style=" padding-top: 50px;">Global</span>
                             </div>
                             <div class="diagram-item" id="sacrArmL">
-                                <span style=" padding-top: 50px;">Arm L</span>
+                                <span style=" padding-top: 50px;">Left<br>Arm</span>
                             </div>
                         </div>
                         <div>
                             <div class="diagram-item" id="sacrLegR">
-                                <span style=" padding-top: 50px;">Leg R</span>
+                                <span style=" padding-top: 50px;">Right<br>Leg</span>
                             </div>
                             <div class="diagram-item" id="sacrLegL">
-                                <span style=" padding-top: 50px;">Leg L</span>
+                                <span style=" padding-top: 50px;">Left<br>Leg</span>
                             </div>
                         </div>
                     </div>
@@ -91,11 +90,51 @@
             </div>
         </div>
         <div class="assets-contain">
-
             <div class="divider" data-style="horizontal"></div>
-            <h2>Asset Wiki's</h2>
+            <h2>Wikis for the Assets</h2>
+            <div class="assets-col-contain">
+                <div class="flexbox-2">
+                    <div class="asset-item" id="assetAlpha">
+                        <h3>Minecraft Angel Wings</h3>
+                        <p>The Wing Asset is based on a Mod called "<a>Wings</a>" for Minecraft Forge, it was originally
+                            developed as a private Asset for Viella but due to various reasons was publicly released</p>
+                        <div class="button">View Wiki</div>
+
+                        <div class="divider" data-style="vertical"></div>
+                        <div class="button">Download Rig</div>
+                    </div>
+                    <div class="asset-item" id="assetAlpha">
+                        <h3>Minecraft Feline Ears</h3>
+                        <p>The Feline ear rig was originally developped on the Neokat rig, but was eventually ported into it's own separate entity, now using it's own Material and driver system</p>
+                        <div class="button">View Wiki</div>
+
+                        <div class="divider" data-style="vertical"></div>
+                        <div class="button">Download Rig</div>
+                    </div>
+                </div>
+                <div class="flexbox-2">
+                    <div class="asset-item" id="assetAlpha">
+                        <h3>Minecraft Feline Tail</h3>
+                        <p>Developed a long time ago, this Tail rig was designed to be simple and easy to use, therefore it uses a simple wool texture from Minecraft and basic Geometry and rigging, though a more advanced rig is in planning</p>
+                        <div class="button">View Wiki</div>
+
+                        <div class="divider" data-style="vertical"></div>
+                        <div class="button">Download Rig</div>
+                    </div>
+                    <div class="asset-item" id="assetAlpha">
+                        <h3>Sakura's Materal Pack</h3>
+                        <p>The Material pack is a collection of multiple materials, all being either procedural or semi-procedural. The Wiki will consist of details on how each Material works and even some ways to modify the Material</p>
+                        <div class="button">View Wiki</div>
+
+                        <div class="divider" data-style="vertical"></div>
+                        <div class="button">Download Rig</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+
     <div class="footer pattern-grid-lg">
         <div class="clusterfuck">
             <div>
@@ -152,16 +191,8 @@
                 window.open('http://git.sakura-sedaia.com/sacr_experimental', "_blank");
             }
         }
-        function openExternal(url, trusted) {
-	if (trusted != 1) {
-		if (window.confirm("You are about to be directed to an external site, wish to continue?\n\nSite Link: " + url)) {
-			window.open(url, "_blank");
-		}
-	} else {
-		window.open(url, "_blank");
-	}
-}
     </script>
+    <script src="wiki_assets/scripts/link-handling.js"></script>
 </body>
 
 </html>
