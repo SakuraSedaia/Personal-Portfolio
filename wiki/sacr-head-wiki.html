@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sakura's Rig Wiki</title>
+
+    <link rel="shortcut icon" href="../assets/images/Favicon/favicon.ico" />
+    <!-- Stylesheets -->
+    <link href="wiki_assets/wiki-home.css" rel="stylesheet" />
+    <link href="https://unpkg.com/pattern.css@1.0.0/dist/pattern.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="dev-warning pattern-diagonal-stripes-lg">
+        <span>
+            <h2>WARNING:</h2>
+            <p>This site is still under heavy development, please pardon any bugs, issues, or missing content for the
+                time being</p>
+        </span>
+    </div>
+
+    <div class="viewport-container pattern-grid-md">
+        <a class="return-to-main" onclick="returnWikiHome()" href="wiki.html">Return to Main Site</a>
+        <div class="header-contain">
+            <div class="header-text">
+                <h1>Wiki Page Template</h1>
+                <h3>Just a template for other pages</h3>
+            </div>
+        </div>
+       
+        <div class="sacr-head-info-contain">
+            <div class="head-info">
+                <h2>The Head Region</h2>
+                <p>The head region is easily one of the most complex parts of SACR, including both a simple to use Emotion system and a more advanced system for the more advanced animators and renderers to give a greater degree of control over the Facerig</p>
+            </div>
+            
+            <div class="simple-face-controls">
+                <h3>Simple Emotion System</h3>
+                <p>The Simple Emotion system is designed to be simple and easy to use, yet still be able to deliver good emotions without the need for pinpoint controls. There are 5 main controllers on the Simple face system:</p>
+                <ol>
+                    <li>Eyebrow Master Controller</li>
+                    <li>Eyelid Master Controller</li>
+                    <li>Face Position/Eyeheight Controller</li>
+                    <li>Pupil Controller</li>
+                    <li>Mouth Master Controller</li>
+                    <li>Mouth State Controller</li>
+                </ol>
+
+                <h3>Eyebrow Master Controller</h3>
+                <p>The eyebrow controller has 3 different controls attatched to the different forms of Transformation, the primary function is controlled by translation, and depending on how you move it will cause the Eyebrows to either slant inward or outwards.</p>
+            </div>
+        </div>
+
+    <div class="footer pattern-grid-lg">
+        <div class="clusterfuck">
+            <div>
+                <h4>Site Links</h4>
+                <div onclick="openInternal('index.html')"><span class="link" data-style="default">Home</span></div>
+                <div><span class="link" data-style="default">Contact</span></div>
+                <div onclick="openInternal('rig-library.html')"><span class="link" data-style="default">Rigs</span>
+                </div>
+                <div><span class="link" data-style="default">Projects</span></div>
+            </div>
+            <div>
+                <h4>Social Links</h4>
+                <div onclick="openExternal('https://youtube.com/c/SakuraSedaia')"><span class="link"
+                        data-style="default">Youtube</span></div>
+                <div onclick="openExternal('https://github.com/SakuraSedaia')"><span class="link"
+                        data-style="default">GitHub</span></div>
+                <div onclick="openExtennal('https://codepen.io/Sakura-Sedaia')"><span class="link"
+                        data-style="default">Codepen</span></div>
+            </div>
+            <div>
+                <h4>External API's</h4>
+                <div onclick="openExternal('https://fonts.google.com/')"><span class="link" data-style="default">Google
+                        Fonts</span></div>
+                <div onclick="openExternal('https://bansal.io/pattern-css')"><span class="link"
+                        data-style="default">pattern.css</span></div>
+            </div>
+
+        </div>
+        <div class="trademarks">
+            <p id="copyright"></p>
+        </div>
+
+    </div>
+    <script>
+        function returnHome() {
+            window.open("../index.html", "_self");
+        }
+        var copySelf = ["Sakura Sedaia", "&copy;", new Date().getFullYear()];
+        document.getElementById("copyright").innerHTML =
+            copySelf[1] +
+            " Copyright " +
+            copySelf[2] +
+            " " +
+            copySelf[0] +
+            ", All rights reserved";
+
+        function openSACRStable() {
+            window.confirm("You are about to be led to an external page, are you sure you want to continue?"); {
+                window.open('http://git.sakura-sedaia.com/sacr-mc-rig', "_blank");
+            }
+        }
+        function openSACRExperimental() {
+            window.confirm("You are about to be led to an external page, are you sure you want to continue?"); {
+                window.open('http://git.sakura-sedaia.com/sacr_experimental', "_blank");
+            }
+        }
+    </script>
+</body>
+
+</html>
