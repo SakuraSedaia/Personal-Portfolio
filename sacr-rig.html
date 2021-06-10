@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Sakura Sedaia</title>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" />
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href="assets/styles/main_style.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<!-- FontAwesome Kit -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
+</head>
+
+<body>
+
+	<rigs-dropdown id="rdp">
+		<div class="close-rdp" onclick="rigsDropdown('close')" id="closeRdpBtn">
+			<span class="material-icons md-36"> cancel </span>
+		</div>
+
+		<div class="rdp rdp-sacr" style="
+          background-image: url(assets/images/MCRigBackgrouns/SACRThumbnail1.png);
+          background-position: center;
+        ">
+			<div class="rdp-title">
+				<h2 class="rdp-title-h2" id="rdpSACRText">
+					Sakura's Advanced Minecraft Rig
+				</h2>
+				<div class="rdp-btn" onclick="openInternal('sacr-rig.html')" id="rdpSACRBtn">Open Page</div>
+			</div>
+		</div>
+		<div class="rdp rdp-lacm" style="
+          background-image: url(assets/images/MCRigBackgrouns/LACMThumbnail1.PNG);
+          background-position: center;
+        ">
+			<div class="rdp-title">
+				<h2 class="rdp-title-h2" id="rdpSLACMEText">Sakura's LACM Edit</h2>
+				<div class="rdp-btn" href="#" id="rdpSLACMEBtn">Open Page</div>
+			</div>
+		</div>
+	</rigs-dropdown>
+
+	<!-- Header Start -->
+	<header>
+		<div class="header-contain" style="
+          background-image: url(assets/images/WPRenders/SakiAzzy-Wallpaper-Fixed-Composited.png);
+          background-position: 0 -1.25in;
+        ">
+			<!-- Navigation Start -->
+			<div class="navigation">
+				<div class="nav-logo">
+					<div class="logoIco"></div>
+					<div class="logoTxt" onclick="openInternal('index.html')"><span>Sakura Sedaia</span></div>
+				</div>
+
+				<div class="nav-contain">
+					<div class="nav-item" data-active="true" onclick="openInternal( 'index.html')">
+						Home
+					</div>
+					<div class="nav-item" onclick="rigsDropdown('open')">Rigs</div>
+					<div class="nav-item" onclick="openInternal( 'projects.html')">
+						Projects
+					</div>
+					<div class="nav-item" onclick="openInternal( 'contact.html')">
+						Contact
+					</div>
+				</div>
+			</div>
+			<!-- Navigation End -->
+
+			<!-- Header Content -->
+			<div class="header-content">
+				<div class="header-text">
+					<h1>Personal Portfolio</h1>
+					<h4>Provided by you're local Internet Neko</h4>
+				</div>
+			</div>
+
+		</div>
+	</header>
+	<!-- End Header -->
+
+	<div class="about-sacr">
+		<div class="title-sacr">
+			<div class="title-text">
+				<h1>Sakura's Advanced Character Rig</h1>
+				<h3>Lightweight Advanced Minecraft Character Rig built and designed by an Animator for Animators</h3>
+			</div>
+			<div class="title-bg"></div>
+
+		</div>
+
+		<!-- Rig Download -->
+		<div class="rig-download-section">
+			<div class="rds-col rds-background">
+				<img src="https://sakura-sedaia.com/assets/images/WPRenders/SoWModTeam_Render.png" width="540px"
+					alt="background">
+			</div>
+			<div class="rds-col">
+				<h1>Download SACR R4.1.1 LTS</h1>
+				<span class="file-details">File Size: 1.21MB |
+					<a onclick="openInternal('assets/misc/sacr-changelog-latest.txt')"
+						class="download-extra">Changelog</a> |
+					<a onclick="openExternal('github.com/SakuraSedaia/SACR-MC-Rig/')" class="download-extra">GitHub
+						Repo</a>
+				</span>
+				<div class="download-lr download-extra" onclick="downloadSACR()">Latest Release</div>
+				<div hidden>Go to Sakura's LACM Lite Edit</div>
+			</div>
+
+		</div>
+
+		<!-- Features section -->
+		<div class="features-sacr">
+			<h2>Highlight Features</h2>
+
+			<div class="highlight-features">
+				<div class="row-1">
+					<div class="row-1-col feat-one">
+						<h2>Light Weight</h2>
+						<div class="feat-overlay">
+							SACR's Optimized package should allow most mid-range computers and above to run the Standard
+							Build easily,
+						</div>
+					</div>
+					<div class="row-1-col feat-two">
+						<h2>Feature Packed</h2>
+						<div class="feat-overlay">
+							<p>SACR is packed with enough features to be able to get the job done and more, utilize the
+								Lattice system to create your own Mesh Preset and extrude the rig to your hearts
+								content, even try out it's embedded Teeth and Female Modes for your special rigs</p>
+						</div>
+					</div>
+					<div class="row-1-col feat-three">
+						<h2>Long-Term Support</h2>
+						<div class="feat-overlay">
+							<p>The SACR's Long-Term Support Status means the rig will continue to be updated with minor
+								feature updates and bug fixes for a extended amount of time, though this means major
+								content updates</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="assets/scripts/responsive.js"></script>
+</body>
+
+</html>

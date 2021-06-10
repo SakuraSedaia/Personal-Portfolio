@@ -1,0 +1,11 @@
+i[data-icon="cancel"] {
+    content: url("cancel-24px.svg");
+}
+
+i[data-icon="expand"] {
+    content: url("expand_more-black-36dp.svg");
+}
+
+i[data-icon="saki-face"] {
+    content: url("../images/Favicon/favicon-32x32.png");
+}

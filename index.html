@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sakura Sedaia</title>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" />
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href="assets/styles/main_style.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<!-- FontAwesome Kit -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
+</head>
+
+<body>
+	<rigs-dropdown id="rdp">
+		<div class="close-rdp" onclick="rigsDropdown('close')" id="closeRdpBtn">
+			<span class="material-icons md-36"> cancel </span>
+		</div>
+
+		<div class="rdp rdp-sacr" style="
+          background-image: url(assets/images/MCRigBackgrouns/SACRThumbnail1.png);
+          background-position: center;
+        ">
+			<div class="rdp-title">
+				<h2 class="rdp-title-h2" id="rdpSACRText">
+					Sakura's Advanced Minecraft Rig
+				</h2>
+				<div class="rdp-btn" onclick="openInternal('sacr-rig.html')" id="rdpSACRBtn">Open Page</div>
+			</div>
+		</div>
+		<div class="rdp rdp-lacm" style="
+          background-image: url(assets/images/MCRigBackgrouns/LACMThumbnail1.PNG);
+          background-position: center;
+        ">
+			<div class="rdp-title">
+				<h2 class="rdp-title-h2" id="rdpSLACMEText">Sakura's LACM Edit</h2>
+				<div class="rdp-btn" href="#" id="rdpSLACMEBtn">Open Page</div>
+			</div>
+		</div>
+	</rigs-dropdown>
+
+	<!-- Header Start -->
+	<header>
+		<div class="header-contain" style="
+          background-image: url(assets/images/WPRenders/SakiAzzy-Wallpaper-Fixed-Composited.png);
+          background-position: 0 -1.25in;
+        ">
+			<!-- Navigation Start -->
+			<div class="navigation">
+				<div class="nav-logo">
+					<div class="logoIco"></div>
+					<div class="logoTxt" onclick="openInternal('index.html')"><span>Sakura Sedaia</span></div>
+				</div>
+
+				<div class="nav-contain">
+					<div class="nav-item" data-active="true" onclick="openInternal( 'index.html')">
+						Home
+					</div>
+					<div class="nav-item" onclick="rigsDropdown('open')">Rigs</div>
+					<div class="nav-item" onclick="openInternal( 'projects.html')">
+						Projects
+					</div>
+					<div class="nav-item" onclick="openInternal( 'contact.html')">
+						Contact
+					</div>
+				</div>
+			</div>
+			<!-- Navigation End -->
+
+			<!-- Header Content -->
+			<div class="header-content">
+				<div class="header-text">
+					<h1>Personal Portfolio</h1>
+					<h4>Provided by you're local Internet Neko</h4>
+				</div>
+			</div>
+
+		</div>
+	</header>
+	<!-- End Header -->
+
+	<!-- Begin page Content -->
+	<div class="content-section">
+		<div class="about">
+			<div class="title">
+				<h1>Who am I</h1>
+				<p>I am a 17 year old 3D Animator and Website Designer from Iowa, I started 3D Animation when I was 12
+					and Website Design when I was 14. I mainly work with Minecraft Animation and build simple websites,
+					I eventually hope to turn Website Design into a carreer and 3D Animation into a suitable hobby. I
+					currently have an IRL Job and work within many online Minecraft production studio's. The most
+					prominant one being <a onclick="openExternal('')">Silver Deer Entertainment</a>, for which I am
+					writting and directing a Zombie Survival Machinima called Parallel Z.
+				</p>
+			</div>
+		</div>
+
+		<div class="updates" hidden>
+			<div class="col-contain">
+
+				<div class="col">
+					<div class="title">
+						<h1>Latest Video</h1>
+					</div>
+					<div class="video">
+
+					</div>
+					<div class="caption">
+						<h4>Add a Caption here</h4>
+					</div>
+				</div>
+
+				<div class="col">
+					<h1>Latest News</h1>
+					<h2>NEW WEBSITE!!!</h2>
+					<p>Built entirely from scratch this new site aims to bring better content Delivery than the old <a
+							onclick="openExternal('spatialdzn.weebly.com/')">Weebly Site</a>, this will allow for better
+						optimization and quicker updates. The new site will be hosted using Google Domains and GitHub
+						and be completely maintained and coded by Me.</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="discord-promo">
+			<div class="plx-card silver">
+				<div class="pxc-bg"
+					style="background-image:url('https://i.gyazo.com/a846fc87cca5ebd3942ae1e038bb5083.png')"> </div>
+				<div class="pxc-avatar"><img
+						src="https://store.playstation.com/store/api/chihiro/00_09_000/container/GB/en/999/EP4312-CUSA07658_00-AV00000000000049/1536930670000/image?w=240&amp;h=240&amp;bg_color=000000&amp;opacity=100&amp;_version=00_09_000" />
+				</div>
+				<div class="pxc-stopper"> </div>
+				<div class="pxc-subcard">
+					<div class="pxc-title">Sakura's Cherry Grove</div>
+					<div class="pxc-sub"> An amazing community server run by your's truly </div>
+
+					<div class="bottom-row">
+						<div class="pxc-info">
+							<div class="region">United States - Central</div>
+						</div>
+						<div class="links">
+							<a class="site" uk-tooltip="WEBSITE"><i class="fas fa-globe-americas"> </i></a>
+							<a class="link discordLink" uk-tooltip="DISCORD SERVER"><i class="fab fa-discord"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End page Content -->
+
+	<!-- Begin Footer -->
+	<footer>
+		<div class="footer-contain"></div>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- Scripts -->
+	<script src="assets/scripts/responsive.js"></script>
+	<script src="assets/scripts/jquery-3.5.1.min.js"></script>
+</body>
+
+</html>
