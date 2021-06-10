@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* Import fonts */
-@import url("https://sakura-sedaia.com/assets/fonts/fonts.css");
+@import url("../fonts/fonts.css");
 /* Global Styles */
 html,
 body {
@@ -13,7 +13,6 @@ body {
 body {
   background-color: #dfdfdf;
 }
-
 .link[data-style=default] {
   color: black;
   cursor: pointer;
@@ -26,56 +25,76 @@ body {
 .header {
   background-size: cover;
   background-position: center center;
-  background-color: rgba(242, 242, 242,.2);
-  color:rgba(255, 255, 255, 0.2);
-  background-blend-mode: overlay;
-  background-image: url('../images/WPRenders/FelinaSakura-FeldenRoad.png');
+  background-image: url('../images/WPRenders/Utami_V2.2_PhotoshopCC.png');
 }
-.header .header-content {
+.header-pattern {
+  background: rgba(242, 242, 242,.2);
+  color:rgba(242, 242, 242, 0.11);
+  background-blend-mode: multiply;
+}
+.header-content {
   text-align: center;
+  color: white;
 }
-.header .header-content .header-top {
+.header-top {
   background-color: rgba(25, 25, 25, 0.2);
   width: 100%;
-  margin-bottom: 30px;
 }
-.header .header-content .header-top .header-info {
-  background-color: rgba(25, 25, 25, 0.2);
+.header-info {
+  background-color: rgba(25, 25, 25, 0.5);
   display: inline-block;
+  padding: 10px;
+  font-family: "Source Code Pro";
 }
-.header .header-content .header-middle {
+.header-middle {
   width: 65%;
   min-width: 450px;
-  background-color: rgba(25, 25, 25, 0.25);
+  background-color: rgba(255, 206, 236, 0.767);
+  color: black;
   border-radius: 15px;
   text-align: center;
   display: inline-block;
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
-.header .header-content .header-middle h1 {
+.header-middle h1 {
   font-family: "PT_Sans";
 }
-.header .header-content .header-middle h2 {
-  font-family: "Noto Sans JP";
+.header-middle h2 {
+  font-family: "Noto Sans";
 }
-.header .header-content .header-bottom {
-  margin-top: 30px;
+.header-bottom {
   background-color: rgba(25, 25, 25, 0.2);
   display: inline-block;
 }
-.header .header-content .header-bottom .header-art {
+.header-art {
   background-color: rgba(25, 25, 25, 0.2);
 }
-.header .header-content .navigation .nav-content {
+.navigation {
+  background-color:rgba(25, 25, 25, 0.2);
+}
+.nav-content {
   text-align: center;
   letter-spacing: 0px;
+  display: flex;
+  justify-content: center;
 }
-.header .header-content .navigation .nav-content .nav-item {
-  padding: 10px;
-  width: 200px;
-  margin: 0;
-  display: inline-block;
-  color: black;
+.nav-item {
+  padding: 7.5px;
+  justify-content: center;
+  font-family: "Noto Sans";
+  min-width: 100px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  color: white;
   background-color: rgba(201, 35, 137, 0.5);
+  transition-duration: 230ms;
+  box-shadow: 0em 0em inset rgba(255, 255, 255);
+  cursor: pointer;
+}
+.nav-item:hover {
+  box-shadow: 0em -2.5em inset rgba(255, 255, 255);
+  color: black;
 }
 
 .footer {
@@ -84,22 +103,22 @@ body {
   border-top: 10px solid #d0ccd9;
   padding-bottom: 1em;
 }
-.footer .clusterfuck {
+.clusterfuck {
   padding-bottom: 1em;
   display: flex;
   color: black;
 }
-.footer .clusterfuck div {
+.clusterfuck div {
   flex-basis: 33.33%;
   text-align: center;
   position: relative;
   color: black;
 }
-.footer .clusterfuck div h4 {
+.clusterfuck div h4 {
   font-family: "Open Sans", sans-serif;
   margin-bottom: 0;
 }
-.footer .clusterfuck div div {
+.clusterfuck div div {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   margin-top: 0.3em;
@@ -112,41 +131,55 @@ body {
   margin: 3em;
   padding-bottom: 1em;
 }
+/* Index.html */
 
-.faq {
-  color: lightgrey;
-}
-.faq .faq-content {
-  color: black;
-  text-align: center;
-  margin-left: 1in;
+.about {
   margin-right: 1in;
-  background-color: rgba(242, 242, 242, 0.5);
 }
-.faq .faq-content h2 {
+.about h2 {
   background-color: black;
   color: #f5f5f5;
   width: 200px;
   display: inline-block;
   font-family: "PT_Sans";
 }
-.faq .faq-content .faq-question {
-  font-family: "Noto Sans JP";
+.about p {
+  color: black;
+  font-family: "Open Sans";
+}
+
+.faq {
+  color: lightgrey;
+}
+.faq-content {
+  color: black;
+  text-align: center;
+  margin-left: 1in;
+  margin-right: 1in;
+  background-color: rgba(242, 242, 242, 0.5);
+}
+.faq-content h2 {
+  background-color: black;
+  color: #f5f5f5;
+  width: 200px;
+  display: inline-block;
+  font-family: "PT_Sans";
+}
+.faq-question {
+  font-family: "Noto Sans";
   padding: 20px;
   padding-bottom: 25px;
 }
-.faq .faq-content .faq-question .faq-question-head {
+.faq-question-head {
   background-color: rgba(25, 25, 25, 0.75);
   color: white;
   display: inline-block;
   padding-left: 20px;
   padding-right: 20px;
 }
-.faq .faq-content .faq-footer {
-  font-family: "Source Sans Pro";
+.faq-footer {
+  font-family: "Source Code Pro";
   padding: 10px;
   background-color: black;
   color: white;
 }
-
-/*# sourceMappingURL=main-style.css.map */

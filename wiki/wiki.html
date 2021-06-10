@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sakura's Rig Wiki</title>
+
+    <link rel="shortcut icon" href="../assets/images/Favicon/favicon.ico" />
+    <!-- Stylesheets -->
+    <link href="wiki_assets/wiki-home.css" rel="stylesheet" />
+    <link href="https://unpkg.com/pattern.css@1.0.0/dist/pattern.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="dev-warning pattern-diagonal-stripes-lg" hidden>
+        <span>
+            <h2>WARNING:</h2>
+            <p>This site is still under heavy development, please pardon any bugs, issues, or missing content for the
+                time being</p>
+        </span>
+    </div>
+    <div class="viewport-container pattern-grid-md">
+        <a class="return-to-main" onclick="returnHome()" href="../index.html">Return to Main Site</a>
+        <div class="header-contain">
+            <div class="header-text">
+                <h1>Database of Rig Knowledge</h1>
+                <h3>A database on Knowledge on all Rigs made by Sakura</h3>
+            </div>
+        </div>
+        <div class="sacr-section">
+            <h2 data-aos="fade-up">Sakura's Character Rig</h2>
+            <div class="sacr-col-contain">
+                <div class="flexbox-2 sacr-desc">
+                    <h3>What is SACR?</h3>
+                    <p>
+                        SACR is a Advanced Minecraft Rig designed and built inside Blender, it is designed to be usable
+                        for
+                        any purpose, while most versions up to now have been made with Animations in mind, but with the
+                        R5
+                        release, the plan is to add in features to make it more Single-frame Render friendly.
+                    </p>
+                    <p>Go to the download page for SACR</p>
+                    <div class="button" onclick="window.open('https://sakura-sedaia.com/sacr-rig.html')">SACR Homepage
+                    </div>
+                    <div id="spacerA"></div>
+                    <div class="divider" data-style="horizontal"></div>
+                    <h3>SACR Github</h3>
+                    <p>
+                        The SACR Github page features all versions of the Rig including the very first versions of SAMR,
+                        the
+                        predecessor for SACR. Though any version of the Rig prior to R4 is extremely unstable and buggy,
+                        as
+                        well as laggy.
+                        <br><br>
+                        GitHub links:
+                    </p>
+                    <div class="button" onclick="openSACRStable()">SACR Releases</div>
+                    <div class="divider" data-style="vertical"></div>
+                    <div class="button" onclick="openSACRExperimental()">SACR
+                        Experimental</div>
+                </div>
+                <div class="flexbox-2 sacr-diagram">
+                    <h3>SACR Rig Regions</h3>
+                    <div class="sacr-flex-container">
+                        <div>
+                            <div class="diagram-item" id="sacrHead" onclick="openInternal('sacr-head-wiki.html')">
+                                <span style="padding-top: 25px;">Head</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="diagram-item" id="sacrArmR">
+                                <span style="padding-top: 50px;">Right<br>Arm</span>
+                            </div>
+                            <div class="diagram-item" id="sacrTorso">
+                                <span style=" padding-top: 50px;">Global</span>
+                            </div>
+                            <div class="diagram-item" id="sacrArmL">
+                                <span style=" padding-top: 50px;">Left<br>Arm</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="diagram-item" id="sacrLegR">
+                                <span style=" padding-top: 50px;">Right<br>Leg</span>
+                            </div>
+                            <div class="diagram-item" id="sacrLegL">
+                                <span style=" padding-top: 50px;">Left<br>Leg</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="assets-contain">
+            <div class="divider" data-style="horizontal"></div>
+            <h2>Wikis for the Assets</h2>
+            <div class="assets-col-contain">
+                <div class="flexbox-2">
+                    <div class="asset-item" id="assetAlpha">
+                        <h3>Minecraft Angel Wings</h3>
+                        <p>The Wing Asset is based on a Mod called "<a>Wings</a>" for Minecraft Forge, it was originally
+                            developed as a private Asset for Viella but due to various reasons was publicly released</p>
+                        <div class="button">View Wiki</div>
+
+                        <div class="divider" data-style="vertical"></div>
+                        <div class="button">Download Rig</div>
+                    </div>
+                    <div class="asset-item" id="assetAlpha">
+                        <h3>Minecraft Feline Ears</h3>
+                        <p>The Feline ear rig was originally developped on the Neokat rig, but was eventually ported into it's own separate entity, now using it's own Material and driver system</p>
+                        <div class="button">View Wiki</div>
+
+                        <div class="divider" data-style="vertical"></div>
+                        <div class="button">Download Rig</div>
+                    </div>
+                </div>
+                <div class="flexbox-2">
+                    <div class="asset-item" id="assetAlpha">
+                        <h3>Minecraft Feline Tail</h3>
+                        <p>Developed a long time ago, this Tail rig was designed to be simple and easy to use, therefore it uses a simple wool texture from Minecraft and basic Geometry and rigging, though a more advanced rig is in planning</p>
+                        <div class="button">View Wiki</div>
+
+                        <div class="divider" data-style="vertical"></div>
+                        <div class="button">Download Rig</div>
+                    </div>
+                    <div class="asset-item" id="assetAlpha">
+                        <h3>Sakura's Materal Pack</h3>
+                        <p>The Material pack is a collection of multiple materials, all being either procedural or semi-procedural. The Wiki will consist of details on how each Material works and even some ways to modify the Material</p>
+                        <div class="button">View Wiki</div>
+
+                        <div class="divider" data-style="vertical"></div>
+                        <div class="button">Download Rig</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer pattern-grid-lg">
+        <div class="clusterfuck">
+            <div>
+                <h4>Site Links</h4>
+                <div onclick="openInternal('index.html')"><span class="link" data-style="default">Home</span></div>
+                <div><span class="link" data-style="default">Contact</span></div>
+                <div onclick="openInternal('rig-library.html')"><span class="link" data-style="default">Rigs</span>
+                </div>
+                <div><span class="link" data-style="default">Projects</span></div>
+            </div>
+            <div>
+                <h4>Social Links</h4>
+                <div onclick="openExternal('https://youtube.com/c/SakuraSedaia')"><span class="link"
+                        data-style="default">Youtube</span></div>
+                <div onclick="openExternal('https://github.com/SakuraSedaia')"><span class="link"
+                        data-style="default">GitHub</span></div>
+                <div onclick="openExtennal('https://codepen.io/Sakura-Sedaia')"><span class="link"
+                        data-style="default">Codepen</span></div>
+            </div>
+            <div>
+                <h4>External API's</h4>
+                <div onclick="openExternal('https://fonts.google.com/')"><span class="link" data-style="default">Google
+                        Fonts</span></div>
+                <div onclick="openExternal('https://bansal.io/pattern-css')"><span class="link"
+                        data-style="default">pattern.css</span></div>
+            </div>
+
+        </div>
+        <div class="trademarks">
+            <p id="copyright"></p>
+        </div>
+
+    </div>
+    <script>
+        function returnHome() {
+            window.open("../index.html", "_self");
+        }
+        var copySelf = ["Sakura Sedaia", "&copy;", new Date().getFullYear()];
+        document.getElementById("copyright").innerHTML =
+            copySelf[1] +
+            " Copyright " +
+            copySelf[2] +
+            " " +
+            copySelf[0] +
+            ", All rights reserved";
+
+        function openSACRStable() {
+            window.confirm("You are about to be led to an external page, are you sure you want to continue?"); {
+                window.open('http://git.sakura-sedaia.com/sacr-mc-rig', "_blank");
+            }
+        }
+        function openSACRExperimental() {
+            window.confirm("You are about to be led to an external page, are you sure you want to continue?"); {
+                window.open('http://git.sakura-sedaia.com/sacr_experimental', "_blank");
+            }
+        }
+    </script>
+    <script src="wiki_assets/scripts/link-handling.js"></script>
+</body>
+
+</html>
