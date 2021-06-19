@@ -130,7 +130,7 @@ body {
   background-size: cover;
   background-position: center; }
   .header-contain .header-content {
-    background-image: url("https://sakura-sedaia.com/assets/images/WPRenders/BarSet_Preview4.png");
+    background-image: url('assets/images/WPRenders/Happy_Bday.jpg');
     background-size: cover; }
     .header-contain .header-content .header-text {
       position: absolute;

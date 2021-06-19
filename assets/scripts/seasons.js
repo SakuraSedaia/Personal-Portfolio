@@ -37,7 +37,7 @@ if (christmas == false) {
 
   // Change Backgrounds
   header.style.backgroundImage =
-    'url(assets/images/WPRenders/BarSet_Preview4.png)'
+    'url(assets/images/WPRenders/Happy_Bday.jpg)'
   header.style.backgroundPosition = 'center'
 
   // Modify HTML Elements
