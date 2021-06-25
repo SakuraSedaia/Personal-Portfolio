@@ -4,7 +4,8 @@
 :root {
     /* SACR Diagram */
     --skin-file: url(images/skins/Sakura_TalonModified_NoLayers.png);
-    --diagram-arm-width: 37.5px; /* ## ARM DIMENSIONS | Steve Width: 50px | Alex Width: 37.5px*/
+    --diagram-arm-width: 37.5px;
+    /* ## ARM DIMENSIONS | Steve Width: 50px | Alex Width: 37.5px*/
 }
 
 .dev-warning {
@@ -13,13 +14,15 @@
     padding: 5px;
     text-align: center;
 }
+
 .dev-warning p {
     color: white;
     margin-top: 0;
     padding: 1em;
     background-color: black;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 html,
 body {
     margin: 0;
