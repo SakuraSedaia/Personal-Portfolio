@@ -220,7 +220,6 @@ p {
 }
 
 .diagram-item:hover span {
-
     transform: translateY(0px) scale(100%);
 }
 
@@ -240,7 +239,6 @@ p {
 #sacrArmL {
     width: var(--diagram-arm-width);
     height: 150px;
-
     background-position: -450px -650px;
 }
 
@@ -350,4 +348,8 @@ p {
 .assets-col-contain .flexbox-2 .asset-item p {
     margin-top: 0;
     font-size: 14pt;
+}
+.git-link-head {
+    color: black;
+    font-family: "PT_Sans";
 }

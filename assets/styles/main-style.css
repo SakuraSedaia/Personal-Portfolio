@@ -13,19 +13,19 @@ body {
 body {
   background-color: #dfdfdf;
 }
-.link[data-style=default] {
-  color: black;
+.link {
+  color: white;
   cursor: pointer;
   transition-duration: 235ms;
 }
-.link[data-style=default]:hover {
-  color: #7c3bd9;
-  box-shadow: 0px -1.5px inset #7c3bd9;
+.link:hover {
+  color: #e0a0c4;
+  box-shadow: 0px -1.5px inset #e0a0c4;
 }
 .header {
   background-size: cover;
   background-position: center center;
-  background-image: url('../images/WPRenders/Utami_V2.2_PhotoshopCC.png');
+  background-image: url('../images/BannerPhotos/Viella-TestRender-RiverTunnel2-Composite.png');
 }
 .header-pattern {
   background: rgba(242, 242, 242,.2);
@@ -83,7 +83,7 @@ body {
   padding: 7.5px;
   justify-content: center;
   font-family: "Noto Sans";
-  min-width: 100px;
+  min-width: 125px;
   border-left: 2px solid white;
   border-right: 2px solid white;
   color: white;
@@ -132,25 +132,87 @@ body {
   padding-bottom: 1em;
 }
 /* Index.html */
-
 .about {
-  margin-right: 1in;
+  color: lightgrey;
+  text-align: center;
 }
-.about h2 {
+.about-content {
+  margin-right: 1in;
+  margin-left: 1in;
+  text-align: center;
+  background-color:rgba(242, 242, 242, 0.5);
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.about-content h2 {
   background-color: black;
   color: #f5f5f5;
   width: 200px;
   display: inline-block;
   font-family: "PT_Sans";
 }
-.about p {
+.about-content p {
   color: black;
   font-family: "Open Sans";
 }
 
-.faq {
-  color: lightgrey;
+/* Rig.html */
+.rig-downloads {
+  background-color:rgb(85, 18, 59);
+  color:rgb(117, 26, 82);
+  text-align: center;
 }
+.rig-content {
+  color: white;
+  margin-right: 1in;
+  margin-left: 1in;
+  padding: 20px;
+  background-color:rgba(243, 197, 220, 0.274);
+  background-size: cover;
+  background-position: center center;
+  background-image: url('../images/WPRenders/Utami_V2.2_PhotoshopCC.png');
+  background-blend-mode: multiply;
+}
+.rig-downloads h2 {
+  background-color: rgba(0, 0, 0, 0.288);
+  color: #ffffff;
+  width: 300px;
+  display: inline-block;
+  font-family: "PT_Sans";
+}
+.rig-downloads p {
+  margin-bottom: 30px;
+  font-family: "Noto Sans";
+}
+.rig-downloads .hyperlinks {
+  text-align: left;
+}
+.rig-downloads .rig-button {
+  color: white;
+  width: 200px;
+  display: inline-block;
+  padding: 5px;
+  transition: 200ms ease-out;
+  cursor: pointer;
+  font-family: "Noto Sans";
+  background-color: rgba(0,0,0,.75);
+}
+#stableRig {
+  box-shadow: rgb(229, 240, 255) 0 -3px inset;
+}
+#experimentalRig {
+  box-shadow: rgb(255, 229, 235) 0 -3px inset;
+}
+#stableRig:hover {
+  box-shadow: rgb(229, 240, 255) 0 -3.3em inset;
+  color: black;
+}
+#experimentalRig:hover {
+  box-shadow: rgb(255, 229, 235) 0 -3.3em inset;
+  color: black;
+}
+/* Global FAQ Styles */
 .faq-content {
   color: black;
   text-align: center;
@@ -183,3 +245,4 @@ body {
   background-color: black;
   color: white;
 }
+
