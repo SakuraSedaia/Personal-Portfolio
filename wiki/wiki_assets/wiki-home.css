@@ -3,8 +3,11 @@
 
 :root {
     /* SACR Diagram */
-    --skin-file: url(images/skins/Sakura_TalonModified_NoLayers.png);
-    --diagram-arm-width: 37px; /* ## ARM DIMENSIONS | Steve Width: 50px | Alex Width: 37px*/
+    --lg: 150px;
+	--md: 100px;
+	--sm: 50px;
+	--xsm: 37px;
+	--fade: 250ms;
 }
 
 .dev-warning {
@@ -155,11 +158,6 @@ p {
     margin-right: .5in;
 }
 
-.sacr-flex-container div {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
 
 .sacr-diagram {
     background-color: rgba(0, 0, 0, 0.25);
@@ -178,15 +176,143 @@ p {
     padding-right: 50px;
     box-shadow: 3px 5px 5px rgba(0, 0, 0, .2);
 }
-
-.sacr-flex-container {
-    text-align: center;
-
-    padding-top: .25in;
-    padding-bottom: .25in;
-}
 /* SACR Diagram Items */
-
+.diagram {
+    text-align: center;
+    padding-top: 0.25in;
+    padding-bottom: 0.25in;
+  }
+  .diagram div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .diagram-item {
+    /* Set Skin File and Metadata for Main Layer */
+    background-image: var(--skin-file);
+    image-rendering: crisp-edges;
+    background-size: 800px;
+    /* Additional Data */
+    width: 100px;
+    letter-spacing: 0px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    box-shadow: 0 0 0 inset rgba(0, 0, 0, 0.5);
+    content: "";
+    transition-duration: var(--fade);
+  }
+  .diagram-item div {
+    /* Set Skin File and Metadata for Second Layer */
+    background-image: var(--skin-file);
+    image-rendering: crisp-edges;
+    background-size: 800px;
+    /* Additional Data */
+    position: relative;
+    display: block;
+    transition-duration: var(--fade);
+    /* Animated Elements */
+    background-color: rgba(0, 0, 0, 0);
+    background-blend-mode: multiply;
+    box-shadow: 1px 3px 5px inset rgba(0, 0, 0, 0);
+  }
+  .diagram-item div span {
+    /* Base Style for the Tooltip */
+    pointer-events: none;
+    position: absolute;
+    font-family: "Noto Sans JP", sans-serif;
+    /* Animated Elements */
+    color: black;
+    opacity: 0;
+    transition-duration: 250ms;
+    transform: translateY(30px) scale(75%) translateX(-70%);
+  }
+  .diagram-item div:hover {
+    /* Hover Style for the Diagram parts */
+    background-color: rgba(0, 0, 0, 0.25);
+    background-blend-mode: multiply;
+    box-shadow: 1px 3px 5px inset rgba(0, 0, 0, 0.5);
+    transition-duration: var(--fade);
+  }
+  .diagram-item div:hover span {
+    /* Hover Style for the Tooltip */
+    transform: translateY(0px) scale(100%) translateX(-50%);
+    color: white;
+    opacity: 1;
+  }
+  
+  #sacrHead {
+    width: var(--md);
+    height: var(--md);
+    background-position: -100px -100px;
+  }
+  #sacrHead #sacrHeadHat {
+    width: 100%;
+    height: 100%;
+    background-position: -500px -100px;
+    transform: scale(105%);
+  }
+  
+  #sacrArmR {
+    width: var(--sm);
+    height: var(--lg);
+    background-position: -550px -250px;
+  }
+  #sacrArmR #sacrArmRHat {
+    width: 100%;
+    height: 100%;
+    background-position: -550px -450px;
+    transform: scale(110%, 103%);
+  }
+  
+  #sacrTorso {
+    width: 100px;
+    height: 150px;
+    background-position: -250px -250px;
+  }
+  #sacrTorso #sacrTorsoHat {
+    width: 100%;
+    height: 100%;
+    background-position: -250px -450px;
+    transform: scale(105%, 103%);
+  }
+  
+  #sacrArmL {
+    width: 50px;
+    height: 150px;
+    background-position: -450px -650px;
+  }
+  #sacrArmL #sacrArmLHat {
+    width: 100%;
+    height: 100%;
+    background-position: -650px -650px;
+    transform: scale(107%, 103%);
+  }
+  
+  #sacrLegR {
+    width: 50px;
+    height: 150px;
+    background-position: -50px -250px;
+  }
+  #sacrLegR #sacrLegRHat {
+    width: 100%;
+    height: 100%;
+    background-position: -50px -450px;
+    transform: scale(110%, 103%);
+  }
+  
+  #sacrLegL {
+    width: 50px;
+    height: 150px;
+    background-position: -250px -650px;
+  }
+  #sacrLegL #sacrLegLHat {
+    width: 100%;
+    height: 100%;
+    background-position: -50px -650px;
+    transform: scale(110%, 103%);
+  }
 .button {
     width: 165px;
     background-color: rgba(228, 129, 203, 0);

@@ -58,31 +58,56 @@
                 </div>
                 <div class="flexbox-2 sacr-diagram">
                     <h3>SACR Rig Regions</h3>
-                    <div class="sacr-flex-container">
-                        <div>
-                            <div class="diagram-item" id="sacrHead" onclick="openInternal('sacr-head-wiki.html')">
-                                <span style="padding-top: 25px;">Head</span>
+                    <div class="diagram">
+
+                        <div class="top-items">
+                    
+                            <div class="diagram-item" id="sacrHead">
+                                <div id="sacrHeadHat">
+                                    <span style=" padding-top: 25px;">Head</span>
+                                </div>
                             </div>
+                    
                         </div>
-                        <div>
+                    
+                        <div class="middle-items">
+                    
                             <div class="diagram-item" id="sacrArmR">
-                                <span style="padding-top: 50px;">Right<br>Arm</span>
+                                <div id="sacrArmRHat">
+                                    <span style=" padding-top: 50px;">Arm Right</span>
+                                </div>
                             </div>
+                    
                             <div class="diagram-item" id="sacrTorso">
-                                <span style=" padding-top: 50px;">Global</span>
+                                <div id="sacrTorsoHat">
+                                    <span style=" padding-top: 50px;">Global</span>
+                                </div>
                             </div>
+                    
                             <div class="diagram-item" id="sacrArmL">
-                                <span style=" padding-top: 50px;">Left<br>Arm</span>
+                                <div id="sacrArmLHat">
+                                    <span style=" padding-top: 50px;">Arm Left</span>
+                                </div>
                             </div>
+                    
                         </div>
-                        <div>
+                    
+                        <div class="bottom-items">
+                    
                             <div class="diagram-item" id="sacrLegR">
-                                <span style=" padding-top: 50px;">Right<br>Leg</span>
+                                <div id="sacrLegRHat">
+                                    <span style=" padding-top: 50px;">Leg Right</span>
+                                </div>
                             </div>
+                    
                             <div class="diagram-item" id="sacrLegL">
-                                <span style=" padding-top: 50px;">Left<br>Leg</span>
+                                <div id="sacrLegLHat">
+                                    <span style=" padding-top: 50px;">Leg Left</span>
+                                </div>
                             </div>
+                    
                         </div>
+                    
                     </div>
                 </div>
             </div>
@@ -171,32 +196,7 @@
         </div>
 
     </div>
-    <script>
-        function returnHome() {
-            window.open("../index.html", "_self");
-        }
-        var copySelf = ["Sakura Sedaia", "&copy;", new Date().getFullYear()];
-        document.getElementById("copyright").innerHTML =
-            copySelf[1] +
-            " Copyright " +
-            copySelf[2] +
-            " " +
-            copySelf[0] +
-            ", All rights reserved";
-
-        function openSACRStable() {
-            window.confirm("You are about to be led to an external page, are you sure you want to continue?"); {
-                window.open('http://git.sakura-sedaia.com/sacr-mc-rig', "_blank");
-            }
-        }
-
-        function openSACRExperimental() {
-            window.confirm("You are about to be led to an external page, are you sure you want to continue?"); {
-                window.open('http://git.sakura-sedaia.com/sacr_experimental', "_blank");
-            }
-        }
-    </script>
-    <script src="wiki_assets/scripts/link-handling.js"></script>
+    <script src="wiki_assets/scripts/responsive.js"></script>
 </body>
 
 </html>
