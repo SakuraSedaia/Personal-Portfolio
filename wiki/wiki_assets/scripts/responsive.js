@@ -34,13 +34,7 @@ function returnHome() {
     window.open("../index.html", "_self");
 }
 var copySelf = ["Sakura Sedaia", "&copy;", new Date().getFullYear()];
-document.getElementById("copyright").innerHTML =
-    copySelf[1] +
-    " Copyright " +
-    copySelf[2] +
-    " " +
-    copySelf[0] +
-    ", All rights reserved";
+document.getElementById("copyright").innerHTML = copySelf[1] + " Copyright " + copySelf[2] +" " + copySelf[0] + ", All rights reserved";
 
 function openSACRStable() {
     window.confirm("You are about to be led to an external page, are you sure you want to continue?"); {
