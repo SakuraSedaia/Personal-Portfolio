@@ -24,7 +24,7 @@ body {
 .header {
   background-size: cover;
   background-position: center center;
-  background-image: url('../images/BannerPhotos/Viella-TestRender-RiverTunnel2-Composite.png');
+  background-image: url('../images/Viella-TestRender-RiverTunnel2-Composite.png');
 }
 .header-pattern {
   background: rgba(242, 242, 242,.2);
@@ -180,7 +180,7 @@ body {
   background-color:rgba(243, 197, 220, 0.274);
   background-size: cover;
   background-position: center center;
-  background-image: url('../images/WPRenders/Utami_V2.2_PhotoshopCC.png');
+  background-image: url('../images/Utami_V2.2_PhotoshopCC.png');
   background-blend-mode: multiply;
 }
 .rig-downloads h2 {
