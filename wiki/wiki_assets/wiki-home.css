@@ -107,8 +107,9 @@ p {
 }
 
 .return-to-main {
-    position: absolute;
+    position: relative;
     text-decoration: underline;
+    color: white;
 }
 
 .return-to-main:before {
@@ -323,7 +324,7 @@ p {
     line-height: 25px;
     font-size: 16px;
     border: 3px solid #202020;
-    font-family: "Noto Sans JP";
+    font-family: "Noto Sans";
     cursor: pointer;
     transition: 250ms;
     box-shadow: 3px 5px 5px rgba(0, 0, 0, .2);

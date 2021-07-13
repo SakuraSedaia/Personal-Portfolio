@@ -39,7 +39,7 @@
 					<div class="nav-content">
 						<div class="nav-item" onclick="openInternal('index.html')">Home</div>
 						<div class="nav-item" onclick="openInternal('rigs.html')">Rigs</div>
-						<div class="nav-item" onclick="openInternal('wiki/wiki-home.html')">Rig Wiki</div>
+						<div class="nav-item" onclick="openInternal('wiki/wiki.html')">Rig Wiki (WIP)</div>
 						<div class="nav-item" onclick="openInternal('contact.html')">Contact</div>
 					</div>
 				</div>
@@ -55,7 +55,7 @@
 		<div class="about-content">
 			<h2>Who is I?</h2>
 			<p>
-				I am an independant 18 Year old YouTube content creator and fast food worker with too much freetime that
+				I am an independant <span id="display"></span> Year old YouTube content creator and fast food worker with too much freetime that
 				has partnered with multiple studios. I got my start in 2012 with the creation of my first Channel, at
 				the time... named PokeKid206, yeah terrible name right? Well that channel got me started inside the
 				YouTube atmosphere, though about 2 years later it would be pretty well abandoned as I made the complete
@@ -138,12 +138,34 @@
 		</div>
 		<div class="trademarks">
 			<div>&copy; 2021 Sakura Sedaia, All Rights Reserved</div>
+			<p>Yes I realise the "Who am I" part is horribly written, don't @ me</p>
 		</div>
 
 	</div>
 	<!-- FOOT END -->
 
 	<script src="assets/scripts/script.js"></script>
+	<script>
+		// Begin Age Calculation Code
+var birthday = new Date("june 19 2003");
+var currentDate = new Date();
+var birthDateCode = 100 + birthday.getMonth() * 100 + birthday.getDate();
+var currentDateCode =
+	100 + currentDate.getMonth() * 100 + currentDate.getDate();
+var isBirthday;
+var age = currentDate.getFullYear() - birthday.getFullYear();
+if (currentDateCode < birthDateCode) {
+	age = age - 1;
+} else if (currentDateCode == birthDateCode) {
+	isBirthday = true;
+}
+
+// Insert Code to display in Console or HTML
+document.getElementById("display").innerText = age;
+
+// End Age Calculation Code
+
+	</script>
 </body>
 
 </html>

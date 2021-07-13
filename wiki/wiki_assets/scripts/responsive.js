@@ -7,11 +7,9 @@ function openExternal(url, trusted) {
         window.open(url, "_blank");
     }
 }
-
 function openInternal(url) {
     window.open(url, '_self');
 }
-
 function returnWikiHome() {
     window.open('wiki.html');
 }
@@ -41,9 +39,11 @@ function openSACRStable() {
         window.open('http://git.sakura-sedaia.com/sacr-mc-rig', "_blank");
     }
 }
-
 function openSACRExperimental() {
     window.confirm("You are about to be led to an external page, are you sure you want to continue?"); {
         window.open('http://git.sakura-sedaia.com/sacr_experimental', "_blank");
     }
+}
+function notWorking() {
+    window.alert("Sorry but this page does not exist yet")
 }

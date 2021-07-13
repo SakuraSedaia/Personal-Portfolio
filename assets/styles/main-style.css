@@ -13,7 +13,7 @@ body {
   background-color: #dfdfdf;
 }
 .link {
-  color: white;
+  color: black;
   cursor: pointer;
   transition-duration: 235ms;
 }
@@ -196,6 +196,16 @@ body {
 }
 .rig-downloads .hyperlinks {
   text-align: left;
+  color: #dfdfdf;
+}
+.rig-downloads .hyperlinks ul li .link {
+  color: #dfdfdf;
+  cursor: pointer;
+  transition-duration: 235ms;
+}
+.rig-downloads .hyperlinks ul li .link:hover {
+  color: #e0a0c4;
+  box-shadow: 0px -1.5px inset #e0a0c4;
 }
 .rig-downloads .rig-button {
   color: white;
@@ -253,4 +263,43 @@ body {
   padding: 10px;
   background-color: black;
   color: white;
+}
+
+/* Contact */
+.contact {
+  color: lightgrey;
+  text-align: center;
+  background-color: #dfdfdf;
+}
+.contact-content {
+  color: black;
+  margin-right: 1in;
+  margin-left: 1in;
+  background-color:rgba(242, 242, 242, 0.5);
+  padding: 10px;
+}
+.contact-content h2 {
+  background-color: black;
+  color: #f5f5f5;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: inline-block;
+  font-family: "PT_Sans";
+}
+.flexbox-2 {
+  display: flex;
+}
+.contact-item {
+  flex-basis: 50%;
+}
+.sub-head {
+  background-color: rgba(0, 0, 0, 0.144);
+  color: #000;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: inline-block;
+  font-family: "PT_Sans";
+  font-size: 18px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
