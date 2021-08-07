@@ -13,9 +13,14 @@ function openExternal(url, trusted) {
 }
 
 function downloadRig(file) {
-    var url = window.location.hostname + "/assets/rigstuff/" + file;
-    console.log("Initiated Download request for file " + file + ", from " + url)
-    if (window.confirm("You are about to download a file from the site, are you sure you want to continue?\n\nSite Link: " + url)) {
-        window.open(url, "_blank");
+    if(file==null) {
+        window.alert("This download does not exist")
+    } else {
+        var url = window.location.hostname + "/assets/rigstuff/" + file;
+        console.log("Initiated Download request for file " + file + ", from " + url)
+        if (window.confirm("You are about to download a file from the site, are you sure you want to continue?\n\nSite Link: " + url)) {
+            window.open(url, "_blank");
+        }
     }
+    
 }
