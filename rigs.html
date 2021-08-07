@@ -13,111 +13,141 @@
 
 <body>
 	<!-- HEAD START -->
-	
+
 	<div class="header">
 		<div class="header-pattern pattern-diagonal-stripes-sm">
-		<div class="header-content">
-			<div class="header-top">
-				<div class="header-info">
-					Sakura Sedaia
+			<div class="header-content">
+				<div class="header-top">
+					<div class="header-info">
+						Sakura Sedaia
+					</div>
 				</div>
-			</div>
-			<br>
-			<div class="header-middle">
-				<h1>Rigs</h1>
-				<h2>
-					A place to download all of Sakura's available rigs or access the Repositories to see past versions
-				</h2>
-			</div>
-			<br>
-			<div class="header-bottom">
-				<div class="header-art">
-					<span>Header Art by: Sakura Sedaia</span>
+				<br>
+				<div class="header-middle">
+					<h1>Rigs</h1>
+					<h2>
+						A place to download all of Sakura's available rigs or access the Repositories to see past
+						versions
+					</h2>
 				</div>
-			</div>
-			<div class="navigation">
-				<div class="nav-content">
-					<div class="nav-item" onclick="openInternal('index.html')">Home</div>
-					<div class="nav-item" onclick="openInternal('rigs.html')">Rigs</div>
-					<div class="nav-item" onclick="openInternal('wiki/wiki.html')">Rig Wiki (WIP)</div>
-					<div class="nav-item" onclick="openInternal('contact.html')">Contact</div>
+				<br>
+				<div class="header-bottom">
+					<div class="header-art">
+						<span>Header Art by: Sakura Sedaia</span>
+					</div>
+				</div>
+				<div class="navigation">
+					<div class="nav-content">
+						<div class="nav-item" onclick="openInternal('index.html')">Home</div>
+						<div class="nav-item" onclick="openInternal('rigs.html')">Rigs</div>
+						<div class="nav-item" onclick="openInternal('wiki/wiki.html')">Rig Wiki (WIP)</div>
+						<div class="nav-item" onclick="openInternal('contact.html')">Contact</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 
 	<!-- HEAD END -->
 
 	<div class="rig-downloads pattern-grid-lg">
 		<div class="rig-content">
-		<h2>SACR Rig downloads</h2>
-		<p>Download the latest stable and experimental builds here. Stable releases are the more stable rigs while Experimental rigs are generally more up to date but can have some issues regarding stability, once a Experimental Rig is deemed stable enough it is then listed as the latest stable rig.</p>
-		<div id="stableRig" class="rig-button"  onclick="downloadRig('SACR_R5.1.zip')">
-			Stable
-			<br>
-			<span>R5.1 | 07/08/2021</span>
-		</div>
-		<div id="experimentalRig" class="rig-button hidden-download" onclick="downloadRig(null)">
-			Experimental (Not Active)
-			<br>
-			<span>None | N/A</span>
-		</div>
-		<div class="hyperlinks">
-		<ul>
-			<li><a class="link">SACR Stable Changelog</a></li>
-			<li><a class="link">SACR Experimental Changelog (Compared to Stable Release)</a></li>
-		</ul>
-		<span class="monospace">* All dates are in the dd/mm/yyyy format</span>
-	</div>
-	</div>
-	</div>
-		
-
-		<!-- FAQ -->
-		<div class="faq pattern-grid-lg">
-			<div class="faq-content">
-					<h2>?  FAQ  ?</h2>
-
-					<div class="faq-question">
-							<span class="faq-question-head"><strong>Q</strong>: What Software do these Rigs require?</span>
-							<br>
-							<strong>A</strong>: All Rigs posted on this page are made and tested in Blender 2.83.15 and newer LTS Builds, so any version of Blender newer than 2.83 can use these rigs seemelessly, but be cautious trying to use these rigs in anything older (Such as 2.79 or older) as the Drivers and Scripts (If any) can and will break.
-					</div>
-
-					<div class="faq-question">
-						<span class="faq-question-head"><strong>Q</strong>: When will the Wiki become available?</span>
-						<br>
-						<strong>A</strong>: The exact timeframe of when the Wiki for all my rigs is unknown, but I am putting work into the site as much as I can while maintaining all my other projects. The WIP Version of the wiki is online right now.
-				</div>
+			<h2>SACR Rig downloads</h2>
+			<p>Download the latest stable and experimental builds here. Stable releases are the more stable rigs while
+				Experimental rigs are generally more up to date but can have some issues regarding stability, once a
+				Experimental Rig is deemed stable enough it is then listed as the latest stable rig.</p>
+			<div id="stableRig" class="rig-button" onclick="downloadRig('SACR_R5.1.zip')">
+				Stable
+				<br>
+				<span>R5.1 | 07/08/2021</span>
 			</div>
+			<!--
+			<div id="experimentalRig" class="rig-button hidden-download" onclick="downloadRig(null)">
+				Experimental (Not Active)
+				<br>
+				<span>None | N/A</span>
+			</div>
+			-->
+			<div class="hyperlinks">
+				<ul>
+					<li><a class="link">SACR Stable Changelog</a></li>
+					<li><a class="link">SACR Experimental Changelog (Compared to Stable Release)</a></li>
+				</ul>
+				<span class="monospace">* All dates are in the dd/mm/yyyy format</span>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- FAQ -->
+	<div class="faq pattern-grid-lg">
+		<div class="faq-content">
+			<h2>? FAQ ?</h2>
+
+			<div class="faq-question">
+				<span class="faq-question-head"><strong>Q</strong>: What Software do these Rigs require?</span>
+				<br>
+				<strong>A</strong>: All Rigs posted on this page are made and tested in Blender 2.83.15 and newer LTS
+				Builds, so any version of Blender newer than 2.83 can use these rigs seemelessly, but be cautious trying
+				to use these rigs in anything older (Such as 2.79 or older) as the Drivers and Scripts (If any) can and
+				will break.
+			</div>
+
+			<div class="faq-question">
+				<span class="faq-question-head"><strong>Q</strong>: When will the Wiki become available?</span>
+				<br>
+				<strong>A</strong>: The exact timeframe of when the Wiki for all my rigs is unknown, but I am putting
+				work into the site as much as I can while maintaining all my other projects. The WIP Version of the wiki
+				is online right now.
+			</div>
+		</div>
 	</div>
 	<!-- FOOT BEGIN -->
 	<div class="footer pattern-grid-lg">
-			<div class="clusterfuck">
-					<div>
-							<h4>Site Links</h4>
-							<div onclick="openInternal('index.html')"><span class="link" data-style="default">Home</span></div>
-							<div><span class="link" data-style="default">Contact</span></div>
-							<div onclick="openInternal('rig-library.html')"><span class="link" data-style="default">Rigs</span></div>
-							<div><span class="link" data-style="default">Projects</span></div>
-					</div>
-					<div>
-							<h4>Social Links</h4>
-							<div onclick="openExternal('https://youtube.com/c/SakuraSedaia')"><span class="link" data-style="default">Youtube</span></div>
-							<div onclick="openExternal('https://github.com/SakuraSedaia')"><span class="link" data-style="default">GitHub</span></div>
-							<div onclick="openExtennal('https://codepen.io/Sakura-Sedaia')"><span class="link" data-style="default">Codepen</span></div>
-					</div>
-					<div>
-							<h4><span>External API's</span></h4>
-							<div onclick="openExternal('https://michalsnik.github.io/aos/')"><span class="link" data-style="default">AoS.js</span></div>
-							<div onclick="openExternal('https://fonts.google.com/')"><span class="link" data-style="default">Google Fonts</span></div>
-							<div onclick="openExternal('https://bansal.io/pattern-css')"><span class="link" data-style="default">pattern.css</span></div>
-					</div>
+		<div class="clusterfuck">
+			<div>
+				<h4>Site Links</h4>
+				<div onclick="openInternal('index.html')">
+					<span class="link" data-style="default">Home</span>
+				</div>
+				<div>
+					<span class="link" data-style="default">Contact</span>
+				</div>
+				<div onclick="openInternal('rig-library.html')">
+					<span class="link" data-style="default">Rigs</span>
+				</div>
+				<div>
+					<span class="link" data-style="default">Projects</span>
+				</div>
 			</div>
-			<div class="trademarks">
-				<div>&copy; 2021 Sakura Sedaia, All Rights Reserved</div>
+			<div>
+				<h4>Social Links</h4>
+				<div onclick="openExternal('https://youtube.com/c/SakuraSedaia')">
+					<span class="link" data-style="default">Youtube</span>
+				</div>
+				<div onclick="openExternal('https://github.com/SakuraSedaia')">
+					<span class="link" data-style="default">GitHub</span>
+				</div>
+				<div onclick="openExtennal('https://codepen.io/Sakura-Sedaia')">
+					<span class="link" data-style="default">Codepen</span>
+				</div>
 			</div>
+			<div>
+				<h4><span>External API's</span></h4>
+				<div onclick="openExternal('https://michalsnik.github.io/aos/')">
+					<span class="link" data-style="default">AoS.js</span>
+				</div>
+				<div onclick="openExternal('https://fonts.google.com/')">
+					<span class="link" data-style="default">Google Fonts</span>
+				</div>
+				<div onclick="openExternal('https://bansal.io/pattern-css')">
+					<span class="link" data-style="default">pattern.css</span>
+				</div>
+			</div>
+		</div>
+		<div class="trademarks">
+			<div>&copy; 2021 Sakura Sedaia, All Rights Reserved</div>
+		</div>
 
 	</div>
 	<!-- FOOT END -->
