@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--  Meta  -->
+	<meta charset="UTF-8">
+	<title>Home page | PORTFOLIO</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--  Styles  -->
+	<link rel="stylesheet" href="assets/styles/main-style.css">
+	<link rel="stylesheet" href="lost-angel/lost-angel.css">
+	<link href="https://unpkg.com/pattern.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- HEAD START -->
+
+	<div class="header">
+		<div class="header-pattern pattern-diagonal-stripes-sm">
+			<div class="header-content">
+				<div class="header-top">
+					<div class="header-info">
+						Sakura Sedaia
+					</div>
+				</div>
+				<br>
+				<div class="header-middle">
+					<h1>Landing page</h1>
+					<h2>
+						Welcome to the site that is built to represent Sakura and inform you of all of his projects
+					</h2>
+				</div>
+				<br>
+				<div class="header-bottom">
+					<div class="header-art">
+						<span hidden>Header Art by: Sakura</span>
+					</div>
+				</div>
+				<div class="navigation">
+					<div class="nav-content">
+						<div class="nav-item" onclick="openInternal('index.html')">Home</div>
+						<div class="nav-item" onclick="openInternal('rigs.html')">Rigs</div>
+						<div class="nav-item" onclick="openInternal('wiki/wiki.html')">Rig Wiki (WIP)</div>
+						<div class="nav-item" onclick="openInternal('contact.html')">Contact</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- HEAD END -->
+    <div class="viewport">
+		<br>
+        <span class="changelog-return link" onclick="openInternal('rigs.html')"> Return to Rigs page</span>
+		<div class="raw-text">
+			SACR Revision 5.1:<br>
+### Fixed<br>
+> Flipped Eyebrow Normals<br>
+> Alex Arm Normals <br>
+<br>
+### Changes:<br>
+> Added Separate SSS Colour Input<br>
+> Expanded and Restructured Iris and Eyewhite Material<br>
+> Reorganized and Simplified Default UI<br>
+<br>
+### Additions<br>
+> Rigged Hair<br>
+<br>
+### Removed<br>
+> Diffuse Shader Option<br>
+<br>
+<br>
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=<br>
+SACR Revision 5:<br>
+### Fixes<br>
+> UV Mappings fixed and re-aligned<br>
+> Removed Unused and broken settings<br>
+> Removed Broken Drivers<br>
+<br>
+### Changes<br>
+> Changed how Pupils are Scaled<br>
+> Arm Anchor point changed<br>
+> Updated and Simplified Boneshapes<br>
+> Changed Eyebrow Thickness to Shapekey<br>
+> Improved Female Deform<br>
+> Updated Default Workspace<br>
+> Updated Image Names<br>
+> Armature and Master Collection names updated<br>
+> Armature and Mesh collections fused<br>
+> Updated ArmIK to Match Leg IK<br>
+> Updated Eyebrow Controls<br>
+> Updated Skeleton Layer organization<br>
+> Default skin and materials set for Steve skin<br>
+<br>
+### Added<br>
+> Separate Emission Mask Inputs for each Eye<br>
+> Pupils + Custom Pupil Support<br>
+> Stretch to Legs<br>
+> Shapekey to Lattices for Custom Deforms<br>
+> Restrictions on scale, allowing for easy Child Preset creation<br>
+> Stretch to Arms<br>
+> Added a two step toggle on Eyes and Eyebrows<br>
+> Added a Separate toggle for Mouth<br>
+> Added easy smoothing on arms & torso<br>
+<br>
+### Removed<br>
+> Round Eyes<br>
+> Complete HD Skin Compatability<br>
+> Diffuse Material<br>
+> Round Eye<br>
+		</div>
+    </div>
+	<!-- FOOT BEGIN -->
+	<div class="footer pattern-grid-lg">
+		<div class="clusterfuck">
+			<div>
+				<h4>Site Links</h4>
+				<div onclick="openInternal('index.html')"><span>Home</span></div>
+				<div><span>Contact</span></div>
+				<div onclick="openInternal('rig-library.html')"><span>Rigs</span>
+				</div>
+			</div>
+			<div>
+				<h4>Social Links</h4>
+				<div onclick="openExternal('https://youtube.com/c/SakuraSedaia')"><span >Youtube</span></div>
+				<div onclick="openExternal('https://github.com/SakuraSedaia')"><span>GitHub</span></div>
+				<div onclick="openExtennal('https://codepen.io/Sakura-Sedaia')"><span>Codepen</span></div>
+			</div>
+			<div>
+				<h4><span>External API's</span></h4>
+				<div onclick="openExternal('https://michalsnik.github.io/aos/')"><span>AoS.js</span></div>
+				<div onclick="openExternal('https://fonts.google.com/')"><span>Google Fonts</span></div>
+				<div onclick="openExternal('https://bansal.io/pattern-css')"><span>pattern.css</span></div>
+			</div>
+		</div>
+		<div class="trademarks">
+			<div>&copy; 2021 Sakura Sedaia, All Rights Reserved</div>
+		</div>
+
+	</div>
+	<!-- FOOT END -->
+
+	<script src="assets/scripts/script.js"></script>
+</body>
+
+</html>

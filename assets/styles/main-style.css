@@ -231,6 +231,21 @@ body {
   box-shadow: rgb(255, 229, 235) 0 -3.3em inset;
   color: black;
 }
+.hyperlinks {
+  color: black;
+  text-shadow: 2px 1px 5px black;
+  background-color:rgba(25, 25, 25, 0.5);
+  width: auto;
+}
+.hyperlinks a {
+  color: white;
+ margin-left: 10px;
+ margin-right: 10px;
+}
+.hyperlinks div {
+  text-align: center;
+  padding-top: 5px;
+}
 /* Global FAQ Styles */
 .faq-content {
   color: black;
@@ -302,4 +317,16 @@ body {
   font-size: 18px;
   border-radius: 10px;
   margin-bottom: 10px;
+}
+.raw-text {
+  font-family:'Courier New', Courier, monospace;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: .5in;
+  padding: .1in;
+}
+.changelog-return {
+  margin-left: 1in;
 }
