@@ -18,17 +18,17 @@ body {
   transition-duration: 235ms;
 }
 .link:hover {
-  color: #e0a0c4;
-  box-shadow: 0px -1.5px inset #e0a0c4;
+  color: #a0e0a0;
+  box-shadow: 0px -1.5px inset #a2e0a0;
 }
 .header {
   background-size: cover;
   background-position: center center;
-  background-image: url('../images/Viella-TestRender-RiverTunnel2-Composite.png');
+  background-image: url('../images/Pik_Environment.png');
 }
 .header-pattern {
-  background: rgba(242, 242, 242,.2);
-  color:rgba(242, 242, 242, 0.11);
+  background: rgba(242, 242, 242, 0.151);
+  color:rgba(242, 242, 242, 0.027);
   background-blend-mode: multiply;
 }
 .header-content {
@@ -48,7 +48,7 @@ body {
 .header-middle {
   width: 65%;
   min-width: 450px;
-  background-color: rgba(255, 206, 236, 0.767);
+  background-color: rgba(206, 255, 228, 0.767);
   color: black;
   border-radius: 15px;
   text-align: center;
@@ -86,7 +86,7 @@ body {
   border-left: 2px solid white;
   border-right: 2px solid white;
   color: white;
-  background-color: rgba(201, 35, 137, 0.5);
+  background-color: rgba(35, 201, 43, 0.5);
   transition-duration: 230ms;
   box-shadow: 0em 0em inset rgba(255, 255, 255);
   cursor: pointer;
@@ -131,8 +131,8 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   margin-top: 0.3em;
-  color: #e08bbb;
-  box-shadow: 0px -1.5px inset #e08bbb;
+  color: #8be08f;
+  box-shadow: 0px -1.5px inset #8be096;
 }
 .trademarks {
   color: black;
@@ -168,8 +168,8 @@ body {
 }
 /* Rig.html */
 .rig-downloads {
-  background-color:rgb(85, 18, 59);
-  color:rgb(117, 26, 82);
+  background-color:rgb(18, 85, 32);
+  color:rgb(26, 117, 38);
   text-align: center;
 }
 .rig-content {
@@ -177,10 +177,10 @@ body {
   margin-right: 1in;
   margin-left: 1in;
   padding: 20px;
-  background-color:rgba(243, 197, 220, 0.274);
+  background-color:rgba(197, 243, 218, 0.274);
   background-size: cover;
   background-position: center 60%;
-  background-image: url('../images/AmiasRender.jpg');
+  background-image: url('../images/Banner_Render1.png');
   background-blend-mode: multiply;
 }
 .rig-downloads h2 {
@@ -205,7 +205,7 @@ body {
 }
 .rig-downloads .hyperlinks ul li .link:hover {
   color: #e0a0c4;
-  box-shadow: 0px -1.5px inset #e0a0c4;
+  box-shadow: 0px -1.5px inset #a0e0b3;
 }
 .rig-downloads .rig-button {
   color: white;
