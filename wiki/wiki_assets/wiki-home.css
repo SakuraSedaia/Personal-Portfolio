@@ -8,6 +8,9 @@
 	--sm: 50px;
 	--xsm: 37px;
 	--fade: 250ms;
+
+    /* Image Interpolation */
+    --img-interpolation: pixelated;
 }
 
 .dev-warning {
@@ -191,8 +194,7 @@ p {
   
   .diagram-item {
     /* Set Skin File and Metadata for Main Layer */
-    background-image: var(--skin-file);
-    image-rendering: crisp-edges;
+    image-rendering: var(--img-interpolation);
     background-size: 800px;
     /* Additional Data */
     width: 100px;
@@ -203,10 +205,10 @@ p {
     box-shadow: 0 0 0 inset rgba(0, 0, 0, 0.5);
     content: "";
     transition-duration: var(--fade);
+    
   }
   .diagram-item div {
     /* Set Skin File and Metadata for Second Layer */
-    background-image: var(--skin-file);
     image-rendering: crisp-edges;
     background-size: 800px;
     /* Additional Data */

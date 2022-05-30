@@ -2,45 +2,40 @@
 <html lang="en">
 
 <head>
-	<!--  Meta  -->
 	<meta charset="UTF-8">
-	<title>SACR Minecraft Rig | PORTFOLIO</title>
+	<title>Home page | PORTFOLIO</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" />
-	<!--  Styles  -->
+	<link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" />
+
 	<link rel="stylesheet" href="assets/styles/main-style.css">
-	<link href="https://unpkg.com/pattern.css" rel="stylesheet">
+	<link rel="stylesheet" href="lost-angel/lost-angel.css">
 </head>
 
 <body>
+
 	<!-- HEAD START -->
 
-	<div class="header">
-		<div class="header-pattern pattern-diagonal-stripes-sm">
+	<div class="header" style="background-image: url('assets/images/Jon_and_Jen_Pik_Run.png');">
+		<div class="header-pattern">
 			<div class="header-content">
 				<div class="header-top">
 					<div class="header-info">
-						Sakura Sedaia
+						Sakura Sedaia | Rig Downloads
 					</div>
 				</div>
 				<br>
 				<div class="header-middle">
-					<h1>Rigs</h1>
+					<h1>Blender Rigs</h1>
 					<h2>
-						A place to download all of Sakura's available rigs or access the Repositories to see past
-						versions
+						Everything you need to know about Sakura
+						<br>you can find here.
 					</h2>
-				</div>
-				<br>
-				<div class="header-bottom">
-					<div class="header-art">
-						<span>Header Art by: Sakura Sedaia</span>
-					</div>
 				</div>
 				<div class="navigation">
 					<div class="nav-content">
 						<div class="nav-item" onclick="openInternal('index.html')">Home</div>
 						<div class="nav-item" onclick="openInternal('rigs.html')">Rigs</div>
+						
 						<div class="nav-item" onclick="openExternal('https://sakura-sedaia.carrd.co/',1)">Commissions</div>
 						<div class="nav-item" onclick="openInternal('contact.html')">Contact</div>
 					</div>
@@ -48,102 +43,133 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- HEAD END -->
 
-	<div class="rig-downloads pattern-grid-lg">
-		<div class="rig-content">
-			<h2>SACR Rig downloads</h2>
-			<p>Download the latest stable and experimental builds here. Stable releases are the more stable rigs while
-				Experimental rigs are generally more up to date but can have some issues regarding stability, once a
-				Experimental Rig is deemed stable enough it is then listed as the latest stable rig.</p>
-			<div id="stableRig" class="rig-button" onclick="downloadRig('SACR_R6.zip')">
-				Stable
-				<br>
-				<span>R6.0 | 26/01/2022</span>
+	<!-- Featured Rig Start -->
+	<div class="featured-rig" style="background-image:url('assets/images/BannerRender.png')">
+		<div class="content-contain">
+			<div class="title">
+				<h1>Sakura's Advanced Character Rig</h1>
+				<p>DISCLAIMER: Rig is Discontinued and will no longer recieve updates part from patches to ensure
+					compatibility with Blender 3.0 and newer</p>
 			</div>
-			<div id="experimentalRig" class="rig-button" onclick="downloadRig('')" style="display: none;">
-				Experimental
-				<br>
-				<span>null | null</span>
+
+			<div class="features">
+				<div class="col">
+					<h2>Notable Features</h2>
+					<ul>
+						<li>125 Sharp Bends</li>
+						<li>Inverse Kinimatics for limbs w/ Wrists</li>
+						<li>Custom Armour Mesh w/ 4 different tiers
+							<ul>
+								<li>Leather Armour <strong>IS</strong> able to be dyed</li>
+							</ul>
+						</li>
+						<li>Fully Functioning Facerig</li>
+						<li>Molars for your Demonic or Feline-like Characters</li>
+						<li>Advanced Eye Model & Material</li>
+						<li>Simple enough for Beginners, Advanced enough for experts</li>
+						<li>Female Body Mesh & Eyelashes</li>
+						<li>And Much, much more!</li>
+					</ul>
+				</div>
+				<div class="col">
+					<h2>Compatible With:*</h2>
+					<ul>
+						<li>Blender 2.80</li>
+						<li>Blender 2.81</li>
+						<li>Blender 2.82</li>
+						<li>Blender 2.83 LTS</li>
+						<li>Blender 2.90</li>
+						<li>Blender 2.91</li>
+						<li>Blender 2.92</li>
+						<li>Blender 2.93 LTS <strong>(Recomended)</strong></li>
+						<li>Blender 3.0**</li>
+					</ul>
+
+					<p>Blender 3.0 may be compatible, however it is not officially supported by the Rig</p>
+				</div>
 			</div>
-			<div class="hyperlinks">
-				<a class="link" onclick="openInternal('sacr-stable-changelog.html')">SACR Stable Changelog</a><a class="link">SACR Experimental Changelog</a><a class="link" onclick="openExternal('https://www.youtube.com/watch?v=BhBtHKRXFu8')">Latest Release Video</a>
+			<div class="download-featured-rig">
+				<h2>Download the latest version of SACR here</h2>
+
+				<div class="featured-rig-buttons">
+					<div class="download" onclick="downloadRig('sacr-directory/SACR_R6.zip')">
+					Download SACR R6
+				</div>
+				<div class=" changelog" onclick="openSACRhangelog()">
+						Changelog
+					</div>
+				</div>
 				<br>
-				<div class="monospace">* All dates are in the dd/mm/yyyy format</div>
+				<img src="assets/images/Jenneifer&Jonathan_Picnic_HalfRes.png" width="200px" alt="Jen-Reading">
+				
+				<div class="disclaimer">
+					*These are versions the Rig will load and work near flawlessly in, using any version of Blender not on this list could result in trouble to run and utilize the rig to it's full capacity
+
+					<p>**SACR <strong>IS</strong> compatible with Blender 3.0 and Newer, however, once opened and saved using Blender 3.X you may no longer re-use that file in Blender 2.93 or older due to complications regarding API conversions from 2.93 to 3.0. Please use caution when operating</p>
+				</div>
 			</div>
 		</div>
 	</div>
 
+	<!-- Featured Rig End -->
 
-	<!-- FAQ -->
-	<div class="faq pattern-grid-lg">
-		<div class="faq-content">
-			<h2>? FAQ ?</h2>
+	<!-- Rigs Gallery Start -->
+	<div class="rig-gallery" hidden>
+		<div class="title">
+			<h1>Available Rigs to Download</h1>
+			<p>DISCLAIMER: All my Rigs are developed in Blender 2.93 LTS, as such, compatibilty with other versions may be patchy and some unsupported. None of my rigs rely on Python Scrips but most contain Blender Drivers, so it is impairtive that "Auto Run Python Scripts" is enabled in settings, <a onclick="openExternal('https://docs.blender.org/manual/en/latest/advanced/scripting/security.html#setting-defaults')" class="link">click here for the offcial documentation if you don't know how to enable this</a></p>
+			<br>
+			<br>
+			<h2>Available Rig Gallery</h2>
+		</div>
 
-			<div class="faq-question">
-				<span class="faq-question-head"><strong>Q</strong>: What Software do these Rigs require?</span>
-				<br>
-				<strong>A</strong>: All Rigs posted on this page are made and tested in Blender 2.93.7, this is the recommended version to use SACR in as it will provide the best quality in terms of User Experience. SACR is untested in Blender 3.0, as such, it is not guarenteed all rig features will work seamlessly
-			</div>
-
-			<div class="faq-question">
-				<span class="faq-question-head"><strong>Q</strong>: When will the Wiki become available?</span>
-				<br>
-				<strong>A</strong>: The exact timeframe of when the Wiki for all my rigs is unknown, but I am putting
-				work into the site as much as I can while maintaining all my other projects. The WIP Version of the wiki
-				is online right now.
+		<div class="gallery">
+			<div class="rig-card">
+				<div class="rig-card-thumb">
+					<img src="assets/images/MC_Tail_RigShowcase.png" width="200px" alt="Tail Rig Preview Render">
+				</div>
+<br>
+				<div class="rig-card-text">
+					<h3>MC Cat Tail Rig</h3>
+					<p>Click for more details</p>
+				</div>
 			</div>
 		</div>
+
 	</div>
+	<!-- Rigs Gallery End -->
+
 	<!-- FOOT BEGIN -->
-	<div class="footer pattern-grid-lg">
+	<div class="footer">
 		<div class="clusterfuck">
 			<div>
 				<h4>Site Links</h4>
-				<div onclick="openInternal('index.html')">
-					<span class="link" data-style="default">Home</span>
-				</div>
-				<div>
-					<span class="link" data-style="default">Contact</span>
-				</div>
-				<div onclick="openInternal('rig-library.html')">
-					<span class="link" data-style="default">Rigs</span>
-				</div>
-				<div>
-					<span class="link" data-style="default">Projects</span>
+				<div onclick="openInternal('index.html')"><span>Home</span></div>
+				<div onclick="openInternal('rigs.html')"><span>Rigs</span>
 				</div>
 			</div>
 			<div>
 				<h4>Social Links</h4>
-				<div onclick="openExternal('https://youtube.com/c/SakuraSedaia')">
-					<span class="link" data-style="default">Youtube</span>
-				</div>
-				<div onclick="openExternal('https://github.com/SakuraSedaia')">
-					<span class="link" data-style="default">GitHub</span>
-				</div>
-				<div onclick="openExtennal('https://codepen.io/Sakura-Sedaia')">
-					<span class="link" data-style="default">Codepen</span>
-				</div>
+				<div onclick="openExternal('https://youtube.com/c/SakuraSedaia')"><span >Youtube</span></div>
+				<div onclick="openExternal('https://www.deviantart.com/')"><span>DeviantArt</span></div>
+				<div onclick="openExtennal('https://codepen.io/Sakura-Sedaia')"><span>Codepen</span></div>
 			</div>
 			<div>
 				<h4><span>External API's</span></h4>
-				<div onclick="openExternal('https://fonts.google.com/')">
-					<span class="link" data-style="default">Google Fonts</span>
-				</div>
-				<div onclick="openExternal('https://bansal.io/pattern-css')">
-					<span class="link" data-style="default">pattern.css</span>
-				</div>
+				<div onclick="openExternal('https://fonts.google.com/')"><span>Google Fonts</span></div>
 			</div>
 		</div>
 		<div class="trademarks">
-			<div>&copy; 2021 Sakura Sedaia, All Rights Reserved</div>
+			<div>&copy; 2022 Sakura Sedaia, All Rights Reserved</div>
 		</div>
 
 	</div>
 	<!-- FOOT END -->
 
 	<script src="assets/scripts/script.js"></script>
+
 </body>
 
 </html>

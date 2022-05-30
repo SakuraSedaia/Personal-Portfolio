@@ -13,12 +13,30 @@ function openInternal(url) {
 function returnWikiHome() {
     window.open('wiki.html');
 }
+
 var skinFile = "https://texture.namemc.com/12/cc/12ccdc2d82bae349.png";
 var isSkinAlex = false;
 var diagramItem = document.getElementsByClassName("diagram-item");
-for (var i = 0; i < diagramItem.length; i++) {
+let i = 0;
+function setSkinOpacity() {
+    setTimeout(function() {
+        diagramItem[i].style.opacity = "100%";
+    i++
+
+    if (i < diagramItem.length) {
+        setSkinOpacity();
+    }
+    }, 100);
+}
+
+setSkinOpacity();
+
+let i = 0;
+while ( i < diagramItem.length ) {
 	diagramItem[i].style.backgroundImage = "url(" + skinFile + ")";
 	diagramItem[i].childNodes[1].style.backgroundImage = "url(" + skinFile + ")";
+    window.setTimeout("console.log('Wait 1 second')",1000);
+    i++
 }
 var skinArmR = document.getElementById("sacrArmR");
 var skinArmL = document.getElementById("sacrArmL");
