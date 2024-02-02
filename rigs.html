@@ -3,11 +3,11 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Home page | PORTFOLIO</title>
+	<title>Rig Catalog | Sakura Sedaia</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" />
 
-	<link rel="stylesheet" href="assets/styles/main-style.css">
+	<link rel="stylesheet" href="assets/styles/main-style.min.css">
 	<link rel="stylesheet" href="lost-angel/lost-angel.css">
 </head>
 
@@ -15,28 +15,27 @@
 
 	<!-- HEAD START -->
 
-	<div class="header" style="background-image: url('assets/images/Jon_and_Jen_Pik_Run.png');">
+	<div class="header" style="background-image: url('assets/images/Waterfall Valley.png');background-position: bottom">
 		<div class="header-pattern">
 			<div class="header-content">
 				<div class="header-top">
 					<div class="header-info">
-						Sakura Sedaia | Rig Downloads
+						Sakura Sedaia | Rig Catalog
 					</div>
 				</div>
 				<br>
 				<div class="header-middle">
-					<h1>Blender Rigs</h1>
+					<h1>Rig Catalog</h1>
 					<h2>
-						Everything you need to know about Sakura
-						<br>you can find here.
+						Source of Sakura's Rigs, primarily SACR Rig
 					</h2>
 				</div>
 				<div class="navigation">
 					<div class="nav-content">
-						<div class="nav-item" onclick="openInternal('index.html')">Home</div>
+						<div class="nav-item" onclick="openInternal('index.html')">About Me</div>
 						<div class="nav-item" onclick="openInternal('rigs.html')">Rigs</div>
-						
-						<div class="nav-item" onclick="openExternal('https://sakura-sedaia.carrd.co/',1)">Commissions</div>
+
+						<!--<div class="nav-item" onclick="openExternal('https://sakura-sedaia.carrd.co/',1)">Commissions</div>-->
 						<div class="nav-item" onclick="openInternal('contact.html')">Contact</div>
 					</div>
 				</div>
@@ -50,64 +49,41 @@
 		<div class="content-contain">
 			<div class="title">
 				<h1>Sakura's Advanced Character Rig</h1>
-				<p>DISCLAIMER: Rig is Discontinued and will no longer recieve updates part from patches to ensure
-					compatibility with Blender 3.0 and newer</p>
 			</div>
 
-			<div class="features">
+			<div class="download-rigs">
 				<div class="col">
-					<h2>Notable Features</h2>
-					<ul>
-						<li>125 Sharp Bends</li>
-						<li>Inverse Kinimatics for limbs w/ Wrists</li>
-						<li>Custom Armour Mesh w/ 4 different tiers
-							<ul>
-								<li>Leather Armour <strong>IS</strong> able to be dyed</li>
-							</ul>
-						</li>
-						<li>Fully Functioning Facerig</li>
-						<li>Molars for your Demonic or Feline-like Characters</li>
-						<li>Advanced Eye Model & Material</li>
-						<li>Simple enough for Beginners, Advanced enough for experts</li>
-						<li>Female Body Mesh & Eyelashes</li>
-						<li>And Much, much more!</li>
-					</ul>
-				</div>
-				<div class="col">
-					<h2>Compatible With:*</h2>
-					<ul>
-						<li>Blender 2.80</li>
-						<li>Blender 2.81</li>
-						<li>Blender 2.82</li>
-						<li>Blender 2.83 LTS</li>
-						<li>Blender 2.90</li>
-						<li>Blender 2.91</li>
-						<li>Blender 2.92</li>
-						<li>Blender 2.93 LTS <strong>(Recomended)</strong></li>
-						<li>Blender 3.0**</li>
-					</ul>
+					<h2>Stable Build</h2>
+					<h3>Revision 6</h3>
+					<p class="stable-info">
+						The Stable build of SACR is in it's 6th revision, featuring all of the essentials such as Eye
+						Gradients, 125° Sharp Bends, Advanced Facerig with Simplified Emotion Controls, etc. SACR can
+						cover all of your bases, whether you're an Animator or Renderer, it can be setup however you
+						prefer for your workflow and with it's optimized Material Setups and Mesh's, your Computer won't
+						suffer near as much as competitors.
+					</p>
 
-					<p>Blender 3.0 may be compatible, however it is not officially supported by the Rig</p>
-				</div>
-			</div>
-			<div class="download-featured-rig">
-				<h2>Download the latest version of SACR here</h2>
-
-				<div class="featured-rig-buttons">
-					<div class="download" onclick="downloadRig('sacr-directory/SACR_R6.zip')">
-					Download SACR R6
-				</div>
-				<div class=" changelog" onclick="openSACRhangelog()">
-						Changelog
+					<div class="download-rig">
+						<div class="downloadDetail">Blender 2.93 | 0.97mb </div>
+						<br>
+						<div class="download-btn" onclick="downloadSACR('SACR_R6.zip')">Download Stable</div>
 					</div>
 				</div>
-				<br>
-				<img src="assets/images/Jenneifer&Jonathan_Picnic_HalfRes.png" width="200px" alt="Jen-Reading">
-				
-				<div class="disclaimer">
-					*These are versions the Rig will load and work near flawlessly in, using any version of Blender not on this list could result in trouble to run and utilize the rig to it's full capacity
+				<div class="col">
+					<h2>Experimental Release</h2>
+					<h3>Revision 7 Development</h3>
+					<p class="experimental-info">
+						The Experimental Release is the latest Stable build plus experimental features for the upcoming
+						release, while SACR was previously under a discontinued state due to Sakura moving on, Sakura
+						has been coming back to Blender due to real world scenarios, as such, development on SACR will
+						continue with R7 set to release by July 2024 for Blender 4.0 and Later.
+					</p>
 
-					<p>**SACR <strong>IS</strong> compatible with Blender 3.0 and Newer, however, once opened and saved using Blender 3.X you may no longer re-use that file in Blender 2.93 or older due to complications regarding API conversions from 2.93 to 3.0. Please use caution when operating</p>
+					<div class="download-rig">
+						<div class="downloadDetail">Unknown | Unknown </div>
+						<br>
+						<div class="download-btn-na">Not Available</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -115,44 +91,19 @@
 
 	<!-- Featured Rig End -->
 
-	<!-- Rigs Gallery Start -->
-	<div class="rig-gallery" hidden>
-		<div class="title">
-			<h1>Available Rigs to Download</h1>
-			<p>DISCLAIMER: All my Rigs are developed in Blender 2.93 LTS, as such, compatibilty with other versions may be patchy and some unsupported. None of my rigs rely on Python Scrips but most contain Blender Drivers, so it is impairtive that "Auto Run Python Scripts" is enabled in settings, <a onclick="openExternal('https://docs.blender.org/manual/en/latest/advanced/scripting/security.html#setting-defaults')" class="link">click here for the offcial documentation if you don't know how to enable this</a></p>
-			<br>
-			<br>
-			<h2>Available Rig Gallery</h2>
-		</div>
-
-		<div class="gallery">
-			<div class="rig-card">
-				<div class="rig-card-thumb">
-					<img src="assets/images/MC_Tail_RigShowcase.png" width="200px" alt="Tail Rig Preview Render">
-				</div>
-<br>
-				<div class="rig-card-text">
-					<h3>MC Cat Tail Rig</h3>
-					<p>Click for more details</p>
-				</div>
-			</div>
-		</div>
-
-	</div>
-	<!-- Rigs Gallery End -->
 
 	<!-- FOOT BEGIN -->
 	<div class="footer">
 		<div class="clusterfuck">
 			<div>
 				<h4>Site Links</h4>
-				<div onclick="openInternal('index.html')"><span>Home</span></div>
+				<div onclick="openInternal('index.html')"><span>About Me</span></div>
 				<div onclick="openInternal('rigs.html')"><span>Rigs</span>
 				</div>
 			</div>
 			<div>
 				<h4>Social Links</h4>
-				<div onclick="openExternal('https://youtube.com/c/SakuraSedaia')"><span >Youtube</span></div>
+				<div onclick="openExternal('https://youtube.com/c/SakuraSedaia')"><span>Youtube</span></div>
 				<div onclick="openExternal('https://www.deviantart.com/')"><span>DeviantArt</span></div>
 				<div onclick="openExtennal('https://codepen.io/Sakura-Sedaia')"><span>Codepen</span></div>
 			</div>
@@ -162,13 +113,15 @@
 			</div>
 		</div>
 		<div class="trademarks">
-			<div>&copy; 2022 Sakura Sedaia, All Rights Reserved</div>
+			<div>&copy; 2024 Sakura Sedaia, All Rights Reserved</div>
 		</div>
 
 	</div>
 	<!-- FOOT END -->
 
 	<script src="assets/scripts/script.js"></script>
+	<script>
+	</script>
 
 </body>
 
