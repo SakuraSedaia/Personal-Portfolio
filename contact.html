@@ -3,42 +3,43 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Home page | PORTFOLIO</title>
+	<title>Contact | Sakura Sedaia</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" />
 
 	<link rel="stylesheet" href="assets/styles/main-style.css">
-	<link rel="stylesheet" href="lost-angel/lost-angel.css">
 </head>
 
 <body>
 
 	<!-- HEAD START -->
-
 	<div class="header" style="background-image: url('assets/images/Jon_and_Jen_Pik_Run.png');">
 		<div class="header-pattern">
 			<div class="header-content">
 				<div class="header-top">
 					<div class="header-info">
-						Sakura Sedaia | Contact
+						Contact | Sakura Sedaia
 					</div>
 				</div>
 				<br>
 				<div class="header-middle">
 					<h1>Contacts</h1>
+					<br>
 					<h2>
 						Need to contact me?
-                        <br>
-                        Well you're in the right place
+						<br>
+						Well you're in the right place
 					</h2>
 				</div>
 				<div class="navigation">
 					<div class="nav-content">
-						<div class="nav-item" onclick="openInternal('index.html')">About Me</div>
-						<div class="nav-item" onclick="openInternal('rigs.html')">Rigs</div>
-						
-						<!--<div class="nav-item" onclick="openExternal('https://sakura-sedaia.carrd.co/',1)">Commissions</div>-->
-						<div class="nav-item" onclick="openInternal('contact.html')">Contact</div>
+						<div class="nav-item" onclick="openInternal('index.html')"><span>About</span></div>
+						<div class="nav-item" onclick="openInternal('rigs.html')"><span>Rigs</span></div>
+						<div class="nav-item" onclick="openInternal('render.html')" hidden><span>Renders</span></div>
+						<div class="nav-item" onclick="openInternal('websites.html')" hidden><span>Websites</span></div>
+						<div class="nav-item active" onclick="openInternal('contact.html')"><span>Contact</span></div>
+
+						<div class="nav-item" onclick="openExternal('https://sakura-sedaia.carrd.co/',1)">Commissions</div>
 					</div>
 				</div>
 			</div>
@@ -47,43 +48,49 @@
 	<!-- HEAD END -->
 
 	<!-- Email Contact Start -->
-	<div class="contact">
-	<div class="email-stuff">
-        <h2>Email Information</h2>
-        <p>Should you ever need to contact me Via email, please reach me through the following Email Address: <a onclick="copyEmail()">sakusedaia@outlook.com</a></p>
-        
-    </div>
-	<!-- Discord Contact Start -->
-    <div class="discord-stuff">
-        <h2>Discord Information</h2>
-        <p>If you are planning to contact me through discord, you can message me directly via my Username, <a onclick="copyDiscUser()">Sakura4Eva#5245</a> or join my Discord Server and use it to contact me directly there, <a onclick="openExternal('https://discord.gg/9JTuWN8Gr8')">https://discord.gg/9JTuWN8Gr8</a></p>
-        
-    </div>
-</div>
+	<div class="body-container contact">
+		<div class="email-stuff">
+			<h2>Email Information</h2>
+			<p>Should you ever need to contact me Via email, please reach me through the following Email Address: <a
+					onclick="copyEmail('sakusedaia@outlook.com')">sakusedaia@outlook.com</a></p>
+
+		</div>
+		<!-- Discord Contact Start -->
+		<div class="discord-stuff">
+			<h2>Discord Information</h2>
+			<p>If you are planning to contact me through discord, you can message me directly via my Username, <a
+					onclick="copyDiscUser('idiot_mechanic')">idiot_mechanic</a></p>
+
+		</div>
+	</div>
+
 	<!-- FOOT BEGIN -->
 	<div class="footer">
 		<div class="clusterfuck">
 			<div>
 				<h4>Site Links</h4>
+
 				<div onclick="openInternal('index.html')"><span>About Me</span></div>
-				<div onclick="openInternal('rigs.html')"><span>Rigs</span>
-				</div>
+				<div onclick="openInternal('rigs.html')"><span>Rigs</span></div>
+				<div onclick="openInternal('render.html')"><span>Renders</span></div>
+				<div onclick="openInternal('websites.html')"><span>Environments</span></div>
+				<div onclick="openInternal('contact.html')"><span>Contact</span></div>
 			</div>
 			<div>
 				<h4>Social Links</h4>
-				<div onclick="openExternal('https://youtube.com/c/SakuraSedaia')"><span >Youtube</span></div>
+				<div onclick="openExternal('https://youtube.com/c/SakuraSedaia')"><span>Youtube</span></div>
 				<div onclick="openExternal('https://www.deviantart.com/')"><span>DeviantArt</span></div>
 				<div onclick="openExtennal('https://codepen.io/Sakura-Sedaia')"><span>Codepen</span></div>
+				<div>
+					<h4><span>External API's</span></h4>
+					<div onclick="openExternal('https://fonts.google.com/')"><span>Google Fonts</span></div>
+				</div>
 			</div>
-			<div>
-				<h4><span>External API's</span></h4>
-				<div onclick="openExternal('https://fonts.google.com/')"><span>Google Fonts</span></div>
+			<div class="trademarks">
+				<div>&copy; 2024 Sakura Sedaia, All Rights Reserved</div>
 			</div>
-		</div>
-		<div class="trademarks">
-			<div>&copy; 2024 Sakura Sedaia, All Rights Reserved</div>
-		</div>
 
+		</div>
 	</div>
 	<!-- FOOT END -->
 

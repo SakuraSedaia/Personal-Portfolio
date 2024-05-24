@@ -1,6 +1,6 @@
 // Link Handling
 function openInternal(url) {
-    window.open(url,"_self");
+    window.open(url, "_self");
 }
 
 function openExternal(url, trusted) {
@@ -14,7 +14,7 @@ function openExternal(url, trusted) {
 }
 
 function downloadSACR(file, dev) {
-    if(file==null) {
+    if (file == null) {
         window.alert("This download does not exist")
     } else if (dev != 1) {
         var filepath = window.location.href.substring(0, (window.location.href.length - 9)) + "assets/rig-storage/sacr-directory/" + file;
@@ -38,8 +38,9 @@ function downloadSACR(file, dev) {
         }
     }
 }
+
 function downloadRig(file) {
-    if(file==null) {
+    if (file == null) {
         window.alert("This download does not exist")
     } else {
         var filepath = window.location.href.substring(0, (window.location.href.length - 9)) + "assets/rig-storage/" + file;
@@ -54,3 +55,11 @@ function downloadRig(file) {
     }
 }
 
+function copyEmail(text) {
+    window.alert('Email "' + text + '" copied to clipboard');
+    navigator.clipboard.writeText(text);
+}
+function copyDiscUser(text) {
+    window.alert('Discord Name "' + text + '" copied to clipboard');
+    navigator.clipboard.writeText(text);
+}

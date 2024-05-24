@@ -8,35 +8,37 @@
 	<link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" />
 
 	<link rel="stylesheet" href="assets/styles/main-style.css">
-	<link rel="stylesheet" href="lost-angel/lost-angel.css">
 </head>
 
 <body>
 
 	<!-- HEAD START -->
-
 	<div class="header" style="background-image: url('assets/images/Waterfall Valley.png');background-position: bottom">
 		<div class="header-pattern">
 			<div class="header-content">
 				<div class="header-top">
 					<div class="header-info">
-						Sakura Sedaia | Rig Catalog
+						Rig Catalog | Sakura Sedaia
 					</div>
 				</div>
 				<br>
 				<div class="header-middle">
 					<h1>Rig Catalog</h1>
+					<br>
 					<h2>
 						Source of Sakura's Rigs, primarily SACR Rig
 					</h2>
 				</div>
 				<div class="navigation">
 					<div class="nav-content">
-						<div class="nav-item" onclick="openInternal('index.html')">About Me</div>
-						<div class="nav-item" onclick="openInternal('rigs.html')">Rigs</div>
+						<div class="nav-item" onclick="openInternal('index.html')"><span>About</span></div>
+						<div class="nav-item active" onclick="openInternal('rigs.html')"><span>Rigs</span></div>
+						<div class="nav-item" onclick="openInternal('render.html')" hidden><span>Renders</span></div>
+						<div class="nav-item" onclick="openInternal('websites.html')" hidden><span>Websites</span></div>
+						<div class="nav-item" onclick="openInternal('contact.html')"><span>Contact</span></div>
 
-						<!--<div class="nav-item" onclick="openExternal('https://sakura-sedaia.carrd.co/',1)">Commissions</div>-->
-						<div class="nav-item" onclick="openInternal('contact.html')">Contact</div>
+						<div class="nav-item" onclick="openExternal('https://sakura-sedaia.carrd.co/',1)">Commissions
+						</div>
 					</div>
 				</div>
 			</div>
@@ -45,50 +47,58 @@
 	<!-- HEAD END -->
 
 	<!-- Featured Rig Start -->
-	<div class="featured-rig" style="background-image:url('assets/images/BannerRender.png')">
-		<div class="content-contain">
-			<div class="title">
-				<h1>Sakura's Advanced Character Rig</h1>
-			</div>
-
-			<div class="download-rigs">
-				<div class="col">
-					<h2>Stable Build</h2>
-					<h3>Revision 6</h3>
-					<p class="stable-info">
-						The Stable build of SACR is in it's 6th revision, featuring all of the essentials such as Eye
-						Gradients, 125° Sharp Bends, Advanced Facerig with Simplified Emotion Controls, etc. SACR can
-						cover all of your bases, whether you're an Animator or Renderer, it can be setup however you
-						prefer for your workflow and with it's optimized Material Setups and Mesh's, your Computer won't
-						suffer near as much as competitors.
-					</p>
-
-					<div class="download-rig">
-						<div class="downloadDetail">Blender 2.93 | 0.97mb </div>
-						<br>
-						<div class="download-btn" onclick="downloadSACR('SACR_R6.zip')">Download</div>
-					</div>
+	<div class="body-container">
+		<div class="featured-rig" style="background-image:url('assets/images/BannerRender.png')">
+			<div class="content-contain">
+				<div class="title">
+					<h1>Sakura's Advanced Character Rig</h1>
 				</div>
-				<div class="col">
-					<h2>Experimental Release</h2>
-					<h3>Revision 7 Development</h3>
-					<p class="experimental-info">
-						The Experimental Release is the latest Stable build plus experimental features for the upcoming
-						release, while SACR was previously under a discontinued state due to Sakura moving on, Sakura
-						has been coming back to Blender due to real world scenarios, as such, development on SACR will
-						continue with R7 set to release by July 2024 for Blender 4.0 and Later.
-					</p>
 
-					<div class="download-rig">
-						<div class="downloadDetail">Blender 4.1 | 6.23mb </div>
-						<br>
-						<div class="download-btn" onclick="downloadSACR('SACR E7_Proto1.blend', 1)">Download</div>
+				<div class="download-rigs">
+					<div class="col" id="stableRig">
+						<h2>Stable Build</h2>
+						<h3>Revision 6</h3>
+						<p class="stable-info">
+							The Stable build of SACR is in it's 6th revision, featuring all of the essentials such as
+							Eye
+							Gradients, 125° Sharp Bends, Advanced Facerig with Simplified Emotion Controls, etc. SACR
+							can
+							cover all of your bases, whether you're an Animator or Renderer, it can be setup however you
+							prefer for your workflow and with it's optimized Material Setups and Mesh's, your Computer
+							won't
+							suffer near as much as competitors.
+						</p>
+
+						<div class="download-rig">
+							<div class="downloadDetail">Blender 2.93 | 0.97mb </div>
+							<br>
+							<div class="download-btn" onclick="downloadSACR('SACR_R6.zip')">Download</div>
+						</div>
+					</div>
+
+					<div class="col" id="devRig">
+						<h2>Experimental Release</h2>
+						<h3>Revision 7 Development</h3>
+						<p class="experimental-info">
+							The Experimental Release is the latest Stable build plus experimental features for the
+							upcoming
+							release, while SACR was previously under a discontinued state due to Sakura moving on,
+							Sakura
+							has been coming back to Blender due to real world scenarios, as such, development on SACR
+							will
+							continue with R7 set to release by July 2024 for Blender 4.0 and Later.
+						</p>
+
+						<div class="download-rig">
+							<div class="downloadDetail">Blender 4.1 | 6.23mb </div>
+							<br>
+							<div class="download-btn download-btn-red" onclick="downloadSACR('SACR E7_Proto1.blend', 1)">Download</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
 	<!-- Featured Rig End -->
 
 
@@ -97,25 +107,28 @@
 		<div class="clusterfuck">
 			<div>
 				<h4>Site Links</h4>
+
 				<div onclick="openInternal('index.html')"><span>About Me</span></div>
-				<div onclick="openInternal('rigs.html')"><span>Rigs</span>
-				</div>
+				<div onclick="openInternal('rigs.html')"><span>Rigs</span></div>
+				<div onclick="openInternal('render.html')"><span>Renders</span></div>
+				<div onclick="openInternal('websites.html')"><span>Environments</span></div>
+				<div onclick="openInternal('contact.html')"><span>Contact</span></div>
 			</div>
 			<div>
 				<h4>Social Links</h4>
 				<div onclick="openExternal('https://youtube.com/c/SakuraSedaia')"><span>Youtube</span></div>
 				<div onclick="openExternal('https://www.deviantart.com/')"><span>DeviantArt</span></div>
 				<div onclick="openExtennal('https://codepen.io/Sakura-Sedaia')"><span>Codepen</span></div>
+				<div>
+					<h4><span>External API's</span></h4>
+					<div onclick="openExternal('https://fonts.google.com/')"><span>Google Fonts</span></div>
+				</div>
 			</div>
-			<div>
-				<h4><span>External API's</span></h4>
-				<div onclick="openExternal('https://fonts.google.com/')"><span>Google Fonts</span></div>
+			<div class="trademarks">
+				<div>&copy; 2024 Sakura Sedaia, All Rights Reserved</div>
 			</div>
-		</div>
-		<div class="trademarks">
-			<div>&copy; 2024 Sakura Sedaia, All Rights Reserved</div>
-		</div>
 
+		</div>
 	</div>
 	<!-- FOOT END -->
 
