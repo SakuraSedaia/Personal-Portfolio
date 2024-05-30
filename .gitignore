@@ -1,8 +1,10 @@
-assets/styles/main_style_css.css
+*.scss
+*.blend1
 *.py
-Website Assets/*
+lost-angel/*
+assets/rig-storage/asset-rigs/*
+wiki/*
 personal-portfolio.code-workspace
 .vscode/*
+*.min*
 *.code-workspace
-*.blend1
-*.scss
