@@ -28,7 +28,6 @@ function downloadSACR(file, dev) {
         }
     } else if (dev == 1) {
         var filepath = window.location.href.substring(0, (window.location.href.length - 9)) + "assets/rig-storage/sacr-experimental/" + file;
-
         console.log("Initiated Download request for file " + file + ", from " + filepath)
         if (window.confirm(`You are about to download a file from the site, are you sure you want to continue?\n\nSite Link: ` + filepath)) {
             var downloadWin = window.open(filepath, "File Download", "width = 100px;");
@@ -44,7 +43,6 @@ function downloadRig(file) {
         window.alert("This download does not exist")
     } else {
         var filepath = window.location.href.substring(0, (window.location.href.length - 9)) + "assets/rig-storage/" + file;
-
         console.log("Initiated Download request for file " + file + ", from " + filepath)
         if (window.confirm(`You are about to download a file from the site, are you sure you want to continue?\n\nSite Link: ` + filepath)) {
             var downloadWin = window.open(filepath, "File Download", "width = 100px;");
@@ -59,7 +57,13 @@ function copyEmail(text) {
     window.alert('Email "' + text + '" copied to clipboard');
     navigator.clipboard.writeText(text);
 }
+
 function copyDiscUser(text) {
     window.alert('Discord Name "' + text + '" copied to clipboard');
     navigator.clipboard.writeText(text);
+}
+
+let mdPath = "assets/docs/"
+function openMarkdown(md) {
+    window.open(mdPath + md, "_blank")
 }
