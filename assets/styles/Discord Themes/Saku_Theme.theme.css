@@ -8,6 +8,10 @@ Transparency2 Module: https://raw.githack.com/Ruben7173/Ruben7173.github.io/mast
 
 The 2 items above are not owned by me, They go to there respected owners 
 */
+
+@import url('https://raw.githack.com/Ruben7173/Ruben7173.github.io/master/BetterDiscord-Themes/Modules/transparency2.css');
+@import url('https://raw.githack.com/VaporousCreeper/BetterDiscord-ThemesAndPlugins/master/Themes/GGO_Kirito/core.css');
+
 :root {
     --background: url('../../images/JonAndJen_Cuddling.png');
     --activetext-colour: white;
