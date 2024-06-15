@@ -275,7 +275,6 @@ The 2 items above are not owned by me, They go to there respected owners
 
 #app-mount .containerDefault_ae2ea4 {
     margin-right: 10px;
-    border-radius: 5px; /* EDIT ME FOR CHANNEL STUFF! */
 }
 
 #app-mount .mention_dd733a,
@@ -316,7 +315,6 @@ The 2 items above are not owned by me, They go to there respected owners
     width: 190px;
     transition: width 0.2s;
     transition-timing-function: ease-in-out;
-    border-radius: 20px; /* EDIT ME FOR CHANNEL STUFF! */
 }
 
 #app-mount .containerDefault_ae2ea4 .modeMuted_f0a72e div.wrapper__612a5 {
