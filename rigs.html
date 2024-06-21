@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Rig Catalog | Sakura Sedaia</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" />
-	<link rel="stylesheet" href="assets/styles/main-style.css">
+	<link rel="stylesheet" href="assets/styles/global.css">
+	<link rel="stylesheet" href="assets/styles/rigs.css">
 </head>
+
 <body>
 	<!-- HEAD START -->
 	<div class="header" style="background-image: url('assets/images/Waterfall Valley.png');background-position: bottom">
@@ -73,32 +76,135 @@
 						<h2>Experimental Release</h2>
 						<h3>Revision 7 Development</h3>
 						<p class="experimental-info">
-							The Experimental Release is the latest Stable build plus experimental features for the
-							upcoming
-							release, while SACR was previously under a discontinued state due to Sakura moving on,
-							Sakura
-							has been coming back to Blender due to real world scenarios, as such, development on SACR
-							will
-							continue with R7 set to release by July 2024 for Blender 4.0 and Later.
-						</p>
-
-						<div class="download-rig">
-							<div class="downloadDetail" onclick="openMarkdown('SACR E7 Changelog.md')">Blender 4.0 | 0.98mb | Zip Archive</div>
+							Revision 7 of SACR brings a much needed refresh to the Facerig, as well as updates to the
+							control schema used by the rig. Another goal of Revision 7 was to make true what Revision 6
+							was originally meant to do, but fell short. Optimization. With the rig now running smoothly
+							during posing
 							<br>
-							<div class="download-btn download-btn-red" onclick="downloadSACR('SACR E7_Proto3.zip', 1)">Download</div>
+							<br>
+							Expected Full Release: July 2024
+						</p>
+						<div class="download-rig">
+							<div class="downloadDetail" onclick="openMarkdown('SACR E7 Changelog.md')">Blender 4.0 |
+								0.98mb | Zip Archive</div>
+							<br>
+							<div class="download-btn download-btn-red" onclick="downloadSACR('SACR E7_Proto3.zip', 1)">
+								Download</div>
+						</div>
+					</div>
+				</div>
+				<div class="prev-versions">
+					<div class="prev-ver-text">
+						<h1>Additional Versions</h1>
+						<p>SACR Stable and Experimental has had it's previous versions saved in GitHub Repositories for
+							the past several years, access to both has remained public, but has been buried until now,
+							where it is now posted here for everyone to see!</p>
+						<ul>
+							<li><a
+									onclick="openExternal('https://github.com/SakuraSedaia/SACR-MC-Rig/tree/master/Rig%20Builds')">Stable
+									Repository</a></li>
+							<li><a onclick="openExternal('https://github.com/SakuraSedaia/SACR_Experimental')">Experimental
+									Repository</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Featured Rig End -->
+		<div class="asset-rigs">
+			<div class="content-contain">
+				<div class="title">
+					<h1>Asset Rigs</h1>
+				</div>
+				<div class="description">
+					<p>A Collection of various assets made by Sakura over the years.</p>
+				</div>
+				<div class="rig-gallery">
+
+					<br>
+					<div class="catagory character-addons" expanded="false">
+						<div class="cat-head">
+							<div class="cat-title">Character Addons</div>
+							<div class="dropdown-ico" onclick="expandCatagory(0)" active="false">
+								<img src="assets/images/vectors/arrow-right-solid.svg" width="20px" height="20px">
+							</div>
+						</div>
+						<div class="rig-contain">
+							<div class="scroll">
+								<!-- Rig Card Start -->
+								<div class="rig">
+									<h2>Feline Tail</h2>
+									<h3>V1 - Blender 2.93</h3>
+									<div class="thumbnail">
+										<img src="assets/images/rig-previews/character-addons/MC_Tail_RigShowcase.png">
+									</div>
+									<p>A Flexible, Minecraft Style Tail Rig for Cat-Like Characters using a custom
+										material and Minecraft Wool Texture</p>
+									<div class="download" onclick="downloadRig('mc_feline_tail_rig_v1.blend',0)">
+										Download</div>
+								</div>
+								<!-- Rig Card End -->
+								<!-- Rig Card Start -->
+								<div class="rig">
+									<h2>Voxel Glasses</h2>
+									<h3>V1 - Blender 2.93</h3>
+									<div class="thumbnail">
+										<img src="assets/images/rig-previews/character-addons/Glasses_Render.png">
+									</div>
+									<p>4 stylish Voxel Glasses with a glass material for the lenses.</p>
+									<div class="download" onclick="downloadRig('glasses_v1.blend',0)">Download</div>
+								</div>
+								<!-- Rig Card End -->
+								<!-- Rig Card Start -->
+								<div class="rig">
+									<h2>Voxel Furry Ears</h2>
+									<h3>V4 - Blender 2.9</h3>
+									<div class="thumbnail">
+										<img src="assets/images/rig-previews/character-addons/Tanya-Ears_Render.png">
+									</div>
+									<p>High Voxel Ears for use on Voxel Character rigs, works for Vulpine, Canine, and
+										Feline characters</p>
+									<div class="download" onclick="downloadRig('hd_ear_rig_v4.blend',0)">Download</div>
+								</div>
+								<!-- Rig Card End -->
+								<!-- Rig Card Start -->
+								<div class="rig">
+									<h2>Mermaid Tail Rig</h2>
+									<h3>V2 - Blender 2.9</h3>
+									<div class="thumbnail">
+										<img src="assets/images/rig-previews/character-addons/TailRig_Render.png">
+									</div>
+									<p>A Flexible Mermaid Tail Rig for Mermaid OC's, original rig by Markimoo, edited by
+										Ace
+										and Sakura</p>
+									<div class="download" onclick="downloadRig('mermaid_tail_v2_edit.blend',0)">
+										Download</div>
+								</div>
+								<!-- Rig Card End -->
+								<!-- Rig Card Start -->
+								<div class="rig">
+									<h2>Feathery Wings</h2>
+									<h3>V2 - Blender 2.9</h3>
+									<div class="thumbnail">
+										<img src="assets/images/rig-previews/character-addons/Tanya-Wings_Render.png">
+									</div>
+									<p>A Wing rig based on the Angel Wings from the Wings Mod</p>
+									<div class="download" onclick="downloadRig('wing_rig_v2.blend',0)">
+										Download</div>
+								</div>
+								<!-- Rig Card End -->
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- Featured Rig End -->
 	<!-- FOOT BEGIN -->
 	<div class="footer">
 		<div class="clusterfuck">
 			<div>
 				<h4>Site Links</h4>
-
 				<div onclick="openInternal('index.html')"><span>About Me</span></div>
 				<div onclick="openInternal('rigs.html')"><span>Rigs</span></div>
 				<div onclick="openInternal('contact.html')"><span>Contact</span></div>
@@ -108,6 +214,7 @@
 				<div onclick="openExternal('https://youtube.com/c/SakuraSedaia')"><span>Youtube</span></div>
 				<div onclick="openExternal('https://www.deviantart.com/')"><span>DeviantArt</span></div>
 				<div onclick="openExtennal('https://codepen.io/Sakura-Sedaia')"><span>Codepen</span></div>
+				<div onclick="openExtennal('https://github.com/SakuraSedaia')"><span>Github</span></div>
 				<div>
 					<h4><span>External API's</span></h4>
 					<div onclick="openExternal('https://fonts.google.com/')"><span>Google Fonts</span></div>
@@ -121,4 +228,5 @@
 	<!-- FOOT END -->
 	<script src="assets/scripts/script.js"></script>
 </body>
+
 </html>
