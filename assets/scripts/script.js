@@ -1,10 +1,7 @@
-
-
 // Link Handling
 function openInternal(url) {
     window.open(url, "_self");
 }
-
 function openExternal(url, trusted) {
     if (trusted != 1) {
         if (window.confirm("You are about to be directed to an external site, wish to continue?\n\nSite Link: " + url)) {
@@ -14,9 +11,6 @@ function openExternal(url, trusted) {
         window.open(url, "_blank");
     }
 }
-
-
-
 function copyEmail(text) {
     window.alert('Email "' + text + '" copied to clipboard');
     navigator.clipboard.writeText(text);
@@ -26,8 +20,6 @@ function copyDiscUser(text) {
     window.alert('Discord Name "' + text + '" copied to clipboard');
     navigator.clipboard.writeText(text);
 }
-
-
 // Rigs.html
 function downloadSACR(file, dev) {
     if (file == null) {
@@ -44,7 +36,6 @@ function downloadSACR(file, dev) {
         }
     } else if (dev == 1) {
         var filepath = window.location.href.substring(0, (window.location.href.length - 9)) + "assets/rig-storage/sacr-experimental/" + file;
-
         console.log("Initiated Download request for file " + file + ", from " + filepath)
         if (window.confirm(`You are about to download a file from the site, are you sure you want to continue?\n\nSite Link: ` + filepath)) {
             var downloadWin = window.open(filepath, "File Download", "width = 100px;");
@@ -77,7 +68,7 @@ function openMarkdown(md) {
     if (md == null) {
         window.alert("File does not exist")
     } else {
-        window.open(mdPath + md, "_blank")
+        window.open(mdPath + md, "_blank", "width=800px")
     }
 }
 

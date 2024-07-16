@@ -1,398 +1,180 @@
-.body-container .featured-rig {
-    color: black;
-    margin-top: 0px;
-    padding-top: 0px;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+@import url(global.css);
+.body-container h2 {
+    background-color: rgba(0, 0, 0, 0.884);
+    border-radius: 1em;
+    color: #f5f5f5;
+    width: 200px;
     display: inline-block;
-    border-top: 5px solid white;
-    -o-border-image: 5px linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.7));
-       border-image: 5px linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.7));
-    width: 100%;
-}
-.body-container .featured-rig .content-contain {
-    background-color: rgba(240, 240, 240, 0.521);
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
-    margin-right: var(--content-side-margin);
-    margin-left: var(--content-side-margin);
-    padding: 10px;
-    text-align: center;
-    background-image: linear-gradient(to bottom right, rgba(255, 228, 233, 0.075), rgba(255, 228, 233, 0.568));
-}
-.body-container .featured-rig .content-contain .title {
-    border-radius: 20px;
-    margin: 5px;
-    text-align: center;
-    padding: 10px;
-    padding-top: 1px;
-    margin-top: 20px;
-    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.7));
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
+    font-family: "PT_Sans";
     box-shadow: var(--box-shadow-sm);
-    text-align: center;
-    display: inline-block;
-    max-width: 800px;
-    min-width: 500px;
-    width: 80%;
-}
-.body-container .featured-rig .content-contain .title h1 {
-    font-family: "Noto Sans";
-    font-size: 22px;
-}
-.body-container .featured-rig .content-contain .title p {
-    font-family: "Source Sans Pro";
-}
-.body-container .featured-rig .content-contain .download-rigs {
-    display: flex;
-    justify-content: center;
-}
-.body-container .featured-rig .content-contain .download-rigs .col {
-    flex-basis: 50%;
-    border-radius: 5px;
-    height: 425px;
-    margin: 5px;
-    text-align: left;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-    padding: 10px;
-    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.7));
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
-    box-shadow: var(--box-shadow-xsm);
-}
-.body-container .featured-rig .content-contain .download-rigs .col h2 {
-    text-align: center;
-    font-family: "Open Sans";
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-.body-container .featured-rig .content-contain .download-rigs .col h3 {
-    text-align: center;
-    font-family: "Open Sans";
-    margin-top: 0;
-    color: rgb(49, 49, 49);
-}
-.body-container .featured-rig .content-contain .download-rigs .col p {
-    font-family: "Source Code Pro";
-    text-align: center;
-    max-width: 400px;
-    font-size: 14px;
-    height: 200px;
-}
-.body-container .featured-rig .content-contain .download-rigs .col .download-rig {
-    text-align: center;
-    margin-top: 30px;
-}
-.body-container .featured-rig .content-contain .download-rigs .col .download-rig .download-btn {
-    padding: 10px;
-    justify-content: center;
-    font-family: "Noto Sans";
-    color: black;
-    background-color: rgba(255, 255, 255, 0.1450980392);
-    transition-duration: 230ms;
-    cursor: pointer;
-    width: 150px;
-    height: 20px;
-    border-radius: 20px;
-    margin-right: 2%;
-    margin-left: 2%;
-    box-shadow: var(--box-shadow-sm);
-    -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
-    background-color: rgba(199, 223, 255, 0.8);
-    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
-    display: inline-block;
-}
-.body-container .featured-rig .content-contain .download-rigs .col .download-rig .download-btn:hover {
-    background-color: rgba(116, 191, 241, 0.8);
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-    color: black;
-    transform: scale(115%);
-    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
-}
-.body-container .featured-rig .content-contain .download-rigs .col .download-rig .download-btn-red {
-    padding: 10px;
-    justify-content: center;
-    font-family: "Noto Sans";
-    color: black;
-    background-color: rgba(255, 255, 255, 0.1450980392);
-    transition-duration: 230ms;
-    cursor: pointer;
-    width: 150px;
-    height: 20px;
-    border-radius: 20px;
-    margin-right: 2%;
-    margin-left: 2%;
-    box-shadow: var(--box-shadow-sm);
-    -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
-    background-color: rgba(255, 199, 199, 0.8);
-    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
-    display: inline-block;
-}
-.body-container .featured-rig .content-contain .download-rigs .col .download-rig .download-btn-red:hover {
-    background-color: rgba(241, 116, 185, 0.8);
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-    color: black;
-    transform: scale(115%);
-    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
-}
-.body-container .featured-rig .content-contain .download-rigs .col .download-rig .download-btn-na {
-    padding: 10px;
-    justify-content: center;
-    font-family: "Noto Sans";
-    color: black;
-    background-color: rgba(255, 255, 255, 0.1450980392);
-    transition-duration: 230ms;
-    cursor: default;
-    width: 150px;
-    height: 20px;
-    border-radius: 20px;
-    margin-right: 2%;
-    margin-left: 2%;
-    box-shadow: var(--box-shadow-sm);
-    -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
-    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
-    display: inline-block;
-}
-.body-container .featured-rig .content-contain .download-rigs .col:hover {
-    box-shadow: var(--box-shadow-sm);
-}
-.body-container .featured-rig .content-contain .download-rigs #stableRig {
-    background-color: rgba(224, 242, 250, 0.767);
-}
-.body-container .featured-rig .content-contain .download-rigs #stableRig:hover {
-    background-color: rgb(224, 242, 250);
-}
-.body-container .featured-rig .content-contain .download-rigs #devRig {
-    background-color: rgba(255, 228, 233, 0.678);
-}
-.body-container .featured-rig .content-contain .download-rigs #devRig:hover {
-    background-color: rgb(255, 228, 233);
-}
-.body-container .featured-rig .content-contain .prev-versions {
-    background-color: rgb(250, 236, 224);
-    border-radius: 5px;
-    text-align: left;
-    padding: 10px;
-    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.7));
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
-    box-shadow: var(--box-shadow-xsm);
-}
-.body-container .featured-rig .content-contain .prev-versions:hover {
-    background-color: rgb(253, 227, 205);
-    box-shadow: var(--box-shadow-sm);
-}
-.body-container .featured-rig .content-contain .prev-versions .prev-ver-text h1 {
-    font-family: "Open Sans";
-    font-size: 24px;
-}
-.body-container .featured-rig .content-contain .prev-versions .prev-ver-text p {
-    font-family: "Source Code Pro";
-    font-size: 14px;
-    text-indent: 2%;
-}
-.body-container .featured-rig .content-contain .prev-versions .prev-ver-text ul li a {
-    font-family: var(--secondary-font);
-    font-size: 16px;
-}
-.body-container .asset-rigs {
-    color: black;
-    margin-top: 0px;
-    padding-top: 0px;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: inline-block;
-    border-top: 5px solid white;
-    -o-border-image: 5px linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.7));
-       border-image: 5px linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.7));
-    width: 100%;
-}
-.body-container .asset-rigs .content-contain {
-    background-color: rgba(255, 255, 255, 0.521);
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
-    margin-right: var(--content-side-margin);
-    margin-left: var(--content-side-margin);
-    padding: 10px;
-    text-align: center;
-    background-image: linear-gradient(to bottom right, rgba(255, 228, 233, 0.075), rgba(255, 228, 233, 0.568));
-}
-.body-container .asset-rigs .content-contain .title {
-    border-radius: 20px;
-    margin: 5px;
-    text-align: center;
-    padding: 10px;
-    padding-top: 1px;
-    margin-top: 20px;
-    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.7));
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
-    box-shadow: var(--box-shadow-sm);
-    text-align: center;
-    display: inline-block;
-    max-width: 800px;
-    min-width: 500px;
-    width: 80%;
-}
-.body-container .asset-rigs .content-contain .title h1 {
-    font-family: "Noto Sans";
-    font-size: 22px;
-}
-.body-container .asset-rigs .content-contain .description {
-    color: black;
-    font-family: var(--secondary-font);
-    font-size: 20px;
-    border-bottom: 2px solid grey;
-}
-.body-container .asset-rigs .content-contain .rig-gallery .catagory {
-    background-color: rgb(32, 32, 32);
-    overflow: hidden;
-    height: 50px;
-    margin-left: 0px;
-    margin-right: 0px;
-    border-radius: 13px;
-}
-.body-container .asset-rigs .content-contain .rig-gallery .catagory[expanded=true] {
-    overflow: hidden;
-    height: 460px;
-}
-.body-container .asset-rigs .content-contain .rig-gallery .catagory .cat-head {
-    height: 50px;
-    color: white;
-    display: flex;
-    font-size: 20px;
-    box-shadow: 0px -3px inset rgb(46, 46, 46);
-    margin-bottom: 20px;
-    position: sticky;
-}
-.body-container .asset-rigs .content-contain .rig-gallery .catagory .cat-head .cat-title {
-    height: 50px;
-    line-height: 50px;
-    flex-basis: 100%;
-    text-align: left;
-    text-indent: 10%;
-    font-family: var(--primary-font);
-}
-.body-container .asset-rigs .content-contain .rig-gallery .catagory .cat-head .dropdown-ico {
-    flex-basis: 20%;
-    line-height: 55px;
-    box-shadow: 3px 0px inset rgb(46, 46, 46);
-    cursor: pointer;
-}
-.body-container .asset-rigs .content-contain .rig-gallery .catagory .cat-head .dropdown-ico img {
-    transform: rotate(0deg);
-    pointer-events: none;
-    color: white;
-}
-.body-container .asset-rigs .content-contain .rig-gallery .catagory .cat-head .dropdown-ico[active=true] img {
-    transform: rotate(90deg);
-}
-.body-container .asset-rigs .content-contain .rig-gallery .catagory .rig-contain {
-    overflow-x: scroll;
-}
-.body-container .asset-rigs .content-contain .rig-gallery .catagory .rig-contain .scroll {
-    display: flex;
-}
-.body-container .asset-rigs .content-contain .rig-gallery .catagory .rig-contain .scroll .rig {
-    padding-top: 3px;
-    margin-left: 10px;
-    flex-basis: 250px;
-    width: 250px;
-    min-width: 250px;
-    height: 370px;
-    background-color: grey;
-    border-radius: var(--radius-md);
-    box-shadow: var(--box-shadow-sm);
-}
-.body-container .asset-rigs .content-contain .rig-gallery .catagory .rig-contain .scroll .rig h2 {
-    margin-bottom: 2px;
-}
-.body-container .asset-rigs .content-contain .rig-gallery .catagory .rig-contain .scroll .rig h3 {
-    margin-top: 2px;
-    color: rgb(36, 36, 36);
-}
-.body-container .asset-rigs .content-contain .rig-gallery .catagory .rig-contain .scroll .rig .thumbnail {
-    width: 200px; /* 90% of Card width */
-    height: 150px;
-    display: inline-block;
-}
-.body-container .asset-rigs .content-contain .rig-gallery .catagory .rig-contain .scroll .rig .thumbnail img {
-    width: 100%;
-    border-radius: var(--radius-md);
-}
-.body-container .asset-rigs .content-contain .rig-gallery .catagory .rig-contain .scroll .rig p {
-    font-family: var(--secondary-font);
-    font-size: 14px;
-    height: 50px;
-    max-height: 50px;
-    margin-bottom: 20px;
-}
-.body-container .asset-rigs .content-contain .rig-gallery .catagory .rig-contain .scroll .rig .download {
     padding: 5px;
-    background-color: rgb(255, 202, 202);
-    border-radius: 25px;
-    width: 50%;
+}
+.body-container h3 {
+    width: 100%;
+    font-family: var(--secondary-font);
+}
+.body-container p {
+    font-size: 16px;
+    font-family: var(--secondary-font);
+    letter-spacing: 0.5px;
+    line-height: 23px;
+}
+
+.sacr {
+    margin-right: var(--content-side-margin);
+    margin-left: var(--content-side-margin);
+    text-align: left;
+    box-shadow: var(--box-shadow-sm);
+    padding-top: 20px;
+    padding-bottom: 5px;
+    background-color: var(--primary-color);
+}
+.sacr .about-rig {
+    display: flex;
+}
+.sacr .about-rig .description {
+    flex-basis: 50%;
+    margin: auto;
+    text-align: center;
+}
+.sacr .about-rig .description h2 span {
+    color: #111111;
+}
+.sacr .about-rig .description p {
+    color: black;
+    width: 90%;
+    text-align: left;
     display: inline-block;
-    bottom: 0px;
-    position: relative;
+    text-indent: 2em;
+}
+.sacr .about-rig .sacr-thumbnail {
+    flex-basis: 50%;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    border-left: 2px solid black;
+}
+.sacr .about-rig .sacr-thumbnail img {
+    width: 90%;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 7px 6px 16px -4px rgb(130, 130, 130);
+}
+.sacr .download-rig {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.sacr .download-rig .dl-heading h3 {
+    color: #111111;
+    background-color: transparent;
+}
+.sacr .download-rig .dl-heading p {
+    text-indent: 2rem;
+}
+.sacr .download-rig .info {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+.sacr .download-rig .info span {
+    padding-right: 20px;
+    font-size: 14px;
+    font-family: var(--secondary-font);
+}
+.sacr .download-rig .download .link-contain {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.sacr .download-rig .download .link-contain div {
+    padding: 10px;
+    justify-content: center;
+    font-family: "Noto Sans";
+    color: #111111;
+    background-color: rgba(255, 255, 255, 0.3411764706);
+    transition-duration: 130ms;
     cursor: pointer;
-    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.404));
-    box-shadow: var(--radius-sm);
+    width: 220px;
+    min-width: 220px;
+    border-radius: 1em;
+    box-shadow: var(--box-shadow-sm);
+    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+    margin: 1%;
+    margin-left: 0%;
 }
-.body-container .asset-rigs .content-contain .rig-gallery .catagory .rig-contain .scroll .rig .download:hover {
-    background-color: rgb(255, 169, 169);
+.sacr .download-rig .download .link-contain div .download-text {
+    color: black;
+    font-size: 16px;
+    border-left: 0px solid transparent;
+    padding-left: 0px;
 }
-.body-container .asset-rigs .content-contain .rig-gallery .catagory .rig-contain .scroll .rig .download[inactive] {
+.sacr .download-rig .download .link-contain div span {
+    font-size: 12px;
+    border-left: 1px solid #3d3d3d;
+    color: #3d3d3d;
+    padding-left: 5px;
+}
+.sacr .download-rig .download .link-contain div .start {
+    border-left: 0px solid transparent;
+    padding-left: 0px;
+}
+.sacr .download-rig .download .link-contain div:hover {
+    box-shadow: var(--box-shadow-sm), 0 -4em inset var(--accent-color);
+    cursor: pointer;
+}
+.sacr .download-rig .download .link-contain div:hover span {
     pointer-events: none;
-    opacity: 50%;
+}
+.sacr .download-rig .download .link-contain div:hover .download-text {
+    color: rgb(97, 9, 60);
+}
+.sacr .extras {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.sacr .extras p {
+    text-indent: 2rem;
+    margin-top: 2em;
+}
+.sacr .extras span {
+    padding-right: 20px;
+    font-family: var(--secondary-font);
 }
 
 @media screen and (max-width: 720px) {
-    .body-container .featured-rig .content-contain {
-        margin-left: 0.5in;
-        margin-right: 0.5in;
+    .sacr {
+        margin-left: 0em;
+        margin-right: 0em;
     }
-    .body-container .featured-rig .content-contain .title {
-        width: 400px;
-        min-width: 200px;
+    .sacr .about-rig {
+        flex-wrap: wrap;
+    }
+    .sacr .about-rig .description {
+        flex-basis: 100%;
+    }
+    .sacr .about-rig .sacr-thumbnail {
+        flex-basis: 60%;
+        display: inline-block;
+        margin: auto;
         text-align: center;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    .body-container .featured-rig .content-contain .title h1 {
-        width: 100%;
-    }
-    .body-container .asset-rigs .content-contain {
-        margin-left: 0.5in;
-        margin-right: 0.5in;
-    }
-    .body-container .asset-rigs .content-contain .title {
-        width: 400px;
-        min-width: 200px;
-        text-align: center;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    .body-container .asset-rigs .content-contain .title h1 {
-        width: 100%;
+        border-left: 0px solid transparent;
     }
 }
-@media screen and (max-width: 520px) {
-    .body-container .featured-rig .content-contain {
-        margin-left: 0in;
-        margin-right: 0in;
+@media all and (max-width: 600px) and (orientation: portrait) {
+    .sacr .download-rig .download .info span {
+        padding-right: 0px;
     }
-    .body-container .asset-rigs .content-contain {
-        margin-left: 0in;
-        margin-right: 0in;
+    .sacr .download-rig .download .info span a {
+        background-color: var(--secondary-color);
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 1em;
+        display: inline-block;
+        margin: 5px;
+    }
+    .sacr .download-rig .download .info span a:hover {
+        background-color: var(--accent-color);
+        color: black;
     }
 }

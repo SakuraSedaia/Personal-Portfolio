@@ -3,39 +3,38 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Rig Catalog | Sakura Sedaia</title>
+	<title>SACR | Sakura Sedaia</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" />
-	<link rel="stylesheet" href="assets/styles/global.css">
 	<link rel="stylesheet" href="assets/styles/rigs.css">
 </head>
 
 <body>
 	<!-- HEAD START -->
-	<div class="header" style="background-image: url('assets/images/Waterfall Valley.png');background-position: bottom">
+	<div class="header"
+		style="background-image: url('assets/images/render-gallery/gallery/CharEnvironment/NinoCyberheist-Jun2024.png');background-position: center center">
 		<div class="header-pattern">
 			<div class="header-content">
 				<div class="header-top">
 					<div class="header-info">
-						Rig Catalog | Sakura Sedaia
+						Sakura Sedaia | Portfolio
 					</div>
 				</div>
 				<br>
-				<div class="header-middle">
-					<h1>Rig Catalog</h1>
-					<br>
-					<h2>
-						Source of Sakura's Rigs, primarily SACR Rig
-					</h2>
+				<div class="header-middle" style="background-color: rgba(65, 65, 65, 0.479);">
+					<h1>Sakura's Minecraft Rig</h1>
+				</div>
+				<br>
+				<div class="header-bottom">
+					<div class="header-art">
+						<span hidden>Header Art by: Sakura</span>
+					</div>
 				</div>
 				<div class="navigation">
 					<div class="nav-content">
 						<div class="nav-item" onclick="openInternal('index.html')"><span>About</span></div>
-						<div class="nav-item active" onclick="openInternal('rigs.html')"><span>Rigs</span></div>
-						<div class="nav-item" onclick="openInternal('render.html')" hidden><span>Renders</span></div>
-						<div class="nav-item" onclick="openInternal('websites.html')" hidden><span>Websites</span></div>
+						<div class="nav-item active" onclick="openInternal('rigs.html')"><span>SACR</span></div>
 						<div class="nav-item" onclick="openInternal('contact.html')"><span>Contact</span></div>
-
 						<div class="nav-item" onclick="openExternal('https://sakura-sedaia.carrd.co/')">Commissions
 						</div>
 					</div>
@@ -44,192 +43,154 @@
 		</div>
 	</div>
 	<!-- HEAD END -->
-	<!-- Featured Rig Start -->
+	<!-- CONTENT START -->
 	<div class="body-container">
-		<div class="featured-rig" style="background-image:url('assets/images/BannerRender.png')">
-			<div class="content-contain">
-				<div class="title">
-					<h1>Sakura's Advanced Character Rig</h1>
+		<div class="sacr">
+			<div class="about-rig">
+				<div class="description">
+					<h2>What is SACR?</h2>
+					<p>
+						Quite simply, SACR is a rig developed by Sakura for use in Blender in the creation of Minecraft
+						Character based renders with a huge emphasis on a large feature package without the performance
+						drawback typically associated with having all of those features.
+					</p>
 				</div>
-				<div class="download-rigs">
-					<div class="col" id="stableRig">
-						<h2>Stable Build</h2>
-						<h3>Revision 6</h3>
-						<p class="stable-info">
-							The Stable build of SACR is in it's 6th revision, featuring all of the essentials such as
-							Eye
-							Gradients, 125° Sharp Bends, Advanced Facerig with Simplified Emotion Controls, etc. SACR
-							can
-							cover all of your bases, whether you're an Animator or Renderer, it can be setup however you
-							prefer for your workflow and with it's optimized Material Setups and Mesh's, your Computer
-							won't
-							suffer near as much as competitors.
-
-							**NOTE** Shading and Some Rig Drivers break in Blender 4.0 and newer, use in these versions at your own risk
-						</p>
-
-						<div class="download-rig">
-							<div class="downloadDetail">Blender 2.93 | 0.97mb | Zip Archive</div>
-							<br>
-							<div class="download-btn" onclick="downloadSACR('SACR_R6.zip')">Download</div>
-						</div>
-					</div>
-					<div class="col" id="devRig">
-						<h2>Experimental Release</h2>
-						<h3>Revision 7 Development</h3>
-						<p class="experimental-info">
-							Revision 7 of SACR brings a much needed refresh to the Facerig, as well as updates to the
-							control schema used by the rig. Another goal of Revision 7 was to make true what Revision 6
-							was originally meant to do, but fell short. Optimization. With the rig now running smoothly
-							during posing
-							<br>
-							<br>
-							Expected Full Release: July 2024
-						</p>
-						<div class="download-rig">
-							<div class="downloadDetail link" onclick="openMarkdown('SACR E7 Changelog.html')">Blender
-								4.1 |
-								1.03mb | Zip Archive</div>
-							<br>
-							<div class="download-btn download-btn-red" onclick="downloadSACR('SACR E7_Proto4.zip', 1)">
-								Download</div>
-						</div>
-					</div>
+				<div class="sacr-thumbnail">
+					<img src="assets/images/render-gallery/gallery/CharEnvironment/SakuraATM9-Jul2024.png">
 				</div>
-				<div class="prev-versions">
-					<div class="prev-ver-text">
-						<h1>Additional Versions</h1>
-						<p>SACR Stable and Experimental has had it's previous versions saved in GitHub Repositories for
-							the past several years, access to both has remained public, but has been buried until now,
-							where it is now posted here for everyone to see!</p>
-						<ul>
-							<li><a
-									onclick="openExternal('https://github.com/SakuraSedaia/SACR-MC-Rig/tree/master/Rig%20Builds')">Stable
-									Repository</a></li>
-							<li><a onclick="openExternal('https://github.com/SakuraSedaia/SACR_Experimental')">Experimental
-									Repository</a></li>
-						</ul>
+			</div>
+			<div class="download-rig"> <!-- Revision 7 -->
+				<div class="dl-heading">
+					<h3>
+						<span>Revision 7</span>
+					</h3>
+					<p>
+						Revision 7 contains many improvements and changes over it's predecessor, Revision 6. These
+						changes include but are not limited to improved shape Keys, optimized mesh and drivers, return
+						of full rig bone shapes, and a compltetely redone face rig mesh. All of these bringig SACR R7
+						back to it's roots, a super optimized, feature packed, and highly customizable rig that won't
+						destroy your computer or render times as much as competing rigs.
+					</p>
+				</div>
+				<div class="info">
+					<span>
+						<a onclick="openMarkdown('Changelog_Revision_7.html')">Open the Changelog</a>
+					</span>
+				</div>
+				<div class="download">
+					<div class="link-contain">
+						<div onclick="downloadSACR('SACR_R7.zip',0)">
+							<span class="download-text">Download SACR R7</span>
+							<br>
+							<span class="start">980 kB</span>
+							<span>Blender 4.1</span>
+							<span>ZIP Archive</span>
+						</div>
+						<div onclick="downloadSACR('SACR_R7_Lite.zip',0)">
+							<span class="download-text">Download SACR R7 Lite</span>
+							<br>
+							<span class="start">632 kB</span>
+							<span>Blender 4.1</span>
+							<span>ZIP Archive</span>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- Featured Rig End -->
-		<div class="asset-rigs">
-			<div class="content-contain">
-				<div class="title">
-					<h1>Asset Rigs</h1>
+			<hr data-line="4" class="code-line" dir="auto" />
+			<div class="download-rig"> <!-- Revision 6 -->
+				<div class="dl-heading">
+					<h3>
+						<span>Revision 6.1</span>
+					</h3>
+					<p>
+						SACR R6, released 2 years ago on Blender 2.93 has recieved a minor refresh to clean up two main
+						issues present on the rig for Blender 3.3, being non-functional materials and extreme lag. SACR
+						R6.1
+						is still offered as Blender 3.6 changed the file structure of blender save files, making it
+						impossible to open or append newer rigs such as SACR R7 in versions older than Blender 3.6.
+					</p>
 				</div>
-				<div class="description">
-					<p>A Collection of various assets made by Sakura over the years.</p>
+				<div class="info">
+					<span>
+						<a onclick="openMarkdown('Changelog_Revision_6.1.html')">Open the Changelog</a>
+					</span>
 				</div>
-				<div class="rig-gallery">
-
-					<br>
-					<div class="catagory character-addons" expanded="false">
-						<div class="cat-head">
-							<div class="cat-title">Character Addons</div>
-							<div class="dropdown-ico" onclick="expandCatagory(0)" active="false">
-								<img src="assets/images/Vectors/arrow-right-solid.svg" width="20px" height="20px">
-							</div>
-						</div>
-						<div class="rig-contain">
-							<div class="scroll">
-								<!-- Rig Card Start -->
-								<div class="rig">
-									<h2>Feline Tail</h2>
-									<h3>V1 - Blender 2.93</h3>
-									<div class="thumbnail">
-										<img src="assets/images/rig-previews/character-addons/MC_Tail_RigShowcase.png">
-									</div>
-									<p>A Flexible, Minecraft Style Tail Rig for Cat-Like Characters using a custom
-										material and Minecraft Wool Texture</p>
-									<div class="download" onclick="downloadRig('mc_feline_tail_rig_v1.blend',0)">
-										Download</div>
-								</div>
-								<!-- Rig Card End -->
-								<!-- Rig Card Start -->
-								<div class="rig">
-									<h2>Voxel Glasses</h2>
-									<h3>V1 - Blender 2.93</h3>
-									<div class="thumbnail">
-										<img src="assets/images/rig-previews/character-addons/Glasses_Render.png">
-									</div>
-									<p>4 stylish Voxel Glasses with a glass material for the lenses.</p>
-									<div class="download" onclick="downloadRig('glasses_v1.blend',0)">Download</div>
-								</div>
-								<!-- Rig Card End -->
-								<!-- Rig Card Start -->
-								<div class="rig">
-									<h2>Voxel Furry Ears</h2>
-									<h3>V4 - Blender 2.9</h3>
-									<div class="thumbnail">
-										<img src="assets/images/rig-previews/character-addons/Tanya-Ears_Render.png">
-									</div>
-									<p>High Voxel Ears for use on Voxel Character rigs, works for Vulpine, Canine, and
-										Feline characters</p>
-									<div class="download" onclick="downloadRig('hd_ear_rig_v4.blend',0)">Download</div>
-								</div>
-								<!-- Rig Card End -->
-								<!-- Rig Card Start -->
-								<div class="rig">
-									<h2>Mermaid Tail Rig</h2>
-									<h3>V2 - Blender 2.9</h3>
-									<div class="thumbnail">
-										<img src="assets/images/rig-previews/character-addons/TailRig_Render.png">
-									</div>
-									<p>A Flexible Mermaid Tail Rig for Mermaid OC's, original rig by Markimoo, edited by
-										Ace
-										and Sakura</p>
-									<div class="download" onclick="downloadRig('mermaid_tail_v2_edit.blend',0)">
-										Download</div>
-								</div>
-								<!-- Rig Card End -->
-								<!-- Rig Card Start -->
-								<div class="rig">
-									<h2>Feathery Wings</h2>
-									<h3>V2 - Blender 2.9</h3>
-									<div class="thumbnail">
-										<img src="assets/images/rig-previews/character-addons/Tanya-Wings_Render.png">
-									</div>
-									<p>A Wing rig based on the Angel Wings from the Wings Mod</p>
-									<div class="download" onclick="downloadRig('wing_rig_v2.blend',0)">
-										Download</div>
-								</div>
-								<!-- Rig Card End -->
-							</div>
+				<div class="download">
+					<div class="link-contain">
+						<div onclick="downloadSACR('SACR_R6.1.zip',0)">
+							<span class="download-text">Download SACR R6.1</span>
+							<br>
+							<span class="start">764 kB</span>
+							<span>Blender 3.3</span>
+							<span>ZIP Archive</span>
 						</div>
 					</div>
 				</div>
+			</div>
+			<hr data-line="4" class="code-line" dir="auto" />
+			<div class="extras">
+				<p>
+					SACR has gone thorugh many development versions and stable builds, and have always had public
+					repositories on Github, but never really had an easy way to find and download the rigs. As such, it
+					is now possible to find these repositories in the links now posted just below this paragraph. All
+					previous Stable releases, including from the first ever SAMR rigs are available on the Previous Versions repo.
+				</p>
+				<span>
+					<a onclick="openExternal('https://github.com/SakuraSedaia/SACR-MC-Rig')">
+						Previous Versions
+					</a>
+				</span>
+				<span>
+					<a onclick="openExternal('https://github.com/SakuraSedaia/SACR_Experimental')">
+						Experimental Versions
+					</a>
+				</span>
+
+				<hr data-line="4" class="code-line" dir="auto" />
+				<p>
+					SACR is licensed under the <a onclick="openMarkdown('SACR_MIT_License.html')">MIT License</a>, as
+					such, users are allowed to download, modify, and redistribute SACR as one's own, however the Rig
+					Creator, Sakura, requests that should one use or modify the SACR rig that credit be given to him.
+					SACR is a free, open source and public rig for use by anyone in their projects, and will forever
+					remain free.
+				</p>
 			</div>
 		</div>
 	</div>
+	<!-- CONTENT END -->
 	<!-- FOOT BEGIN -->
 	<div class="footer">
 		<div class="clusterfuck">
-			<div>
+			<div class="foot-col">
 				<h4>Site Links</h4>
 				<div onclick="openInternal('index.html')"><span>About Me</span></div>
 				<div onclick="openInternal('rigs.html')"><span>Rigs</span></div>
 				<div onclick="openInternal('contact.html')"><span>Contact</span></div>
 			</div>
-			<div>
+			<div class="foot-col">
 				<h4>Social Links</h4>
 				<div onclick="openExternal('https://youtube.com/c/SakuraSedaia')"><span>Youtube</span></div>
 				<div onclick="openExternal('https://www.deviantart.com/')"><span>DeviantArt</span></div>
 				<div onclick="openExtennal('https://codepen.io/Sakura-Sedaia')"><span>Codepen</span></div>
-				<div onclick="openExtennal('https://github.com/SakuraSedaia')"><span>Github</span></div>
-				<div>
-					<h4><span>External API's</span></h4>
-					<div onclick="openExternal('https://fonts.google.com/')"><span>Google Fonts</span></div>
-				</div>
 			</div>
-			<div class="trademarks">
-				<div>&copy; 2024 Sakura Sedaia, All Rights Reserved</div>
+			<div class="foot-col">
+
+				<h4><span>External API's</span></h4>
+				<div onclick="openExternal('https://fonts.google.com/')"><span>Google Fonts</span></div>
+
 			</div>
+
+
 		</div>
+
+		<div class="trademark">&copy; 2024 Sakura Sedaia, All Rights Reserved</div>
 	</div>
 	<!-- FOOT END -->
+
 	<script src="assets/scripts/script.js"></script>
+	<script>
+	</script>
+
 </body>
 
 </html>
