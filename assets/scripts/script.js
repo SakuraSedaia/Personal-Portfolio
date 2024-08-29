@@ -21,46 +21,11 @@ function copyDiscUser(text) {
     navigator.clipboard.writeText(text);
 }
 // Rigs.html
-function downloadSACR(file, dev) {
-    if (file == null) {
-        window.alert("This download does not exist")
-    } else if (dev != 1) {
-        var filepath = window.location.href.substring(0, (window.location.href.length - 9)) + "assets/rig-storage/sacr-directory/" + file;
 
-        console.log("Initiated Download request for file " + file + ", from " + filepath)
-        if (window.confirm(`You are about to download a file from the site, are you sure you want to continue?\n\nSite Link: ` + filepath)) {
-            var downloadWin = window.open(filepath, "File Download", "width = 100px;");
-            if (downloadWin.getElementsByTagName("h1").innerText = "File not found") {
-                console.log("File not Found");
-            }
-        }
-    } else if (dev == 1) {
-        var filepath = window.location.href.substring(0, (window.location.href.length - 9)) + "assets/rig-storage/sacr-experimental/" + file;
-        console.log("Initiated Download request for file " + file + ", from " + filepath)
-        if (window.confirm(`You are about to download a file from the site, are you sure you want to continue?\n\nSite Link: ` + filepath)) {
-            var downloadWin = window.open(filepath, "File Download", "width = 100px;");
-            if (downloadWin.getElementsByTagName("h1").innerText = "File not found") {
-                console.log("File not Found");
-            }
-        }
-    }
-}
-var rootDir = "assets/rig-storage/asset-rigs/"
-var rigDir = [
-    rootDir + "character-addons/",
-    rootDir + "models/"
-]
-function downloadRig(file,cat) {
-    if (file == null) {
-        window.alert("This download does not exist")
-    } else {
-        var filepath = window.location.href.substring(0, (window.location.href.length - 9)) + rigDir[cat] + file;
-
-        console.log("Initiated Download request for file " + file + ", from " + filepath)
-        if (window.confirm(`You are about to download a file from the site, are you sure you want to continue?\n\nSite Link: ` + filepath)) {
-            var downloadWin = window.open(filepath, "File Download", "width = 100px;");
-        }
-    }
+function openSACR(ver) {// (X.X or X.X-Dev)
+    var sacrPath = "https://github.com/SakuraSedaia/SACR-MC-Rig/releases/tag/R" + ver
+    window.open(sacrPath, "_blank");
+    console.info(sacrPath);
 }
 
 let mdPath = "assets/docs/"

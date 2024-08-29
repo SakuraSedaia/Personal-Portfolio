@@ -1,4 +1,15 @@
 @import url(global.css);
+.exp-update-alert {
+    background-color: rgb(128, 0, 0);
+    color: white;
+    padding: 0.2in 1in;
+}
+.exp-update-alert h2 {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    letter-spacing: 0.01em;
+}
+
 .body-container h2 {
     background-color: rgba(0, 0, 0, 0.884);
     border-radius: 1em;
@@ -108,15 +119,8 @@
     border-left: 0px solid transparent;
     padding-left: 0px;
 }
-.sacr .download-rig .download .link-contain div span {
-    font-size: 12px;
-    border-left: 1px solid #3d3d3d;
-    color: #3d3d3d;
-    padding-left: 5px;
-}
-.sacr .download-rig .download .link-contain div .start {
-    border-left: 0px solid transparent;
-    padding-left: 0px;
+.sacr .download-rig .download .link-contain div .download-text span {
+    transform: translateY(6px);
 }
 .sacr .download-rig .download .link-contain div:hover {
     box-shadow: var(--box-shadow-sm), 0 -4em inset var(--accent-color);
