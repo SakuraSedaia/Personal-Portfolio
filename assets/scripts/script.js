@@ -23,7 +23,7 @@ function copyDiscUser(text) {
 // Rigs.html
 
 function openSACR(ver) {// (X.X or X.X-Dev)
-    var sacrPath = "https://github.com/SakuraSedaia/SACR-MC-Rig/releases/tag/R" + ver
+    var sacrPath= "https://github.com/SakuraSedaia/SACR-MC-Rig/releases/tag/" + ver 
     window.open(sacrPath, "_blank");
     console.info(sacrPath);
 }
