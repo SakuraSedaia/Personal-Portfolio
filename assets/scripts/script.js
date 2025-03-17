@@ -22,7 +22,7 @@ function copyDiscUser(text) {
 }
 // Rigs.html
 
-function openSACR(ver) {// (X.X or X.X-Dev)
+function openSACR(ver) {// (X.X or X.X-Dev, Dev will be replaced by either "alpha.#", "beta.#", or "rc.#")
     var sacrPath= "https://github.com/SakuraSedaia/SACR-MC-Rig/releases/tag/" + ver 
     window.open(sacrPath, "_blank");
     console.info(sacrPath);
