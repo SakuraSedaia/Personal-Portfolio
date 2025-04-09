@@ -150,6 +150,16 @@
 }
 
 @media screen and (max-width: 720px) {
+    .exp-update-alert {
+        background-color: rgb(128, 0, 0);
+        color: white;
+        padding: 0.05in 0.2in;
+    }
+    .exp-update-alert h2 {
+        font-family: var(--primary-font);
+        font-size: 1.2em;
+        letter-spacing: 0.01em;
+    }
     .rig-version-title {
         width: 200px;
     }
