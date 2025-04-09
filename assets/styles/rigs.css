@@ -132,6 +132,9 @@
 .sacr .download-rig .download .link-contain div:hover .download-text {
     color: rgb(97, 9, 60);
 }
+.sacr .rig-version-title {
+    width: 400px;
+}
 .sacr .extras {
     width: 90%;
     margin: auto;
@@ -147,6 +150,9 @@
 }
 
 @media screen and (max-width: 720px) {
+    .rig-version-title {
+        width: 200px;
+    }
     .sacr {
         margin-left: 0em;
         margin-right: 0em;
@@ -166,6 +172,9 @@
     }
 }
 @media all and (max-width: 600px) and (orientation: portrait) {
+    .rig-version-title {
+        width: 200px;
+    }
     .sacr .download-rig .download .info span {
         padding-right: 0px;
     }
