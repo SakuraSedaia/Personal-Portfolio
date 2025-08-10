@@ -92,12 +92,12 @@
     font-size: 14px;
     font-family: var(--secondary-font);
 }
-.sacr .download-rig .download .link-contain {
+.link-contain {
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
 }
-.sacr .download-rig .download .link-contain div {
+.link-contain div {
     padding: 10px;
     justify-content: center;
     font-family: "Noto Sans";
@@ -113,23 +113,23 @@
     margin: 1%;
     margin-left: 0%;
 }
-.sacr .download-rig .download .link-contain div .download-text {
+.link-contain div .download-text {
     color: black;
     font-size: 16px;
     border-left: 0px solid transparent;
     padding-left: 0px;
 }
-.sacr .download-rig .download .link-contain div .download-text span {
+.link-contain div .download-text span {
     transform: translateY(6px);
 }
-.sacr .download-rig .download .link-contain div:hover {
+.link-contain div:hover {
     box-shadow: var(--box-shadow-sm), 0 -4em inset var(--accent-color);
     cursor: pointer;
 }
-.sacr .download-rig .download .link-contain div:hover span {
+.link-contain div:hover span {
     pointer-events: none;
 }
-.sacr .download-rig .download .link-contain div:hover .download-text {
+.link-contain div:hover .download-text {
     color: rgb(97, 9, 60);
 }
 .sacr .rig-version-title {

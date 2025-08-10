@@ -21,12 +21,47 @@ function copyDiscUser(text) {
     navigator.clipboard.writeText(text);
 }
 // Rigs.html
+lib = "assets/lib"
+function openSACR(branch, ver, source, modifier) {
+    version = branch + ver
+    if (modifier == null) {
+        file = "SACR_" + version + ".blend"
+    } else {
+        modifier = "_" + modifier
+        file = "SACR_" + version + modifier + ".blend"
+    }
 
-function openSACR(ver) {// (X.X or X.X-Dev, Dev will be replaced by either "alpha.#", "beta.#", or "rc.#")
-    var sacrPath= "https://github.com/SakuraSedaia/SACR-MC-Rig/releases/tag/" + ver 
+    var sacrPath
+    switch (source) {
+        case "local":
+            sacrPath = lib + "/SACR/" + version + "/" + file;
+            break;
+        case "git":
+            sacrPath = "https://github.com/SakuraSedaia/SACR-MC-Rig/releases/tag/" + version;
+            break;
+    }
+
     window.open(sacrPath, "_blank");
     console.info(sacrPath);
 }
+
+function openAddon(file, source) {
+    console.info("Downloading " + file);
+    var addonPath 
+    switch (source) {
+        case "local":
+            addonPath = lib + "/Rig_GUI/" + file + ".zip"
+            break;
+        case "blend":
+            addonPath = null
+            break;
+    }
+
+    
+    window.open(addonPath, "_blank");
+    console.info(addonPath);
+}
+
 
 let mdPath = "assets/docs/"
 function openMarkdown(md) {
